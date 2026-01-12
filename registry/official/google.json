@@ -1,0 +1,23 @@
+{
+  "google": {
+    "name": "Google Gemini",
+    "path": "google",
+    "source": "github:OpenSourceWTF/dojo-skills-google",
+    "aliases": [
+      "gemini",
+      "google-llm"
+    ],
+    "description": "Integration with Google's Gemini models",
+    "tags": [
+      "llm",
+      "ai",
+      "chat",
+      "multimodal"
+    ],
+    "dependencies": [],
+    "versions": {
+      "1.0.0": "init",
+      "latest": "init"
+    }
+  }
+}
