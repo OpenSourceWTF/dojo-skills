@@ -1,0 +1,47 @@
+{
+  "skills": {
+    "create-docx": {
+      "name": "Create DOCX",
+      "path": "create-docx",
+      "source": "github:anthropics/skills",
+      "aliases": [
+        "word",
+        "docx"
+      ],
+      "description": "Create and edit Microsoft Word documents",
+      "tags": [
+        "office",
+        "documents",
+        "microsoft"
+      ]
+    },
+    "analyze-pdf": {
+      "name": "Analyze PDF",
+      "path": "analyze-pdf",
+      "source": "github:anthropics/skills",
+      "aliases": [
+        "pdf",
+        "read-pdf"
+      ],
+      "description": "Extract text and analyze PDF documents",
+      "tags": [
+        "office",
+        "documents",
+        "pdf"
+      ]
+    },
+    "test-app": {
+      "name": "Test App",
+      "path": "test-app",
+      "source": "github:anthropics/skills",
+      "aliases": [
+        "test"
+      ],
+      "description": "Example skill for testing",
+      "tags": [
+        "test",
+        "example"
+      ]
+    }
+  }
+}
