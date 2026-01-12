@@ -1,0 +1,21 @@
+{
+  "awesome-list": {
+    "name": "Awesome Dojo Skills",
+    "path": "awesome-list",
+    "source": "github:OpenSourceWTF/dojo-awesome-skills",
+    "aliases": [
+      "skills",
+      "list"
+    ],
+    "description": "Curated list of community skills",
+    "tags": [
+      "community",
+      "list"
+    ],
+    "dependencies": [],
+    "versions": {
+      "1.0.0": "init",
+      "latest": "init"
+    }
+  }
+}

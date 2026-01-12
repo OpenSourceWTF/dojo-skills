@@ -1,0 +1,15 @@
+{
+  "anthropic": {
+    "name": "Anthropic Claude",
+    "path": "anthropic",
+    "source": "github:OpenSourceWTF/dojo-skills-anthropic",
+    "aliases": ["claude", "anthropic-llm"],
+    "description": "Integration with Anthropic's Claude models",
+    "tags": ["llm", "ai", "chat"],
+    "dependencies": [],
+    "versions": {
+      "1.0.0": "init",
+      "latest": "init"
+    }
+  }
+}
