@@ -1,23 +1,34 @@
 {
-  "google": {
-    "name": "Google Gemini",
-    "path": "google",
-    "source": "github:OpenSourceWTF/dojo-skills-google",
-    "aliases": [
-      "gemini",
-      "google-llm"
-    ],
-    "description": "Integration with Google's Gemini models",
-    "tags": [
-      "llm",
-      "ai",
-      "chat",
-      "multimodal"
-    ],
-    "dependencies": [],
-    "versions": {
-      "1.0.0": "init",
-      "latest": "init"
+  "skills": {
+    "github-actions": {
+      "name": "GitHub Actions",
+      "path": "skills/github-actions",
+      "source": "github:google-gemini/gemini-cli",
+      "aliases": [
+        "gha",
+        "actions"
+      ],
+      "description": "Manage GitHub Actions workflows",
+      "tags": [
+        "devops",
+        "ci-cd",
+        "github"
+      ]
+    },
+    "code-review": {
+      "name": "Code Review",
+      "path": "skills/code-review",
+      "source": "github:google-gemini/gemini-cli",
+      "aliases": [
+        "cr",
+        "review"
+      ],
+      "description": "Automated code review assistant",
+      "tags": [
+        "coding",
+        "review",
+        "quality"
+      ]
     }
   }
 }

@@ -1,0 +1,288 @@
+{
+  "skills": {
+    "filesystem": {
+      "name": "Filesystem",
+      "path": "src/filesystem",
+      "source": "github:modelcontextprotocol/servers",
+      "aliases": [
+        "fs",
+        "files"
+      ],
+      "description": "Local filesystem access",
+      "tags": [
+        "system",
+        "files"
+      ]
+    },
+    "git": {
+      "name": "Git",
+      "path": "src/git",
+      "source": "github:modelcontextprotocol/servers",
+      "aliases": [
+        "vcs"
+      ],
+      "description": "Git repository management",
+      "tags": [
+        "dev",
+        "vcs",
+        "git"
+      ]
+    },
+    "memory": {
+      "name": "Memory",
+      "path": "src/memory",
+      "source": "github:modelcontextprotocol/servers",
+      "aliases": [
+        "store",
+        "graph"
+      ],
+      "description": "Knowledge graph memory system",
+      "tags": [
+        "ai",
+        "memory",
+        "graph"
+      ]
+    },
+    "brave-search": {
+      "name": "Brave Search",
+      "path": "src/brave-search",
+      "source": "github:modelcontextprotocol/servers",
+      "aliases": [
+        "search",
+        "web"
+      ],
+      "description": "Web search using Brave API",
+      "tags": [
+        "search",
+        "web"
+      ]
+    },
+    "github": {
+      "name": "GitHub",
+      "path": "src/github",
+      "source": "github:modelcontextprotocol/servers",
+      "aliases": [
+        "gh"
+      ],
+      "description": "GitHub API integration",
+      "tags": [
+        "dev",
+        "github",
+        "api"
+      ]
+    },
+    "postgres": {
+      "name": "PostgreSQL",
+      "path": "src/postgres",
+      "source": "github:modelcontextprotocol/servers",
+      "aliases": [
+        "pg",
+        "sql"
+      ],
+      "description": "PostgreSQL database access",
+      "tags": [
+        "db",
+        "sql",
+        "postgres"
+      ]
+    },
+    "sqlite": {
+      "name": "SQLite",
+      "path": "src/sqlite",
+      "source": "github:modelcontextprotocol/servers",
+      "aliases": [
+        "sql",
+        "lite"
+      ],
+      "description": "SQLite database access",
+      "tags": [
+        "db",
+        "sql",
+        "sqlite"
+      ]
+    },
+    "slack": {
+      "name": "Slack",
+      "path": "src/slack",
+      "source": "github:modelcontextprotocol/servers",
+      "aliases": [
+        "chat"
+      ],
+      "description": "Slack integration",
+      "tags": [
+        "chat",
+        "slack",
+        "productivity"
+      ]
+    },
+    "sentry": {
+      "name": "Sentry",
+      "path": "src/sentry",
+      "source": "github:modelcontextprotocol/servers",
+      "aliases": [
+        "monitoring",
+        "error"
+      ],
+      "description": "Sentry error monitoring",
+      "tags": [
+        "dev",
+        "monitoring",
+        "sentry"
+      ]
+    },
+    "cloudflare": {
+      "name": "Cloudflare",
+      "path": "src/cloudflare",
+      "source": "github:modelcontextprotocol/servers",
+      "aliases": [
+        "cf"
+      ],
+      "description": "Cloudflare resource management",
+      "tags": [
+        "devops",
+        "cloud",
+        "cloudflare"
+      ]
+    },
+    "linear": {
+      "name": "Linear",
+      "path": "src/linear",
+      "source": "github:modelcontextprotocol/servers",
+      "aliases": [
+        "issues"
+      ],
+      "description": "Linear issue tracking",
+      "tags": [
+        "productivity",
+        "issues",
+        "linear"
+      ]
+    },
+    "notion": {
+      "name": "Notion",
+      "path": "src/notion",
+      "source": "github:modelcontextprotocol/servers",
+      "aliases": [
+        "wiki"
+      ],
+      "description": "Notion knowledge base",
+      "tags": [
+        "productivity",
+        "notes",
+        "notion"
+      ]
+    },
+    "puppeteer": {
+      "name": "Puppeteer",
+      "path": "src/puppeteer",
+      "source": "github:modelcontextprotocol/servers",
+      "aliases": [
+        "browser",
+        "scrape"
+      ],
+      "description": "Browser automation",
+      "tags": [
+        "web",
+        "automation",
+        "testing"
+      ]
+    },
+    "sequential-thinking": {
+      "name": "Sequential Thinking",
+      "path": "src/sequential-thinking",
+      "source": "github:modelcontextprotocol/servers",
+      "aliases": [
+        "think",
+        "cot"
+      ],
+      "description": "Dynamic chain of thought processing",
+      "tags": [
+        "ai",
+        "reasoning",
+        "tool"
+      ]
+    },
+    "time": {
+      "name": "Time",
+      "path": "src/time",
+      "source": "github:modelcontextprotocol/servers",
+      "aliases": [
+        "clock"
+      ],
+      "description": "Time and date utilities",
+      "tags": [
+        "utility",
+        "time"
+      ]
+    },
+    "weather": {
+      "name": "Weather",
+      "path": "src/weather",
+      "source": "github:modelcontextprotocol/servers",
+      "aliases": [
+        "forecast"
+      ],
+      "description": "Weather forecasts",
+      "tags": [
+        "utility",
+        "weather"
+      ]
+    },
+    "everything": {
+      "name": "Everything",
+      "path": "src/everything",
+      "source": "github:modelcontextprotocol/servers",
+      "aliases": [
+        "all"
+      ],
+      "description": "Template or reference server",
+      "tags": [
+        "template",
+        "example"
+      ]
+    },
+    "fetch": {
+      "name": "Fetch",
+      "path": "src/fetch",
+      "source": "github:modelcontextprotocol/servers",
+      "aliases": [
+        "http",
+        "curl"
+      ],
+      "description": "Web content fetching",
+      "tags": [
+        "utility",
+        "web",
+        "fetch"
+      ]
+    },
+    "gdrive": {
+      "name": "Google Drive",
+      "path": "src/gdrive",
+      "source": "github:modelcontextprotocol/servers",
+      "aliases": [
+        "drive"
+      ],
+      "description": "Google Drive integration",
+      "tags": [
+        "productivity",
+        "storage",
+        "google"
+      ]
+    },
+    "gitlab": {
+      "name": "GitLab",
+      "path": "src/gitlab",
+      "source": "github:modelcontextprotocol/servers",
+      "aliases": [
+        "gl"
+      ],
+      "description": "GitLab API integration",
+      "tags": [
+        "dev",
+        "gitlab",
+        "vcs"
+      ]
+    }
+  }
+}
