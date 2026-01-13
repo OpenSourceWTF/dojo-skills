@@ -27,33 +27,30 @@
 
 ## ⚡ Quick Start
 
+> **First, install the Dojo CLI:** [github.com/OpenSourceWTF/dojo](https://github.com/OpenSourceWTF/dojo)
+
 ```bash
-# Install a skill
-dojo learn @anthropic/frontend-design
-
-# Search for skills  
-dojo search "testing"
-
-# List installed skills
-dojo list
+dojo learn @anthropic/frontend-design   # Install a skill
+dojo search "testing"                    # Search skills  
+dojo list                                # List installed
 ```
 
 ---
 
 ## 🎯 Supported Platforms
 
-<table>
-  <tr>
-    <td align="center"><img src="https://img.shields.io/badge/Claude%20Code-Anthropic-orange?style=for-the-badge" alt="Claude"></td>
-    <td align="center"><img src="https://img.shields.io/badge/Gemini%20CLI-Google-blue?style=for-the-badge" alt="Gemini"></td>
-    <td align="center"><img src="https://img.shields.io/badge/Cursor%20AI-IDE-purple?style=for-the-badge" alt="Cursor"></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="https://img.shields.io/badge/OpenAI%20Codex-OpenAI-green?style=for-the-badge" alt="Codex"></td>
-    <td align="center"><img src="https://img.shields.io/badge/Qwen-Alibaba-red?style=for-the-badge" alt="Qwen"></td>
-    <td align="center"><img src="https://img.shields.io/badge/MCP-Protocol-black?style=for-the-badge" alt="MCP"></td>
-  </tr>
-</table>
+<p align="center">
+
+| Platform | Vendor | Format | Skills |
+|:--------:|:------:|:------:|:------:|
+| ![Claude](https://img.shields.io/badge/Claude%20Code-E57C4E?style=flat-square&logo=anthropic&logoColor=white) | Anthropic | `SKILL.md` | 17 |
+| ![Gemini](https://img.shields.io/badge/Gemini%20CLI-4285F4?style=flat-square&logo=google&logoColor=white) | Google | `SKILL.md` | 10 |
+| ![Codex](https://img.shields.io/badge/Codex-412991?style=flat-square&logo=openai&logoColor=white) | OpenAI | `SKILL.md` | 6 |
+| ![Cursor](https://img.shields.io/badge/Cursor%20AI-1F1F1F?style=flat-square&logo=cursor&logoColor=white) | Cursor | `.cursorrules` | 12 |
+| ![Qwen](https://img.shields.io/badge/Qwen-FF6A00?style=flat-square&logo=alibaba-cloud&logoColor=white) | Alibaba | `SKILL.md` | ✓ |
+| ![MCP](https://img.shields.io/badge/MCP%20Servers-000000?style=flat-square&logo=protocol&logoColor=white) | Protocol | `mcp_servers` | 21 |
+
+</p>
 
 ---
 
