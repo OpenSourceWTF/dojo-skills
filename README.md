@@ -18,13 +18,15 @@ Skills are distributed to all detected agent environments via Dojo's "Always-Syn
 
 ```
 registry/
-├── official/           # Vendor-maintained skills
+├── official/           # Vendor-maintained skills (SKILL.md format)
 │   ├── anthropic.json  # Official Anthropic/Claude skills
 │   ├── google.json     # Official Google/Gemini skills
 │   └── openai.json     # Official OpenAI/Codex skills
 ├── community/          # Community-curated skills  
 │   ├── awesome.json    # Curated community skills
 │   └── mcp-servers.json# MCP server integrations
+├── todo/               # Planned but not yet integrated
+│   └── cursor-rules.json # Cursor AI rules (different format)
 └── user/               # Gitignored, local-only mappings
     └── *.json
 ```
@@ -111,45 +113,54 @@ Workflows, automation, and communication skills.
    - Source repository link
    - Example use cases
 
+## Skill Format Compatibility
+
+This registry focuses on skills using the **SKILL.md format** (compatible with Claude Code and Gemini CLI):
+
+| Format | Compatible Agents | Status |
+|--------|-------------------|--------|
+| `SKILL.md` | Claude Code, Gemini CLI, Codex | ✅ Active |
+| `.cursorrules` | Cursor AI | 📋 TODO |
+
 ## Sources & Attribution
 
-This registry incorporates skills from the following curated sources:
-
-### By AI Environment Compatibility
+### Active Sources (SKILL.md format)
 
 | Source Repository | Compatible With | Registry File | Count |
 |-------------------|-----------------|---------------|-------|
-| [anthropics/skills](https://github.com/anthropics/skills) | Claude Code | `official/anthropic.json` | 17 |
-| [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | Gemini CLI | `official/google.json` | 7 |
-| [gemini-cli-extensions/*](https://github.com/gemini-cli-extensions) | Gemini CLI | `official/google.json` | 3 |
-| [openai/codex](https://github.com/openai/codex) | OpenAI Codex | `official/openai.json` | 6 |
-| [obra/superpowers](https://github.com/obra/superpowers) | Claude Code | `community/awesome.json` | 2 |
-| [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) | Claude, Codex, Gemini | `community/awesome.json` | 1 |
-| [wshobson/agents](https://github.com/wshobson/agents) | Claude Code | `community/awesome.json` | 1 |
-| [Prat011/awesome-llm-skills](https://github.com/Prat011/awesome-llm-skills) | Claude, Codex, Gemini, Qwen | `community/awesome.json` | 1 |
-| [code-yeongyu/oh-my-opencode](https://github.com/code-yeongyu/oh-my-opencode) | Claude, Codex, Gemini | `community/awesome.json` | 1 |
-| Community skills | Claude Code | `community/awesome.json` | 11 |
-| [PatrickJS/awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) | Cursor AI | `community/cursor-rules.json` | 12 |
+| [anthropics/skills](https://github.com/anthropics/skills) | Claude, Gemini | `official/anthropic.json` | 17 |
+| [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | Gemini, Claude | `official/google.json` | 7 |
+| [gemini-cli-extensions/*](https://github.com/gemini-cli-extensions) | Gemini, Claude | `official/google.json` | 3 |
+| [openai/codex](https://github.com/openai/codex) | Codex, Claude, Gemini | `official/openai.json` | 6 |
+| [obra/superpowers](https://github.com/obra/superpowers) | Claude, Gemini | `community/awesome.json` | 2 |
+| [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) | Claude, Gemini, Codex | `community/awesome.json` | 1 |
+| [wshobson/agents](https://github.com/wshobson/agents) | Claude, Gemini | `community/awesome.json` | 1 |
+| [Prat011/awesome-llm-skills](https://github.com/Prat011/awesome-llm-skills) | Claude, Gemini, Codex, Qwen | `community/awesome.json` | 1 |
+| [code-yeongyu/oh-my-opencode](https://github.com/code-yeongyu/oh-my-opencode) | Claude, Gemini, Codex | `community/awesome.json` | 1 |
+| Community skills | Claude, Gemini | `community/awesome.json` | 11 |
 | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | MCP (All agents) | `community/mcp-servers.json` | 13 |
 | [upstash/context7](https://github.com/upstash/context7) | MCP (All agents) | `community/mcp-servers.json` | 1 |
 | [github/github-mcp-server](https://github.com/github/github-mcp-server) | MCP (All agents) | `community/mcp-servers.json` | 1 |
 | Other MCP servers | MCP (All agents) | `community/mcp-servers.json` | 5 |
 
-### Summary by Platform
+### TODO Sources (different format)
+
+| Source Repository | Format | File |
+|-------------------|--------|------|
+| [PatrickJS/awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) | `.cursorrules` | `todo/cursor-rules.json` |
+
+### Summary
 
 | Platform | Skills |
 |----------|--------|
-| Claude Code | 31 |
-| Gemini CLI | 10 |
-| OpenAI Codex | 6 |
-| Cursor AI | 12 |
-| Cross-platform (Claude/Codex/Gemini) | 3 |
-| MCP Servers (works with all) | 20 |
-| **Total** | **82** |
+| Claude Code + Gemini CLI | 50 |
+| MCP Servers (all agents) | 20 |
+| **Active Total** | **70** |
+| TODO (Cursor) | 12 |
 
 ### Last Updated
 - **Date**: 2026-01-13
-- **Total Skills**: 82
+- **Active Skills**: 70
 
 ## License
 

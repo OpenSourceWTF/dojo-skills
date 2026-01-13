@@ -1,7 +1,13 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "updated": "2026-01-13",
-  "totalSkills": 82,
+  "format": "SKILL.md",
+  "compatibleWith": [
+    "Claude Code",
+    "Gemini CLI",
+    "OpenAI Codex"
+  ],
+  "totalSkills": 70,
   "categories": {
     "official": [
       "anthropic.json",
@@ -10,8 +16,10 @@
     ],
     "community": [
       "awesome.json",
-      "cursor-rules.json",
       "mcp-servers.json"
+    ],
+    "todo": [
+      "cursor-rules.json"
     ]
   }
 }
