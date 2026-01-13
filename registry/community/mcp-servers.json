@@ -293,6 +293,104 @@
       "versions": {
         "latest": "main"
       }
+    },
+    "mcp-context7": {
+      "name": "Context7 MCP Server",
+      "source": "github:upstash/context7",
+      "aliases": [
+        "context7",
+        "docs",
+        "documentation"
+      ],
+      "description": "Up-to-date code documentation for LLMs and AI code editors",
+      "tags": [
+        "mcp",
+        "documentation",
+        "llm",
+        "context"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "master"
+      }
+    },
+    "mcp-github-official": {
+      "name": "GitHub Official MCP Server",
+      "source": "github:github/github-mcp-server",
+      "aliases": [
+        "gh-official",
+        "github-official"
+      ],
+      "description": "GitHub's official MCP Server for repository operations",
+      "tags": [
+        "mcp",
+        "github",
+        "official",
+        "devops"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "mcp-xcode": {
+      "name": "Xcode Build MCP Server",
+      "source": "github:cameroncooke/XcodeBuildMCP",
+      "aliases": [
+        "xcode",
+        "xcodebuild",
+        "ios-build"
+      ],
+      "description": "Xcode-related tools for integration with AI assistants",
+      "tags": [
+        "mcp",
+        "xcode",
+        "ios",
+        "macos"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "mcp-chart": {
+      "name": "Chart Visualization MCP Server",
+      "source": "github:antvis/mcp-server-chart",
+      "aliases": [
+        "charts",
+        "visualization",
+        "antv"
+      ],
+      "description": "25+ visual charts using AntV for chart generation and data analysis",
+      "tags": [
+        "mcp",
+        "visualization",
+        "charts",
+        "data"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "mcp-excel": {
+      "name": "Excel MCP Server",
+      "source": "github:haris-musa/excel-mcp-server",
+      "aliases": [
+        "excel-mcp",
+        "spreadsheet-mcp"
+      ],
+      "description": "Excel file manipulation and automation",
+      "tags": [
+        "mcp",
+        "excel",
+        "spreadsheet",
+        "office"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
     }
   }
 }

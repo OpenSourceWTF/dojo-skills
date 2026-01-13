@@ -233,6 +233,104 @@
       "versions": {
         "latest": "main"
       }
+    },
+    "obsidian-skills": {
+      "name": "Obsidian Agent Skills",
+      "source": "github:kepano/obsidian-skills",
+      "aliases": [
+        "obsidian",
+        "notes",
+        "pkm"
+      ],
+      "description": "Agent skills for Obsidian note-taking and knowledge management",
+      "tags": [
+        "obsidian",
+        "notes",
+        "productivity",
+        "knowledge"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "wshobson-agents": {
+      "name": "Multi-Agent Orchestration",
+      "source": "github:wshobson/agents",
+      "aliases": [
+        "agents",
+        "orchestration",
+        "subagents"
+      ],
+      "description": "Intelligent automation and multi-agent orchestration for Claude Code",
+      "tags": [
+        "agents",
+        "orchestration",
+        "automation",
+        "workflows"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "oh-my-opencode": {
+      "name": "Oh My OpenCode (Sisyphus)",
+      "source": "github:code-yeongyu/oh-my-opencode",
+      "aliases": [
+        "sisyphus",
+        "opencode",
+        "agent-harness"
+      ],
+      "description": "The Best Agent Harness - batteries-included agent that codes like you",
+      "tags": [
+        "agents",
+        "framework",
+        "automation",
+        "cross-platform"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "ai-research-skills": {
+      "name": "AI Research Skills",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs",
+      "aliases": [
+        "research",
+        "ai-research",
+        "orchestra"
+      ],
+      "description": "Comprehensive AI research and engineering skills for any AI model by Orchestra Research",
+      "tags": [
+        "research",
+        "ai",
+        "machine-learning",
+        "science"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "awesome-llm-skills": {
+      "name": "Awesome LLM Skills",
+      "source": "github:Prat011/awesome-llm-skills",
+      "aliases": [
+        "llm-skills",
+        "cross-platform"
+      ],
+      "description": "Cross-platform skills for Claude Code, Codex, Gemini CLI, Qwen, and custom agents",
+      "tags": [
+        "collection",
+        "cross-platform",
+        "multi-agent"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "master"
+      }
     }
   }
 }

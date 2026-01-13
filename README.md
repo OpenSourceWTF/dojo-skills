@@ -115,25 +115,41 @@ Workflows, automation, and communication skills.
 
 This registry incorporates skills from the following curated sources:
 
-### Official Sources
-| Source | Registry File | Skills Count |
-|--------|---------------|--------------|
-| [anthropics/skills](https://github.com/anthropics/skills) | `official/anthropic.json` | 14 |
-| [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | `official/google.json` | 7 |
-| [openai/codex](https://github.com/openai/codex) | `official/openai.json` | 6 |
+### By AI Environment Compatibility
 
-### Community Sources
-| Source | Registry File | Skills Count |
-|--------|---------------|--------------|
-| [travisvn/awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills) | `community/awesome.json` | 12 |
-| [obra/superpowers](https://github.com/obra/superpowers) | `community/awesome.json` | Included |
-| [PatrickJS/awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) | `community/cursor-rules.json` | 12 |
-| [instructa/ai-prompts](https://github.com/instructa/ai-prompts) | `community/cursor-rules.json` | Included |
-| [wong2/awesome-mcp-servers](https://github.com/wong2/awesome-mcp-servers) | `community/mcp-servers.json` | 15 |
+| Source Repository | Compatible With | Registry File | Count |
+|-------------------|-----------------|---------------|-------|
+| [anthropics/skills](https://github.com/anthropics/skills) | Claude Code | `official/anthropic.json` | 17 |
+| [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | Gemini CLI | `official/google.json` | 7 |
+| [gemini-cli-extensions/*](https://github.com/gemini-cli-extensions) | Gemini CLI | `official/google.json` | 3 |
+| [openai/codex](https://github.com/openai/codex) | OpenAI Codex | `official/openai.json` | 6 |
+| [obra/superpowers](https://github.com/obra/superpowers) | Claude Code | `community/awesome.json` | 2 |
+| [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) | Claude, Codex, Gemini | `community/awesome.json` | 1 |
+| [wshobson/agents](https://github.com/wshobson/agents) | Claude Code | `community/awesome.json` | 1 |
+| [Prat011/awesome-llm-skills](https://github.com/Prat011/awesome-llm-skills) | Claude, Codex, Gemini, Qwen | `community/awesome.json` | 1 |
+| [code-yeongyu/oh-my-opencode](https://github.com/code-yeongyu/oh-my-opencode) | Claude, Codex, Gemini | `community/awesome.json` | 1 |
+| Community skills | Claude Code | `community/awesome.json` | 11 |
+| [PatrickJS/awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) | Cursor AI | `community/cursor-rules.json` | 12 |
+| [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | MCP (All agents) | `community/mcp-servers.json` | 13 |
+| [upstash/context7](https://github.com/upstash/context7) | MCP (All agents) | `community/mcp-servers.json` | 1 |
+| [github/github-mcp-server](https://github.com/github/github-mcp-server) | MCP (All agents) | `community/mcp-servers.json` | 1 |
+| Other MCP servers | MCP (All agents) | `community/mcp-servers.json` | 5 |
+
+### Summary by Platform
+
+| Platform | Skills |
+|----------|--------|
+| Claude Code | 31 |
+| Gemini CLI | 10 |
+| OpenAI Codex | 6 |
+| Cursor AI | 12 |
+| Cross-platform (Claude/Codex/Gemini) | 3 |
+| MCP Servers (works with all) | 20 |
+| **Total** | **82** |
 
 ### Last Updated
-- **Date**: 2026-01-12
-- **Total Skills**: 66
+- **Date**: 2026-01-13
+- **Total Skills**: 82
 
 ## License
 

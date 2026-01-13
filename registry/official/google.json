@@ -132,6 +132,60 @@
       "versions": {
         "latest": "main"
       }
+    },
+    "gemini-security": {
+      "name": "Gemini Security Scanner",
+      "source": "github:gemini-cli-extensions/security",
+      "aliases": [
+        "security-scan",
+        "vulnerability-check"
+      ],
+      "description": "Security scanning extension for Gemini CLI",
+      "tags": [
+        "security",
+        "scanning",
+        "devops"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "gemini-jules": {
+      "name": "Jules Agent Orchestration",
+      "source": "github:gemini-cli-extensions/jules",
+      "aliases": [
+        "jules",
+        "async-agent"
+      ],
+      "description": "Orchestrate Jules async agent for bug fixing, refactoring, and dependency updates",
+      "tags": [
+        "agents",
+        "automation",
+        "orchestration"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "gemini-code-review-ext": {
+      "name": "Gemini Code Review Extension",
+      "source": "github:gemini-cli-extensions/code-review",
+      "aliases": [
+        "gem-review",
+        "gcr"
+      ],
+      "description": "Code review extension for Gemini CLI that reviews code changes",
+      "tags": [
+        "development",
+        "review",
+        "quality"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
     }
   }
 }

@@ -267,6 +267,62 @@
       "versions": {
         "latest": "main"
       }
+    },
+    "doc-coauthoring": {
+      "name": "Document Co-Authoring",
+      "source": "github:anthropics/skills/skills/doc-coauthoring",
+      "aliases": [
+        "coauthor",
+        "collaborative-writing"
+      ],
+      "description": "Collaborative document editing workflows with tracked changes and suggestions",
+      "tags": [
+        "document",
+        "collaboration",
+        "writing"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "theme-factory": {
+      "name": "Theme Factory",
+      "source": "github:anthropics/skills/skills/theme-factory",
+      "aliases": [
+        "themes",
+        "theming",
+        "color-schemes"
+      ],
+      "description": "Generate and customize themes with consistent color schemes and styling",
+      "tags": [
+        "design",
+        "themes",
+        "creative"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "web-artifacts-builder": {
+      "name": "Web Artifacts Builder",
+      "source": "github:anthropics/skills/skills/web-artifacts-builder",
+      "aliases": [
+        "web-artifacts",
+        "html-builder"
+      ],
+      "description": "Build interactive web-based artifacts with HTML, CSS, and JavaScript",
+      "tags": [
+        "development",
+        "web",
+        "artifacts",
+        "html"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
     }
   }
 }
