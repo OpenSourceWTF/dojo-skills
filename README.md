@@ -1,6 +1,22 @@
-# Dojo Skills Registry
+<p align="center">
+  <img src="assets/dojo-logo.png" alt="Dojo Logo" width="200">
+</p>
 
-> 🥋 The canonical skill registry for [Dojo](https://github.com/OpenSourceWTF/dojo) - a package manager for AI agent skills and workflows.
+<h1 align="center">Dojo Skills Registry</h1>
+
+<p align="center">
+  <strong>🥋 The canonical skill registry for <a href="https://github.com/OpenSourceWTF/dojo">Dojo</a> - a package manager for AI agent skills and workflows.</strong>
+</p>
+
+<p align="center">
+  <a href="https://github.com/OpenSourceWTF">
+    <img src="assets/opensourcewtf-logo.png" alt="OpenSourceWTF" width="100">
+  </a>
+  <br>
+  <em>An <a href="https://github.com/OpenSourceWTF">OpenSourceWTF</a> Project</em>
+</p>
+
+---
 
 ## Overview
 
@@ -13,6 +29,7 @@ This repository contains curated skill definitions for AI coding agents includin
 - **Community contributions**
 
 Skills are distributed to all detected agent environments via Dojo's "Always-Sync" dual-write system.
+
 
 ## Registry Structure
 
