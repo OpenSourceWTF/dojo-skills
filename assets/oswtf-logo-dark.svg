@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180" fill="#FFFFFF">
+  <path d="M50,20 Q30,20 30,40 L30,70 Q30,80 20,80 Q30,80 30,90 L30,120 Q30,140 50,140 L55,140 L55,130 L50,130 Q40,130 40,120 L40,90 Q40,80 30,75 Q40,70 40,60 L40,40 Q40,30 50,30 L55,30 L55,20 Z"/>
+  <path d="M150,20 Q170,20 170,40 L170,70 Q170,80 180,80 Q170,80 170,90 L170,120 Q170,140 150,140 L145,140 L145,130 L150,130 Q160,130 160,120 L160,90 Q160,80 170,75 Q160,70 160,60 L160,40 Q160,30 150,30 L145,30 L145,20 Z"/>
+  <polygon points="90,50 100,60 110,50 115,55 105,65 115,75 110,80 100,70 90,80 85,75 95,65 85,55"/>
+  <circle cx="100" cy="80" r="20" fill="none" stroke="#FFFFFF" stroke-width="6"/>
+  <text x="100" y="160" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle">OSWTF</text>
+</svg>
