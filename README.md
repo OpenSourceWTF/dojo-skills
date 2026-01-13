@@ -1,65 +1,107 @@
 <p align="center">
-  <img src="assets/dojo-logo-light.svg" alt="Dojo Logo" width="200">
+  <img src="assets/dojo-logo-light.svg" alt="Dojo Logo" width="180">
 </p>
 
-<h1 align="center">Dojo Skills Registry</h1>
+<h1 align="center">🥋 Dojo Skills Registry</h1>
 
 <p align="center">
-  <strong>🥋 The canonical skill registry for <a href="https://github.com/OpenSourceWTF/dojo">Dojo</a> - a package manager for AI agent skills and workflows.</strong>
+  <strong>The canonical skill registry for <a href="https://github.com/OpenSourceWTF/dojo">Dojo</a> — a package manager for AI agent skills and workflows.</strong>
+</p>
+
+<p align="center">
+  <a href="https://github.com/OpenSourceWTF/dojo-skills/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License"></a>
+  <a href="https://github.com/OpenSourceWTF/dojo-skills"><img src="https://img.shields.io/github/stars/OpenSourceWTF/dojo-skills?style=social" alt="GitHub Stars"></a>
+  <img src="https://img.shields.io/badge/skills-83-brightgreen" alt="Skills Count">
+  <img src="https://img.shields.io/badge/MCP%20Servers-21-purple" alt="MCP Servers">
 </p>
 
 <p align="center">
   <a href="https://github.com/OpenSourceWTF">
-    <img src="assets/oswtf-logo-light.svg" alt="OpenSourceWTF" width="100">
+    <img src="assets/oswtf-logo-light.svg" alt="OpenSourceWTF" width="80">
   </a>
   <br>
-  <em>An <a href="https://github.com/OpenSourceWTF">OpenSourceWTF</a> Project</em>
+  <sub>An <a href="https://github.com/OpenSourceWTF">OpenSourceWTF</a> Project</sub>
 </p>
 
 ---
 
-## Overview
+## ⚡ Quick Start
 
-This repository contains curated skill definitions for AI coding agents including:
-- **Claude Code** (Anthropic)
-- **Gemini CLI** (Google)
-- **Cursor AI**
-- **OpenAI Codex**
-- **Qwen/Alibaba**
-- **Community contributions**
+```bash
+# Install a skill
+dojo learn @anthropic/frontend-design
 
-Skills are distributed to all detected agent environments via Dojo's "Always-Sync" dual-write system.
+# Search for skills  
+dojo search "testing"
 
+# List installed skills
+dojo list
+```
 
-## Registry Structure
+---
+
+## 🎯 Supported Platforms
+
+<table>
+  <tr>
+    <td align="center"><img src="https://img.shields.io/badge/Claude%20Code-Anthropic-orange?style=for-the-badge" alt="Claude"></td>
+    <td align="center"><img src="https://img.shields.io/badge/Gemini%20CLI-Google-blue?style=for-the-badge" alt="Gemini"></td>
+    <td align="center"><img src="https://img.shields.io/badge/Cursor%20AI-IDE-purple?style=for-the-badge" alt="Cursor"></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://img.shields.io/badge/OpenAI%20Codex-OpenAI-green?style=for-the-badge" alt="Codex"></td>
+    <td align="center"><img src="https://img.shields.io/badge/Qwen-Alibaba-red?style=for-the-badge" alt="Qwen"></td>
+    <td align="center"><img src="https://img.shields.io/badge/MCP-Protocol-black?style=for-the-badge" alt="MCP"></td>
+  </tr>
+</table>
+
+---
+
+## 📁 Registry Structure
 
 ```
 registry/
-├── official/               # Vendor-maintained skills (SKILL.md format)
-│   ├── anthropic.json      # Official Anthropic/Claude skills (17)
-│   ├── google.json         # Official Google/Gemini skills (10)
-│   └── openai.json         # Official OpenAI/Codex skills (6)
-├── community/              # Community-curated skills  
-│   └── awesome.json        # Curated community skills (17)
-├── mcp/                    # MCP servers by vendor
-│   ├── modelcontextprotocol.json  # Official MCP servers (13)
-│   ├── github.json         # GitHub's official MCP server (1)
-│   ├── upstash.json        # Upstash Context7 (1)
-│   ├── opensourcewtf.json  # Dojo skill manager (1)
-│   └── community.json      # Other community MCP servers (5)
-├── cursor/                 # Cursor AI rules by vendor
-│   ├── patrickjs.json      # awesome-cursorrules collection (11)
-│   └── instructa.json      # Instructa AI prompts (1)
-└── user/                   # Gitignored, local-only mappings
-    └── *.json
+├── 🏢 official/                    # Vendor-maintained skills
+│   ├── anthropic.json              # Claude skills (17)
+│   ├── google.json                 # Gemini skills (10)
+│   └── openai.json                 # Codex skills (6)
+│
+├── 🌐 community/                   # Community-curated  
+│   └── awesome.json                # Curated skills (17)
+│
+├── 🔌 mcp/                         # MCP servers by vendor
+│   ├── modelcontextprotocol.json   # Official MCP (13)
+│   ├── github.json                 # GitHub MCP (1)
+│   ├── upstash.json                # Context7 (1)
+│   ├── opensourcewtf.json          # Dojo (1)
+│   └── community.json              # Community (5)
+│
+├── 🖱️ cursor/                      # Cursor AI rules
+│   ├── patrickjs.json              # awesome-cursorrules (11)
+│   └── instructa.json              # AI prompts (1)
+│
+└── 👤 user/                        # Local-only (gitignored)
 ```
 
+---
 
+## 📊 Skill Categories
 
+| Category | Description | Count |
+|:--------:|-------------|:-----:|
+| 📄 **Document** | Office docs, PDFs, file formats | 8 |
+| 🎨 **Design** | Visual design, creative coding | 12 |
+| 💻 **Development** | Coding patterns, testing, builds | 24 |
+| 🔌 **MCP** | Model Context Protocol servers | 21 |
+| 🔧 **Productivity** | Workflows, automation | 6 |
+| 🖱️ **Cursor** | Cursor AI rules & prompts | 12 |
 
-## Skill JSON Schema
+---
 
-Each skill entry follows this structure:
+## 📝 Skill Schema
+
+<details>
+<summary><strong>Click to expand JSON schema</strong></summary>
 
 ```json
 {
@@ -68,7 +110,7 @@ Each skill entry follows this structure:
       "name": "Display Name",
       "source": "github:org/repo/path",
       "aliases": ["alias1", "alias2"],
-      "description": "Short description of what the skill does",
+      "description": "What the skill does",
       "tags": ["category1", "category2"],
       "dependencies": ["@org/dep-skill"],
       "versions": {
@@ -78,9 +120,9 @@ Each skill entry follows this structure:
       "mcp_servers": [
         {
           "name": "server-name",
-          "package": "@scope/package-name",
+          "package": "@scope/package",
           "command": "npx",
-          "args": ["-y", "@scope/package-name"],
+          "args": ["-y", "@scope/package"],
           "env": { "API_KEY": "" }
         }
       ]
@@ -89,128 +131,109 @@ Each skill entry follows this structure:
 }
 ```
 
-### Field Descriptions
+</details>
 
-| Field | Required | Description |
-|-------|----------|-------------|
-| `name` | ✅ | Human-readable display name |
-| `source` | ✅ | GitHub path: `github:owner/repo/path` |
-| `aliases` | ✅ | Short names for quick lookup |
-| `description` | ✅ | One-line description |
-| `tags` | ✅ | Categories for filtering |
-| `dependencies` | ❌ | Skills this depends on |
-| `versions` | ❌ | Version-to-commit mapping |
-| `mcp_servers` | ❌ | MCP server configurations (see below) |
-
-### MCP Server Configuration
-
-Skills can include `mcp_servers` for automatic MCP config setup:
+### Required Fields
 
 | Field | Description |
 |-------|-------------|
-| `name` | Server identifier in MCP config |
-| `package` | npm package name |
-| `command` | Usually `npx` or `node` |
-| `args` | Command arguments (`-y` for npx auto-install) |
-| `env` | Environment vars (empty = required, value = default) |
+| `name` | Human-readable display name |
+| `source` | GitHub path: `github:owner/repo/path` |
+| `aliases` | Short names for quick lookup |
+| `description` | One-line description |
+| `tags` | Categories for filtering |
 
+### Optional Fields
 
-## Resolution Logic
+| Field | Description |
+|-------|-------------|
+| `dependencies` | Skills this depends on |
+| `versions` | Version-to-commit mapping |
+| `mcp_servers` | MCP server auto-configuration |
 
-1. **Fully Qualified Names (FQN)**: `@anthropic/docx`, `@google/code-review`
-2. **Short Name Search**: Searching `pdf` looks across all registry files
-3. **Collision Handling**: Multiple matches prompt user to select FQN
-4. **Priority Order**: Official > Community > User
+---
 
-## Usage with Dojo
+## 🔍 Resolution Logic
 
-```bash
-# Install a skill
-dojo learn @anthropic/frontend-design
-
-# Search for skills
-dojo search "testing"
-
-# List installed skills
-dojo list
+```
+┌─────────────────────────────────────────────────────┐
+│  1. Fully Qualified Names (FQN)                     │
+│     @anthropic/docx  →  Direct match               │
+├─────────────────────────────────────────────────────┤
+│  2. Short Name Search                              │
+│     "pdf"  →  Searches all registry files          │
+├─────────────────────────────────────────────────────┤
+│  3. Collision Handling                             │
+│     Multiple matches  →  Prompts user for FQN      │
+├─────────────────────────────────────────────────────┤
+│  4. Priority Order                                 │
+│     Official > Community > User                    │
+└─────────────────────────────────────────────────────┘
 ```
 
-## Skill Categories
+---
 
-### 📄 Document Processing
-Skills for working with Office documents, PDFs, and file formats.
+## 🤝 Contributing
 
-### 🎨 Design & Creative
-Generative art, visual design, and creative coding skills.
-
-### 💻 Development
-Coding patterns, testing frameworks, and build tools.
-
-### 🔌 MCP Integrations
-Model Context Protocol server builders and tools.
-
-### 🔧 Productivity
-Workflows, automation, and communication skills.
-
-## Contributing
-
-1. Fork this repository
-2. Add your skill to `registry/community/awesome.json`
-3. Follow the JSON schema above
-4. Submit a PR with:
+1. **Fork** this repository
+2. **Add** your skill to `registry/community/awesome.json`
+3. **Follow** the JSON schema above
+4. **Submit** a PR with:
    - Skill description
    - Source repository link
    - Example use cases
 
-## Skill Format Compatibility
+---
 
-This registry focuses on skills using the **SKILL.md format** (compatible with Claude Code and Gemini CLI):
+## 📚 Sources
 
-| Format | Compatible Agents | Status |
-|--------|-------------------|--------|
-| `SKILL.md` | Claude Code, Gemini CLI, Codex | ✅ Active |
-| `.cursorrules` | Cursor AI | 📋 TODO |
+<details>
+<summary><strong>Official Sources</strong></summary>
 
-## Sources & Attribution
+| Repository | Platform | Count |
+|------------|----------|:-----:|
+| [anthropics/skills](https://github.com/anthropics/skills) | Claude, Gemini | 17 |
+| [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | Gemini, Claude | 10 |
+| [openai/codex](https://github.com/openai/codex) | Codex, all | 6 |
 
-### Active Sources (SKILL.md format)
+</details>
 
-| Source Repository | Compatible With | Registry File | Count |
-|-------------------|-----------------|---------------|-------|
-| [anthropics/skills](https://github.com/anthropics/skills) | Claude, Gemini | `official/anthropic.json` | 17 |
-| [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | Gemini, Claude | `official/google.json` | 7 |
-| [gemini-cli-extensions/*](https://github.com/gemini-cli-extensions) | Gemini, Claude | `official/google.json` | 3 |
-| [openai/codex](https://github.com/openai/codex) | Codex, Claude, Gemini | `official/openai.json` | 6 |
-| [obra/superpowers](https://github.com/obra/superpowers) | Claude, Gemini | `community/awesome.json` | 2 |
-| [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) | Claude, Gemini, Codex | `community/awesome.json` | 1 |
-| [wshobson/agents](https://github.com/wshobson/agents) | Claude, Gemini | `community/awesome.json` | 1 |
-| [Prat011/awesome-llm-skills](https://github.com/Prat011/awesome-llm-skills) | Claude, Gemini, Codex, Qwen | `community/awesome.json` | 1 |
-| [code-yeongyu/oh-my-opencode](https://github.com/code-yeongyu/oh-my-opencode) | Claude, Gemini, Codex | `community/awesome.json` | 1 |
-| Community skills | Claude, Gemini | `community/awesome.json` | 11 |
-| [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | MCP (All agents) | `community/mcp-servers.json` | 13 |
-| [upstash/context7](https://github.com/upstash/context7) | MCP (All agents) | `community/mcp-servers.json` | 1 |
-| [github/github-mcp-server](https://github.com/github/github-mcp-server) | MCP (All agents) | `community/mcp-servers.json` | 1 |
-| Other MCP servers | MCP (All agents) | `community/mcp-servers.json` | 5 |
+<details>
+<summary><strong>Community Sources</strong></summary>
 
-### TODO Sources (different format)
+| Repository | Platform | Count |
+|------------|----------|:-----:|
+| [obra/superpowers](https://github.com/obra/superpowers) | Claude, Gemini | 2 |
+| [kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) | All | 1 |
+| [PatrickJS/awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) | Cursor | 11 |
+| Various community | All | 15+ |
 
-| Source Repository | Format | File |
-|-------------------|--------|------|
-| [PatrickJS/awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) | `.cursorrules` | `todo/cursor-rules.json` |
+</details>
 
-### Summary
+<details>
+<summary><strong>MCP Server Sources</strong></summary>
 
-| Platform | Skills |
-|----------|--------|
-| Claude Code + Gemini CLI | 50 |
-| MCP Servers (all agents) | 20 |
-| **Active Total** | **70** |
-| TODO (Cursor) | 12 |
+| Repository | Count |
+|------------|:-----:|
+| [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | 13 |
+| [github/github-mcp-server](https://github.com/github/github-mcp-server) | 1 |
+| [upstash/context7](https://github.com/upstash/context7) | 1 |
+| Community MCP servers | 6 |
 
-### Last Updated
-- **Date**: 2026-01-13
-- **Active Skills**: 70
+</details>
 
-## License
+---
 
-MIT - See [LICENSE](LICENSE) for details.
+<p align="center">
+  <sub>
+    <strong>Total Skills: 83</strong> · 
+    <strong>MCP Servers: 21</strong> · 
+    <strong>Last Updated: 2026-01-13</strong>
+  </sub>
+</p>
+
+<p align="center">
+  <a href="LICENSE">MIT License</a> · 
+  <a href="https://github.com/OpenSourceWTF/dojo">Dojo CLI</a> · 
+  <a href="https://github.com/OpenSourceWTF">OpenSourceWTF</a>
+</p>
