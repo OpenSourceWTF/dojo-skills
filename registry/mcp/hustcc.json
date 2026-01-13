@@ -1,0 +1,28 @@
+{
+  "skills": {
+    "mcp-mermaid": {
+      "name": "MCP Mermaid Server",
+      "source": "github:hustcc/mcp-mermaid",
+      "description": "Generate mermaid diagram and chart with AI MCP dynamically.",
+      "tags": [
+        "mcp",
+        "mermaid",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-mermaid-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "mcp-mermaid"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

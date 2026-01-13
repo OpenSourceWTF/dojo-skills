@@ -1,0 +1,33 @@
+{
+  "skills": {
+    "needle-mcp": {
+      "name": "Needle MCP Server",
+      "source": "github:needle-ai/needle-mcp",
+      "description": "MCP (Model Context Protocol) server to manage documents and perform searches using [Needle](https://needle-ai.com) through Claude’s Desktop Application.",
+      "tags": [
+        "mcp",
+        "document management",
+        "search",
+        "Needle",
+        "Knowledge Base"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "needle-mcp-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/needle-ai/needle-mcp",
+            "needle-mcp"
+          ],
+          "env": {
+            "NEEDLE_API_KEY": "${NEEDLE_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

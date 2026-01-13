@@ -1,0 +1,61 @@
+{
+  "skills": {
+    "actors-mcp-server": {
+      "name": "Apify Model Context Protocol (MCP) Server",
+      "source": "github:apify/actors-mcp-server",
+      "description": "Implementation of an MCP server for all [Apify Actors](https://apify.com/store).",
+      "tags": [
+        "mcp",
+        "mcp",
+        "model-context-protocol",
+        "apify",
+        "actors",
+        "ai-agents",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "actors-mcp-server-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@apify/actors-mcp-server"
+          ],
+          "env": {
+            "APIFY_TOKEN": "${APIFY_TOKEN}"
+          }
+        }
+      ]
+    },
+    "rag-web-browser": {
+      "name": "RAG Web Browser Server",
+      "source": "github:apify/mcp-server-rag-web-browser",
+      "description": "An MCP server for Apify's open-source RAG Web Browser [Actor](https://apify.com/apify/rag-web-browser) to perform web searches, scrape URLs, and return content in Markdown.",
+      "tags": [
+        "mcp",
+        "RAG",
+        "Web Browser",
+        "AI Agents",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "rag-web-browser-npm",
+          "command": "npx",
+          "args": [
+            "@apify/mcp-server-rag-web-browser"
+          ],
+          "env": {
+            "APIFY_TOKEN": "${APIFY_TOKEN}"
+          }
+        }
+      ]
+    }
+  }
+}

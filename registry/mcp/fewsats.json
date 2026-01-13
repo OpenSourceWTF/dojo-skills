@@ -1,0 +1,31 @@
+{
+  "skills": {
+    "fewsats-mcp": {
+      "name": "Fewsats MCP Server",
+      "source": "github:Fewsats/fewsats-mcp",
+      "description": "This MCP server integrates with [Fewsats](https://fewsats.com) and allows AI Agents to purchase anything in a secure way.",
+      "tags": [
+        "mcp",
+        "payments",
+        "wallet",
+        "offers",
+        "Finance"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "fewsats-mcp-uvx",
+          "command": "uvx",
+          "args": [
+            "fewsats-mcp"
+          ],
+          "env": {
+            "FEWSATS_API_KEY": "${FEWSATS_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

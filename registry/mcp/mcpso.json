@@ -1,0 +1,31 @@
+{
+  "skills": {
+    "chatsum": {
+      "name": "Chat Summary",
+      "source": "github:mcpso/mcp-server-chatsum",
+      "description": "Query and Summarize chat messages with LLM. by [mcpso](https://mcp.so/)",
+      "tags": [
+        "mcp",
+        "chat",
+        "summary",
+        "Messaging"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "chatsum-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "https://github.com/mcpso/mcp-server-chatsum"
+          ],
+          "env": {
+            "CHAT_DB_PATH": "${CHAT_DB_PATH}"
+          }
+        }
+      ]
+    }
+  }
+}

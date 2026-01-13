@@ -1,0 +1,43 @@
+{
+  "skills": {
+    "bitable-mcp": {
+      "name": "Bitable",
+      "source": "github:lloydzhou/bitable-mcp",
+      "description": "MCP server provides access to Lark Bitable through the Model Context Protocol. It allows users to interact with Bitable tables using predefined tools.",
+      "tags": [
+        "mcp",
+        "Bitable",
+        "Lark",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "bitable-mcp-uvx",
+          "command": "uvx",
+          "args": [
+            "bitable-mcp"
+          ],
+          "env": {
+            "PERSONAL_BASE_TOKEN": "${PERSONAL_BASE_TOKEN}",
+            "APP_TOKEN": "${APP_TOKEN}"
+          }
+        },
+        {
+          "name": "bitable-mcp-python",
+          "command": "python",
+          "args": [
+            "-m",
+            "bitable_mcp"
+          ],
+          "env": {
+            "PERSONAL_BASE_TOKEN": "${PERSONAL_BASE_TOKEN}",
+            "APP_TOKEN": "${APP_TOKEN}"
+          }
+        }
+      ]
+    }
+  }
+}

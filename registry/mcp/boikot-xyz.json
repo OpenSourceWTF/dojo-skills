@@ -1,0 +1,21 @@
+{
+  "skills": {
+    "boikot-mcp": {
+      "name": "Boikot MCP Server",
+      "source": "github:boikot-xyz/boikot",
+      "description": "boikot is a community-led initiative to make data on company ethics transparent and accessible.",
+      "tags": [
+        "mcp",
+        "ethics",
+        "corporate ethics",
+        "company information",
+        "MCP",
+        "lookup tool",
+        "Analytics"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    }
+  }
+}

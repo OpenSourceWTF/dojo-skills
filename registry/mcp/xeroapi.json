@@ -1,0 +1,34 @@
+{
+  "skills": {
+    "xero-mcp-server": {
+      "name": "Xero MCP Server",
+      "source": "github:XeroAPI/xero-mcp-server",
+      "description": "This is a Model Context Protocol (MCP) server implementation for Xero. It provides a bridge between the MCP protocol and Xero's API, allowing for standardized access to Xero's accounting and business features.",
+      "tags": [
+        "mcp",
+        "xero",
+        "accounting",
+        "mcp",
+        "oauth2",
+        "Finance"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "xero-mcp-server-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@xeroapi/xero-mcp-server@latest"
+          ],
+          "env": {
+            "XERO_CLIENT_ID": "${XERO_CLIENT_ID}",
+            "XERO_CLIENT_SECRET": "${XERO_CLIENT_SECRET}"
+          }
+        }
+      ]
+    }
+  }
+}

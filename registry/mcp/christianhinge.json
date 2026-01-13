@@ -1,0 +1,33 @@
+{
+  "skills": {
+    "dicom": {
+      "name": "DICOM Model Context Protocol",
+      "source": "github:ChristianHinge/dicom-mcp",
+      "description": "An MCP server to query and retrieve medical images and for parsing and reading dicom-encapsulated documents (pdf etc.).",
+      "tags": [
+        "mcp",
+        "DICOM",
+        "Medical Imaging",
+        "AI",
+        "PDF Extraction",
+        "Professional Apps"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "dicom-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/ChristianHinge/dicom-mcp",
+            "dicom-mcp",
+            "${CONFIG_PATH}"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

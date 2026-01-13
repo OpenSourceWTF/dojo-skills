@@ -1,0 +1,32 @@
+{
+  "skills": {
+    "inbox-zero": {
+      "name": "Inbox Zero MCP Server",
+      "source": "github:elie222/inbox-zero",
+      "description": "data-color-mode=\"auto\" data-light-theme=\"light\" data-dark-theme=\"dark\"",
+      "tags": [
+        "mcp",
+        "email",
+        "inbox",
+        "assistant",
+        "mcp",
+        "Messaging"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "inbox-zero-custom",
+          "command": "node",
+          "args": [
+            "build/index.js"
+          ],
+          "env": {
+            "API_KEY": "${API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

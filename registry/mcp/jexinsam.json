@@ -1,0 +1,35 @@
+{
+  "skills": {
+    "mssql": {
+      "name": "MSSQL",
+      "source": "github:JexinSam/mssql_mcp_server",
+      "description": "MCP Server for MSSQL database in Python",
+      "tags": [
+        "mcp",
+        "MSSQL",
+        "AI",
+        "Database Access",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mssql-uvx",
+          "command": "uvx",
+          "args": [
+            "mssql_mcp_server"
+          ],
+          "env": {
+            "MSSQL_DRIVER": "${MSSQL_DRIVER}",
+            "MSSQL_HOST": "${MSSQL_HOST}",
+            "MSSQL_USER": "${MSSQL_USER}",
+            "MSSQL_PASSWORD": "${MSSQL_PASSWORD}",
+            "MSSQL_DATABASE": "${MSSQL_DATABASE}"
+          }
+        }
+      ]
+    }
+  }
+}

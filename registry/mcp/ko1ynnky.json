@@ -1,0 +1,32 @@
+{
+  "skills": {
+    "github-actions": {
+      "name": "GitHub Actions",
+      "source": "github:ko1ynnky/github-actions-mcp-server",
+      "description": "A Model Context Protocol (MCP) server for interacting with Github Actions.",
+      "tags": [
+        "mcp",
+        "GitHub Actions",
+        "Workflow Management",
+        "Automation",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "github-actions-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "https://github.com/ko1ynnky/github-actions-mcp-server"
+          ],
+          "env": {
+            "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_PERSONAL_ACCESS_TOKEN}"
+          }
+        }
+      ]
+    }
+  }
+}

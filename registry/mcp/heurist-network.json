@@ -1,0 +1,33 @@
+{
+  "skills": {
+    "heurist-mesh-agent": {
+      "name": "Mesh Agent",
+      "source": "github:heurist-network/heurist-mesh-mcp-server",
+      "description": "Access specialized web3 AI agents for blockchain analysis, smart contract security, token metrics, and blockchain interactions through the [Heurist Mesh network](https://github.com/heurist-network/heurist-agent-framework/tree/main/mesh).",
+      "tags": [
+        "mcp",
+        "Heurist",
+        "Agent Framework",
+        "Blockchain Tools",
+        "Finance"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "heurist-mesh-agent-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/heurist-network/heurist-mesh-mcp-server",
+            "mesh-tool-server"
+          ],
+          "env": {
+            "HEURIST_API_KEY": "${HEURIST_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "skills": {
+    "octagon-mcp-server": {
+      "name": "Octagon MCP Server",
+      "source": "github:OctagonAI/octagon-mcp-server",
+      "description": "A Model Context Protocol (MCP) server implementation that integrates with Octagon Market Intelligence API.",
+      "tags": [
+        "mcp",
+        "market intelligence",
+        "financial analysis",
+        "SEC filings",
+        "earnings calls",
+        "stock market data",
+        "private company research",
+        "funding rounds",
+        "M&A",
+        "IPO",
+        "web scraping",
+        "Analytics"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "octagon-mcp-server-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "octagon-mcp"
+          ],
+          "env": {
+            "OCTAGON_API_KEY": "${OCTAGON_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,328 @@
+{
+  "skills": {
+    "competitive-ads-extractor": {
+      "name": "competitive-ads-extractor",
+      "source": "github:ComposioHQ/awesome-claude-skills/competitive-ads-extractor",
+      "description": "Extracts and analyzes competitors' ads from ad libraries (Facebook, LinkedIn, etc.) to understand...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "developer-growth-analysis": {
+      "name": "developer-growth-analysis",
+      "source": "github:ComposioHQ/awesome-claude-skills/developer-growth-analysis",
+      "description": "Analyzes your recent Claude Code chat history to identify coding patterns, development gaps, and ...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "skill-creator": {
+      "name": "skill-creator",
+      "source": "github:ComposioHQ/awesome-claude-skills/skill-creator",
+      "description": "Guide for creating effective skills. This skill should be used when users want to create a new sk...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "template-skill": {
+      "name": "template-skill",
+      "source": "github:ComposioHQ/awesome-claude-skills/template-skill",
+      "description": "Replace with description of the skill and when Claude should use it.",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "brand-guidelines": {
+      "name": "brand-guidelines",
+      "source": "github:ComposioHQ/awesome-claude-skills/brand-guidelines",
+      "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "changelog-generator": {
+      "name": "changelog-generator",
+      "source": "github:ComposioHQ/awesome-claude-skills/changelog-generator",
+      "description": "Automatically creates user-facing changelogs from git commits by analyzing commit history, catego...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "content-research-writer": {
+      "name": "content-research-writer",
+      "source": "github:ComposioHQ/awesome-claude-skills/content-research-writer",
+      "description": "Assists in writing high-quality content by conducting research, adding citations, improving hooks...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "docx": {
+      "name": "docx",
+      "source": "github:ComposioHQ/awesome-claude-skills/document-skills/docx",
+      "description": "Comprehensive document creation, editing, and analysis with support for tracked changes, comments...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "domain-name-brainstormer": {
+      "name": "domain-name-brainstormer",
+      "source": "github:ComposioHQ/awesome-claude-skills/domain-name-brainstormer",
+      "description": "Generates creative domain name ideas for your project and checks availability across multiple TLD...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "internal-comms": {
+      "name": "internal-comms",
+      "source": "github:ComposioHQ/awesome-claude-skills/internal-comms",
+      "description": "A set of resources to help me write all kinds of internal communications, using the formats that ...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "invoice-organizer": {
+      "name": "invoice-organizer",
+      "source": "github:ComposioHQ/awesome-claude-skills/invoice-organizer",
+      "description": "Automatically organizes invoices and receipts for tax preparation by reading messy files, extract...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "pdf": {
+      "name": "pdf",
+      "source": "github:ComposioHQ/awesome-claude-skills/document-skills/pdf",
+      "description": "Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "xlsx": {
+      "name": "xlsx",
+      "source": "github:ComposioHQ/awesome-claude-skills/document-skills/xlsx",
+      "description": "Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, ...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "youtube-downloader": {
+      "name": "youtube-downloader",
+      "source": "github:ComposioHQ/awesome-claude-skills/video-downloader",
+      "description": "Download YouTube videos with customizable quality and format options. Use this skill when the use...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "mcp-builder": {
+      "name": "mcp-builder",
+      "source": "github:ComposioHQ/awesome-claude-skills/mcp-builder",
+      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "slack-gif-creator": {
+      "name": "slack-gif-creator",
+      "source": "github:ComposioHQ/awesome-claude-skills/slack-gif-creator",
+      "description": "Toolkit for creating animated GIFs optimized for Slack, with validators for size constraints and ...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "canvas-design": {
+      "name": "canvas-design",
+      "source": "github:ComposioHQ/awesome-claude-skills/canvas-design",
+      "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use th...",
+      "tags": [
+        "documentation",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "image-enhancer": {
+      "name": "image-enhancer",
+      "source": "github:ComposioHQ/awesome-claude-skills/image-enhancer",
+      "description": "Improves the quality of images, especially screenshots, by enhancing resolution, sharpness, and c...",
+      "tags": [
+        "documentation",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "artifacts-builder": {
+      "name": "artifacts-builder",
+      "source": "github:ComposioHQ/awesome-claude-skills/artifacts-builder",
+      "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern fron...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "pptx": {
+      "name": "pptx",
+      "source": "github:ComposioHQ/awesome-claude-skills/document-skills/pptx",
+      "description": "Presentation creation, editing, and analysis. When Claude needs to work with presentations (.pptx...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "theme-factory": {
+      "name": "theme-factory",
+      "source": "github:ComposioHQ/awesome-claude-skills/theme-factory",
+      "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "webapp-testing": {
+      "name": "webapp-testing",
+      "source": "github:ComposioHQ/awesome-claude-skills/webapp-testing",
+      "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verify...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "skill-share": {
+      "name": "skill-share",
+      "source": "github:ComposioHQ/awesome-claude-skills/skill-share",
+      "description": "A skill that creates new Claude skills and automatically shares them on Slack using Rube for seam...",
+      "tags": [
+        "machine-learning",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "raffle-winner-picker": {
+      "name": "raffle-winner-picker",
+      "source": "github:ComposioHQ/awesome-claude-skills/raffle-winner-picker",
+      "description": "Picks random winners from lists, spreadsheets, or Google Sheets for giveaways, raffles, and conte...",
+      "tags": [
+        "testing-and-quality",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "file-organizer": {
+      "name": "file-organizer",
+      "source": "github:ComposioHQ/awesome-claude-skills/file-organizer",
+      "description": "Intelligently organizes your files and folders across your computer by understanding context, fin...",
+      "tags": [
+        "version-control-and-collaboration",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "lead-research-assistant": {
+      "name": "lead-research-assistant",
+      "source": "github:ComposioHQ/awesome-claude-skills/lead-research-assistant",
+      "description": "Identifies high-quality leads for your product or service by analyzing your business, searching f...",
+      "tags": [
+        "version-control-and-collaboration",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "meeting-insights-analyzer": {
+      "name": "meeting-insights-analyzer",
+      "source": "github:ComposioHQ/awesome-claude-skills/meeting-insights-analyzer",
+      "description": "Analyzes meeting transcripts and recordings to uncover behavioral patterns, communication insight...",
+      "tags": [
+        "version-control-and-collaboration",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    }
+  }
+}

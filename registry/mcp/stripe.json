@@ -1,0 +1,49 @@
+{
+  "skills": {
+    "stripe": {
+      "name": "Stripe Model Context Protocol",
+      "source": "github:stripe/agent-toolkit",
+      "description": "The Stripe Model Context Protocol server allows you to integrate with Stripe APIs through function calling. This protocol supports various tools to interact with different Stripe services.",
+      "tags": [
+        "mcp",
+        "stripe",
+        "payments",
+        "customers",
+        "refunds",
+        "Finance"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "stripe-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@stripe/mcp",
+            "--tools=all",
+            "--api-key=${STRIPE_SECRET_KEY}"
+          ],
+          "env": {}
+        },
+        {
+          "name": "stripe-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "STRIPE_SECRET_KEY",
+            "mcp/stripe",
+            "--tools=all"
+          ],
+          "env": {
+            "STRIPE_SECRET_KEY": "${STRIPE_SECRET_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

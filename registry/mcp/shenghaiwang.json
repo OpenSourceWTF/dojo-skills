@@ -1,0 +1,37 @@
+{
+  "skills": {
+    "xcodebuild": {
+      "name": "Xcode Build",
+      "source": "github:ShenghaiWang/xcodebuild",
+      "description": "🍎 Build iOS Xcode workspace/project and feed back errors to llm.",
+      "tags": [
+        "mcp",
+        "xcode",
+        "mcpxcodebuild",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "xcodebuild-uvx",
+          "command": "uvx",
+          "args": [
+            "mcpxcodebuild"
+          ],
+          "env": {}
+        },
+        {
+          "name": "xcodebuild-python",
+          "command": "python",
+          "args": [
+            "-m",
+            "mcpxcodebuild"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

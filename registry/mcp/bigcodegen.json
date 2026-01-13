@@ -1,0 +1,33 @@
+{
+  "skills": {
+    "neovim": {
+      "name": "Neovim Server",
+      "source": "github:bigcodegen/mcp-neovim-server",
+      "description": "An MCP Server for your Neovim session.",
+      "tags": [
+        "mcp",
+        "Neovim",
+        "MCP",
+        "Claude Desktop",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "neovim-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "mcp-neovim-server"
+          ],
+          "env": {
+            "ALLOW_SHELL_COMMANDS": "${ALLOW_SHELL_COMMANDS}",
+            "NVIM_SOCKET_PATH": "${NVIM_SOCKET_PATH}"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "skills": {
+    "phoenix-mcp": {
+      "name": "Arize Phoenix MCP Server",
+      "source": "github:Arize-ai/phoenix/js/packages/phoenix-mcp",
+      "description": "Phoenix MCP Server is an implementation of the Model Context Protocol that provides a unified interface to the capabilities of the Arize Phoenix platform, enabling prompts management, dataset exploration and synthesis, and experiment visualization with the help of a language model.",
+      "tags": [
+        "mcp",
+        "MCP",
+        "Model Context Protocol",
+        "Prompts Management",
+        "Datasets",
+        "Experiments",
+        "LLM",
+        "Phoenix",
+        "Arize",
+        "AI Systems"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "phoenix-mcp-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@arizeai/phoenix-mcp@latest",
+            "--baseUrl",
+            "${PHOENIX_BASE_URL}",
+            "--apiKey",
+            "${PHOENIX_API_KEY}"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

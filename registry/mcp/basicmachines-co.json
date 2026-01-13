@@ -1,0 +1,41 @@
+{
+  "skills": {
+    "basic-memory": {
+      "name": "Basic Memory",
+      "source": "github:basicmachines-co/basic-memory",
+      "description": "Local-first knowledge management system that builds a semantic graph from Markdown files, enabling persistent memory across conversations with LLMs.",
+      "tags": [
+        "mcp",
+        "LLM",
+        "Markdown",
+        "Knowledge Base",
+        "Knowledge Base"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "basic-memory-uvx",
+          "command": "uvx",
+          "args": [
+            "basic-memory",
+            "mcp"
+          ],
+          "env": {}
+        },
+        {
+          "name": "basic-memory-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "mcp/basic-memory"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

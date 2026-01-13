@@ -1,0 +1,31 @@
+{
+  "skills": {
+    "aws": {
+      "name": "AWS",
+      "source": "github:rishikavikondala/mcp-server-aws",
+      "description": "Perform operations on your AWS resources using an LLM.",
+      "tags": [
+        "mcp",
+        "s3",
+        "dynamodb",
+        "aws",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "aws-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/rishikavikondala/mcp-server-aws",
+            "mcp-server-aws"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

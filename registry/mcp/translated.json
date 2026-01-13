@@ -1,0 +1,55 @@
+{
+  "skills": {
+    "lara-mcp": {
+      "name": "Lara Translate MCP Server",
+      "source": "github:translated/lara-mcp",
+      "description": "A Model Context Protocol (MCP) Server for [Lara Translate](https://laratranslate.com/translate) API, enabling powerful translation capabilities with support for language detection, context-aware translations and translation memories.",
+      "tags": [
+        "mcp",
+        "translation",
+        "MCP",
+        "Model Context Protocol",
+        "language detection",
+        "translation memories",
+        "multilingual",
+        "API",
+        "Productivity"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "lara-mcp-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@translated/lara-mcp@latest"
+          ],
+          "env": {
+            "LARA_ACCESS_KEY_ID": "${LARA_ACCESS_KEY_ID}",
+            "LARA_ACCESS_KEY_SECRET": "${LARA_ACCESS_KEY_SECRET}"
+          }
+        },
+        {
+          "name": "lara-mcp-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "LARA_ACCESS_KEY_ID",
+            "-e",
+            "LARA_ACCESS_KEY_SECRET",
+            "mcp/lara"
+          ],
+          "env": {
+            "LARA_ACCESS_KEY_ID": "${LARA_ACCESS_KEY_ID}",
+            "LARA_ACCESS_KEY_SECRET": "${LARA_ACCESS_KEY_SECRET}"
+          }
+        }
+      ]
+    }
+  }
+}

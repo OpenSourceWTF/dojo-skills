@@ -1,0 +1,33 @@
+{
+  "skills": {
+    "wxflows": {
+      "name": "wxflows MCP Server",
+      "source": "github:IBM/wxflows/examples/mcp",
+      "description": "data-color-mode=\"auto\" data-light-theme=\"light\" data-dark-theme=\"dark\"",
+      "tags": [
+        "mcp",
+        "mcp",
+        "ai",
+        "tools",
+        "watsonx",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "wxflows-custom",
+          "command": "node",
+          "args": [
+            "build/index.js"
+          ],
+          "env": {
+            "WXFLOWS_APIKEY": "${WXFLOWS_APIKEY}",
+            "WXFLOWS_ENDPOINT": "${WXFLOWS_ENDPOINT}"
+          }
+        }
+      ]
+    }
+  }
+}

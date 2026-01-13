@@ -7,11 +7,11 @@
  * - MCPs from Chat2AnyLLM/code-assistant-manager
  *
  * Features:
+ * - Groups output by GitHub owner/author (like existing registry structure)
  * - Fetches and parses markdown tables for skills
  * - Fetches JSON files for MCP server configs
- * - Validates URLs and filters broken links
+ * - Validates URLs and filters broken links (opt-in)
  * - Converts to dojo-skills registry schema
- * - Deduplicates and merges with existing registry
  */
 
 import * as fs from "fs/promises";
@@ -37,6 +37,8 @@ const CONFIG = {
   dryRun: process.argv.includes("--dry-run"),
   verbose: process.argv.includes("--verbose"),
   validateUrls: process.argv.includes("--validate"),
+  // Minimum skills per author to create a separate file (1 = all authors get their own file)
+  minSkillsPerFile: 1,
 };
 
 // Types for dojo-skills registry schema
@@ -95,7 +97,6 @@ function verbose(message: string) {
 
 // URL validation with retry and better GitHub handling
 async function validateUrl(url: string): Promise<boolean> {
-  // Skip validation if flag is not set - validation is opt-in due to rate limits
   if (!CONFIG.validateUrls) {
     return true;
   }
@@ -108,21 +109,17 @@ async function validateUrl(url: string): Promise<boolean> {
 
   for (let attempt = 0; attempt < 2; attempt++) {
     try {
-      // Use GET instead of HEAD - some servers don't support HEAD properly
       const response = await fetch(url, {
         method: "GET",
         signal: controller.signal,
         redirect: "follow",
-        headers: {
-          "User-Agent": "dojo-skills-sync/1.0",
-        },
+        headers: { "User-Agent": "dojo-skills-sync/1.0" },
       });
       clearTimeout(timeout);
-      // Accept 2xx and 3xx as valid
       return response.status < 400;
     } catch {
       if (attempt === 0) {
-        await new Promise((r) => setTimeout(r, 1000)); // Longer delay between retries
+        await new Promise((r) => setTimeout(r, 1000));
       }
     }
   }
@@ -165,10 +162,10 @@ async function validateUrlsBatch(
 async function fetchGitHubDirectory(
   owner: string,
   repo: string,
-  path: string,
+  dirPath: string,
   branch = "main"
 ): Promise<Array<{ name: string; download_url: string; type: string }>> {
-  const url = `https://api.github.com/repos/${owner}/${repo}/contents/${path}?ref=${branch}`;
+  const url = `https://api.github.com/repos/${owner}/${repo}/contents/${dirPath}?ref=${branch}`;
   const response = await fetch(url);
   if (!response.ok) {
     throw new Error(`GitHub API error: ${response.status} for ${url}`);
@@ -178,8 +175,7 @@ async function fetchGitHubDirectory(
 
 // Parse markdown table from awesome-claude-skills domains
 function parseSkillsMarkdown(
-  markdown: string,
-  domain: string
+  markdown: string
 ): Array<{ name: string; url: string; description: string; author: string }> {
   const skills: Array<{
     name: string;
@@ -188,7 +184,6 @@ function parseSkillsMarkdown(
     author: string;
   }> = [];
 
-  // Look for table rows: | [name](url) | description | author |
   const tableRowRegex =
     /\|\s*\[([^\]]+)\]\(([^)]+)\)\s*\|\s*([^|]+)\s*\|\s*([^|]+)\s*\|/g;
   let match;
@@ -208,9 +203,14 @@ function parseSkillsMarkdown(
   return skills;
 }
 
+// Extract owner from GitHub URL
+function extractOwner(url: string): string {
+  const match = url.match(/github\.com\/([^/]+)/);
+  return match ? match[1].toLowerCase() : "unknown";
+}
+
 // Convert GitHub URL to our source format
 function urlToSource(url: string): string {
-  // Convert https://github.com/owner/repo/tree/branch/path to github:owner/repo/path
   const match = url.match(
     /github\.com\/([^/]+)\/([^/]+)(?:\/tree\/[^/]+)?(?:\/(.+))?/
   );
@@ -232,10 +232,13 @@ function nameToKey(name: string): string {
     .replace(/^-|-$/g, "");
 }
 
-// Fetch and parse skills from awesome-claude-skills
-async function fetchSkillsFromAwesome(): Promise<Map<string, DojoSkill>> {
+// Group skills by owner
+type SkillsByOwner = Map<string, Map<string, DojoSkill>>;
+
+// Fetch and parse skills from awesome-claude-skills, grouped by owner
+async function fetchSkillsFromAwesome(): Promise<SkillsByOwner> {
   log("Fetching skills from awesome-claude-skills...");
-  const skills = new Map<string, DojoSkill>();
+  const skillsByOwner: SkillsByOwner = new Map();
 
   try {
     const { owner, repo, branch, domainsPath } = CONFIG.awesomeSkillsRepo;
@@ -249,14 +252,20 @@ async function fetchSkillsFromAwesome(): Promise<Map<string, DojoSkill>> {
       if (!response.ok) continue;
 
       const markdown = await response.text();
-      const domain = file.name.replace(".md", "").replace(/-/g, " ");
       const domainTag = file.name.replace(".md", "");
-      const parsed = parseSkillsMarkdown(markdown, domain);
+      const parsed = parseSkillsMarkdown(markdown);
 
       for (const skill of parsed) {
+        const ownerName = extractOwner(skill.url);
         const key = nameToKey(skill.name);
-        if (!skills.has(key)) {
-          skills.set(key, {
+
+        if (!skillsByOwner.has(ownerName)) {
+          skillsByOwner.set(ownerName, new Map());
+        }
+
+        const ownerSkills = skillsByOwner.get(ownerName)!;
+        if (!ownerSkills.has(key)) {
+          ownerSkills.set(key, {
             name: skill.name,
             source: urlToSource(skill.url),
             description:
@@ -272,18 +281,24 @@ async function fetchSkillsFromAwesome(): Promise<Map<string, DojoSkill>> {
       verbose(`    Found ${parsed.length} skills in ${file.name}`);
     }
 
-    log(`Found ${skills.size} total skills from awesome-claude-skills`);
+    const totalSkills = Array.from(skillsByOwner.values()).reduce(
+      (sum, m) => sum + m.size,
+      0
+    );
+    log(
+      `Found ${totalSkills} skills from ${skillsByOwner.size} authors`
+    );
   } catch (error) {
     log(`Error fetching skills: ${error}`, "error");
   }
 
-  return skills;
+  return skillsByOwner;
 }
 
-// Fetch and parse MCPs from code-assistant-manager
-async function fetchMcpsFromManager(): Promise<Map<string, DojoSkill>> {
+// Fetch and parse MCPs from code-assistant-manager, grouped by owner
+async function fetchMcpsFromManager(): Promise<SkillsByOwner> {
   log("Fetching MCPs from code-assistant-manager...");
-  const mcps = new Map<string, DojoSkill>();
+  const mcpsByOwner: SkillsByOwner = new Map();
 
   try {
     const { owner, repo, branch, serversPath } = CONFIG.mcpManagerRepo;
@@ -298,9 +313,9 @@ async function fetchMcpsFromManager(): Promise<Map<string, DojoSkill>> {
         if (!response.ok) continue;
 
         const data = await response.json();
-
         const key = file.name.replace(".json", "");
         const repoUrl = data.repository?.url || data.homepage || "";
+        const ownerName = extractOwner(repoUrl) || "unknown";
 
         // Build MCP server config from installations
         const mcpServers: McpServerConfig[] = [];
@@ -319,7 +334,11 @@ async function fetchMcpsFromManager(): Promise<Map<string, DojoSkill>> {
           }
         }
 
-        mcps.set(key, {
+        if (!mcpsByOwner.has(ownerName)) {
+          mcpsByOwner.set(ownerName, new Map());
+        }
+
+        mcpsByOwner.get(ownerName)!.set(key, {
           name: data.display_name || data.name || key,
           source: urlToSource(repoUrl),
           description: data.description || `${key} MCP server`,
@@ -337,102 +356,132 @@ async function fetchMcpsFromManager(): Promise<Map<string, DojoSkill>> {
       }
     }
 
-    log(`Found ${mcps.size} total MCPs from code-assistant-manager`);
+    const totalMcps = Array.from(mcpsByOwner.values()).reduce(
+      (sum, m) => sum + m.size,
+      0
+    );
+    log(`Found ${totalMcps} MCPs from ${mcpsByOwner.size} authors`);
   } catch (error) {
     log(`Error fetching MCPs: ${error}`, "error");
   }
 
-  return mcps;
+  return mcpsByOwner;
 }
 
 // Validate and filter entries with broken links
 async function filterBrokenLinks(
-  skills: Map<string, DojoSkill>,
+  skillsByOwner: SkillsByOwner,
   label: string
-): Promise<Map<string, DojoSkill>> {
-  log(`Validating ${skills.size} ${label} URLs...`);
+): Promise<SkillsByOwner> {
+  const allEntries: Array<{ key: string; url: string; owner: string }> = [];
 
-  const entries = Array.from(skills.entries()).map(([key, skill]) => {
-    // Convert source to URL for validation
-    let url = skill.source;
-    if (url.startsWith("github:")) {
-      url = `https://github.com/${url.replace("github:", "")}`;
+  for (const [ownerName, skills] of skillsByOwner) {
+    for (const [key, skill] of skills) {
+      let url = skill.source;
+      if (url.startsWith("github:")) {
+        url = `https://github.com/${url.replace("github:", "")}`;
+      }
+      allEntries.push({ key: `${ownerName}:${key}`, url, owner: ownerName });
     }
-    return { key, url };
-  });
+  }
 
-  const validationResults = await validateUrlsBatch(entries);
+  log(`Validating ${allEntries.length} ${label} URLs...`);
+  const validationResults = await validateUrlsBatch(allEntries);
 
-  const filtered = new Map<string, DojoSkill>();
   let brokenCount = 0;
+  const filtered: SkillsByOwner = new Map();
 
-  for (const [key, skill] of skills) {
-    if (validationResults.get(key) !== false) {
-      filtered.set(key, skill);
-    } else {
-      brokenCount++;
+  for (const [ownerName, skills] of skillsByOwner) {
+    const validSkills = new Map<string, DojoSkill>();
+    for (const [key, skill] of skills) {
+      const fullKey = `${ownerName}:${key}`;
+      if (validationResults.get(fullKey) !== false) {
+        validSkills.set(key, skill);
+      } else {
+        brokenCount++;
+      }
+    }
+    if (validSkills.size > 0) {
+      filtered.set(ownerName, validSkills);
     }
   }
 
   log(
-    `Filtered out ${brokenCount} broken links, ${filtered.size} ${label} remain`
+    `Filtered out ${brokenCount} broken links, ${filtered.size} authors remain`
   );
   return filtered;
 }
 
-// Load existing registry files
-async function loadExistingRegistry(
-  filePath: string
-): Promise<RegistryFile | null> {
-  try {
-    const content = await fs.readFile(filePath, "utf-8");
-    return JSON.parse(content);
-  } catch {
-    return null;
-  }
-}
+// Write registry files grouped by owner
+async function writeRegistryFiles(
+  skillsByOwner: SkillsByOwner,
+  category: "community" | "mcp"
+): Promise<{ files: string[]; totalCount: number }> {
+  const categoryDir = path.join(CONFIG.outputDir, category);
+  const files: string[] = [];
+  let totalCount = 0;
 
-// Merge new skills with existing, deduplicate by source
-function mergeSkills(
-  existing: Map<string, DojoSkill>,
-  newSkills: Map<string, DojoSkill>
-): Map<string, DojoSkill> {
-  const merged = new Map(existing);
-  const sourcesSeen = new Set(Array.from(existing.values()).map((s) => s.source));
+  // Collect small authors into "misc" file
+  const miscSkills = new Map<string, DojoSkill>();
 
-  for (const [key, skill] of newSkills) {
-    if (!sourcesSeen.has(skill.source)) {
-      merged.set(key, skill);
-      sourcesSeen.add(skill.source);
+  for (const [ownerName, skills] of skillsByOwner) {
+    if (skills.size < CONFIG.minSkillsPerFile) {
+      // Add to misc
+      for (const [key, skill] of skills) {
+        miscSkills.set(`${ownerName}-${key}`, skill);
+      }
+    } else {
+      // Write separate file for this owner
+      const fileName = `${ownerName}.json`;
+      const filePath = path.join(categoryDir, fileName);
+
+      const registry: RegistryFile = {
+        skills: Object.fromEntries(skills),
+      };
+
+      if (CONFIG.dryRun) {
+        log(`[DRY RUN] Would write ${skills.size} entries to ${fileName}`);
+      } else {
+        await fs.mkdir(categoryDir, { recursive: true });
+        await fs.writeFile(filePath, JSON.stringify(registry, null, 2) + "\n");
+        verbose(`  Wrote ${skills.size} entries to ${fileName}`);
+      }
+
+      files.push(fileName);
+      totalCount += skills.size;
     }
   }
 
-  return merged;
-}
+  // Write misc file if there are any small-author skills
+  if (miscSkills.size > 0) {
+    const miscFileName = category === "mcp" ? "synced-misc.json" : "synced-misc.json";
+    const miscPath = path.join(categoryDir, miscFileName);
 
-// Write registry file
-async function writeRegistryFile(
-  filePath: string,
-  skills: Map<string, DojoSkill>
-): Promise<void> {
-  const registry: RegistryFile = {
-    skills: Object.fromEntries(skills),
-  };
+    const registry: RegistryFile = {
+      skills: Object.fromEntries(miscSkills),
+    };
 
-  if (CONFIG.dryRun) {
-    log(`[DRY RUN] Would write ${skills.size} entries to ${filePath}`);
-    return;
+    if (CONFIG.dryRun) {
+      log(`[DRY RUN] Would write ${miscSkills.size} misc entries to ${miscFileName}`);
+    } else {
+      await fs.mkdir(categoryDir, { recursive: true });
+      await fs.writeFile(miscPath, JSON.stringify(registry, null, 2) + "\n");
+      verbose(`  Wrote ${miscSkills.size} misc entries to ${miscFileName}`);
+    }
+
+    files.push(miscFileName);
+    totalCount += miscSkills.size;
   }
 
-  await fs.mkdir(path.dirname(filePath), { recursive: true });
-  await fs.writeFile(filePath, JSON.stringify(registry, null, 2) + "\n");
-  log(`Wrote ${skills.size} entries to ${filePath}`);
+  log(`${category}: ${files.length} files, ${totalCount} entries`);
+  return { files, totalCount };
 }
 
-// Update index.json
+// Update index.json with new files
 async function updateIndex(
-  skillCount: number,
-  mcpCount: number
+  communityFiles: string[],
+  mcpFiles: string[],
+  totalSkills: number
 ): Promise<void> {
   const indexPath = path.join(CONFIG.outputDir, "index.json");
 
@@ -441,26 +490,30 @@ async function updateIndex(
     const index: IndexJson = JSON.parse(content);
 
     // Add new files to categories if not present
-    if (!index.categories.community.includes("synced-awesome.json")) {
-      index.categories.community.push("synced-awesome.json");
+    for (const file of communityFiles) {
+      if (!index.categories.community.includes(file)) {
+        index.categories.community.push(file);
+      }
     }
-    if (!index.categories.mcp.includes("synced-mcps.json")) {
-      index.categories.mcp.push("synced-mcps.json");
+    for (const file of mcpFiles) {
+      if (!index.categories.mcp.includes(file)) {
+        index.categories.mcp.push(file);
+      }
     }
 
     // Update counts and date
-    index.totalSkills = skillCount + mcpCount;
+    index.totalSkills = totalSkills;
     index.updated = new Date().toISOString().split("T")[0];
 
     if (CONFIG.dryRun) {
-      log(
-        `[DRY RUN] Would update index.json with ${index.totalSkills} total skills`
-      );
+      log(`[DRY RUN] Would update index.json with ${totalSkills} total skills`);
+      log(`[DRY RUN] Community files: ${communityFiles.join(", ")}`);
+      log(`[DRY RUN] MCP files: ${mcpFiles.join(", ")}`);
       return;
     }
 
     await fs.writeFile(indexPath, JSON.stringify(index, null, 2) + "\n");
-    log(`Updated index.json: ${index.totalSkills} total skills`);
+    log(`Updated index.json: ${totalSkills} total skills`);
   } catch (error) {
     log(`Error updating index.json: ${error}`, "error");
   }
@@ -481,41 +534,18 @@ async function main() {
   const validSkills = await filterBrokenLinks(awesomeSkills, "skills");
   const validMcps = await filterBrokenLinks(managerMcps, "MCPs");
 
-  // Load existing synced files if present
-  const existingSkillsPath = path.join(
-    CONFIG.outputDir,
-    "community",
-    "synced-awesome.json"
-  );
-  const existingMcpsPath = path.join(
-    CONFIG.outputDir,
-    "mcp",
-    "synced-mcps.json"
-  );
-
-  const existingSkillsFile = await loadExistingRegistry(existingSkillsPath);
-  const existingMcpsFile = await loadExistingRegistry(existingMcpsPath);
-
-  const existingSkills = existingSkillsFile
-    ? new Map(Object.entries(existingSkillsFile.skills))
-    : new Map<string, DojoSkill>();
-  const existingMcps = existingMcpsFile
-    ? new Map(Object.entries(existingMcpsFile.skills))
-    : new Map<string, DojoSkill>();
-
-  // Merge with existing
-  const finalSkills = mergeSkills(existingSkills, validSkills);
-  const finalMcps = mergeSkills(existingMcps, validMcps);
-
-  // Write output files
-  await writeRegistryFile(existingSkillsPath, finalSkills);
-  await writeRegistryFile(existingMcpsPath, finalMcps);
+  // Write output files grouped by owner
+  const communityResult = await writeRegistryFiles(validSkills, "community");
+  const mcpResult = await writeRegistryFiles(validMcps, "mcp");
 
   // Update index
-  await updateIndex(finalSkills.size, finalMcps.size);
+  const totalSkills = communityResult.totalCount + mcpResult.totalCount;
+  await updateIndex(communityResult.files, mcpResult.files, totalSkills);
 
   log("=== Sync Complete ===");
-  log(`Skills: ${finalSkills.size} | MCPs: ${finalMcps.size}`);
+  log(
+    `Skills: ${communityResult.totalCount} (${communityResult.files.length} files) | MCPs: ${mcpResult.totalCount} (${mcpResult.files.length} files)`
+  );
 }
 
 main().catch((error) => {

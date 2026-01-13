@@ -1,0 +1,35 @@
+{
+  "skills": {
+    "bing-web-search-api": {
+      "name": "Bing Search API",
+      "source": "github:leehanchung/bing-search-mcp",
+      "description": "Server implementation for Microsoft Bing Web Search API.",
+      "tags": [
+        "mcp",
+        "Bing",
+        "Search",
+        "Web",
+        "News",
+        "Images",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "bing-web-search-api-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+http://github.com/leehanchung/bing-search-mcp",
+            "mcp-server-bing"
+          ],
+          "env": {
+            "BING_API_KEY": "${BING_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

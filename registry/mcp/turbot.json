@@ -1,0 +1,34 @@
+{
+  "skills": {
+    "steampipe": {
+      "name": "Steampipe",
+      "source": "github:turbot/steampipe-mcp",
+      "description": "Cloud-native SQL interface for APIs and cloud platforms",
+      "tags": [
+        "mcp",
+        "Steampipe",
+        "Cloud",
+        "API",
+        "SQL",
+        "Turbot",
+        "Cloud Platforms",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "steampipe-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@turbot/steampipe-mcp",
+            "${STEAMPIPE_DATABASE_URL}"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "skills": {
+    "fingertip": {
+      "name": "Fingertip",
+      "source": "github:fingertip-com/fingertip-mcp",
+      "description": "MCP server for Fingertip.com to search and create new sites.",
+      "tags": [
+        "mcp",
+        "Fingertip",
+        "AI Assistants",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "fingertip-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@fingertip/mcp"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

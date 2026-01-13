@@ -1,0 +1,97 @@
+{
+  "skills": {
+    "markitdown": {
+      "name": "MarkItDown MCP Server",
+      "source": "github:microsoft/markitdown/packages/markitdown-mcp",
+      "description": "The `markitdown-mcp` package provides a lightweight STDIO and SSE MCP server for calling MarkItDown.",
+      "tags": [
+        "mcp",
+        "markdown",
+        "conversion",
+        "server",
+        "AutoGen",
+        "document conversion",
+        "Media Creation"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "markitdown-python",
+          "command": "uvx",
+          "args": [
+            "markitdown-mcp"
+          ],
+          "env": {}
+        }
+      ]
+    },
+    "microsoft-learn": {
+      "name": "Microsoft Learn MCP",
+      "source": "github:microsoft/microsoft-learn-mcp",
+      "description": "Access Microsoft Learn documentation and resources through the Model Context Protocol. Provides comprehensive access to Microsoft's technical documentation, tutorials, and learning paths.",
+      "tags": [
+        "mcp",
+        "microsoft",
+        "learn",
+        "documentation",
+        "azure",
+        "windows",
+        "dotnet",
+        "office",
+        "365",
+        "technical-docs",
+        "Documentation",
+        "Knowledge Base"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "microsoft-learn-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "mcp-remote",
+            "https://learn.microsoft.com/api/mcp"
+          ],
+          "env": {}
+        }
+      ]
+    },
+    "playwright": {
+      "name": "Playwright MCP",
+      "source": "github:microsoft/playwright-mcp",
+      "description": "A Model Context Protocol (MCP) server that provides browser automation capabilities using [Playwright](https://playwright.dev). This server enables LLMs to interact with web pages through structured accessibility snapshots, bypassing the need for screenshots or visually-tuned models.",
+      "tags": [
+        "mcp",
+        "browser automation",
+        "web",
+        "playwright",
+        "accessibility",
+        "LLM",
+        "MCP",
+        "Model Context Protocol",
+        "web navigation",
+        "form-filling",
+        "data extraction",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "playwright-npm",
+          "command": "npx",
+          "args": [
+            "@playwright/mcp@latest"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

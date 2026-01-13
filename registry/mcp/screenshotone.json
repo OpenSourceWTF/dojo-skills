@@ -1,0 +1,31 @@
+{
+  "skills": {
+    "screenshotone": {
+      "name": "ScreenshotOne MCP Server",
+      "source": "github:screenshotone/mcp",
+      "description": "An official implementation of an [MCP (Model Context Protocol)](https://modelcontextprotocol.io/) server for [ScreenshotOne](https://screenshotone.com).",
+      "tags": [
+        "mcp",
+        "screenshot",
+        "website",
+        "image",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "screenshotone-custom",
+          "command": "node",
+          "args": [
+            "build/index.js"
+          ],
+          "env": {
+            "SCREENSHOTONE_API_KEY": "${SCREENSHOTONE_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

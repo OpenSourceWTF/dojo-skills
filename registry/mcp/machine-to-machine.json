@@ -1,0 +1,62 @@
+{
+  "skills": {
+    "f1-mcp-server": {
+      "name": "Formula One MCP Server",
+      "source": "github:Machine-To-Machine/f1-mcp-server.git",
+      "description": "A Model Context Protocol (MCP) server that provides Formula One racing data.",
+      "tags": [
+        "mcp",
+        "f1",
+        "formula one",
+        "racing",
+        "sports",
+        "data",
+        "mcp",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "f1-mcp-server-uvx",
+          "command": "uvx",
+          "args": [
+            "f1-mcp-server"
+          ],
+          "env": {}
+        }
+      ]
+    },
+    "m2m-ssh-gateway": {
+      "name": "MCP SSH Gateway Client",
+      "source": "github:Machine-To-Machine/m2m-mcp-server-ssh-client.git",
+      "description": "A Model Context Protocol Server (Remote SSH client) that connects to remote MCP servers over SSH, proxying tools, prompts, and resources.",
+      "tags": [
+        "mcp",
+        "mcp",
+        "ssh",
+        "gateway",
+        "proxy",
+        "remote",
+        "client",
+        "Dev Tools",
+        "Productivity",
+        "System Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "m2m-ssh-gateway-uvx",
+          "command": "uvx",
+          "args": [
+            "m2m-mcp-server-ssh-client"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "skills": {
+    "skill-from-masters": {
+      "name": "skill-from-masters",
+      "source": "github:GBSOSS/skill-from-masters/.",
+      "description": "Help users create high-quality skills by discovering and incorporating proven methodologies from ...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    }
+  }
+}

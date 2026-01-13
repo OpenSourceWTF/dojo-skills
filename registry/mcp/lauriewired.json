@@ -1,0 +1,35 @@
+{
+  "skills": {
+    "ghidra-mcp": {
+      "name": "GhidraMCP",
+      "source": "github:LaurieWired/GhidraMCP",
+      "description": "GhidraMCP is an Model Context Protocol server for allowing LLMs to autonomously reverse engineer applications. It exposes numerous tools from core Ghidra functionality to MCP clients.",
+      "tags": [
+        "mcp",
+        "reverse engineering",
+        "Ghidra",
+        "MCP",
+        "binary analysis",
+        "decompiler",
+        "LLM",
+        "Model Context Protocol",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "ghidra-mcp-python",
+          "command": "python",
+          "args": [
+            "/ABSOLUTE_PATH_TO/bridge_mcp_ghidra.py",
+            "--ghidra-server",
+            "http://127.0.0.1:8080/"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

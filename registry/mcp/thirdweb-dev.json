@@ -1,0 +1,33 @@
+{
+  "skills": {
+    "thirdweb": {
+      "name": "thirdweb MCP Server",
+      "source": "github:thirdweb-dev/ai",
+      "description": "Read/write to over 2k blockchains, enabling data querying, contract analysis/deployment, and transaction execution, powered by Thirdweb",
+      "tags": [
+        "mcp",
+        "blockchain",
+        "mcp",
+        "thirdweb",
+        "web3",
+        "ipfs",
+        "AI Systems"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "thirdweb-uvx",
+          "command": "uvx",
+          "args": [
+            "thirdweb-mcp"
+          ],
+          "env": {
+            "THIRDWEB_SECRET_KEY": "${THIRDWEB_SECRET_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

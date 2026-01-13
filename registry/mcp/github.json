@@ -1,34 +1,37 @@
 {
   "skills": {
-    "mcp-github-official": {
+    "github": {
       "name": "GitHub Official MCP Server",
       "source": "github:github/github-mcp-server",
-      "aliases": [
-        "gh-official",
-        "github-official"
-      ],
-      "description": "GitHub's official MCP Server for repository operations",
+      "description": "The official GitHub MCP server written in Go. Provides comprehensive GitHub API integration including repository management, issue tracking, pull requests, code search, and more.",
       "tags": [
         "mcp",
         "github",
-        "official",
-        "devops"
+        "code",
+        "repository",
+        "git",
+        "issues",
+        "pull-requests",
+        "api",
+        "Dev Tools"
       ],
-      "dependencies": [],
       "versions": {
         "latest": "main"
       },
       "mcp_servers": [
         {
-          "name": "github",
-          "package": "@github/mcp-server",
-          "command": "npx",
+          "name": "github-docker",
+          "command": "docker",
           "args": [
-            "-y",
-            "@github/mcp-server"
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "${GITHUB_PERSONAL_ACCESS_TOKEN}",
+            "ghcr.io/github/github-mcp-server"
           ],
           "env": {
-            "GITHUB_PERSONAL_ACCESS_TOKEN": ""
+            "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_PERSONAL_ACCESS_TOKEN}"
           }
         }
       ]

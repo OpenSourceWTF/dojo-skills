@@ -1,0 +1,53 @@
+{
+  "skills": {
+    "doit": {
+      "name": "DoiT MCP Server",
+      "source": "github:doitintl/doit-mcp-server",
+      "description": "DoiT MCP Server provides access to the DoiT API. This server enables LLMs like Claude to access DoiT platform data for troubleshooting and analysis.",
+      "tags": [
+        "mcp",
+        "DoiT",
+        "API",
+        "MCP",
+        "cloud",
+        "cost analysis",
+        "analytics",
+        "anomaly detection",
+        "Claude",
+        "LLM",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "doit-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@doitintl/doit-mcp-server@latest"
+          ],
+          "env": {
+            "DOIT_API_KEY": "${DOIT_API_KEY}"
+          }
+        },
+        {
+          "name": "doit-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "DOIT_API_KEY",
+            "mcp/doit"
+          ],
+          "env": {
+            "DOIT_API_KEY": "${DOIT_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

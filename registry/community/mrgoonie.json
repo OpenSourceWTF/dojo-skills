@@ -1,0 +1,448 @@
+{
+  "skills": {
+    "aesthetic": {
+      "name": "aesthetic",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/aesthetic",
+      "description": "Create aesthetically beautiful interfaces following proven design principles. Use when building U...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "inversion-exercise": {
+      "name": "Inversion Exercise",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/problem-solving/inversion-exercise",
+      "description": "Flip core assumptions to reveal hidden constraints and alternative approaches - \"what if the oppo...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "meta-pattern-recognition": {
+      "name": "Meta-Pattern Recognition",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/problem-solving/meta-pattern-recognition",
+      "description": "Spot patterns appearing in 3+ domains to find universal principles",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "skill-creator": {
+      "name": "skill-creator",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/skill-creator",
+      "description": "Guide for creating effective skills. This skill should be used when users want to create a new sk...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "template-skill": {
+      "name": "template-skill",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/template-skill",
+      "description": "Replace with description of the skill and when Claude should use it.",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "verification-before-completion": {
+      "name": "Verification Before Completion",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/debugging/verification-before-completion",
+      "description": "Run verification commands and confirm output before claiming success",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "better-auth": {
+      "name": "better-auth",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/better-auth",
+      "description": "Implement authentication and authorization with Better Auth - a framework-agnostic TypeScript aut...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "code-review": {
+      "name": "code-review",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/code-review",
+      "description": "Use when receiving code review feedback (especially if unclear or technically questionable), when...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "context-engineering": {
+      "name": "context-engineering",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/context-engineering",
+      "description": "Master context engineering for AI agent systems. Use when designing agent architectures, debuggin...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "docs-seeker": {
+      "name": "docs-seeker",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/docs-seeker",
+      "description": "Searching internet for technical documentation using llms.txt standard, GitHub repositories via R...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "docx": {
+      "name": "docx",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/document-skills/docx",
+      "description": "Comprehensive document creation, editing, and analysis with support for tracked changes, comments...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "media-processing": {
+      "name": "media-processing",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/media-processing",
+      "description": "Process multimedia files with FFmpeg (video/audio encoding, conversion, streaming, filtering, har...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "pdf": {
+      "name": "pdf",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/document-skills/pdf",
+      "description": "Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "repomix": {
+      "name": "repomix",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/repomix",
+      "description": "Package entire code repositories into single AI-friendly files using Repomix. Capabilities includ...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "scale-game": {
+      "name": "Scale Game",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/problem-solving/scale-game",
+      "description": "Test at extremes (1000x bigger/smaller, instant/year-long) to expose fundamental truths hidden at...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "xlsx": {
+      "name": "xlsx",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/document-skills/xlsx",
+      "description": "Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, ...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "ai-multimodal": {
+      "name": "ai-multimodal",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/ai-multimodal",
+      "description": "Process and generate multimedia content using Google Gemini API. Capabilities include analyze aud...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "databases": {
+      "name": "databases",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/databases",
+      "description": "Work with MongoDB (document database, BSON documents, aggregation pipelines, Atlas cloud) and Pos...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "mcp-builder": {
+      "name": "mcp-builder",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/mcp-builder",
+      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "mermaidjs-v11": {
+      "name": "mermaidjs-v11",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/mermaidjs-v11",
+      "description": "Create diagrams and visualizations using Mermaid.js v11 syntax. Use when generating flowcharts, s...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "mcp-management": {
+      "name": "mcp-management",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/mcp-management",
+      "description": "Manage Model Context Protocol (MCP) servers - discover, analyze, and execute tools/prompts/resour...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "backend-development": {
+      "name": "backend-development",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/backend-development",
+      "description": "Build robust backend systems with modern technologies (Node.js, Python, Go, Rust), frameworks (Ne...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "defense-in-depth-validation": {
+      "name": "Defense-in-Depth Validation",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/debugging/defense-in-depth",
+      "description": "Validate at every layer data passes through to make bugs impossible",
+      "tags": [
+        "data-and-analytics",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "chrome-devtools": {
+      "name": "chrome-devtools",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/chrome-devtools",
+      "description": "Browser automation, debugging, and performance analysis using Puppeteer CLI scripts. Use for auto...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "devops": {
+      "name": "devops",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/devops",
+      "description": "Deploy and manage cloud infrastructure on Cloudflare (Workers, R2, D1, KV, Pages, Durable Objects...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "frontend-design": {
+      "name": "frontend-design",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/frontend-design",
+      "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "frontend-dev-guidelines": {
+      "name": "frontend-dev-guidelines",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/frontend-development",
+      "description": "Frontend development guidelines for React/TypeScript applications. Modern patterns including Susp...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "pptx": {
+      "name": "pptx",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/document-skills/pptx",
+      "description": "Presentation creation, editing, and analysis. When Claude needs to work with presentations (.pptx...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "shopify": {
+      "name": "shopify",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/shopify",
+      "description": "Build Shopify applications, extensions, and themes using GraphQL/REST APIs, Shopify CLI, Polaris ...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "simplification-cascades": {
+      "name": "Simplification Cascades",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/problem-solving/simplification-cascades",
+      "description": "Find one insight that eliminates multiple components - \"if this is true, we don't need X, Y, or Z\"",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "ui-styling": {
+      "name": "ui-styling",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/ui-styling",
+      "description": "Create beautiful, accessible user interfaces with shadcn/ui components (built on Radix UI + Tailw...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "web-frameworks": {
+      "name": "web-frameworks",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/web-frameworks",
+      "description": "Build modern full-stack web applications with Next.js (App Router, Server Components, RSC, PPR, S...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "root-cause-tracing": {
+      "name": "Root Cause Tracing",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/debugging/root-cause-tracing",
+      "description": "Systematically trace bugs backward through call stack to find original trigger",
+      "tags": [
+        "uncategorized",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "systematic-debugging": {
+      "name": "Systematic Debugging",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/debugging/systematic-debugging",
+      "description": "Four-phase debugging framework that ensures root cause investigation before attempting fixes. Nev...",
+      "tags": [
+        "uncategorized",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "collision-zone-thinking": {
+      "name": "Collision-Zone Thinking",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/problem-solving/collision-zone-thinking",
+      "description": "Force unrelated concepts together to discover emergent properties - \"What if we treated X like Y?\"",
+      "tags": [
+        "version-control-and-collaboration",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "sequential-thinking": {
+      "name": "sequential-thinking",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/sequential-thinking",
+      "description": "Use when complex problems require systematic step-by-step reasoning with ability to revise though...",
+      "tags": [
+        "version-control-and-collaboration",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "when-stuck-problem-solving-dispatch": {
+      "name": "When Stuck - Problem-Solving Dispatch",
+      "source": "github:mrgoonie/claudekit-skills/.claude/skills/problem-solving/when-stuck",
+      "description": "Dispatch to the right problem-solving technique based on how you're stuck",
+      "tags": [
+        "version-control-and-collaboration",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    }
+  }
+}

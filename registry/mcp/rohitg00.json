@@ -1,0 +1,37 @@
+{
+  "skills": {
+    "kubectl-mcp": {
+      "name": "Kubectl MCP Server",
+      "source": "github:rohitg00/kubectl-mcp-server",
+      "description": "A Model Context Protocol (MCP) server for Kubernetes that enables AI assistants like Claude, Cursor, and others to interact with Kubernetes clusters through natural language.",
+      "tags": [
+        "mcp",
+        "kubernetes",
+        "kubectl",
+        "MCP",
+        "Model Context Protocol",
+        "AI assistants",
+        "CLI",
+        "Python",
+        "k8s",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "kubectl-mcp-python",
+          "command": "python",
+          "args": [
+            "-m",
+            "kubectl_mcp_tool.minimal_wrapper"
+          ],
+          "env": {
+            "KUBECONFIG": "${KUBECONFIG}"
+          }
+        }
+      ]
+    }
+  }
+}

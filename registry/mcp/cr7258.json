@@ -1,0 +1,32 @@
+{
+  "skills": {
+    "elasticsearch": {
+      "name": "Elasticsearch",
+      "source": "github:cr7258/elasticsearch-mcp-server",
+      "description": "MCP server implementation that provides Elasticsearch interaction.",
+      "tags": [
+        "mcp",
+        "elasticsearch",
+        "server",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "elasticsearch-uvx",
+          "command": "uvx",
+          "args": [
+            "elasticsearch-mcp-server"
+          ],
+          "env": {
+            "ELASTIC_HOST": "${ELASTIC_HOST}",
+            "ELASTIC_USERNAME": "${ELASTIC_USERNAME}",
+            "ELASTIC_PASSWORD": "${ELASTIC_PASSWORD}"
+          }
+        }
+      ]
+    }
+  }
+}

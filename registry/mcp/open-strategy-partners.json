@@ -1,0 +1,42 @@
+{
+  "skills": {
+    "open-strategy-partners-marketing-tools": {
+      "name": "Open Strategy Partners Marketing Tools",
+      "source": "github:open-strategy-partners/osp_marketing_tools",
+      "description": "Content editing codes, value map, and positioning tools for product marketing.",
+      "tags": [
+        "mcp",
+        "LLM",
+        "Technical Writing",
+        "Optimization",
+        "Productivity"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "open-strategy-partners-marketing-tools-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/open-strategy-partners/osp_marketing_tools@main",
+            "osp_marketing_tools"
+          ],
+          "env": {}
+        },
+        {
+          "name": "open-strategy-partners-marketing-tools-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "mcp/osp_marketing_tools"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

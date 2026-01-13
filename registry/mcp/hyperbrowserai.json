@@ -1,0 +1,40 @@
+{
+  "skills": {
+    "hyperbrowser": {
+      "name": "Hyperbrowser MCP Server",
+      "source": "github:hyperbrowserai/mcp",
+      "description": "This is Hyperbrowser's Model Context Protocol (MCP) Server. It provides various tools to scrape, extract structured data, and crawl webpages. It also provides easy access to general purpose browser agents like OpenAI's CUA, Anthropic's Claude Computer Use, and Browser Use.",
+      "tags": [
+        "mcp",
+        "browser",
+        "web",
+        "scraping",
+        "crawling",
+        "automation",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "hyperbrowser-npm",
+          "command": "npx",
+          "args": [
+            "hyperbrowser-mcp",
+            "${HYPERBROWSER_API_KEY}"
+          ],
+          "env": {}
+        },
+        {
+          "name": "hyperbrowser-custom",
+          "command": "node",
+          "args": [
+            "dist/server.js"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

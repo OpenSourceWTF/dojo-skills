@@ -1,0 +1,86 @@
+{
+  "skills": {
+    "fetch-mcp": {
+      "name": "Fetch",
+      "source": "github:zcaceres/fetch-mcp",
+      "description": "A server that flexibly fetches HTML, JSON, Markdown, or plaintext.",
+      "tags": [
+        "mcp",
+        "fetch",
+        "web",
+        "api",
+        "html",
+        "json",
+        "markdown",
+        "plain text",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "fetch-mcp-npm",
+          "command": "node",
+          "args": [
+            "{ABSOLUTE PATH TO FILE HERE}/dist/index.js"
+          ],
+          "env": {}
+        }
+      ]
+    },
+    "google-tasks": {
+      "name": "Google Tasks",
+      "source": "github:zcaceres/gtasks-mcp",
+      "description": "Google Tasks API Model Context Protocol Server.",
+      "tags": [
+        "mcp",
+        "google",
+        "tasks",
+        "productivity",
+        "Productivity"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "google-tasks-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "https://github.com/zcaceres/gtasks-mcp"
+          ],
+          "env": {}
+        }
+      ]
+    },
+    "markdownify": {
+      "name": "Markdownify",
+      "source": "github:zcaceres/mcp-markdownify-server",
+      "description": "MCP to convert almost anything to Markdown (PPTX, HTML, PDF, Youtube Transcripts and more)",
+      "tags": [
+        "mcp",
+        "markdown",
+        "conversion",
+        "Media Creation"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "markdownify-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "https://github.com/zcaceres/mcp-markdownify-server"
+          ],
+          "env": {
+            "UV_PATH": "${UV_PATH}"
+          }
+        }
+      ]
+    }
+  }
+}

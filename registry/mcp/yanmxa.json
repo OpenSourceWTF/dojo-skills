@@ -1,0 +1,29 @@
+{
+  "skills": {
+    "multicluster-mcp-sever": {
+      "name": "Multi-Cluster Server",
+      "source": "github:yanmxa/multicluster-mcp-server",
+      "description": "The gateway for GenAI systems to interact with multiple Kubernetes clusters.",
+      "tags": [
+        "mcp",
+        "Generative AI",
+        "Kubernetes",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "multicluster-mcp-sever-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "https://github.com/yanmxa/multicluster-mcp-server"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

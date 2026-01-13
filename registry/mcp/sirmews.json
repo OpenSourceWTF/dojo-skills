@@ -1,0 +1,31 @@
+{
+  "skills": {
+    "pinecone": {
+      "name": "Pinecone Model Context Protocol for Claude Desktop",
+      "source": "github:sirmews/mcp-pinecone",
+      "description": "MCP server for searching and uploading records to Pinecone. Allows for simple RAG features, leveraging Pinecone's Inference API.",
+      "tags": [
+        "mcp",
+        "pinecone",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "pinecone-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp-pinecone",
+            "--index-name",
+            "${your-index-name}",
+            "--api-key",
+            "${your-secret-api-key}"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

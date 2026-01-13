@@ -1,0 +1,34 @@
+{
+  "skills": {
+    "diff-mcp": {
+      "name": "diff-mcp",
+      "source": "github:benjamine/jsondiffpatch/packages/diff-mcp",
+      "description": "diff-mcp is an MCP Server that allows you to compare text or data (JSON, JSON5, YAML, TOML, XML, HTML) and get a readable diff in multiple output formats (text, JSON, JSONPatch).",
+      "tags": [
+        "mcp",
+        "diff",
+        "json",
+        "text",
+        "comparison",
+        "mcp",
+        "jsondiffpatch",
+        "data comparison",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "diff-mcp-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "diff-mcp"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "skills": {
+    "starwind-ui": {
+      "name": "Starwind UI",
+      "source": "github:Boston343/starwind-ui-mcp",
+      "description": "This MCP provides relevant commands, documentation, and other information to allow LLMs to take full advantage of Starwind UI's open source Astro components.",
+      "tags": [
+        "mcp",
+        "Starwind",
+        "Developer Tools",
+        "AI",
+        "Components",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "starwind-ui-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "https://github.com/Boston343/starwind-ui-mcp/"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

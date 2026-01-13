@@ -1,0 +1,36 @@
+{
+  "skills": {
+    "ergo-blockchain-mcp": {
+      "name": "Ergo Blockchain Explorer",
+      "source": "github:marctheshark3/ergo-mcp",
+      "description": "-An MCP server to integrate Ergo Blockchain Node and Explorer APIs for checking address balances, analyzing transactions, viewing transaction history, performing forensic analysis of addresses, searching for tokens, and monitoring network status.",
+      "tags": [
+        "mcp",
+        "Ergo",
+        "Blockchain",
+        "Python",
+        "API",
+        "Finance"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "ergo-blockchain-mcp-uvx",
+          "command": "uvx",
+          "args": [
+            "ergo-mcp"
+          ],
+          "env": {
+            "SERVER_HOST": "${SERVER_HOST}",
+            "SERVER_PORT": "${SERVER_PORT}",
+            "SERVER_WORKERS": "${SERVER_WORKERS}",
+            "ERGO_NODE_API": "${ERGO_NODE_API}",
+            "ERGO_NODE_API_KEY": "${ERGO_NODE_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "skills": {
+    "graphlit-mcp-server": {
+      "name": "Graphlit MCP Server",
+      "source": "github:graphlit/graphlit-mcp-server",
+      "description": "The Model Context Protocol (MCP) Server enables integration between MCP clients and the Graphlit service. This document outlines the setup process and provides a basic example of using the client.",
+      "tags": [
+        "mcp",
+        "mcp",
+        "graphlit",
+        "retrieval",
+        "extraction",
+        "ingestion",
+        "web",
+        "notifications",
+        "Knowledge Base"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "graphlit-mcp-server-npx",
+          "command": "npx",
+          "args": [
+            "-y",
+            "graphlit-mcp-server"
+          ],
+          "env": {
+            "GRAPHLIT_ORGANIZATION_ID": "${GRAPHLIT_ORGANIZATION_ID}",
+            "GRAPHLIT_ENVIRONMENT_ID": "${GRAPHLIT_ENVIRONMENT_ID}",
+            "GRAPHLIT_JWT_SECRET": "${GRAPHLIT_JWT_SECRET}"
+          }
+        }
+      ]
+    }
+  }
+}

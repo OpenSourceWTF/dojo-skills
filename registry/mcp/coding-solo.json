@@ -1,0 +1,30 @@
+{
+  "skills": {
+    "godot": {
+      "name": "Godot",
+      "source": "github:Coding-Solo/godot-mcp",
+      "description": "A MCP server providing comprehensive Godot engine integration for project editing, debugging, and scene management.",
+      "tags": [
+        "mcp",
+        "Godot",
+        "AI",
+        "Game",
+        "Media Creation"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "godot-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "https://github.com/Coding-Solo/godot-mcp"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

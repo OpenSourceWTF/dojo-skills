@@ -1,0 +1,34 @@
+{
+  "skills": {
+    "mcp-server-weibo": {
+      "name": "Weibo MCP Server",
+      "source": "github:Selenium39/mcp-server-weibo",
+      "description": "This is a server based on the [Model Context Protocol](https://modelcontextprotocol.io) for scraping Weibo user information, feeds, and search functionality. This server can help retrieve detailed information about Weibo users, feed content, and perform user searches.",
+      "tags": [
+        "mcp",
+        "weibo",
+        "social media",
+        "scraping",
+        "user information",
+        "search",
+        "TypeScript",
+        "MCP",
+        "Model Context Protocol",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-server-weibo-npm",
+          "command": "npx",
+          "args": [
+            "mcp-server-weibo"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

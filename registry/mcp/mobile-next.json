@@ -1,0 +1,39 @@
+{
+  "skills": {
+    "mobile-mcp": {
+      "name": "Mobile MCP Server",
+      "source": "github:mobile-next/mobile-mcp",
+      "description": "This is a [Model Context Protocol (MCP) server](https://github.com/modelcontextprotocol) that enables scalable mobile automation, development through a platform-agnostic interface, eliminating the need for distinct iOS or Android knowledge. You can run it on emulators, simulators, and physical devices (iOS and Android).",
+      "tags": [
+        "mcp",
+        "mobile",
+        "automation",
+        "iOS",
+        "Android",
+        "simulator",
+        "emulator",
+        "physical devices",
+        "MCP",
+        "Model Context Protocol",
+        "accessibility",
+        "testing",
+        "LLM",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mobile-mcp-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@mobilenext/mobile-mcp@latest"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

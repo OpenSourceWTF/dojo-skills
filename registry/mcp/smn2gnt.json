@@ -1,0 +1,33 @@
+{
+  "skills": {
+    "salesforce-mcp": {
+      "name": "Salesforce Connector",
+      "source": "github:smn2gnt/MCP-Salesforce",
+      "description": "Interact with Salesforce Data and Metadata",
+      "tags": [
+        "mcp",
+        "salesforce",
+        "Productivity"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "salesforce-mcp-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "mcp-salesforce-connector",
+            "salesforce"
+          ],
+          "env": {
+            "SALESFORCE_USERNAME": "${SALESFORCE_USERNAME}",
+            "SALESFORCE_PASSWORD": "${SALESFORCE_PASSWORD}",
+            "SALESFORCE_SECURITY_TOKEN": "${SALESFORCE_SECURITY_TOKEN}"
+          }
+        }
+      ]
+    }
+  }
+}

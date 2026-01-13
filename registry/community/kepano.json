@@ -1,0 +1,40 @@
+{
+  "skills": {
+    "obsidian-bases": {
+      "name": "obsidian-bases",
+      "source": "github:kepano/obsidian-skills/skills/obsidian-bases",
+      "description": "Create and edit Obsidian Bases (.base files) with views, filters, formulas, and summaries. Use wh...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "json-canvas": {
+      "name": "json-canvas",
+      "source": "github:kepano/obsidian-skills/skills/json-canvas",
+      "description": "Create and edit JSON Canvas files (.canvas) with nodes, edges, groups, and connections. Use when ...",
+      "tags": [
+        "uncategorized",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "obsidian-markdown": {
+      "name": "obsidian-markdown",
+      "source": "github:kepano/obsidian-skills/skills/obsidian-markdown",
+      "description": "Create and edit Obsidian Flavored Markdown with wikilinks, embeds, callouts, properties, and othe...",
+      "tags": [
+        "version-control-and-collaboration",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    }
+  }
+}

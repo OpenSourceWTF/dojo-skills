@@ -1,0 +1,39 @@
+{
+  "skills": {
+    "mcp-zenml": {
+      "name": "ZenML MCP Server",
+      "source": "github:zenml-io/mcp-zenml",
+      "description": "Interact with your MLOps and LLMOps pipelines through your ZenML MCP server",
+      "tags": [
+        "mcp",
+        "zenml",
+        "mcp",
+        "ai",
+        "ml",
+        "pipelines",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-zenml-custom",
+          "command": "uv",
+          "args": [
+            "run",
+            "path/to/zenml_server.py"
+          ],
+          "env": {
+            "LOGLEVEL": "${LOGLEVEL}",
+            "NO_COLOR": "1",
+            "PYTHONUNBUFFERED": "1",
+            "PYTHONIOENCODING": "UTF-8",
+            "ZENML_STORE_URL": "${ZENML_STORE_URL}",
+            "ZENML_STORE_API_KEY": "${ZENML_STORE_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

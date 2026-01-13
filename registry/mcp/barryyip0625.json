@@ -1,0 +1,51 @@
+{
+  "skills": {
+    "mcp-discord": {
+      "name": "MCP-Discord",
+      "source": "github:barryyip0625/mcp-discord",
+      "description": "A Discord MCP (Model Context Protocol) server that enables AI assistants to interact with the Discord platform.",
+      "tags": [
+        "mcp",
+        "discord",
+        "mcp",
+        "model context protocol",
+        "bot",
+        "messaging",
+        "webhook",
+        "channel management",
+        "forum",
+        "Messaging"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-discord-custom",
+          "command": "node",
+          "args": [
+            "path/to/mcp-discord/build/index.js"
+          ],
+          "env": {
+            "DISCORD_TOKEN": "${DISCORD_TOKEN}"
+          }
+        },
+        {
+          "name": "mcp-discord-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "DISCORD_TOKEN",
+            "mcp/mcp-discord"
+          ],
+          "env": {
+            "DISCORD_TOKEN": "${DISCORD_TOKEN}"
+          }
+        }
+      ]
+    }
+  }
+}

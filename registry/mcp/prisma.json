@@ -1,0 +1,35 @@
+{
+  "skills": {
+    "prisma": {
+      "name": "Prisma MCP Server",
+      "source": "github:prisma/prisma",
+      "description": "Prisma ORM is a **next-generation ORM** that consists of these tools:",
+      "tags": [
+        "mcp",
+        "database",
+        "ORM",
+        "TypeScript",
+        "Node.js",
+        "PostgreSQL",
+        "Prisma",
+        "MCP",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "prisma-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "prisma",
+            "mcp"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

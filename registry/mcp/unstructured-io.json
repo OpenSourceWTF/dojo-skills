@@ -1,0 +1,33 @@
+{
+  "skills": {
+    "uns-mcp": {
+      "name": "Unstructured API MCP Server",
+      "source": "github:Unstructured-IO/UNS-MCP",
+      "description": "An MCP server implementation for interacting with the Unstructured API. This server provides tools to list sources and workflows.",
+      "tags": [
+        "mcp",
+        "unstructured",
+        "api",
+        "document processing",
+        "workflow",
+        "connectors",
+        "Knowledge Base"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "uns-mcp-uvx",
+          "command": "uvx",
+          "args": [
+            "uns_mcp"
+          ],
+          "env": {
+            "UNSTRUCTURED_API_KEY": "${UNSTRUCTURED_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "skills": {
+    "arangodb": {
+      "name": "ArangoDB",
+      "source": "github:ravenwits/mcp-server-arangodb",
+      "description": "MCP Server that provides database interaction capabilities through [ArangoDB](https://arangodb.com/).",
+      "tags": [
+        "mcp",
+        "ArangoDB",
+        "TypeScript",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "arangodb-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "https://github.com/ravenwits/mcp-server-arangodb"
+          ],
+          "env": {
+            "ARANGO_URL": "${ARANGO_URL}",
+            "ARANGO_DATABASE": "${ARANGO_DATABASE}",
+            "ARANGO_USERNAME": "${ARANGO_USERNAME}",
+            "ARANGO_PASSWORD": "${ARANGO_PASSWORD}"
+          }
+        }
+      ]
+    }
+  }
+}

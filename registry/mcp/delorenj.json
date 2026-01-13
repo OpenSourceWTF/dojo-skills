@@ -1,0 +1,33 @@
+{
+  "skills": {
+    "ticketmaster": {
+      "name": "Ticketmaster",
+      "source": "github:delorenj/mcp-server-ticketmaster",
+      "description": "Search for events, venues, and attractions through the Ticketmaster Discovery API",
+      "tags": [
+        "mcp",
+        "ticketmaster",
+        "events",
+        "venues",
+        "attractions",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "ticketmaster-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@delorenj/mcp-server-ticketmaster"
+          ],
+          "env": {
+            "TICKETMASTER_API_KEY": "${TICKETMASTER_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

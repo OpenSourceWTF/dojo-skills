@@ -1,0 +1,48 @@
+{
+  "skills": {
+    "desktop-commander-mcp": {
+      "name": "Desktop Commander MCP",
+      "source": "github:wonderwhy-er/DesktopCommanderMCP",
+      "description": "Short version. Four key things. Terminal commands, diff based file editing, ripgrep based text search in folders, ability to read files from urls",
+      "tags": [
+        "mcp",
+        "terminal",
+        "file management",
+        "code search",
+        "AI assistant",
+        "command execution",
+        "filesystem",
+        "process management",
+        "text editing",
+        "ripgrep",
+        "Claude integration",
+        "System Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "desktop-commander-mcp-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@wonderwhy-er/desktop-commander"
+          ],
+          "env": {}
+        },
+        {
+          "name": "desktop-commander-mcp-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "mcp/desktop-commander"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

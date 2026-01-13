@@ -1,0 +1,34 @@
+{
+  "skills": {
+    "bigquery": {
+      "name": "BigQuery",
+      "source": "github:ergut/mcp-bigquery-server",
+      "description": "Server implementation for Google BigQuery integration that enables direct BigQuery database access and querying capabilities",
+      "tags": [
+        "mcp",
+        "BigQuery",
+        "AI",
+        "LLM",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "bigquery-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@ergut/mcp-bigquery-server",
+            "--project-id",
+            "${PROJECT_ID}",
+            "--location",
+            "${LOCATION}"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

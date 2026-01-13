@@ -1,0 +1,43 @@
+{
+  "skills": {
+    "mcp-clickhouse": {
+      "name": "ClickHouse MCP Server",
+      "source": "github:ClickHouse/mcp-clickhouse",
+      "description": "An MCP server for ClickHouse.",
+      "tags": [
+        "mcp",
+        "clickhouse",
+        "database",
+        "sql",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-clickhouse-uvx",
+          "command": "uv",
+          "args": [
+            "run",
+            "--with",
+            "mcp-clickhouse",
+            "--python",
+            "3.13",
+            "mcp-clickhouse"
+          ],
+          "env": {
+            "CLICKHOUSE_HOST": "${CLICKHOUSE_HOST}",
+            "CLICKHOUSE_PORT": "${CLICKHOUSE_PORT}",
+            "CLICKHOUSE_USER": "${CLICKHOUSE_USER}",
+            "CLICKHOUSE_PASSWORD": "${CLICKHOUSE_PASSWORD}",
+            "CLICKHOUSE_SECURE": "${CLICKHOUSE_SECURE}",
+            "CLICKHOUSE_VERIFY": "${CLICKHOUSE_VERIFY}",
+            "CLICKHOUSE_CONNECT_TIMEOUT": "${CLICKHOUSE_CONNECT_TIMEOUT}",
+            "CLICKHOUSE_SEND_RECEIVE_TIMEOUT": "${CLICKHOUSE_SEND_RECEIVE_TIMEOUT}"
+          }
+        }
+      ]
+    }
+  }
+}

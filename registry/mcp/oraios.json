@@ -1,0 +1,50 @@
+{
+  "skills": {
+    "serena": {
+      "name": "Serena",
+      "source": "github:oraios/serena",
+      "description": "You can use Serena for any coding tasks – whether it is focussed on analysis, planning,",
+      "tags": [
+        "mcp",
+        "coding agent",
+        "code retrieval",
+        "code editing",
+        "language server",
+        "MCP",
+        "open-source",
+        "semantic analysis",
+        "AI assistant",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "serena-uvx_from_git",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/oraios/serena",
+            "serena",
+            "start-mcp-server"
+          ],
+          "env": {}
+        },
+        {
+          "name": "serena-uvx",
+          "command": "uv",
+          "args": [
+            "run",
+            "--directory",
+            "/abs/path/to/serena",
+            "serena-mcp-server",
+            "--project-file",
+            "/abs/path/to/myproject.yml"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

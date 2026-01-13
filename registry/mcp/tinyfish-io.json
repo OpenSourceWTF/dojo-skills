@@ -1,0 +1,31 @@
+{
+  "skills": {
+    "agentql-mcp": {
+      "name": "AgentQL MCP Server",
+      "source": "github:tinyfish-io/agentql-mcp",
+      "description": "This is a Model Context Protocol (MCP) server that integrates [AgentQL](https://agentql.com)'s data extraction capabilities.",
+      "tags": [
+        "mcp",
+        "data extraction",
+        "web scraping",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "agentql-mcp-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "agentql-mcp"
+          ],
+          "env": {
+            "AGENTQL_API_KEY": "${AGENTQL_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

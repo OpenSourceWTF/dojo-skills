@@ -1,0 +1,32 @@
+{
+  "skills": {
+    "todoist": {
+      "name": "Todoist",
+      "source": "github:abhiz123/todoist-mcp-server",
+      "description": "Interact with Todoist to manage your tasks.",
+      "tags": [
+        "mcp",
+        "task management",
+        "todoist",
+        "natural language processing",
+        "Productivity"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "todoist-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@abhiz123/todoist-mcp-server"
+          ],
+          "env": {
+            "TODOIST_API_TOKEN": "${TODOIST_API_TOKEN}"
+          }
+        }
+      ]
+    }
+  }
+}

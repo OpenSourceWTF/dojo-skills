@@ -1,0 +1,34 @@
+{
+  "skills": {
+    "airflow": {
+      "name": "Apache Airflow",
+      "source": "github:yangkyeongmo/mcp-server-apache-airflow",
+      "description": "A MCP Server that connects to [Apache Airflow](https://airflow.apache.org/) using official python client.",
+      "tags": [
+        "mcp",
+        "Apache Airflow",
+        "DAG",
+        "Workflow",
+        "Data Pipeline",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "airflow-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp-server-apache-airflow"
+          ],
+          "env": {
+            "AIRFLOW_HOST": "${AIRFLOW_HOST}",
+            "AIRFLOW_USERNAME": "${AIRFLOW_USERNAME}",
+            "AIRFLOW_PASSWORD": "${AIRFLOW_PASSWORD}"
+          }
+        }
+      ]
+    }
+  }
+}

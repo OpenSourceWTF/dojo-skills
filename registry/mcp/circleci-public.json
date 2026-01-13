@@ -1,0 +1,56 @@
+{
+  "skills": {
+    "mcp-circleci": {
+      "name": "CircleCI MCP Server",
+      "source": "github:CircleCI-Public/mcp-server-circleci",
+      "description": "Model Context Protocol (MCP) is a [new, standardized protocol](https://modelcontextprotocol.io/introduction) for managing context between large language models (LLMs) and external systems. In this repository, we provide an MCP Server for [CircleCI](https://circleci.com).",
+      "tags": [
+        "mcp",
+        "circleci",
+        "mcp",
+        "model context protocol",
+        "llm",
+        "ci/cd",
+        "build logs",
+        "flaky tests",
+        "config validation",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-circleci-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@circleci/mcp-server-circleci"
+          ],
+          "env": {
+            "CIRCLECI_TOKEN": "${CIRCLECI_TOKEN}",
+            "CIRCLECI_BASE_URL": "${CIRCLECI_BASE_URL}"
+          }
+        },
+        {
+          "name": "mcp-circleci-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "CIRCLECI_BASE_URL",
+            "-e",
+            "CIRCLECI_TOKEN",
+            "mcp/circleci"
+          ],
+          "env": {
+            "CIRCLECI_BASE_URL": "${CIRCLECI_BASE_URL}",
+            "CIRCLECI_TOKEN": "${CIRCLECI_TOKEN}"
+          }
+        }
+      ]
+    }
+  }
+}

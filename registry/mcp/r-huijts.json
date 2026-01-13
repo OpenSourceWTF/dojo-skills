@@ -1,0 +1,60 @@
+{
+  "skills": {
+    "ns-travel-information": {
+      "name": "NS Travel Information",
+      "source": "github:r-huijts/ns-mcp-server",
+      "description": "Access Dutch Railways (NS) real-time train travel information and disruptions through the official NS API.",
+      "tags": [
+        "mcp",
+        "NS",
+        "Train",
+        "Travel",
+        "Information",
+        "Professional Apps"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "ns-travel-information-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "ns-mcp-server"
+          ],
+          "env": {
+            "NS_API_KEY": "${NS_API_KEY}"
+          }
+        }
+      ]
+    },
+    "rijksmuseum": {
+      "name": "Rijksmuseum",
+      "source": "github:r-huijts/rijksmuseum-mcp",
+      "description": "Interface with the Rijksmuseum API to search artworks, retrieve artwork details, access image tiles, and explore user collections.",
+      "tags": [
+        "mcp",
+        "collection",
+        "Rijksmuseum",
+        "Analytics"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "rijksmuseum-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "mcp-server-rijksmuseum"
+          ],
+          "env": {
+            "RIJKSMUSEUM_API_KEY": "${RIJKSMUSEUM_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "skills": {
+    "ida-mcp": {
+      "name": "IDA MCP Server",
+      "source": "github:MxIris-Reverse-Engineering/ida-mcp-server",
+      "description": "A Model Context Protocol server for IDA interaction and automation. This server provides tools to read IDA database via Large Language Models.",
+      "tags": [
+        "mcp",
+        "IDA",
+        "reverse engineering",
+        "MCP",
+        "Model Context Protocol",
+        "automation",
+        "LLM",
+        "IDA Pro",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "ida-mcp-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp-server-ida"
+          ],
+          "env": {}
+        },
+        {
+          "name": "ida-mcp-python",
+          "command": "python",
+          "args": [
+            "-m",
+            "mcp_server_ida"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

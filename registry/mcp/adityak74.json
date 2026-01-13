@@ -1,0 +1,39 @@
+{
+  "skills": {
+    "scholarly": {
+      "name": "scholarly",
+      "source": "github:adityak74/mcp-scholarly",
+      "description": "A MCP server to search for scholarly and academic articles.",
+      "tags": [
+        "mcp",
+        "scholarly",
+        "academic",
+        "Knowledge Base"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "scholarly-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp-scholarly"
+          ],
+          "env": {}
+        },
+        {
+          "name": "scholarly-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "--rm",
+            "-i",
+            "mcp/scholarly"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

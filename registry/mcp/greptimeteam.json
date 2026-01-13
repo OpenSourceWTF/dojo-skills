@@ -1,0 +1,93 @@
+{
+  "skills": {
+    "greptimedb-mcp-server": {
+      "name": "GreptimeDB MCP Server",
+      "source": "github:GreptimeTeam/greptimedb-mcp-server",
+      "description": "A Model Context Protocol (MCP) server implementation for [GreptimeDB](https://github.com/GreptimeTeam/greptimedb).",
+      "tags": [
+        "mcp",
+        "database",
+        "sql",
+        "greptimedb",
+        "mcp",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "greptimedb-mcp-server-uvx",
+          "command": "uvx",
+          "args": [
+            "greptimedb-mcp-server"
+          ],
+          "env": {
+            "GREPTIMEDB_HOST": "${GREPTIMEDB_HOST}",
+            "GREPTIMEDB_PORT": "${GREPTIMEDB_PORT}",
+            "GREPTIMEDB_USER": "${GREPTIMEDB_USER}",
+            "GREPTIMEDB_PASSWORD": "${GREPTIMEDB_PASSWORD}",
+            "GREPTIMEDB_DATABASE": "${GREPTIMEDB_DATABASE}"
+          }
+        }
+      ]
+    },
+    "greptimedb": {
+      "name": "GreptimeDB",
+      "source": "github:GreptimeTeam/greptimedb",
+      "description": "<source media=\"(prefers-color-scheme: light)\" srcset=\"https://cdn.jsdelivr.net/gh/GreptimeTeam/greptimedb@main/docs/logo-text-padding.png\">",
+      "tags": [
+        "mcp",
+        "database",
+        "timeseries",
+        "observability",
+        "metrics",
+        "logs",
+        "events",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "greptimedb-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-p",
+            "127.0.0.1:4000-4003:4000-4003",
+            "-v",
+            "$(pwd)/greptimedb:./greptimedb_data",
+            "--name",
+            "greptime",
+            "--rm",
+            "greptime/greptimedb:latest",
+            "standalone",
+            "start",
+            "--http-addr",
+            "0.0.0.0:4000",
+            "--rpc-bind-addr",
+            "0.0.0.0:4001",
+            "--mysql-addr",
+            "0.0.0.0:4002",
+            "--postgres-addr",
+            "0.0.0.0:4003"
+          ],
+          "env": {}
+        },
+        {
+          "name": "greptimedb-source",
+          "command": "cargo",
+          "args": [
+            "run",
+            "--",
+            "standalone",
+            "start"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

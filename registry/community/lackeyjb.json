@@ -1,0 +1,16 @@
+{
+  "skills": {
+    "playwright-skill": {
+      "name": "playwright-skill",
+      "source": "github:lackeyjb/playwright-skill/skills/playwright-skill",
+      "description": "Complete browser automation with Playwright. Auto-detects dev servers, writes clean test scripts ...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    }
+  }
+}

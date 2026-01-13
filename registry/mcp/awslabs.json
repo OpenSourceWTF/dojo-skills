@@ -1,0 +1,46 @@
+{
+  "skills": {
+    "awslabs.aws-documentation-mcp-server": {
+      "name": "AWS Documentation MCP Server (awslabs)",
+      "source": "github:awslabs/aws-documentation-mcp-server",
+      "description": "MCP server to provide access to AWS documentation and reference data.",
+      "tags": [
+        "mcp",
+        "aws",
+        "documentation",
+        "search",
+        "aws-docs",
+        "Documentation",
+        "Search"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "awslabs.aws-documentation-mcp-server-uvx",
+          "command": "uvx",
+          "args": [
+            "awslabs.aws-documentation-mcp-server@latest"
+          ],
+          "env": {}
+        },
+        {
+          "name": "awslabs.aws-documentation-mcp-server-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "--rm",
+            "--interactive",
+            "--env",
+            "FASTMCP_LOG_LEVEL=ERROR",
+            "--env",
+            "AWS_DOCUMENTATION_PARTITION=aws",
+            "mcp/aws-documentation:latest"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

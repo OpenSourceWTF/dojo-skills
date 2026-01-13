@@ -1,0 +1,32 @@
+{
+  "skills": {
+    "xiyan-mcp-server": {
+      "name": "XiYan MCP Server",
+      "source": "github:XGenerationLab/xiyan_mcp_server",
+      "description": "An MCP server that supports fetching data from a database using natural language queries, powered by XiyanSQL as the text-to-SQL LLM.",
+      "tags": [
+        "mcp",
+        "database",
+        "sql",
+        "database",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "xiyan-mcp-server-python",
+          "command": "python",
+          "args": [
+            "-m",
+            "xiyan_mcp_server"
+          ],
+          "env": {
+            "YML": "${YML}"
+          }
+        }
+      ]
+    }
+  }
+}

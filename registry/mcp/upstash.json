@@ -1,32 +1,33 @@
 {
   "skills": {
-    "mcp-context7": {
-      "name": "Context7 MCP Server",
+    "context7": {
+      "name": "Context7 MCP",
       "source": "github:upstash/context7",
-      "aliases": [
-        "context7",
-        "docs",
-        "documentation"
-      ],
-      "description": "Up-to-date code documentation for LLMs and AI code editors",
+      "description": "LLMs rely on outdated or generic information about the libraries you use. You get:",
       "tags": [
         "mcp",
         "documentation",
-        "llm",
-        "context"
+        "LLM",
+        "MCP",
+        "prompt context",
+        "up-to-date docs",
+        "code examples",
+        "Cursor",
+        "Claude",
+        "VSCode",
+        "Windsurf",
+        "Knowledge Base"
       ],
-      "dependencies": [],
       "versions": {
-        "latest": "master"
+        "latest": "main"
       },
       "mcp_servers": [
         {
-          "name": "context7",
-          "package": "@upstash/context7-mcp",
+          "name": "context7-npm",
           "command": "npx",
           "args": [
             "-y",
-            "@upstash/context7-mcp"
+            "@upstash/context7-mcp@latest"
           ],
           "env": {}
         }

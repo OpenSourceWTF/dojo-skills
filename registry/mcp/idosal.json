@@ -1,0 +1,35 @@
+{
+  "skills": {
+    "git-mcp": {
+      "name": "GitMCP",
+      "source": "github:idosal/git-mcp",
+      "description": "GitMCP is a free, open-source, remote Model Context Protocol (MCP) server that transforms any GitHub project into a documentation hub, enabling AI tools to access up-to-date documentation and code to eliminate code hallucinations.",
+      "tags": [
+        "mcp",
+        "MCP",
+        "GitHub",
+        "documentation",
+        "AI assistant",
+        "Model Context Protocol",
+        "code",
+        "open-source",
+        "no-hallucinations",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "git-mcp-npm",
+          "command": "npx",
+          "args": [
+            "mcp-remote",
+            "https://gitmcp.io/{owner}/{repo}"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

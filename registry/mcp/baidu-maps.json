@@ -1,0 +1,60 @@
+{
+  "skills": {
+    "baidumap": {
+      "name": "Baidu Maps MCP Server",
+      "source": "github:baidu-maps/mcp",
+      "description": "百度地图API现已全面兼容[MCP协议](https://modelcontextprotocol.io/)，是国内首家兼容MCP协议的地图服务商。",
+      "tags": [
+        "mcp",
+        "maps",
+        "geolocation",
+        "geocoding",
+        "routing",
+        "places",
+        "weather",
+        "traffic",
+        "navigation",
+        "MCP",
+        "baidu",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "baidumap-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp-server-baidu-maps"
+          ],
+          "env": {
+            "BAIDU_MAP_API_KEY": "${BAIDU_MAP_API_KEY}"
+          }
+        },
+        {
+          "name": "baidumap-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@baidumap/mcp-server-baidu-map"
+          ],
+          "env": {
+            "BAIDU_MAP_API_KEY": "${BAIDU_MAP_API_KEY}"
+          }
+        },
+        {
+          "name": "baidumap-python",
+          "command": "python",
+          "args": [
+            "-m",
+            "mcp_server_baidu_maps"
+          ],
+          "env": {
+            "BAIDU_MAP_API_KEY": "${BAIDU_MAP_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

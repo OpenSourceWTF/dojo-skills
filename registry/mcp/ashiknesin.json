@@ -1,0 +1,34 @@
+{
+  "skills": {
+    "pushover": {
+      "name": "Pushover Notifications",
+      "source": "github:ashiknesin/pushover-mcp",
+      "description": "Send instant notifications to your devices using [Pushover.net](https://pushover.net/)",
+      "tags": [
+        "mcp",
+        "pushover",
+        "notifications",
+        "Messaging"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "pushover-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "pushover-mcp@latest",
+            "start",
+            "--token",
+            "${YOUR_TOKEN}",
+            "--user",
+            "${YOUR_USER}"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

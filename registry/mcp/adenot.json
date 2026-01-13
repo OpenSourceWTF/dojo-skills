@@ -1,0 +1,33 @@
+{
+  "skills": {
+    "google-custom-search": {
+      "name": "Google Custom Search",
+      "source": "github:adenot/mcp-google-search",
+      "description": "Provides Google Search results via the Google Custom Search API",
+      "tags": [
+        "mcp",
+        "Google",
+        "Custom Search",
+        "Webpage Reading",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "google-custom-search-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@adenot/mcp-google-search"
+          ],
+          "env": {
+            "GOOGLE_API_KEY": "${GOOGLE_API_KEY}",
+            "GOOGLE_SEARCH_ENGINE_ID": "${GOOGLE_SEARCH_ENGINE_ID}"
+          }
+        }
+      ]
+    }
+  }
+}

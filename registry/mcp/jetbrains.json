@@ -1,0 +1,45 @@
+{
+  "skills": {
+    "mcp-jetbrains": {
+      "name": "JetBrains MCP Proxy Server",
+      "source": "github:JetBrains/mcp-jetbrains",
+      "description": "The server proxies requests from client to JetBrains IDE.",
+      "tags": [
+        "mcp",
+        "jetbrains",
+        "ide",
+        "proxy",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-jetbrains-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@jetbrains/mcp-proxy"
+          ],
+          "env": {}
+        },
+        {
+          "name": "mcp-jetbrains-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "IDE_PORT",
+            "mcp/jetbrains"
+          ],
+          "env": {
+            "IDE_PORT": "${IDE_PORT}"
+          }
+        }
+      ]
+    }
+  }
+}

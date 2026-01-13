@@ -1,0 +1,16 @@
+{
+  "skills": {
+    "project-planner": {
+      "name": "project-planner",
+      "source": "github:adrianpuiu/claude-skills-marketplace/project-planner-skill",
+      "description": "Comprehensive project planning and documentation generator for software projects. Creates structu...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    }
+  }
+}

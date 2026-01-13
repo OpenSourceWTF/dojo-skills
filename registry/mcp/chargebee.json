@@ -1,0 +1,31 @@
+{
+  "skills": {
+    "agentkit": {
+      "name": "Chargebee Model Context Protocol (MCP) Server",
+      "source": "github:chargebee/agentkit",
+      "description": "MCP Server that connects AI agents to Chargebee platform.",
+      "tags": [
+        "mcp",
+        "MCP",
+        "Chargebee",
+        "AI",
+        "LLM",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "agentkit-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@chargebee/mcp@latest"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

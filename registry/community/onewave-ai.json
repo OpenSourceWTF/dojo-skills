@@ -1,0 +1,1288 @@
+{
+  "skills": {
+    "brand-consistency-checker": {
+      "name": "brand-consistency-checker",
+      "source": "github:OneWave-AI/claude-skills/brand-consistency-checker",
+      "description": "Scan documents and slides for off-brand colors, fonts, and logos. Validate against brand guidelin...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "company-announcement-writer": {
+      "name": "company-announcement-writer",
+      "source": "github:OneWave-AI/claude-skills/company-announcement-writer",
+      "description": "Executive communication style for all-hands emails. Balances transparency with appropriate messag...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "conversation-archaeologist": {
+      "name": "conversation-archaeologist",
+      "source": "github:OneWave-AI/claude-skills/conversation-archaeologist",
+      "description": "Mine ALL past Claude conversations to build a living 'User Manual About You'. Extract writing sty...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "cross-conversation-project-manager": {
+      "name": "cross-conversation-project-manager",
+      "source": "github:OneWave-AI/claude-skills/cross-conversation-project-manager",
+      "description": "Maintain project state across MULTIPLE conversations over days/weeks. Track tasks, decisions, blo...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "font-pairing-suggester": {
+      "name": "font-pairing-suggester",
+      "source": "github:OneWave-AI/claude-skills/font-pairing-suggester",
+      "description": "Recommend font combinations for different use cases. Provide Google Fonts alternatives to premium...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "job-application-optimizer": {
+      "name": "job-application-optimizer",
+      "source": "github:OneWave-AI/claude-skills/job-application-optimizer",
+      "description": "Optimize job applications by tailoring resumes to job postings, generating customized cover lette...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "landing-page-copywriter": {
+      "name": "landing-page-copywriter",
+      "source": "github:OneWave-AI/claude-skills/landing-page-copywriter",
+      "description": "Write high-converting landing page copy using proven frameworks like PAS (Problem-Agitate-Solutio...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "meeting-intelligence-system": {
+      "name": "meeting-intelligence-system",
+      "source": "github:OneWave-AI/claude-skills/meeting-intelligence",
+      "description": "Analyze meeting transcripts to extract decisions, action items, blockers, sentiment, and generate...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "personalization-at-scale": {
+      "name": "personalization-at-scale",
+      "source": "github:OneWave-AI/claude-skills/personalization-at-scale",
+      "description": "Generate unique personalized first lines for hundreds of prospects using company news, LinkedIn a...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "raise-negotiation-prep": {
+      "name": "raise-negotiation-prep",
+      "source": "github:OneWave-AI/claude-skills/raise-negotiation-prep",
+      "description": "Market salary research, accomplishment quantification, negotiation scripts, total compensation an...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "sales-methodology-implementer": {
+      "name": "sales-methodology-implementer",
+      "source": "github:OneWave-AI/claude-skills/sales-methodology-implementer",
+      "description": "Implement proven sales methodologies (MEDDIC, BANT, Sandler, Challenger, SPIN) across your team. ...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "skill-composer-studio": {
+      "name": "skill-composer-studio",
+      "source": "github:OneWave-AI/claude-skills/skill-composer-studio",
+      "description": "CHAIN multiple existing skills into custom multi-step workflows. Programmable skill combinations ...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "skill-creator": {
+      "name": "skill-creator",
+      "source": "github:OneWave-AI/claude-skills/official-anthropic-skills/skill-creator",
+      "description": "Guide for creating effective skills. This skill should be used when users want to create a new sk...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "sports-betting-analyzer": {
+      "name": "sports-betting-analyzer",
+      "source": "github:OneWave-AI/claude-skills/sports-betting-analyzer",
+      "description": "Analyze spreads, over/unders, prop bets. Historical trends, situational stats, value bet identifi...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "template-skill": {
+      "name": "template-skill",
+      "source": "github:OneWave-AI/claude-skills/official-anthropic-skills/template-skill",
+      "description": "Replace with description of the skill and when Claude should use it.",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "utm-parameter-generator": {
+      "name": "utm-parameter-generator",
+      "source": "github:OneWave-AI/claude-skills/utm-parameter-generator",
+      "description": "Create standardized UTM tracking for all campaigns. Ensure consistent naming conventions across t...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "brand-guidelines": {
+      "name": "brand-guidelines",
+      "source": "github:OneWave-AI/claude-skills/official-anthropic-skills/brand-guidelines",
+      "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "code-review-pro": {
+      "name": "code-review-pro",
+      "source": "github:OneWave-AI/claude-skills/code-review-pro",
+      "description": "Comprehensive code review covering security vulnerabilities, performance bottlenecks, best practi...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "contact-hunter": {
+      "name": "contact-hunter",
+      "source": "github:OneWave-AI/claude-skills/contact-hunter",
+      "description": "Search and extract contact information for people or companies including names, phone numbers, em...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "csv-excel-merger": {
+      "name": "csv-excel-merger",
+      "source": "github:OneWave-AI/claude-skills/csv-excel-merger",
+      "description": "Merge multiple CSV/Excel files with intelligent column matching, data deduplication, and conflict...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "customer-review-aggregator": {
+      "name": "customer-review-aggregator",
+      "source": "github:OneWave-AI/claude-skills/customer-review-aggregator",
+      "description": "Aggregate and analyze customer reviews from G2, Capterra, Trustpilot, App Store, and other platfo...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "database-schema-designer": {
+      "name": "database-schema-designer",
+      "source": "github:OneWave-AI/claude-skills/database-schema-designer",
+      "description": "Design optimized database schemas for SQL and NoSQL databases including tables, relationships, in...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "docx": {
+      "name": "docx",
+      "source": "github:OneWave-AI/claude-skills/official-anthropic-skills/document-skills/docx",
+      "description": "Comprehensive document creation, editing, and analysis with support for tracked changes, comments...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "email-subject-line-optimizer": {
+      "name": "email-subject-line-optimizer",
+      "source": "github:OneWave-AI/claude-skills/email-subject-line-optimizer",
+      "description": "A/B test subject line variations using proven copywriting frameworks. Predict open rates based on...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "email-template-generator": {
+      "name": "email-template-generator",
+      "source": "github:OneWave-AI/claude-skills/email-template-generator",
+      "description": "Generate professional email templates for various business scenarios including sales outreach, cu...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "executive-dashboard-generator": {
+      "name": "executive-dashboard-generator",
+      "source": "github:OneWave-AI/claude-skills/executive-dashboard-generator",
+      "description": "Transform raw data from CSVs, Google Sheets, or databases into executive-ready reports with visua...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "highlight-reel-scripter": {
+      "name": "highlight-reel-scripter",
+      "source": "github:OneWave-AI/claude-skills/highlight-reel-scripter",
+      "description": "Create shot lists for highlight videos. Timestamp key plays, music cue suggestions, pacing. Platf...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "inbound-lead-qualifier": {
+      "name": "inbound-lead-qualifier",
+      "source": "github:OneWave-AI/claude-skills/inbound-lead-qualifier",
+      "description": "Analyze inbound leads (form fills, demo requests) and score based on ICP fit, intent, and urgency...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "internal-comms": {
+      "name": "internal-comms",
+      "source": "github:OneWave-AI/claude-skills/official-anthropic-skills/internal-comms",
+      "description": "A set of resources to help me write all kinds of internal communications, using the formats that ...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "internal-email-composer": {
+      "name": "internal-email-composer",
+      "source": "github:OneWave-AI/claude-skills/internal-email-composer",
+      "description": "Casual but professional tone for team communication. Uses company-specific terminology with scann...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "pdf": {
+      "name": "pdf",
+      "source": "github:OneWave-AI/claude-skills/official-anthropic-skills/document-skills/pdf",
+      "description": "Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "podcast-to-content-suite": {
+      "name": "podcast-to-content-suite",
+      "source": "github:OneWave-AI/claude-skills/podcast-content-suite",
+      "description": "Transform podcast transcripts into comprehensive content marketing suites including blog posts, s...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "seo-content-optimizer": {
+      "name": "seo-content-optimizer",
+      "source": "github:OneWave-AI/claude-skills/seo-optimizer",
+      "description": "Optimize content for search engines with keyword analysis, readability scoring, meta descriptions...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "slack-message-formatter": {
+      "name": "slack-message-formatter",
+      "source": "github:OneWave-AI/claude-skills/slack-message-formatter",
+      "description": "Convert long text into Slack-optimized format with emojis, bullets, code blocks, and threading su...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "social-media-content-repurposer": {
+      "name": "social-media-content-repurposer",
+      "source": "github:OneWave-AI/claude-skills/social-repurposer",
+      "description": "Convert content between platforms (blog to Twitter thread, article to LinkedIn post, etc.). Optim...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "sports-trivia-builder": {
+      "name": "sports-trivia-builder",
+      "source": "github:OneWave-AI/claude-skills/sports-trivia-builder",
+      "description": "Generate sports trivia questions by sport/era/difficulty. Multiple formats with obscure stats, fu...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "webinar-content-repurposer": {
+      "name": "webinar-content-repurposer",
+      "source": "github:OneWave-AI/claude-skills/webinar-content-repurposer",
+      "description": "Transform webinar recordings into multiple content assets including blog post series, social medi...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "xlsx": {
+      "name": "xlsx",
+      "source": "github:OneWave-AI/claude-skills/official-anthropic-skills/document-skills/xlsx",
+      "description": "Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, ...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "api-documentation-writer": {
+      "name": "api-documentation-writer",
+      "source": "github:OneWave-AI/claude-skills/api-documentation-writer",
+      "description": "Generate comprehensive API documentation including endpoint descriptions, request/response exampl...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "champion-identifier": {
+      "name": "champion-identifier",
+      "source": "github:OneWave-AI/claude-skills/champion-identifier",
+      "description": "Analyze LinkedIn profiles in target accounts to identify potential internal champions. Evaluates ...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "itinerary-optimizer": {
+      "name": "itinerary-optimizer",
+      "source": "github:OneWave-AI/claude-skills/itinerary-optimizer",
+      "description": "Efficiently route multi-stop trips with time management. Include transportation, restaurant/activ...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "mcp-builder": {
+      "name": "mcp-builder",
+      "source": "github:OneWave-AI/claude-skills/official-anthropic-skills/mcp-builder",
+      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "tax-strategy-optimizer": {
+      "name": "tax-strategy-optimizer",
+      "source": "github:OneWave-AI/claude-skills/tax-strategy-optimizer",
+      "description": "Pre-tax vs Roth analysis, charitable giving optimization, capital gains timing, deduction maximiz...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "training-log-analyzer": {
+      "name": "training-log-analyzer",
+      "source": "github:OneWave-AI/claude-skills/training-log-analyzer",
+      "description": "Track workouts, stats, progress over time. Identify improvement areas, plateaus, rest/recovery ne...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "workout-program-designer": {
+      "name": "workout-program-designer",
+      "source": "github:OneWave-AI/claude-skills/workout-program-designer",
+      "description": "Custom training plans by goal (strength, cardio, flexibility). Progressive overload programming, ...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "algorithmic-art": {
+      "name": "algorithmic-art",
+      "source": "github:OneWave-AI/claude-skills/official-anthropic-skills/algorithmic-art",
+      "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "cold-email-sequence-generator": {
+      "name": "cold-email-sequence-generator",
+      "source": "github:OneWave-AI/claude-skills/cold-email-sequence-generator",
+      "description": "Generate personalized cold email sequences (7-14 emails) with A/B test subject lines, follow-up t...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "deal-momentum-analyzer": {
+      "name": "deal-momentum-analyzer",
+      "source": "github:OneWave-AI/claude-skills/deal-momentum-analyzer",
+      "description": "Score deal velocity based on email response times, meeting frequency, and stakeholder engagement....",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "objection-pattern-detector": {
+      "name": "objection-pattern-detector",
+      "source": "github:OneWave-AI/claude-skills/objection-pattern-detector",
+      "description": "Mine lost deal notes to identify recurring objection patterns. Create objection response playbook...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "slack-gif-creator": {
+      "name": "slack-gif-creator",
+      "source": "github:OneWave-AI/claude-skills/official-anthropic-skills/slack-gif-creator",
+      "description": "Toolkit for creating animated GIFs optimized for Slack, with validators for size constraints and ...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "regex-visual-debugger": {
+      "name": "regex-visual-debugger",
+      "source": "github:OneWave-AI/claude-skills/regex-debugger",
+      "description": "Debug regex patterns with visual breakdowns, plain English explanations, test case generation, an...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "post-game-press-conference-simulator": {
+      "name": "post-game-press-conference-simulator",
+      "source": "github:OneWave-AI/claude-skills/post-game-press-conference-simulator",
+      "description": "Generate realistic coach/player interview responses for wins, losses, controversies, injuries. Au...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "sales-comp-plan-designer": {
+      "name": "sales-comp-plan-designer",
+      "source": "github:OneWave-AI/claude-skills/sales-comp-plan-designer",
+      "description": "Base/variable split recommendations, accelerators, decelerators, quota retirement methods, SPIFs,...",
+      "tags": [
+        "business-and-productivity",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "financial-document-parser": {
+      "name": "financial-document-parser",
+      "source": "github:OneWave-AI/claude-skills/financial-parser",
+      "description": "Extract and analyze data from invoices, receipts, bank statements, and financial documents. Categ...",
+      "tags": [
+        "data-and-analytics",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "linkedin-sales-navigator-alt": {
+      "name": "linkedin-sales-navigator-alt",
+      "source": "github:OneWave-AI/claude-skills/linkedin-sales-navigator-alt",
+      "description": "Build targeted prospect lists by analyzing LinkedIn profiles, extracting job titles, companies, l...",
+      "tags": [
+        "data-and-analytics",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "lookalike-customer-finder": {
+      "name": "lookalike-customer-finder",
+      "source": "github:OneWave-AI/claude-skills/lookalike-customer-finder",
+      "description": "Input your best customers and find 100+ companies that match the profile. Uses firmographic data,...",
+      "tags": [
+        "data-and-analytics",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "mvp-case-builder": {
+      "name": "mvp-case-builder",
+      "source": "github:OneWave-AI/claude-skills/mvp-case-builder",
+      "description": "Construct statistical arguments for MVP/awards. Narrative framing, comparison to past winners, ad...",
+      "tags": [
+        "data-and-analytics",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "pipeline-health-analyzer": {
+      "name": "pipeline-health-analyzer",
+      "source": "github:OneWave-AI/claude-skills/pipeline-health-analyzer",
+      "description": "Analyze pipeline health, identify stalled deals, predict close probability, and suggest actions t...",
+      "tags": [
+        "data-and-analytics",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "player-comparison-tool": {
+      "name": "player-comparison-tool",
+      "source": "github:OneWave-AI/claude-skills/player-comparison-tool",
+      "description": "Side-by-side stat comparisons with context. Adjust for era, pace of play, league differences. Adv...",
+      "tags": [
+        "data-and-analytics",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "sales-forecast-builder": {
+      "name": "sales-forecast-builder",
+      "source": "github:OneWave-AI/claude-skills/sales-forecast-builder",
+      "description": "Weighted pipeline forecast by probability. Historical accuracy tracking, commit vs best-case scen...",
+      "tags": [
+        "data-and-analytics",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "webinar-to-content-multiplier": {
+      "name": "webinar-to-content-multiplier",
+      "source": "github:OneWave-AI/claude-skills/webinar-to-content-multiplier",
+      "description": "Convert webinar recordings into blog posts, social snippets, email series. Extract key quotes, st...",
+      "tags": [
+        "data-and-analytics",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "prospect-research-compiler": {
+      "name": "prospect-research-compiler",
+      "source": "github:OneWave-AI/claude-skills/prospect-research-compiler",
+      "description": "Aggregate prospect intelligence from multiple sources including news, social media, company websi...",
+      "tags": [
+        "data-and-analytics",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "canvas-design": {
+      "name": "canvas-design",
+      "source": "github:OneWave-AI/claude-skills/official-anthropic-skills/canvas-design",
+      "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use th...",
+      "tags": [
+        "documentation",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "skill-navigator": {
+      "name": "skill-navigator",
+      "source": "github:OneWave-AI/claude-skills/skill-navigator",
+      "description": "The 100th skill! Your intelligent guide to all 99 other skills. Recommends the perfect skill for ...",
+      "tags": [
+        "documentation",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "social-selling-content-generator": {
+      "name": "social-selling-content-generator",
+      "source": "github:OneWave-AI/claude-skills/social-selling-content-generator",
+      "description": "Generate 30+ LinkedIn posts that attract your target prospects. Creates industry insights, though...",
+      "tags": [
+        "documentation",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "technical-writer": {
+      "name": "technical-writer",
+      "source": "github:OneWave-AI/claude-skills/technical-writer",
+      "description": "Write comprehensive technical documentation including user guides, how-to articles, system archit...",
+      "tags": [
+        "documentation",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "artifacts-builder": {
+      "name": "artifacts-builder",
+      "source": "github:OneWave-AI/claude-skills/official-anthropic-skills/artifacts-builder",
+      "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern fron...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "color-palette-extractor": {
+      "name": "color-palette-extractor",
+      "source": "github:OneWave-AI/claude-skills/color-palette-extractor",
+      "description": "Extract color palettes from images, websites, or designs. Identifies dominant colors, generates c...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "pptx": {
+      "name": "pptx",
+      "source": "github:OneWave-AI/claude-skills/official-anthropic-skills/document-skills/pptx",
+      "description": "Presentation creation, editing, and analysis. When Claude needs to work with presentations (.pptx...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "presentation-design-enhancer": {
+      "name": "presentation-design-enhancer",
+      "source": "github:OneWave-AI/claude-skills/presentation-design-enhancer",
+      "description": "Transform text-heavy slides into visual storytelling. Suggest layout improvements, icon usage, an...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "screenshot-to-code": {
+      "name": "screenshot-to-code",
+      "source": "github:OneWave-AI/claude-skills/screenshot-to-code",
+      "description": "Convert UI screenshots into working HTML/CSS/React/Vue code. Detects design patterns, components,...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "sports-meme-creator": {
+      "name": "sports-meme-creator",
+      "source": "github:OneWave-AI/claude-skills/sports-meme-creator",
+      "description": "Generate sport-specific memes from games/moments. Current event reactive content, popular templat...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "theme-factory": {
+      "name": "theme-factory",
+      "source": "github:OneWave-AI/claude-skills/official-anthropic-skills/theme-factory",
+      "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "webapp-testing": {
+      "name": "webapp-testing",
+      "source": "github:OneWave-AI/claude-skills/official-anthropic-skills/webapp-testing",
+      "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verify...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "fantasy-lineup-optimizer": {
+      "name": "fantasy-lineup-optimizer",
+      "source": "github:OneWave-AI/claude-skills/fantasy-lineup-optimizer",
+      "description": "Analyze matchups, injuries, weather, Vegas lines. Recommend sit/start decisions with confidence l...",
+      "tags": [
+        "machine-learning",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "quota-setting-calculator": {
+      "name": "quota-setting-calculator",
+      "source": "github:OneWave-AI/claude-skills/quota-setting-calculator",
+      "description": "Top-down vs bottom-up quota models. Historical attainment, market growth assumptions, ramp period...",
+      "tags": [
+        "machine-learning",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "territory-planning-optimizer": {
+      "name": "territory-planning-optimizer",
+      "source": "github:OneWave-AI/claude-skills/territory-planning-optimizer",
+      "description": "Account assignment by revenue potential, geography, relationship. Workload balancing, TAM/SAM cal...",
+      "tags": [
+        "machine-learning",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "athlete-social-media-manager": {
+      "name": "athlete-social-media-manager",
+      "source": "github:OneWave-AI/claude-skills/athlete-social-media-manager",
+      "description": "Create brand-safe content for athletes. Personal branding strategy, engagement optimization, cris...",
+      "tags": [
+        "machine-learning",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "knowledge-base-builder": {
+      "name": "knowledge-base-builder",
+      "source": "github:OneWave-AI/claude-skills/knowledge-base-builder",
+      "description": "FAQ identification from support tickets, step-by-step tutorial creation, screenshot/video script ...",
+      "tags": [
+        "machine-learning",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "contract-analyzer": {
+      "name": "contract-analyzer",
+      "source": "github:OneWave-AI/claude-skills/contract-analyzer",
+      "description": "Review contracts for concerning clauses, extract key terms, compare to standard terms, and flag u...",
+      "tags": [
+        "testing-and-quality",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "competitor-content-analyzer": {
+      "name": "competitor-content-analyzer",
+      "source": "github:OneWave-AI/claude-skills/competitor-content-analyzer",
+      "description": "Track competitor blog posts, whitepapers, and content strategy. Identify content gaps in your str...",
+      "tags": [
+        "tools-and-utilities",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "game-strategy-simulator": {
+      "name": "game-strategy-simulator",
+      "source": "github:OneWave-AI/claude-skills/game-strategy-simulator",
+      "description": "What-if scenario analyzer for sports. Play-calling recommendations, clock management, substitutio...",
+      "tags": [
+        "tools-and-utilities",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "portfolio-analyzer": {
+      "name": "portfolio-analyzer",
+      "source": "github:OneWave-AI/claude-skills/portfolio-analyzer",
+      "description": "Review investment portfolios for risk, diversification, fees. Asset allocation recommendations, t...",
+      "tags": [
+        "tools-and-utilities",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "reddit-thread-analyzer": {
+      "name": "reddit-thread-analyzer",
+      "source": "github:OneWave-AI/claude-skills/reddit-analyzer",
+      "description": "Analyze Reddit threads for sentiment, consensus opinions, top arguments, and discussion patterns....",
+      "tags": [
+        "tools-and-utilities",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "sales-coaching-plan-generator": {
+      "name": "sales-coaching-plan-generator",
+      "source": "github:OneWave-AI/claude-skills/sales-coaching-plan-generator",
+      "description": "Individualized development plans by weakness. Skill assessments, call reviews, ride-along checkli...",
+      "tags": [
+        "tools-and-utilities",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "scouting-report-builder": {
+      "name": "scouting-report-builder",
+      "source": "github:OneWave-AI/claude-skills/scouting-report-builder",
+      "description": "Generate player and team scouting reports. Strengths, weaknesses, tendencies, film breakdown, mat...",
+      "tags": [
+        "tools-and-utilities",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "seo-keyword-cluster-builder": {
+      "name": "seo-keyword-cluster-builder",
+      "source": "github:OneWave-AI/claude-skills/seo-keyword-cluster-builder",
+      "description": "Group related keywords into topic clusters. Create content hub architecture recommendations and i...",
+      "tags": [
+        "tools-and-utilities",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "sms-text-optimizer": {
+      "name": "sms-text-optimizer",
+      "source": "github:OneWave-AI/claude-skills/sms-text-optimizer",
+      "description": "Condense messages to 160 characters without losing meaning. Remove unnecessary words while keepin...",
+      "tags": [
+        "tools-and-utilities",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "sports-podcast-outline-generator": {
+      "name": "sports-podcast-outline-generator",
+      "source": "github:OneWave-AI/claude-skills/sports-podcast-outline-generator",
+      "description": "Create structured podcast episodes. Segment timing, debate points, hot takes, listener questions,...",
+      "tags": [
+        "tools-and-utilities",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "trash-talk-generator": {
+      "name": "trash-talk-generator",
+      "source": "github:OneWave-AI/claude-skills/trash-talk-generator",
+      "description": "Create clever, non-offensive trash talk. Rivalry-specific references, historical callbacks, memes...",
+      "tags": [
+        "tools-and-utilities",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "deal-review-framework": {
+      "name": "deal-review-framework",
+      "source": "github:OneWave-AI/claude-skills/deal-review-framework",
+      "description": "Structured deal assessment using MEDDIC, BANT. Risk scoring, required evidence by stage, red flag...",
+      "tags": [
+        "uncategorized",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "expert-panel": {
+      "name": "expert-panel",
+      "source": "github:OneWave-AI/claude-skills/expert-panel",
+      "description": "Assemble 2-3 complementary experts to collaboratively analyze anything. Experts work together to ...",
+      "tags": [
+        "uncategorized",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "financial-goal-planner": {
+      "name": "financial-goal-planner",
+      "source": "github:OneWave-AI/claude-skills/financial-goal-planner",
+      "description": "Create timelines for house down payment, retirement, college fund. Monthly savings targets, inves...",
+      "tags": [
+        "uncategorized",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "injury-report-tracker": {
+      "name": "injury-report-tracker",
+      "source": "github:OneWave-AI/claude-skills/injury-report-tracker",
+      "description": "Monitor injury news across leagues. Fantasy impact analysis, backup player analysis, return timel...",
+      "tags": [
+        "uncategorized",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "podcast-studio": {
+      "name": "podcast-studio",
+      "source": "github:OneWave-AI/claude-skills/podcast-studio",
+      "description": "Generate podcast scripts from text content. Use Tone.js and Howler.js for audio mixing. Create in...",
+      "tags": [
+        "uncategorized",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "quiz-maker": {
+      "name": "quiz-maker",
+      "source": "github:OneWave-AI/claude-skills/quiz-maker",
+      "description": "Create multiple choice, true/false, fill-in-blank, matching quizzes. Auto-generate plausible dist...",
+      "tags": [
+        "uncategorized",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "stock-photo-finder": {
+      "name": "stock-photo-finder",
+      "source": "github:OneWave-AI/claude-skills/stock-photo-finder",
+      "description": "Search multiple free stock photo sites simultaneously. Filter by license type, orientation, and c...",
+      "tags": [
+        "uncategorized",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "team-chemistry-evaluator": {
+      "name": "team-chemistry-evaluator",
+      "source": "github:OneWave-AI/claude-skills/team-chemistry-evaluator",
+      "description": "Analyze roster fit and personality dynamics. Leadership assessment, role clarity, locker room cul...",
+      "tags": [
+        "uncategorized",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "bracket-predictor": {
+      "name": "bracket-predictor",
+      "source": "github:OneWave-AI/claude-skills/bracket-predictor",
+      "description": "March Madness, playoff brackets, tournament picks. Upset potential, chalk vs contrarian strategie...",
+      "tags": [
+        "version-control-and-collaboration",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "budget-optimizer": {
+      "name": "budget-optimizer",
+      "source": "github:OneWave-AI/claude-skills/budget-optimizer",
+      "description": "Analyze spending patterns and find savings. 50/30/20 rule, subscription audit, debt payoff strate...",
+      "tags": [
+        "version-control-and-collaboration",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "competitor-price-tracker": {
+      "name": "competitor-price-tracker",
+      "source": "github:OneWave-AI/claude-skills/competitor-price-tracker",
+      "description": "Monitor competitor pricing pages and send alerts when prices change. Track discount patterns, pro...",
+      "tags": [
+        "version-control-and-collaboration",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "intent-signal-aggregator": {
+      "name": "intent-signal-aggregator",
+      "source": "github:OneWave-AI/claude-skills/intent-signal-aggregator",
+      "description": "Monitor buyer intent signals across the web including job postings, tech changes, funding rounds,...",
+      "tags": [
+        "version-control-and-collaboration",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "linkedin-post-optimizer": {
+      "name": "linkedin-post-optimizer",
+      "source": "github:OneWave-AI/claude-skills/linkedin-post-optimizer",
+      "description": "Professional narrative style with line breaks, hashtag strategy, and hooks in first 2 lines to av...",
+      "tags": [
+        "version-control-and-collaboration",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "practice-plan-creator": {
+      "name": "practice-plan-creator",
+      "source": "github:OneWave-AI/claude-skills/practice-plan-creator",
+      "description": "Design sport-specific practice sessions. Drills by skill level and time, warm-up, skill work, scr...",
+      "tags": [
+        "version-control-and-collaboration",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "ramping-rep-tracker": {
+      "name": "ramping-rep-tracker",
+      "source": "github:OneWave-AI/claude-skills/ramping-rep-tracker",
+      "description": "30/60/90/120 day ramp milestones. Activity expectations by week, certification progress, early wa...",
+      "tags": [
+        "version-control-and-collaboration",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "sales-call-prep-assistant": {
+      "name": "sales-call-prep-assistant",
+      "source": "github:OneWave-AI/claude-skills/sales-call-prep-assistant",
+      "description": "Generate pre-call research briefs with company news, stakeholder backgrounds, and custom discover...",
+      "tags": [
+        "version-control-and-collaboration",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "weak-signal-synthesizer": {
+      "name": "weak-signal-synthesizer",
+      "source": "github:OneWave-AI/claude-skills/weak-signal-synthesizer",
+      "description": "Identify EMERGING trends by connecting dots across unrelated sources. Monitor niche communities, ...",
+      "tags": [
+        "version-control-and-collaboration",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    }
+  }
+}

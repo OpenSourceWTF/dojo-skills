@@ -1,0 +1,49 @@
+{
+  "skills": {
+    "elevenlabs-mcp": {
+      "name": "ElevenLabs Official MCP Server",
+      "source": "github:elevenlabs/elevenlabs-mcp",
+      "description": "Text-to-speech and speech-to-text via ElevenLabs API.",
+      "tags": [
+        "mcp",
+        "ElevenLabs",
+        "text-to-speech",
+        "TTS",
+        "speech-to-text",
+        "STT",
+        "audio",
+        "Media Creation"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "elevenlabs-mcp-uvx",
+          "command": "uvx",
+          "args": [
+            "elevenlabs-mcp"
+          ],
+          "env": {
+            "ELEVENLABS_API_KEY": "${ELEVENLABS_API_KEY}"
+          }
+        },
+        {
+          "name": "elevenlabs-mcp-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "ELEVENLABS_API_KEY",
+            "mcp/elevenlabs"
+          ],
+          "env": {
+            "ELEVENLABS_API_KEY": "${ELEVENLABS_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

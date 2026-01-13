@@ -1,0 +1,29 @@
+{
+  "skills": {
+    "optimade-mcp-server": {
+      "name": "OPTIMADE MCP Server",
+      "source": "github:dianfengxiaobo/optimade-mcp-server",
+      "description": "A Model Context Protocol (MCP) tool for querying Optimade-compatible material databases, fully configurable custom filter presets and provider endpoints.",
+      "tags": [
+        "mcp",
+        "optimade",
+        "materials-science",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "optimade-mcp-server-uvx",
+          "command": "uvx",
+          "args": [
+            "run",
+            "optimade-mcp-server"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

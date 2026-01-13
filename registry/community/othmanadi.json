@@ -1,0 +1,16 @@
+{
+  "skills": {
+    "planning-with-files": {
+      "name": "planning-with-files",
+      "source": "github:OthmanAdi/planning-with-files/skills/planning-with-files",
+      "description": "Implements Manus-style file-based planning for complex tasks. Creates task_plan.md, findings.md, ...",
+      "tags": [
+        "version-control-and-collaboration",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    }
+  }
+}

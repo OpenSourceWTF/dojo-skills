@@ -1,0 +1,29 @@
+{
+  "skills": {
+    "hyperliquid": {
+      "name": "Hyperliquid",
+      "source": "github:mektigboy/server-hyperliquid",
+      "description": "An MCP server implementation that integrates the Hyperliquid SDK for exchange data.",
+      "tags": [
+        "mcp",
+        "Hyperliquid",
+        "Exchange",
+        "Finance"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "hyperliquid-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@mektigboy/server-hyperliquid"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

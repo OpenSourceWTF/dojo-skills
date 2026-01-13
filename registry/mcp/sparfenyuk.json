@@ -1,0 +1,29 @@
+{
+  "skills": {
+    "mcp-proxy": {
+      "name": "MCP Proxy",
+      "source": "github:sparfenyuk/mcp-proxy",
+      "description": "Connect to MCP servers that run on SSE transport, or expose stdio servers as an SSE server.",
+      "tags": [
+        "mcp",
+        "proxy",
+        "sse",
+        "stdio",
+        "MCP Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-proxy-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp-proxy"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

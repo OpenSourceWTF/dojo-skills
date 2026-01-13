@@ -1,0 +1,38 @@
+{
+  "skills": {
+    "hubspot": {
+      "name": "HubSpot CRM Integration",
+      "source": "github:buryhuang/mcp-hubspot",
+      "description": "HubSpot CRM integration for managing contacts and companies. Create and retrieve CRM data directly through Claude chat.",
+      "tags": [
+        "mcp",
+        "HubSpot",
+        "API",
+        "AI",
+        "CRM",
+        "Integration",
+        "Productivity"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "hubspot-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "HUBSPOT_ACCESS_TOKEN=${HUBSPOT_ACCESS_TOKEN}",
+            "buryhuang/mcp-hubspot:latest"
+          ],
+          "env": {
+            "HUBSPOT_ACCESS_TOKEN": "${HUBSPOT_ACCESS_TOKEN}"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "skills": {
+    "agentrpc": {
+      "name": "AgentRPC",
+      "source": "github:agentrpc/agentrpc",
+      "description": "> Universal RPC layer for AI agents across network boundaries and languages",
+      "tags": [
+        "mcp",
+        "RPC",
+        "AI agents",
+        "MCP",
+        "OpenAI",
+        "multi-language",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "agentrpc-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "agentrpc",
+            "mcp"
+          ],
+          "env": {
+            "AGENTRPC_API_SECRET": "${AGENTRPC_API_SECRET}"
+          }
+        }
+      ]
+    }
+  }
+}

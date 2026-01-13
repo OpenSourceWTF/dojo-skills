@@ -1,0 +1,36 @@
+{
+  "skills": {
+    "mcp-aiven": {
+      "name": "Aiven MCP Server",
+      "source": "github:Aiven-Open/mcp-aiven",
+      "description": "A [Model Context Protocol](https://modelcontextprotocol.io/) (MCP) server for Aiven.",
+      "tags": [
+        "mcp",
+        "PostgreSQL",
+        "Kafka",
+        "ClickHouse",
+        "Valkey",
+        "OpenSearch",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-aiven-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/Aiven-Open/mcp-aiven.git",
+            "mcp-aiven"
+          ],
+          "env": {
+            "AIVEN_BASE_URL": "${AIVEN_BASE_URL}",
+            "AIVEN_TOKEN": "${AIVEN_TOKEN}"
+          }
+        }
+      ]
+    }
+  }
+}

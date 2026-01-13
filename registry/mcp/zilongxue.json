@@ -1,0 +1,30 @@
+{
+  "skills": {
+    "claudepost": {
+      "name": "Claude Post Email Management",
+      "source": "github:ZilongXue/claude-post",
+      "description": "ClaudePost enables seamless email management for Gmail, offering secure features like email search, reading, and sending.",
+      "tags": [
+        "mcp",
+        "Email Management",
+        "Natural Language Processing",
+        "Messaging"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "claudepost-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/ZilongXue/claude-post",
+            "email-client"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "skills": {
+    "ntfy-mcp": {
+      "name": "Your Friendly Task Completion Notifier",
+      "source": "github:teddyzxcv/ntfy-mcp",
+      "description": "The MCP server that keeps you informed by sending the notification on phone using ntfy",
+      "tags": [
+        "mcp",
+        "ntfy",
+        "notifications",
+        "Messaging"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "ntfy-mcp-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "https://github.com/teddyzxcv/ntfy-mcp"
+          ],
+          "env": {
+            "NTFY_TOPIC": "${NTFY_TOPIC}"
+          }
+        }
+      ]
+    }
+  }
+}

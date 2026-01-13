@@ -1,0 +1,35 @@
+{
+  "skills": {
+    "naver": {
+      "name": "Naver",
+      "source": "github:pfldy2850/py-mcp-naver",
+      "description": "This MCP server provides tools to interact with various Naver services, such as searching blogs, news, books, and more.",
+      "tags": [
+        "mcp",
+        "Naver",
+        "API",
+        "OpenAPI",
+        "Search",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "naver-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/pfldy2850/py-mcp-naver.git",
+            "src/server.py"
+          ],
+          "env": {
+            "NAVER_CLIENT_ID": "${NAVER_CLIENT_ID}",
+            "NAVER_CLIENT_SECRET": "${NAVER_CLIENT_SECRET}"
+          }
+        }
+      ]
+    }
+  }
+}

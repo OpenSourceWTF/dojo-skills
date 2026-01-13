@@ -1,0 +1,35 @@
+{
+  "skills": {
+    "mcp-audiense-insights": {
+      "name": "Audiense Insights",
+      "source": "github:AudienseCo/mcp-audiense-insights",
+      "description": "This server, based on the [Model Context Protocol (MCP)](https://github.com/modelcontextprotocol), allows **Claude** or any other MCP-compatible client to interact with your [Audiense Insights](https://www.audiense.com/) account. It extracts **marketing insights and audience analysis** from Audiense reports, covering **demographic, cultural, influencer, and content engagement analysis**.",
+      "tags": [
+        "mcp",
+        "marketing",
+        "audience analysis",
+        "insights",
+        "demographics",
+        "influencers",
+        "Analytics"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-audiense-insights-custom",
+          "command": "node",
+          "args": [
+            "/ABSOLUTE/PATH/TO/YOUR/build/index.js"
+          ],
+          "env": {
+            "AUDIENSE_CLIENT_ID": "${AUDIENSE_CLIENT_ID}",
+            "AUDIENSE_CLIENT_SECRET": "${AUDIENSE_CLIENT_SECRET}",
+            "TWITTER_BEARER_TOKEN": "${TWITTER_BEARER_TOKEN}"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "skills": {
+    "wikipedia-mcp": {
+      "name": "Wikipedia MCP Server",
+      "source": "github:rudra-ravi/wikipedia-mcp",
+      "description": "MCP server for querying Wikipedia content via the wikipedia-mcp tool",
+      "tags": [
+        "mcp",
+        "wikipedia",
+        "search",
+        "knowledge",
+        "mcp",
+        "Knowledge",
+        "Search"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "wikipedia-mcp-wikipedia",
+          "command": "wikipedia-mcp",
+          "args": [],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

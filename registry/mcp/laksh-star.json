@@ -1,0 +1,32 @@
+{
+  "skills": {
+    "tmdb": {
+      "name": "TMDB",
+      "source": "github:Laksh-star/mcp-server-tmdb",
+      "description": "This MCP server integrates with The Movie Database (TMDB) API to provide movie information, search capabilities, and recommendations.",
+      "tags": [
+        "mcp",
+        "tmdb",
+        "movies",
+        "recommendations",
+        "Professional Apps"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "tmdb-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "https://github.com/Laksh-star/mcp-server-tmdb"
+          ],
+          "env": {
+            "TMDB_API_KEY": "${TMDB_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

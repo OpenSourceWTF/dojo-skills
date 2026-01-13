@@ -1,0 +1,33 @@
+{
+  "skills": {
+    "coin-api-mcp": {
+      "name": "Coin API",
+      "source": "github:longmans/coin_api_mcp",
+      "description": "Provides access to [coinmarketcap](https://coinmarketcap.com/) cryptocurrency data.",
+      "tags": [
+        "mcp",
+        "CoinMarketCap",
+        "Cryptocurrency",
+        "Data",
+        "Finance"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "coin-api-mcp-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/longmans/coin_api_mcp",
+            "coin-api"
+          ],
+          "env": {
+            "COINMARKETCAP_API_KEY": "${COINMARKETCAP_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

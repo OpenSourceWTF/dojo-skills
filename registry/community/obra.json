@@ -1,0 +1,172 @@
+{
+  "skills": {
+    "dispatching-parallel-agents": {
+      "name": "dispatching-parallel-agents",
+      "source": "github:obra/superpowers/skills/dispatching-parallel-agents",
+      "description": "Use when facing 2+ independent tasks that can be worked on without shared state or sequential dep...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "subagent-driven-development": {
+      "name": "subagent-driven-development",
+      "source": "github:obra/superpowers/skills/subagent-driven-development",
+      "description": "Use when executing implementation plans with independent tasks in the current session",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "using-git-worktrees": {
+      "name": "using-git-worktrees",
+      "source": "github:obra/superpowers/skills/using-git-worktrees",
+      "description": "Use when starting feature work that needs isolation from current workspace or before executing im...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "receiving-code-review": {
+      "name": "receiving-code-review",
+      "source": "github:obra/superpowers/skills/receiving-code-review",
+      "description": "Use when receiving code review feedback, before implementing suggestions, especially if feedback ...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "requesting-code-review": {
+      "name": "requesting-code-review",
+      "source": "github:obra/superpowers/skills/requesting-code-review",
+      "description": "Use when completing tasks, implementing major features, or before merging to verify work meets re...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "using-superpowers": {
+      "name": "using-superpowers",
+      "source": "github:obra/superpowers/skills/using-superpowers",
+      "description": "Use when starting any conversation - establishes how to find and use skills, requiring Skill tool...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "writing-skills": {
+      "name": "writing-skills",
+      "source": "github:obra/superpowers/skills/writing-skills",
+      "description": "Use when creating new skills, editing existing skills, or verifying skills work before deployment",
+      "tags": [
+        "devops-and-infrastructure",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "brainstorming": {
+      "name": "brainstorming",
+      "source": "github:obra/superpowers/skills/brainstorming",
+      "description": "You MUST use this before any creative work - creating features, building components, adding funct...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "finishing-a-development-branch": {
+      "name": "finishing-a-development-branch",
+      "source": "github:obra/superpowers/skills/finishing-a-development-branch",
+      "description": "Use when implementation is complete, all tests pass, and you need to decide how to integrate the ...",
+      "tags": [
+        "testing-and-quality",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "systematic-debugging": {
+      "name": "systematic-debugging",
+      "source": "github:obra/superpowers/skills/systematic-debugging",
+      "description": "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes",
+      "tags": [
+        "testing-and-quality",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "test-driven-development": {
+      "name": "test-driven-development",
+      "source": "github:obra/superpowers/skills/test-driven-development",
+      "description": "Use when implementing any feature or bugfix, before writing implementation code",
+      "tags": [
+        "testing-and-quality",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "verification-before-completion": {
+      "name": "verification-before-completion",
+      "source": "github:obra/superpowers/skills/verification-before-completion",
+      "description": "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - ...",
+      "tags": [
+        "testing-and-quality",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "executing-plans": {
+      "name": "executing-plans",
+      "source": "github:obra/superpowers/skills/executing-plans",
+      "description": "Use when you have a written implementation plan to execute in a separate session with review chec...",
+      "tags": [
+        "uncategorized",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "writing-plans": {
+      "name": "writing-plans",
+      "source": "github:obra/superpowers/skills/writing-plans",
+      "description": "Use when you have a spec or requirements for a multi-step task, before touching code",
+      "tags": [
+        "uncategorized",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    }
+  }
+}

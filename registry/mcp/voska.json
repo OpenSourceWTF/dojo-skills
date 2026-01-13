@@ -1,0 +1,40 @@
+{
+  "skills": {
+    "home-assistant": {
+      "name": "Hass",
+      "source": "github:voska/hass-mcp",
+      "description": "Docker-ready MCP server for Home Assistant with entity management, domain summaries, automation support, and guided conversations. Includes pre-built container images for easy installation.",
+      "tags": [
+        "mcp",
+        "Home Assistant",
+        "Claude",
+        "LLM",
+        "Automation",
+        "System Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "home-assistant-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "HA_URL",
+            "-e",
+            "HA_TOKEN",
+            "voska/hass-mcp"
+          ],
+          "env": {
+            "HA_URL": "${HA_URL}",
+            "HA_TOKEN": "${HA_TOKEN}"
+          }
+        }
+      ]
+    }
+  }
+}

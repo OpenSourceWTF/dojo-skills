@@ -1,0 +1,33 @@
+{
+  "skills": {
+    "code-executor": {
+      "name": "Code Executor",
+      "source": "github:bazinga012/mcp_code_executor",
+      "description": "An MCP server that allows LLMs to execute Python code within a specified Conda environment.",
+      "tags": [
+        "mcp",
+        "Python",
+        "Conda",
+        "Execution",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "code-executor-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "https://github.com/bazinga012/mcp_code_executor"
+          ],
+          "env": {
+            "CODE_STORAGE_DIR": "${CODE_STORAGE_DIR}",
+            "CONDA_ENV_NAME": "${CONDA_ENV_NAME}"
+          }
+        }
+      ]
+    }
+  }
+}

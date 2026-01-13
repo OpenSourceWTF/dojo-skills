@@ -1,0 +1,42 @@
+{
+  "skills": {
+    "rquest": {
+      "name": "Rquest",
+      "source": "github:xxxbrian/mcp-rquest",
+      "description": "An MCP server providing realistic browser-like HTTP request capabilities with accurate TLS/JA3/JA4 fingerprints for bypassing anti-bot measures.",
+      "tags": [
+        "mcp",
+        "http",
+        "request",
+        "llm",
+        "browser",
+        "emulation",
+        "pdf",
+        "markdown",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "rquest-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp-rquest"
+          ],
+          "env": {}
+        },
+        {
+          "name": "rquest-python",
+          "command": "python",
+          "args": [
+            "-m",
+            "mcp-rquest"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

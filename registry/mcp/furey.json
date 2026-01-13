@@ -1,0 +1,50 @@
+{
+  "skills": {
+    "mongodb-lens": {
+      "name": "MongoDB Lens",
+      "source": "github:furey/mongodb-lens",
+      "description": "Full Featured MCP Server for MongoDB Databases.",
+      "tags": [
+        "mcp",
+        "mongodb",
+        "server",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mongodb-lens-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "mongodb-lens@latest",
+            "${MONGODB_URI}"
+          ],
+          "env": {
+            "CONFIG_LOG_LEVEL": "${CONFIG_LOG_LEVEL}"
+          }
+        },
+        {
+          "name": "mongodb-lens-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "--rm",
+            "-i",
+            "--network=host",
+            "--pull=always",
+            "-e",
+            "CONFIG_LOG_LEVEL='verbose'",
+            "furey/mongodb-lens",
+            "${MONGODB_URI}"
+          ],
+          "env": {
+            "CONFIG_LOG_LEVEL": "${CONFIG_LOG_LEVEL}"
+          }
+        }
+      ]
+    }
+  }
+}

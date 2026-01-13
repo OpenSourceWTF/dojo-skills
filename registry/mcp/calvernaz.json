@@ -1,0 +1,32 @@
+{
+  "skills": {
+    "alphavantage": {
+      "name": "Alphavantage",
+      "source": "github:calvernaz/alphavantage",
+      "description": "MCP server for stock market data API [AlphaVantage](https://www.alphavantage.co/)",
+      "tags": [
+        "mcp",
+        "alphavantage",
+        "stock market",
+        "Finance"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "alphavantage-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/calvernaz/alphavantage.git",
+            "alphavantage"
+          ],
+          "env": {
+            "ALPHAVANTAGE_API_KEY": "${ALPHAVANTAGE_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

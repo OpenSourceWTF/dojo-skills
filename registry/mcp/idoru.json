@@ -1,0 +1,34 @@
+{
+  "skills": {
+    "influxdb": {
+      "name": "InfluxDB",
+      "source": "github:idoru/influxdb-mcp-server",
+      "description": "Run queries against InfluxDB OSS API v2.",
+      "tags": [
+        "mcp",
+        "InfluxDB",
+        "API",
+        "server",
+        "time-series",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "influxdb-npm",
+          "command": "npx",
+          "args": [
+            "influxdb-mcp-server"
+          ],
+          "env": {
+            "INFLUXDB_TOKEN": "${INFLUXDB_TOKEN}",
+            "INFLUXDB_URL": "${INFLUXDB_URL}",
+            "INFLUXDB_ORG": "${INFLUXDB_ORG}"
+          }
+        }
+      ]
+    }
+  }
+}

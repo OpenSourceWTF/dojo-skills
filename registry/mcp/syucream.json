@@ -1,0 +1,59 @@
+{
+  "skills": {
+    "holaspirit": {
+      "name": "Holaspirit",
+      "source": "github:syucream/holaspirit-mcp-server",
+      "description": "Interact with [Holaspirit](https://www.holaspirit.com/).",
+      "tags": [
+        "mcp",
+        "Holaspirit",
+        "AI",
+        "Productivity"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "holaspirit-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "holaspirit-mcp-server"
+          ],
+          "env": {
+            "HOLASPIRIT_API_TOKEN": "${HOLASPIRIT_API_TOKEN}"
+          }
+        }
+      ]
+    },
+    "lightdash": {
+      "name": "Lightdash",
+      "source": "github:syucream/lightdash-mcp-server",
+      "description": "Interact with [Lightdash](https://www.lightdash.com/), a BI tool.",
+      "tags": [
+        "mcp",
+        "Lightdash",
+        "AI",
+        "Analytics"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "lightdash-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "lightdash-mcp-server"
+          ],
+          "env": {
+            "LIGHTDASH_API_KEY": "${LIGHTDASH_API_KEY}",
+            "LIGHTDASH_API_URL": "${LIGHTDASH_API_URL}"
+          }
+        }
+      ]
+    }
+  }
+}

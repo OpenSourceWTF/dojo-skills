@@ -1,0 +1,31 @@
+{
+  "skills": {
+    "metoro-mcp-server": {
+      "name": "Metoro MCP Server",
+      "source": "github:metoro-io/metoro-mcp-server",
+      "description": "This MCP Server allows you to interact with your Kubernetes cluster via the Claude Desktop App!",
+      "tags": [
+        "mcp",
+        "kubernetes",
+        "observability",
+        "eBPF",
+        "microservices",
+        "MCP Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "metoro-mcp-server-custom",
+          "command": "metoro-mcp-server",
+          "args": [],
+          "env": {
+            "METORO_AUTH_TOKEN": "<your auth token>",
+            "METORO_API_URL": "https://us-east.metoro.io"
+          }
+        }
+      ]
+    }
+  }
+}

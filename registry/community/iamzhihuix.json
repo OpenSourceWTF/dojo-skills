@@ -1,0 +1,52 @@
+{
+  "skills": {
+    "docx-format-replicator": {
+      "name": "docx-format-replicator",
+      "source": "github:iamzhihuix/happy-claude-skills/skills/docx-format-replicator",
+      "description": "Extract formatting from existing Word documents and generate new documents with the same format b...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "video-processor": {
+      "name": "Video Processor",
+      "source": "github:iamzhihuix/happy-claude-skills/skills/video-processor",
+      "description": "Download and process videos from YouTube and other platforms. Supports video download, audio extr...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "browser": {
+      "name": "browser",
+      "source": "github:iamzhihuix/happy-claude-skills/skills/browser",
+      "description": "Minimal Chrome DevTools Protocol tools for browser automation and scraping. Use when you need to ...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "wechat-article-writer": {
+      "name": "wechat-article-writer",
+      "source": "github:iamzhihuix/happy-claude-skills/skills/wechat-article-writer",
+      "description": "公众号文章自动化写作流程。支持资料搜索、文章撰写、爆款标题生成、排版优化。当用户提到写公众号、微信文章、自媒体写作、爆款文章、内容创作时使用此 skill。",
+      "tags": [
+        "uncategorized",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    }
+  }
+}

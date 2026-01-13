@@ -1,0 +1,32 @@
+{
+  "skills": {
+    "goal-story": {
+      "name": "Goal Story",
+      "source": "github:hichana/goalstory-mcp",
+      "description": "a Goal Tracker and Visualization Tool for personal and professional development.",
+      "tags": [
+        "mcp",
+        "goal tracking",
+        "storytelling",
+        "AI",
+        "Productivity"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "goal-story-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "goalstory-mcp",
+            "https://prod-goalstory-rqc2.encr.app",
+            "${YOUR_API_KEY}"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "skills": {
+    "mcp-server-adfin": {
+      "name": "Adfin MCP Server",
+      "source": "github:Adfin-Engineering/mcp-server-adfin",
+      "description": "1. Python 3.10 or higher",
+      "tags": [
+        "mcp",
+        "adfin",
+        "finance",
+        "invoicing",
+        "Finance"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-server-adfin-python",
+          "command": "uv",
+          "args": [
+            "--directory",
+            "<absolute_path_to_adfin_mcp_folder>",
+            "run",
+            "main_adfin_mcp.py"
+          ],
+          "env": {
+            "ADFIN_EMAIL": "${ADFIN_EMAIL}",
+            "ADFIN_PASSWORD": "${ADFIN_PASSWORD}"
+          }
+        },
+        {
+          "name": "mcp-server-adfin-filesystem",
+          "command": "uv",
+          "args": [
+            "--directory",
+            "<absolute_path_to_adfin_mcp_folder>",
+            "run",
+            "filesystem.py"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

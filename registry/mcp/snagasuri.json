@@ -1,0 +1,45 @@
+{
+  "skills": {
+    "deebo-prototype": {
+      "name": "Deebo: AI Agent's Debugging Partner",
+      "source": "github:snagasuri/deebo-prototype",
+      "description": "Deebo is an autonomous debugging system that AI coding agents (Claude, Cline, Cursor, etc.) can delegate tricky bugs to using the Model Context Protocol (MCP). It runs structured investigations in parallel Git branches to test hypotheses, validate fixes, and helps you move faster. If your main coding agent is like a single-threaded process, Deebo introduces multi-threadedness to your development workflow.",
+      "tags": [
+        "mcp",
+        "debugging",
+        "AI",
+        "coding",
+        "MCP",
+        "Model Context Protocol",
+        "autonomous",
+        "development",
+        "git",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "deebo-prototype-custom",
+          "command": "node",
+          "args": [
+            "--experimental-specifier-resolution=node",
+            "--experimental-modules",
+            "--max-old-space-size=4096",
+            "/absolute/path/to/deebo/build/index.js"
+          ],
+          "env": {
+            "NODE_ENV": "development",
+            "USE_MEMORY_BANK": "true",
+            "MOTHER_HOST": "openrouter",
+            "MOTHER_MODEL": "anthropic/claude-3.5-sonnet",
+            "SCENARIO_HOST": "openrouter",
+            "SCENARIO_MODEL": "anthropic/claude-3.5-sonnet",
+            "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

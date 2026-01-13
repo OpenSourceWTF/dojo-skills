@@ -1,0 +1,47 @@
+{
+  "skills": {
+    "bicscan-mcp": {
+      "name": "BICScan MCP Server",
+      "source": "github:ahnlabio/bicscan-mcp",
+      "description": "A powerful and efficient Blockchain address risk scoring API MCP Server, leveraging the BICScan API to provide comprehensive risk assessments and asset information for blockchain addresses, domains, and decentralized applications (dApps).",
+      "tags": [
+        "mcp",
+        "blockchain",
+        "risk scoring",
+        "crypto",
+        "API",
+        "Finance"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "bicscan-mcp-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/ahnlabio/bicscan-mcp",
+            "bicscan-mcp"
+          ],
+          "env": {
+            "BICSCAN_API_KEY": "${BICSCAN_API_KEY}"
+          }
+        },
+        {
+          "name": "bicscan-mcp-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "--rm",
+            "--interactive",
+            "--env",
+            "BICSCAN_API_KEY=${BICSCAN_API_KEY}",
+            "bicscan-mcp"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

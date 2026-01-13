@@ -1,0 +1,54 @@
+{
+  "skills": {
+    "line-bot": {
+      "name": "LINE Bot MCP Server",
+      "source": "github:line/line-bot-mcp-server",
+      "description": "1. **push_text_message**",
+      "tags": [
+        "mcp",
+        "LINE",
+        "bot",
+        "messaging",
+        "MCP",
+        "Model Context Protocol",
+        "AI Agent",
+        "LINE Messaging API",
+        "Messaging"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "line-bot-npm",
+          "command": "node",
+          "args": [
+            "PATH/TO/line-bot-mcp-server/dist/index.js"
+          ],
+          "env": {
+            "CHANNEL_ACCESS_TOKEN": "${CHANNEL_ACCESS_TOKEN}",
+            "DESTINATION_USER_ID": "${DESTINATION_USER_ID}"
+          }
+        },
+        {
+          "name": "line-bot-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "CHANNEL_ACCESS_TOKEN",
+            "-e",
+            "DESTINATION_USER_ID",
+            "mcp/line"
+          ],
+          "env": {
+            "CHANNEL_ACCESS_TOKEN": "${CHANNEL_ACCESS_TOKEN}",
+            "DESTINATION_USER_ID": "${DESTINATION_USER_ID}"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "skills": {
+    "apple-mcp": {
+      "name": "Apple MCP Tools",
+      "source": "github:Dhravya/apple-mcp",
+      "description": "This is a collection of apple-native tools for the [MCP protocol](https://modelcontextprotocol.com/docs/mcp-protocol).",
+      "tags": [
+        "mcp",
+        "apple",
+        "mcp",
+        "messages",
+        "notes",
+        "contacts",
+        "emails",
+        "reminders",
+        "calendar",
+        "web search",
+        "maps",
+        "System Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "apple-mcp-npm",
+          "command": "bunx",
+          "args": [
+            "@dhravya/apple-mcp@latest"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

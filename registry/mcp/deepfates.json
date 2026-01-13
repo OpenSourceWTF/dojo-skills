@@ -1,0 +1,30 @@
+{
+  "skills": {
+    "replicate": {
+      "name": "Replicate",
+      "source": "github:deepfates/mcp-replicate",
+      "description": "Search, run and manage machine learning models on Replicate through a simple tool-based interface. Browse models, create predictions, track their status, and handle generated images.",
+      "tags": [
+        "mcp",
+        "Replicate",
+        "API",
+        "AI Systems"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "replicate-npm",
+          "command": "npx",
+          "args": [
+            "mcp-replicate"
+          ],
+          "env": {
+            "REPLICATE_API_TOKEN": "${REPLICATE_API_TOKEN}"
+          }
+        }
+      ]
+    }
+  }
+}

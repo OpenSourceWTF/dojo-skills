@@ -1,0 +1,32 @@
+{
+  "skills": {
+    "xmind": {
+      "name": "XMind",
+      "source": "github:apeyroux/mcp-xmind",
+      "description": "Read and search through your XMind directory containing XMind files.",
+      "tags": [
+        "mcp",
+        "XMind",
+        "Mind Mapping",
+        "Analysis",
+        "Productivity",
+        "Knowledge Base"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "xmind-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@41px/mcp-xmind",
+            "${USER_XMIND_DIRECTORY}"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

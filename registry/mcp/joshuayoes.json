@@ -1,0 +1,34 @@
+{
+  "skills": {
+    "ios-simulator-mcp": {
+      "name": "iOS Simulator MCP Server",
+      "source": "github:joshuayoes/ios-simulator-mcp",
+      "description": "A Model Context Protocol (MCP) server for interacting with iOS simulators. This server allows you to interact with iOS simulators by getting information about them, controlling UI interactions, and inspecting UI elements.",
+      "tags": [
+        "mcp",
+        "iOS",
+        "simulator",
+        "MCP",
+        "testing",
+        "QA",
+        "UI interaction",
+        "automation",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "ios-simulator-mcp-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "ios-simulator-mcp"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "skills": {
+    "vscode-mcp": {
+      "name": "VSCode MCP Server",
+      "source": "github:block/vscode-mcp",
+      "description": "This monorepo contains the VSCode MCP Server and its companion VSCode Extension, which together enable AI agents and assistants, like Goose or Claude, to interact with VSCode through the Model Context Protocol.",
+      "tags": [
+        "mcp",
+        "vscode",
+        "mcp",
+        "ai",
+        "extension",
+        "model context protocol",
+        "development",
+        "code editor",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "vscode-mcp-npm",
+          "command": "npx",
+          "args": [
+            "vscode-mcp-server"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

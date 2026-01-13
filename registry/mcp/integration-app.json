@@ -1,0 +1,33 @@
+{
+  "skills": {
+    "mcp-server": {
+      "name": "Integration App MCP Server",
+      "source": "github:integration-app/mcp-server",
+      "description": "This is an implementation of the [Model Context Protocol (MCP) server](https://modelcontextprotocol.org/) that exposes tools powered by [Integration App](https://integration.app).",
+      "tags": [
+        "mcp",
+        "integration",
+        "tools",
+        "mcp",
+        "MCP Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-server-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@integration-app/mcp-server"
+          ],
+          "env": {
+            "INTEGRATION_APP_TOKEN": "${INTEGRATION_APP_TOKEN}",
+            "INTEGRATION_KEY": "${INTEGRATION_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

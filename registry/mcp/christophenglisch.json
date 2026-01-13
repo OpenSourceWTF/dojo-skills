@@ -1,0 +1,34 @@
+{
+  "skills": {
+    "keycloak-mcp": {
+      "name": "Keycloak Model Context Protocol",
+      "source": "github:ChristophEnglisch/keycloak-model-context-protocol",
+      "description": "This MCP server enables natural language interaction with Keycloak for user and realm management including creating, deleting, and listing users and realms.",
+      "tags": [
+        "mcp",
+        "Keycloak",
+        "User Management",
+        "Realm Management",
+        "System Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "keycloak-mcp-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "keycloak-model-context-protocol"
+          ],
+          "env": {
+            "KEYCLOAK_URL": "${KEYCLOAK_URL}",
+            "KEYCLOAK_ADMIN": "${KEYCLOAK_ADMIN}",
+            "KEYCLOAK_ADMIN_PASSWORD": "${KEYCLOAK_ADMIN_PASSWORD}"
+          }
+        }
+      ]
+    }
+  }
+}

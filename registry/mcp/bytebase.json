@@ -1,0 +1,49 @@
+{
+  "skills": {
+    "dbhub": {
+      "name": "DBHub - Universal Database Gateway",
+      "source": "github:bytebase/dbhub",
+      "description": "Universal database MCP server connecting to MySQL, PostgreSQL, SQLite, DuckDB and etc.",
+      "tags": [
+        "mcp",
+        "Database Gateway",
+        "PostgreSQL",
+        "MySQL",
+        "SQL Server",
+        "SQLite",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "dbhub-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "DSN",
+            "bytebase/dbhub",
+            "--transport",
+            "stdio"
+          ],
+          "env": {}
+        },
+        {
+          "name": "dbhub-npx",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@bytebase/dbhub",
+            "--transport",
+            "stdio"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

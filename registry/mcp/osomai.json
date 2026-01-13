@@ -1,0 +1,35 @@
+{
+  "skills": {
+    "servicenow": {
+      "name": "ServiceNow",
+      "source": "github:osomai/servicenow-mcp",
+      "description": "A MCP server to interact with a ServiceNow instance",
+      "tags": [
+        "mcp",
+        "ServiceNow",
+        "Automation",
+        "Productivity"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "servicenow-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/osomai/servicenow-mcp",
+            "servicenow-mcp"
+          ],
+          "env": {
+            "SERVICENOW_INSTANCE_URL": "${SERVICENOW_INSTANCE_URL}",
+            "SERVICENOW_USERNAME": "${SERVICENOW_USERNAME}",
+            "SERVICENOW_PASSWORD": "${SERVICENOW_PASSWORD}",
+            "SERVICENOW_AUTH_TYPE": "${SERVICENOW_AUTH_TYPE}"
+          }
+        }
+      ]
+    }
+  }
+}

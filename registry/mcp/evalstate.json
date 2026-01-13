@@ -1,0 +1,29 @@
+{
+  "skills": {
+    "huggingface-spaces": {
+      "name": "HuggingFace Spaces 🤗",
+      "source": "github:evalstate/mcp-hfspace",
+      "description": "Server for using HuggingFace Spaces, supporting Open Source Image, Audio, Text Models and more. Claude Desktop mode for easy integration.",
+      "tags": [
+        "mcp",
+        "Hugging Face",
+        "Claude Desktop",
+        "AI Systems"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "huggingface-spaces-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@llmindset/mcp-hfspace"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

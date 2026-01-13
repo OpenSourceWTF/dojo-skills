@@ -1,0 +1,33 @@
+{
+  "skills": {
+    "docker": {
+      "name": "Docker Integration",
+      "source": "github:ckreiling/mcp-server-docker",
+      "description": "Integrate with Docker to manage containers, images, volumes, and networks.",
+      "tags": [
+        "mcp",
+        "Docker",
+        "Container",
+        "Image",
+        "Volume",
+        "Network",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "docker-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/ckreiling/mcp-server-docker",
+            "mcp-server-docker"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

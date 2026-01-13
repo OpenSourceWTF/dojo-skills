@@ -1,0 +1,32 @@
+{
+  "skills": {
+    "chatmcp": {
+      "name": "Chat Desktop App",
+      "source": "github:AI-QL/chat-mcp",
+      "description": "– An Open Source Cross-platform GUI Desktop application compatible with Linux, macOS, and Windows, enabling seamless interaction with MCP servers across dynamically selectable LLMs, by **[AIQL](https://github.com/AI-QL/chat-mcp)**",
+      "tags": [
+        "mcp",
+        "LLM",
+        "Electron",
+        "cross-platform",
+        "MCP Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "chatmcp-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "https://github.com/AI-QL/chat-mcp"
+          ],
+          "env": {
+            "SEARCH_PATH": "${SEARCH_PATH}"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "skills": {
+    "atlas-docs-mcp": {
+      "name": "Atlas Docs MCP Server",
+      "source": "github:CartographAI/atlas-docs-mcp",
+      "description": "A [Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction) server that provides AI assistants with documentation for libraries and frameworks.",
+      "tags": [
+        "mcp",
+        "documentation",
+        "MCP",
+        "Model Context Protocol",
+        "libraries",
+        "frameworks",
+        "AI assistants",
+        "LLM",
+        "developer tools",
+        "Knowledge Base"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "atlas-docs-mcp-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@cartographai/atlas-docs-mcp"
+          ],
+          "env": {}
+        },
+        {
+          "name": "atlas-docs-mcp-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "ATLAS_API_URL",
+            "mcp/atlas-docs"
+          ],
+          "env": {
+            "ATLAS_API_URL": "https://atlas.cartograph.app/api"
+          }
+        }
+      ]
+    }
+  }
+}

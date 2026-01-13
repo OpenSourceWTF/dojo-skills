@@ -1,0 +1,29 @@
+{
+  "skills": {
+    "ableton-live": {
+      "name": "Ableton Live",
+      "source": "github:Simon-Kansara/ableton-live-mcp-server",
+      "description": "an MCP server to control Ableton Live.",
+      "tags": [
+        "mcp",
+        "Ableton Live",
+        "OSC",
+        "Music",
+        "Media Creation"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "ableton-live-custom",
+          "command": "python",
+          "args": [
+            "mcp_ableton_server.py"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

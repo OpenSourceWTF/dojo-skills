@@ -1,0 +1,48 @@
+{
+  "skills": {
+    "perplexity": {
+      "name": "Perplexity Ask MCP Server",
+      "source": "github:ppl-ai/modelcontextprotocol",
+      "description": "An MCP server implementation that integrates the Sonar API to provide Claude with unparalleled real-time, web-wide research.",
+      "tags": [
+        "mcp",
+        "perplexity",
+        "search",
+        "sonar-api",
+        "web-search",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "perplexity-npx",
+          "command": "npx",
+          "args": [
+            "-y",
+            "server-perplexity-ask"
+          ],
+          "env": {
+            "PERPLEXITY_API_KEY": "${PERPLEXITY_API_KEY}"
+          }
+        },
+        {
+          "name": "perplexity-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "PERPLEXITY_API_KEY",
+            "mcp/perplexity-ask"
+          ],
+          "env": {
+            "PERPLEXITY_API_KEY": "${PERPLEXITY_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

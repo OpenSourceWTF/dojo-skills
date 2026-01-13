@@ -1,0 +1,32 @@
+{
+  "skills": {
+    "linear": {
+      "name": "Linear",
+      "source": "github:jerhadf/linear-mcp-server",
+      "description": "Allows LLM to interact with Linear's API for project management, including searching, creating, and updating issues.",
+      "tags": [
+        "mcp",
+        "linear",
+        "issue tracking",
+        "LLM",
+        "Productivity"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "linear-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "linear-mcp-server"
+          ],
+          "env": {
+            "LINEAR_API_KEY": "${LINEAR_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

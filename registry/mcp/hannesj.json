@@ -1,0 +1,69 @@
+{
+  "skills": {
+    "graphql-schema": {
+      "name": "GraphQL Schema Model Context Protocol",
+      "source": "github:hannesj/mcp-graphql-schema",
+      "description": "Allow LLMs to explore large GraphQL schemas without bloating the context.",
+      "tags": [
+        "mcp",
+        "GraphQL",
+        "LLMs",
+        "Schema",
+        "API",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "graphql-schema-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "mcp-graphql-schema",
+            "/ABSOLUTE/PATH/TO/schema.graphqls"
+          ],
+          "env": {}
+        }
+      ]
+    },
+    "openapi-schema": {
+      "name": "OpenAPI Schema Model Context Protocol",
+      "source": "github:hannesj/mcp-openapi-schema",
+      "description": "Allow LLMs to explore large [OpenAPI](https://www.openapis.org/) schemas without bloating the context.",
+      "tags": [
+        "mcp",
+        "OpenAPI",
+        "LLM",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "openapi-schema-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "mcp-openapi-schema",
+            "${ABSOLUTE_PATH_TO_OPENAPI_YAML}"
+          ],
+          "env": {}
+        },
+        {
+          "name": "openapi-schema-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "mcp/openapi-schema"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "skills": {
+    "volcengine-tos": {
+      "name": "VolcEngine TOS",
+      "source": "github:dinghuazhou/sample-mcp-server-tos",
+      "description": "A sample MCP server for VolcEngine TOS that flexibly get objects from TOS.",
+      "tags": [
+        "mcp",
+        "TOS",
+        "Volcengine",
+        "Data",
+        "System Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "volcengine-tos-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/dinghuazhou/sample-mcp-server-tos",
+            "tos-mcp-server"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "skills": {
+    "aws-athena": {
+      "name": "AWS Athena",
+      "source": "github:lishenxydlgzs/aws-athena-mcp",
+      "description": "A MCP server for AWS Athena to run SQL queries on Glue Catalog.",
+      "tags": [
+        "mcp",
+        "athena",
+        "sql",
+        "aws",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "aws-athena-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@lishenxydlgzs/aws-athena-mcp"
+          ],
+          "env": {
+            "OUTPUT_S3_PATH": "${OUTPUT_S3_PATH}",
+            "AWS_REGION": "${AWS_REGION}",
+            "AWS_PROFILE": "${AWS_PROFILE}",
+            "AWS_ACCESS_KEY_ID": "${AWS_ACCESS_KEY_ID}",
+            "AWS_SECRET_ACCESS_KEY": "${AWS_SECRET_ACCESS_KEY}",
+            "AWS_SESSION_TOKEN": "${AWS_SESSION_TOKEN}",
+            "QUERY_TIMEOUT_MS": "${QUERY_TIMEOUT_MS}",
+            "MAX_RETRIES": "${MAX_RETRIES}",
+            "RETRY_DELAY_MS": "${RETRY_DELAY_MS}"
+          }
+        }
+      ]
+    }
+  }
+}

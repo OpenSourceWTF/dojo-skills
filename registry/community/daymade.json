@@ -1,0 +1,316 @@
+{
+  "skills": {
+    "claude-code-history-files-finder": {
+      "name": "claude-code-history-files-finder",
+      "source": "github:daymade/claude-code-skills/claude-code-history-files-finder",
+      "description": "Finds and recovers content from Claude Code session history files. This skill should be used when...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "claude-md-progressive-disclosurer": {
+      "name": "claude-md-progressive-disclosurer",
+      "source": "github:daymade/claude-code-skills/claude-md-progressive-disclosurer",
+      "description": "Optimize user CLAUDE.md files by applying progressive disclosure principles. This skill should be...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "mermaid-tools": {
+      "name": "mermaid-tools",
+      "source": "github:daymade/claude-code-skills/mermaid-tools",
+      "description": "Extracts Mermaid diagrams from markdown files and generates high-quality PNG images using bundled...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "skill-creator": {
+      "name": "skill-creator",
+      "source": "github:daymade/claude-code-skills/skill-creator",
+      "description": "Guide for creating effective skills. This skill should be used when users want to create a new sk...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "teams-channel-post-writer": {
+      "name": "teams-channel-post-writer",
+      "source": "github:daymade/claude-code-skills/teams-channel-post-writer",
+      "description": "Creates educational Teams channel posts for internal knowledge sharing about Claude Code features...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "fact-checker": {
+      "name": "fact-checker",
+      "source": "github:daymade/claude-code-skills/fact-checker",
+      "description": "Verifies factual claims in documents using web search and official sources, then proposes correct...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "llm-icon-finder": {
+      "name": "llm-icon-finder",
+      "source": "github:daymade/claude-code-skills/llm-icon-finder",
+      "description": "Finding and accessing AI/LLM model brand icons from lobe-icons library. Use when users need icon ...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "pdf-creator": {
+      "name": "pdf-creator",
+      "source": "github:daymade/claude-code-skills/pdf-creator",
+      "description": "Create PDF documents from markdown with proper Chinese font support using weasyprint. This skill ...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "ppt-creator": {
+      "name": "ppt-creator",
+      "source": "github:daymade/claude-code-skills/ppt-creator",
+      "description": "Create professional slide decks from topics or documents. Generates structured content with data-...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "prompt-optimizer": {
+      "name": "prompt-optimizer",
+      "source": "github:daymade/claude-code-skills/prompt-optimizer",
+      "description": "Transform vague prompts into precise, well-structured specifications using EARS (Easy Approach to...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "transcript-fixer": {
+      "name": "transcript-fixer",
+      "source": "github:daymade/claude-code-skills/transcript-fixer",
+      "description": "Corrects speech-to-text transcription errors in meeting notes, lectures, and interviews using dic...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "youtube-downloader": {
+      "name": "youtube-downloader",
+      "source": "github:daymade/claude-code-skills/youtube-downloader",
+      "description": "Download YouTube videos and HLS streams (m3u8) from platforms like Mux, Vimeo, etc. using yt-dlp ...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "cloudflare-troubleshooting": {
+      "name": "cloudflare-troubleshooting",
+      "source": "github:daymade/claude-code-skills/cloudflare-troubleshooting",
+      "description": "Investigate and resolve Cloudflare configuration issues using API-driven evidence gathering. Use ...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "github-ops": {
+      "name": "github-ops",
+      "source": "github:daymade/claude-code-skills/github-ops",
+      "description": "Provides comprehensive GitHub operations using gh CLI and GitHub API. Activates when working with...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "repomix-unmixer": {
+      "name": "repomix-unmixer",
+      "source": "github:daymade/claude-code-skills/repomix-unmixer",
+      "description": "Extracts files from repomix-packed repositories, restoring original directory structures from XML...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "skills-search": {
+      "name": "skills-search",
+      "source": "github:daymade/claude-code-skills/skills-search",
+      "description": "This skill should be used when users want to search, discover, install, or manage Claude Code ski...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "qa-expert": {
+      "name": "qa-expert",
+      "source": "github:daymade/claude-code-skills/qa-expert",
+      "description": "This skill should be used when establishing comprehensive QA testing processes for any software p...",
+      "tags": [
+        "data-and-analytics",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "developing-ios-apps": {
+      "name": "developing-ios-apps",
+      "source": "github:daymade/claude-code-skills/iOS-APP-developer",
+      "description": "Develops iOS applications with XcodeGen, SwiftUI, and SPM. Triggers on XcodeGen project.yml confi...",
+      "tags": [
+        "devops-and-infrastructure",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "promptfoo-evaluation": {
+      "name": "promptfoo-evaluation",
+      "source": "github:daymade/claude-code-skills/promptfoo-evaluation",
+      "description": "Configures and runs LLM evaluation using Promptfoo framework. Use when setting up prompt testing,...",
+      "tags": [
+        "devops-and-infrastructure",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "docs-cleaner": {
+      "name": "docs-cleaner",
+      "source": "github:daymade/claude-code-skills/docs-cleaner",
+      "description": "Consolidates redundant documentation while preserving all valuable content. This skill should be ...",
+      "tags": [
+        "documentation",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "markdown-tools": {
+      "name": "markdown-tools",
+      "source": "github:daymade/claude-code-skills/markdown-tools",
+      "description": "Converts documents to markdown (PDFs, Word docs, PowerPoint, Confluence exports) with Windows/WSL...",
+      "tags": [
+        "documentation",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "statusline-generator": {
+      "name": "statusline-generator",
+      "source": "github:daymade/claude-code-skills/statusline-generator",
+      "description": "Configures and customizes Claude Code statuslines with multi-line layouts, cost tracking via ccus...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "video-comparer": {
+      "name": "video-comparer",
+      "source": "github:daymade/claude-code-skills/video-comparer",
+      "description": "This skill should be used when comparing two videos to analyze compression results or quality dif...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "repomix-safe-mixer": {
+      "name": "repomix-safe-mixer",
+      "source": "github:daymade/claude-code-skills/repomix-safe-mixer",
+      "description": "Safely package codebases with repomix by automatically detecting and removing hardcoded credentia...",
+      "tags": [
+        "security",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "ui-designer": {
+      "name": "ui-designer",
+      "source": "github:daymade/claude-code-skills/ui-designer",
+      "description": "Extract design systems from reference UI images and generate implementation-ready UI design promp...",
+      "tags": [
+        "testing-and-quality",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "cli-demo-generator": {
+      "name": "cli-demo-generator",
+      "source": "github:daymade/claude-code-skills/cli-demo-generator",
+      "description": "This skill should be used when users want to create animated CLI demos, terminal recordings, or c...",
+      "tags": [
+        "tools-and-utilities",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    }
+  }
+}

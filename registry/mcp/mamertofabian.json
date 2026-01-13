@@ -1,0 +1,41 @@
+{
+  "skills": {
+    "everything-search": {
+      "name": "Everything Search",
+      "source": "github:mamertofabian/mcp-everything-search",
+      "description": "Fast file searching capabilities across Windows (using [Everything SDK](https://www.voidtools.com/support/everything/sdk/)), macOS (using mdfind command), and Linux (using locate/plocate command).",
+      "tags": [
+        "mcp",
+        "search",
+        "everything",
+        "System Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "everything-search-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp-server-everything-search"
+          ],
+          "env": {
+            "EVERYTHING_SDK_PATH": "${EVERYTHING_SDK_PATH}"
+          }
+        },
+        {
+          "name": "everything-search-python",
+          "command": "python",
+          "args": [
+            "-m",
+            "mcp_server_everything_search"
+          ],
+          "env": {
+            "EVERYTHING_SDK_PATH": "${EVERYTHING_SDK_PATH}"
+          }
+        }
+      ]
+    }
+  }
+}

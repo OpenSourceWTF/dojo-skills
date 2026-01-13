@@ -1,0 +1,208 @@
+{
+  "skills": {
+    "card-news-generator": {
+      "name": "card-news-generator",
+      "source": "github:bear2u/my-skills/skills/card-news-generator",
+      "description": "Create 600x600 Instagram-style card news series automatically with optional background images. Us...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "card-news-generator-v2": {
+      "name": "card-news-generator-v2",
+      "source": "github:bear2u/my-skills/.claude/skills/card-news-generator-v2",
+      "description": "Create 600x600 Instagram-style card news series automatically with optional background images. Us...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "codex-claude-cursor-loop": {
+      "name": "codex-claude-cursor-loop",
+      "source": "github:bear2u/my-skills/skills/codex-claude-cursor-loop",
+      "description": "Orchestrates a triple-AI engineering loop where Claude plans, Codex validates logic and reviews c...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "codex-claude-loop": {
+      "name": "codex-claude-loop",
+      "source": "github:bear2u/my-skills/.claude/skills/codex-claude-loop",
+      "description": "Orchestrates a dual-AI engineering loop where Claude Code plans and implements, while Codex valid...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "flutter-init": {
+      "name": "flutter-init",
+      "source": "github:bear2u/my-skills/skills/flutter-init",
+      "description": "Use when user wants to create a new Flutter project (Todo/Habit/Note/Expense/Custom domain) with ...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "gemini-logo-remover": {
+      "name": "gemini-logo-remover",
+      "source": "github:bear2u/my-skills/.claude/skills/gemini-logo-remover",
+      "description": "Remove Gemini logos, watermarks, or AI-generated image markers using OpenCV inpainting. Use this ...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "landing-page-guide-v2": {
+      "name": "landing-page-guide-v2",
+      "source": "github:bear2u/my-skills/skills/landing-page-guide-v2",
+      "description": "Create distinctive, high-converting landing pages that combine proven conversion elements with ex...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "workthrough": {
+      "name": "workthrough",
+      "source": "github:bear2u/my-skills/skills/workthrough-v2",
+      "description": "Use this skill proactively and automatically after completing ANY development work. AI agent summ...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "design-prompt-generator-v2": {
+      "name": "design-prompt-generator-v2",
+      "source": "github:bear2u/my-skills/skills/design-prompt-generator-v2",
+      "description": "Advanced 7-step hierarchical design prompt generator for AI web development tools (Lovable, Curso...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "midjourney-card-news-backgrounds": {
+      "name": "midjourney-card-news-backgrounds",
+      "source": "github:bear2u/my-skills/skills/midjourney-cardnews-bg",
+      "description": "Generate Midjourney prompts for 600x600 card news background images based on topic, mood, and sty...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "prompt-enhancer": {
+      "name": "prompt-enhancer",
+      "source": "github:bear2u/my-skills/skills/prompt-enhancer",
+      "description": "Enhance user prompts by analyzing project context (code structure, dependencies, conventions, exi...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "code-changelog": {
+      "name": "code-changelog",
+      "source": "github:bear2u/my-skills/skills/code-changelog",
+      "description": "AI가 만든 모든 코드 변경사항을 reviews 폴더에 기록하고 간단한 HTML 뷰어로 웹 브라우저에서 실시간 확인할 수 있습니다. 매 수정마다 문서가 생성되고 Python ...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "frontend-design": {
+      "name": "frontend-design",
+      "source": "github:bear2u/my-skills/skills/frontend-design",
+      "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "landing-page-guide": {
+      "name": "landing-page-guide",
+      "source": "github:bear2u/my-skills/skills/landing-page-guide",
+      "description": "Comprehensive guide for creating effective landing pages using Next.js or React. This skill shoul...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "nextjs15-init": {
+      "name": "nextjs15-init",
+      "source": "github:bear2u/my-skills/skills/nextjs15-init",
+      "description": "Use when user wants to create a new Next.js 15 project (Todo/Blog/Dashboard/E-commerce/Custom dom...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "web-to-markdown": {
+      "name": "web-to-markdown",
+      "source": "github:bear2u/my-skills/skills/web-to-markdown",
+      "description": "웹페이지 URL을 입력받아 마크다운 형태로 변환하여 저장합니다. 웹 문서를 로컬 마크다운 파일로 아카이빙하거나 정리할 때 유용합니다.",
+      "tags": [
+        "uncategorized",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "": {
+      "name": "메타-프롬프트-생성기",
+      "source": "github:bear2u/my-skills/skills/meta-prompt-generator",
+      "description": "간단한 설명을 받아 단계별 병렬 처리가 가능한 구조화된 커스텀 슬래시 커맨드를 자동으로 생성합니다. 프롬프트 생성, 워크플로우 설계, 테스트 스위트 작성이 필요할 때 사용하세요.",
+      "tags": [
+        "uncategorized",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    }
+  }
+}

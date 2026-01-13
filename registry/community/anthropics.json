@@ -1,0 +1,340 @@
+{
+  "skills": {
+    "agent-development": {
+      "name": "Agent Development",
+      "source": "github:anthropics/claude-code/plugins/plugin-dev/skills/agent-development",
+      "description": "This skill should be used when the user asks to \"create an agent\", \"add an agent\", \"write a subag...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "skill-development": {
+      "name": "Skill Development",
+      "source": "github:anthropics/claude-code/plugins/plugin-dev/skills/skill-development",
+      "description": "This skill should be used when the user wants to \"create a skill\", \"add a skill to plugin\", \"writ...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "skill-creator": {
+      "name": "skill-creator",
+      "source": "github:anthropics/skills/skills/skill-creator",
+      "description": "Guide for creating effective skills. This skill should be used when users want to create a new sk...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "template-skill": {
+      "name": "template-skill",
+      "source": "github:anthropics/skills/template",
+      "description": "Replace with description of the skill and when Claude should use it.",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "brand-guidelines": {
+      "name": "brand-guidelines",
+      "source": "github:anthropics/skills/skills/brand-guidelines",
+      "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "docx": {
+      "name": "docx",
+      "source": "github:anthropics/skills/skills/docx",
+      "description": "Comprehensive document creation, editing, and analysis with support for tracked changes, comments...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "example-skill": {
+      "name": "example-skill",
+      "source": "github:anthropics/claude-plugins-official/plugins/example-plugin/skills/example-skill",
+      "description": "This skill should be used when the user asks to \"demonstrate skills\", \"show skill format\", \"creat...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "internal-comms": {
+      "name": "internal-comms",
+      "source": "github:anthropics/skills/skills/internal-comms",
+      "description": "A set of resources to help me write all kinds of internal communications, using the formats that ...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "pdf": {
+      "name": "pdf",
+      "source": "github:anthropics/skills/skills/pdf",
+      "description": "Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "xlsx": {
+      "name": "xlsx",
+      "source": "github:anthropics/skills/skills/xlsx",
+      "description": "Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, ...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "claude-opus-4-5-migration": {
+      "name": "claude-opus-4-5-migration",
+      "source": "github:anthropics/claude-code/plugins/claude-opus-4-5-migration/skills/claude-opus-4-5-migration",
+      "description": "Migrate prompts and code from Claude Sonnet 4.0, Sonnet 4.5, or Opus 4.1 to Opus 4.5. Use when th...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "hook-development": {
+      "name": "Hook Development",
+      "source": "github:anthropics/claude-code/plugins/plugin-dev/skills/hook-development",
+      "description": "This skill should be used when the user asks to \"create a hook\", \"add a PreToolUse/PostToolUse/St...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "mcp-builder": {
+      "name": "mcp-builder",
+      "source": "github:anthropics/skills/skills/mcp-builder",
+      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "stripe-best-practices": {
+      "name": "stripe-best-practices",
+      "source": "github:anthropics/claude-plugins-official/external_plugins/stripe/skills/stripe-best-practices",
+      "description": "Best practices for building Stripe integrations. Use when implementing payment processing, checko...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "algorithmic-art": {
+      "name": "algorithmic-art",
+      "source": "github:anthropics/skills/skills/algorithmic-art",
+      "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "slack-gif-creator": {
+      "name": "slack-gif-creator",
+      "source": "github:anthropics/skills/skills/slack-gif-creator",
+      "description": "Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, val...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "mcp-integration": {
+      "name": "MCP Integration",
+      "source": "github:anthropics/claude-code/plugins/plugin-dev/skills/mcp-integration",
+      "description": "This skill should be used when the user asks to \"add MCP server\", \"integrate MCP\", \"configure MCP...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "command-development": {
+      "name": "Command Development",
+      "source": "github:anthropics/claude-code/plugins/plugin-dev/skills/command-development",
+      "description": "This skill should be used when the user asks to \"create a slash command\", \"add a command\", \"write...",
+      "tags": [
+        "devops-and-infrastructure",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "plugin-settings": {
+      "name": "Plugin Settings",
+      "source": "github:anthropics/claude-code/plugins/plugin-dev/skills/plugin-settings",
+      "description": "This skill should be used when the user asks about \"plugin settings\", \"store plugin configuration...",
+      "tags": [
+        "devops-and-infrastructure",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "canvas-design": {
+      "name": "canvas-design",
+      "source": "github:anthropics/skills/skills/canvas-design",
+      "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use th...",
+      "tags": [
+        "documentation",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "frontend-design": {
+      "name": "frontend-design",
+      "source": "github:anthropics/claude-code/plugins/frontend-design/skills/frontend-design",
+      "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "plugin-structure": {
+      "name": "Plugin Structure",
+      "source": "github:anthropics/claude-code/plugins/plugin-dev/skills/plugin-structure",
+      "description": "This skill should be used when the user asks to \"create a plugin\", \"scaffold a plugin\", \"understa...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "pptx": {
+      "name": "pptx",
+      "source": "github:anthropics/skills/skills/pptx",
+      "description": "Presentation creation, editing, and analysis. When Claude needs to work with presentations (.pptx...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "theme-factory": {
+      "name": "theme-factory",
+      "source": "github:anthropics/skills/skills/theme-factory",
+      "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "web-artifacts-builder": {
+      "name": "web-artifacts-builder",
+      "source": "github:anthropics/skills/skills/web-artifacts-builder",
+      "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern fron...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "webapp-testing": {
+      "name": "webapp-testing",
+      "source": "github:anthropics/skills/skills/webapp-testing",
+      "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verify...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "doc-coauthoring": {
+      "name": "doc-coauthoring",
+      "source": "github:anthropics/skills/skills/doc-coauthoring",
+      "description": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to ...",
+      "tags": [
+        "security",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "writing-hookify-rules": {
+      "name": "Writing Hookify Rules",
+      "source": "github:anthropics/claude-code/plugins/hookify/skills/writing-rules",
+      "description": "This skill should be used when the user asks to \"create a hookify rule\", \"write a hook rule\", \"co...",
+      "tags": [
+        "uncategorized",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    }
+  }
+}

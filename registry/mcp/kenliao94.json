@@ -1,0 +1,41 @@
+{
+  "skills": {
+    "rabbitmq": {
+      "name": "RabbitMQ",
+      "source": "github:kenliao94/mcp-server-rabbitmq",
+      "description": "The MCP server that interacts with RabbitMQ to publish and consume messages.",
+      "tags": [
+        "mcp",
+        "rabbitmq",
+        "server",
+        "messaging",
+        "Messaging"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "rabbitmq-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/kenliao94/mcp-server-rabbitmq",
+            "mcp-server-rabbitmq",
+            "--rabbitmq-host",
+            "${RABBITMQ_HOST}",
+            "--port",
+            "${RABBITMQ_PORT}",
+            "--username",
+            "${RABBITMQ_USERNAME}",
+            "--password",
+            "${RABBITMQ_PASSWORD}",
+            "--use-tls",
+            "${USE_TLS}"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

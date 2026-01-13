@@ -1,0 +1,31 @@
+{
+  "skills": {
+    "chroma-mcp": {
+      "name": "Chroma MCP Server",
+      "source": "github:chroma-core/chroma-mcp",
+      "description": "Embeddings, vector search, document storage, and full-text search with the open-source AI application database",
+      "tags": [
+        "mcp",
+        "vector database",
+        "embeddings",
+        "LLM",
+        "retrieval",
+        "MCP",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "chroma-mcp-uvx",
+          "command": "uvx",
+          "args": [
+            "chroma-mcp"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "skills": {
+    "mcp": {
+      "name": "Semgrep MCP Server",
+      "source": "github:semgrep/mcp",
+      "description": "An MCP server for using Semgrep to scan code for security vulnerabilies. Secure your vibe coding! ",
+      "tags": [
+        "mcp",
+        "security",
+        "static analysis",
+        "code scanning",
+        "vulnerability detection",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-uvx",
+          "command": "uvx",
+          "args": [
+            "semgrep-mcp"
+          ],
+          "env": {}
+        },
+        {
+          "name": "mcp-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "ghcr.io/semgrep/mcp",
+            "-t",
+            "stdio"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

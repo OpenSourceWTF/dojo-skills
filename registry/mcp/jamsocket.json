@@ -1,0 +1,32 @@
+{
+  "skills": {
+    "forevervm": {
+      "name": "ForeverVM MCP Server",
+      "source": "github:jamsocket/forevervm",
+      "description": "data-color-mode=\"auto\" data-light-theme=\"light\" data-dark-theme=\"dark\"",
+      "tags": [
+        "mcp",
+        "python",
+        "repl",
+        "claude",
+        "System Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "forevervm-cli",
+          "command": "npx",
+          "args": [
+            "forevervm-mcp",
+            "install",
+            "--client",
+            "${client}"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

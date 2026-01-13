@@ -1,0 +1,35 @@
+{
+  "skills": {
+    "cfbd-api": {
+      "name": "College Football Data API",
+      "source": "github:lenwood/cfbd-mcp-server",
+      "description": "An MCP server for the [College Football Data API](https://collegefootballdata.com/).",
+      "tags": [
+        "mcp",
+        "football",
+        "college",
+        "API",
+        "statistics",
+        "Analytics"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "cfbd-api-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/lenwood/cfbd-mcp-server",
+            "cfbd-mcp-server"
+          ],
+          "env": {
+            "CFB_API_KEY": "${CFB_API_KEY}",
+            "PATH": "${PATH}"
+          }
+        }
+      ]
+    }
+  }
+}

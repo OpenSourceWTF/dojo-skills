@@ -1,0 +1,32 @@
+{
+  "skills": {
+    "gotohuman-mcp-server": {
+      "name": "gotoHuman MCP Server",
+      "source": "github:gotohuman/gotohuman-mcp-server",
+      "description": "Let your **AI agents ask for human reviews** in gotoHuman via MCP.",
+      "tags": [
+        "mcp",
+        "human review",
+        "AI agents",
+        "webhook",
+        "automation",
+        "AI Systems"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "gotohuman-mcp-server-custom",
+          "command": "node",
+          "args": [
+            "build/index.js"
+          ],
+          "env": {
+            "GOTOHUMAN_API_KEY": "${GOTOHUMAN_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

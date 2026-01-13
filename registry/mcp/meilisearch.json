@@ -1,0 +1,43 @@
+{
+  "skills": {
+    "meilisearch-mcp": {
+      "name": "Meilisearch MCP Server",
+      "source": "github:meilisearch/meilisearch-mcp",
+      "description": "A Model Context Protocol (MCP) server for interacting with Meilisearch through LLM interfaces like Claude.",
+      "tags": [
+        "mcp",
+        "search",
+        "meilisearch",
+        "indexing",
+        "document management",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "meilisearch-mcp-uvx",
+          "command": "uvx",
+          "args": [
+            "-n",
+            "meilisearch-mcp"
+          ],
+          "env": {}
+        },
+        {
+          "name": "meilisearch-mcp-python",
+          "command": "python",
+          "args": [
+            "-m",
+            "src.meilisearch_mcp"
+          ],
+          "env": {
+            "MEILI_HTTP_ADDR": "http://localhost:7700",
+            "MEILI_MASTER_KEY": "your_master_key"
+          }
+        }
+      ]
+    }
+  }
+}

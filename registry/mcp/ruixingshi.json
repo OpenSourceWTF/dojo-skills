@@ -1,0 +1,33 @@
+{
+  "skills": {
+    "deepseek-thinker-mcp": {
+      "name": "Deepseek Thinker",
+      "source": "github:ruixingshi/deepseek-thinker-mcp",
+      "description": "A MCP (Model Context Protocol) provider Deepseek reasoning content to MCP-enabled AI Clients, like Claude Desktop. Supports access to Deepseek's thought processes from the Deepseek API service or from a local Ollama server.",
+      "tags": [
+        "mcp",
+        "Deepseek",
+        "AI Clients",
+        "Reasoning",
+        "AI Systems"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "deepseek-thinker-mcp-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "deepseek-thinker-mcp"
+          ],
+          "env": {
+            "API_KEY": "${API_KEY}",
+            "BASE_URL": "${BASE_URL}"
+          }
+        }
+      ]
+    }
+  }
+}

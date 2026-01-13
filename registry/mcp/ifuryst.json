@@ -1,0 +1,34 @@
+{
+  "skills": {
+    "rednote-mcp": {
+      "name": "RedNote MCP",
+      "source": "github:iFurySt/RedNote-MCP",
+      "description": "https://github.com/user-attachments/assets/06b2c67f-d9ed-4a30-8f1d-9743f3edaa3a",
+      "tags": [
+        "mcp",
+        "xiaohongshu",
+        "social media",
+        "content access",
+        "MCP",
+        "Chinese",
+        "Cursor",
+        "Node.js",
+        "Productivity"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "rednote-mcp-npm",
+          "command": "npx",
+          "args": [
+            "rednote-mcp",
+            "--stdio"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

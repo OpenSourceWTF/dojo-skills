@@ -1,0 +1,880 @@
+{
+  "skills": {
+    "crewai-multi-agent": {
+      "name": "crewai-multi-agent",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/14-agents/crewai",
+      "description": "Multi-agent orchestration framework for autonomous AI collaboration. Use when building teams of s...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "dspy": {
+      "name": "dspy",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/16-prompt-engineering/dspy",
+      "description": "Build complex AI systems with declarative programming, optimize prompts automatically, create mod...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "sentencepiece": {
+      "name": "sentencepiece",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/02-tokenization/sentencepiece",
+      "description": "Language-independent tokenizer treating text as raw Unicode. Supports BPE and Unigram algorithms....",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "audiocraft-audio-generation": {
+      "name": "audiocraft-audio-generation",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/18-multimodal/audiocraft",
+      "description": "PyTorch library for audio generation including text-to-music (MusicGen) and text-to-sound (AudioG...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "autogpt-agents": {
+      "name": "autogpt-agents",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/14-agents/autogpt",
+      "description": "Autonomous AI agent platform for building and deploying continuous agents. Use when creating visu...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "blip-2-vision-language": {
+      "name": "blip-2-vision-language",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/18-multimodal/blip-2",
+      "description": "Vision-language pre-training framework bridging frozen image encoders and LLMs. Use when you need...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "faiss": {
+      "name": "faiss",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/15-rag/faiss",
+      "description": "Facebook's library for efficient similarity search and clustering of dense vectors. Supports bill...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "fine-tuning-with-trl": {
+      "name": "fine-tuning-with-trl",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/06-post-training/trl-fine-tuning",
+      "description": "Fine-tune LLMs using reinforcement learning with TRL - SFT for instruction tuning, DPO for prefer...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "gguf-quantization": {
+      "name": "gguf-quantization",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/10-optimization/gguf",
+      "description": "GGUF format and llama.cpp quantization for efficient CPU/GPU inference. Use when deploying models...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "gptq": {
+      "name": "gptq",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/10-optimization/gptq",
+      "description": "Post-training 4-bit quantization for LLMs with minimal accuracy loss. Use for deploying large mod...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "guidance": {
+      "name": "guidance",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/16-prompt-engineering/guidance",
+      "description": "Control LLM output with regex and grammars, guarantee valid JSON/XML/code generation, enforce str...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "hqq-quantization": {
+      "name": "hqq-quantization",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/10-optimization/hqq",
+      "description": "Half-Quadratic Quantization for LLMs without calibration data. Use when quantizing models to 4/3/...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "huggingface-tokenizers": {
+      "name": "huggingface-tokenizers",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/02-tokenization/huggingface-tokenizers",
+      "description": "Fast tokenizers optimized for research and production. Rust-based implementation tokenizes 1GB in...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "knowledge-distillation": {
+      "name": "knowledge-distillation",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/19-emerging-techniques/knowledge-distillation",
+      "description": "Compress large language models using knowledge distillation from teacher to student models. Use w...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "lambda-labs-gpu-cloud": {
+      "name": "lambda-labs-gpu-cloud",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/09-infrastructure/lambda-labs",
+      "description": "Reserved and on-demand GPU cloud instances for ML training and inference. Use when you need dedic...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "langsmith-observability": {
+      "name": "langsmith-observability",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/17-observability/langsmith",
+      "description": "LLM observability platform for tracing, evaluation, and monitoring. Use when debugging LLM applic...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "long-context": {
+      "name": "long-context",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/19-emerging-techniques/long-context",
+      "description": "Extend context windows of transformer models using RoPE, YaRN, ALiBi, and position interpolation ...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "mamba-architecture": {
+      "name": "mamba-architecture",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/01-model-architecture/mamba",
+      "description": "State-space model with O(n) complexity vs Transformers' O(n²). 5× faster inference, million-token...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "mlflow": {
+      "name": "mlflow",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/13-mlops/mlflow",
+      "description": "Track ML experiments, manage model registry with versioning, deploy models to production, and rep...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "nanogpt": {
+      "name": "nanogpt",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/01-model-architecture/nanogpt",
+      "description": "Educational GPT implementation in ~300 lines. Reproduces GPT-2 (124M) on OpenWebText. Clean, hack...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "openrlhf-training": {
+      "name": "openrlhf-training",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/06-post-training/openrlhf",
+      "description": "High-performance RLHF framework with Ray+vLLM acceleration. Use for PPO, GRPO, RLOO, DPO training...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "optimizing-attention-flash": {
+      "name": "optimizing-attention-flash",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/10-optimization/flash-attention",
+      "description": "Optimizes transformer attention with Flash Attention for 2-4x speedup and 10-20x memory reduction...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "outlines": {
+      "name": "outlines",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/16-prompt-engineering/outlines",
+      "description": "Guarantee valid JSON/XML/code structure during generation, use Pydantic models for type-safe outp...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "peft-fine-tuning": {
+      "name": "peft-fine-tuning",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/03-fine-tuning/peft",
+      "description": "Parameter-efficient fine-tuning for LLMs using LoRA, QLoRA, and 25+ methods. Use when fine-tuning...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "phoenix-observability": {
+      "name": "phoenix-observability",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/17-observability/phoenix",
+      "description": "Open-source AI observability platform for LLM tracing, evaluation, and monitoring. Use when debug...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "pinecone": {
+      "name": "pinecone",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/15-rag/pinecone",
+      "description": "Managed vector database for production AI applications. Fully managed, auto-scaling, with hybrid ...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "pyvene-interventions": {
+      "name": "pyvene-interventions",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/04-mechanistic-interpretability/pyvene",
+      "description": "Provides guidance for performing causal interventions on PyTorch models using pyvene's declarativ...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "quantizing-models-bitsandbytes": {
+      "name": "quantizing-models-bitsandbytes",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/10-optimization/bitsandbytes",
+      "description": "Quantizes LLMs to 8-bit or 4-bit for 50-75% memory reduction with minimal accuracy loss. Use when...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "rwkv-architecture": {
+      "name": "rwkv-architecture",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/01-model-architecture/rwkv",
+      "description": "RNN+Transformer hybrid with O(n) inference. Linear time, infinite context, no KV cache. Train lik...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "sentence-transformers": {
+      "name": "sentence-transformers",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/15-rag/sentence-transformers",
+      "description": "Framework for state-of-the-art sentence, text, and image embeddings. Provides 5000+ pre-trained m...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "simpo-training": {
+      "name": "simpo-training",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/06-post-training/simpo",
+      "description": "Simple Preference Optimization for LLM alignment. Reference-free alternative to DPO with better p...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "stable-diffusion-image-generation": {
+      "name": "stable-diffusion-image-generation",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/18-multimodal/stable-diffusion",
+      "description": "State-of-the-art text-to-image generation with Stable Diffusion models via HuggingFace Diffusers....",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "tensorboard": {
+      "name": "tensorboard",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/13-mlops/tensorboard",
+      "description": "Visualize training metrics, debug models with histograms, compare experiments, visualize model gr...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "transformer-lens-interpretability": {
+      "name": "transformer-lens-interpretability",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/04-mechanistic-interpretability/transformer-lens",
+      "description": "Provides guidance for mechanistic interpretability research using TransformerLens to inspect and ...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "weights-and-biases": {
+      "name": "weights-and-biases",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/13-mlops/weights-and-biases",
+      "description": "Track ML experiments with automatic logging, visualize training in real-time, optimize hyperparam...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "chroma": {
+      "name": "chroma",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/15-rag/chroma",
+      "description": "Open-source embedding database for AI applications. Store embeddings and metadata, perform vector...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "evaluating-llms-harness": {
+      "name": "evaluating-llms-harness",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/11-evaluation/lm-evaluation-harness",
+      "description": "Evaluates LLMs across 60+ academic benchmarks (MMLU, HumanEval, GSM8K, TruthfulQA, HellaSwag). Us...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "huggingface-accelerate": {
+      "name": "huggingface-accelerate",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/08-distributed-training/accelerate",
+      "description": "Simplest distributed training API. 4 lines to add distributed support to any PyTorch script. Unif...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "modal-serverless-gpu": {
+      "name": "modal-serverless-gpu",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/09-infrastructure/modal",
+      "description": "Serverless GPU cloud platform for running ML workloads. Use when you need on-demand GPU access wi...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "model-merging": {
+      "name": "model-merging",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/19-emerging-techniques/model-merging",
+      "description": "Merge multiple fine-tuned models using mergekit to combine capabilities without retraining. Use w...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "nemo-curator": {
+      "name": "nemo-curator",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/05-data-processing/nemo-curator",
+      "description": "GPU-accelerated data curation for LLM training. Supports text/image/video/audio. Features fuzzy d...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "qdrant-vector-search": {
+      "name": "qdrant-vector-search",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/15-rag/qdrant",
+      "description": "High-performance vector similarity search engine for RAG and semantic search. Use when building p...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "serving-llms-vllm": {
+      "name": "serving-llms-vllm",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/12-inference-serving/vllm",
+      "description": "Serves LLMs with high throughput using vLLM's PagedAttention and continuous batching. Use when de...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "instructor": {
+      "name": "instructor",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/16-prompt-engineering/instructor",
+      "description": "Extract structured data from LLM responses with Pydantic validation, retry failed extractions aut...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "deepspeed": {
+      "name": "deepspeed",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/08-distributed-training/deepspeed",
+      "description": "Expert guidance for distributed training with DeepSpeed - ZeRO optimization stages, pipeline para...",
+      "tags": [
+        "data-and-analytics",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "evaluating-code-models": {
+      "name": "evaluating-code-models",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/11-evaluation/bigcode-evaluation-harness",
+      "description": "Evaluates code generation models across HumanEval, MBPP, MultiPL-E, and 15+ benchmarks with pass@...",
+      "tags": [
+        "data-and-analytics",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "llamaindex": {
+      "name": "llamaindex",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/14-agents/llamaindex",
+      "description": "Data framework for building LLM applications with RAG. Specializes in document ingestion (300+ co...",
+      "tags": [
+        "data-and-analytics",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "pytorch-fsdp": {
+      "name": "pytorch-fsdp",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/08-distributed-training/pytorch-fsdp",
+      "description": "Expert guidance for Fully Sharded Data Parallel training with PyTorch FSDP - parameter sharding, ...",
+      "tags": [
+        "data-and-analytics",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "training-llms-megatron": {
+      "name": "training-llms-megatron",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/08-distributed-training/megatron-core",
+      "description": "Trains large language models (2B-462B parameters) using NVIDIA Megatron-Core with advanced parall...",
+      "tags": [
+        "data-and-analytics",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "axolotl": {
+      "name": "axolotl",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/03-fine-tuning/axolotl",
+      "description": "Expert guidance for fine-tuning LLMs with Axolotl - YAML configs, 100+ models, LoRA/QLoRA, DPO/KT...",
+      "tags": [
+        "devops-and-infrastructure",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "llama-cpp": {
+      "name": "llama-cpp",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/12-inference-serving/llama-cpp",
+      "description": "Runs LLM inference on CPU, Apple Silicon, and consumer GPUs without NVIDIA hardware. Use for edge...",
+      "tags": [
+        "devops-and-infrastructure",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "skypilot-multi-cloud-orchestration": {
+      "name": "skypilot-multi-cloud-orchestration",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/09-infrastructure/skypilot",
+      "description": "Multi-cloud orchestration for ML workloads with automatic cost optimization. Use when you need to...",
+      "tags": [
+        "devops-and-infrastructure",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "tensorrt-llm": {
+      "name": "tensorrt-llm",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/12-inference-serving/tensorrt-llm",
+      "description": "Optimizes LLM inference with NVIDIA TensorRT for maximum throughput and lowest latency. Use for p...",
+      "tags": [
+        "devops-and-infrastructure",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "speculative-decoding": {
+      "name": "speculative-decoding",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/19-emerging-techniques/speculative-decoding",
+      "description": "Accelerate LLM inference using speculative decoding, Medusa multiple heads, and lookahead decodin...",
+      "tags": [
+        "devops-and-infrastructure",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "langchain": {
+      "name": "langchain",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/14-agents/langchain",
+      "description": "Framework for building LLM-powered applications with agents, chains, and RAG. Supports multiple p...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "clip": {
+      "name": "clip",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/18-multimodal/clip",
+      "description": "OpenAI's model connecting vision and language. Enables zero-shot image classification, image-text...",
+      "tags": [
+        "machine-learning",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "constitutional-ai": {
+      "name": "constitutional-ai",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/07-safety-alignment/constitutional-ai",
+      "description": "Anthropic's method for training harmless AI through self-improvement. Two-phase approach - superv...",
+      "tags": [
+        "machine-learning",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "grpo-rl-training": {
+      "name": "grpo-rl-training",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/06-post-training/grpo-rl-training",
+      "description": "Expert guidance for GRPO/RL fine-tuning with TRL for reasoning and task-specific model training",
+      "tags": [
+        "machine-learning",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "implementing-llms-litgpt": {
+      "name": "implementing-llms-litgpt",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/01-model-architecture/litgpt",
+      "description": "Implements and trains LLMs using Lightning AI's LitGPT with 20+ pretrained architectures (Llama, ...",
+      "tags": [
+        "machine-learning",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "llamaguard": {
+      "name": "llamaguard",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/07-safety-alignment/llamaguard",
+      "description": "Meta's 7-8B specialized moderation model for LLM input/output filtering. 6 safety categories - vi...",
+      "tags": [
+        "machine-learning",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "model-pruning": {
+      "name": "model-pruning",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/19-emerging-techniques/model-pruning",
+      "description": "Reduce LLM size and accelerate inference using pruning techniques like Wanda and SparseGPT. Use w...",
+      "tags": [
+        "machine-learning",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "moe-training": {
+      "name": "moe-training",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/19-emerging-techniques/moe-training",
+      "description": "Train Mixture of Experts (MoE) models using DeepSpeed or HuggingFace. Use when training large-sca...",
+      "tags": [
+        "machine-learning",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "nnsight-remote-interpretability": {
+      "name": "nnsight-remote-interpretability",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/04-mechanistic-interpretability/nnsight",
+      "description": "Provides guidance for interpreting and manipulating neural network internals using nnsight with o...",
+      "tags": [
+        "machine-learning",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "pytorch-lightning": {
+      "name": "pytorch-lightning",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/08-distributed-training/pytorch-lightning",
+      "description": "High-level PyTorch framework with Trainer class, automatic distributed training (DDP/FSDP/DeepSpe...",
+      "tags": [
+        "machine-learning",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "segment-anything-model": {
+      "name": "segment-anything-model",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/18-multimodal/segment-anything",
+      "description": "Foundation model for image segmentation with zero-shot transfer. Use when you need to segment any...",
+      "tags": [
+        "machine-learning",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "sglang": {
+      "name": "sglang",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/12-inference-serving/sglang",
+      "description": "Fast structured generation and serving for LLMs with RadixAttention prefix caching. Use for JSON/...",
+      "tags": [
+        "machine-learning",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "sparse-autoencoder-training": {
+      "name": "sparse-autoencoder-training",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/04-mechanistic-interpretability/saelens",
+      "description": "Provides guidance for training and analyzing Sparse Autoencoders (SAEs) using SAELens to decompos...",
+      "tags": [
+        "machine-learning",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "unsloth": {
+      "name": "unsloth",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/03-fine-tuning/unsloth",
+      "description": "Expert guidance for fast fine-tuning with Unsloth - 2-5x faster training, 50-80% less memory, LoR...",
+      "tags": [
+        "machine-learning",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "whisper": {
+      "name": "whisper",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/18-multimodal/whisper",
+      "description": "OpenAI's general-purpose speech recognition model. Supports 99 languages, transcription, translat...",
+      "tags": [
+        "machine-learning",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "llama-factory": {
+      "name": "llama-factory",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/03-fine-tuning/llama-factory",
+      "description": "Expert guidance for fine-tuning LLMs with LLaMA-Factory - WebUI no-code, 100+ models, 2/3/4/5/6/8...",
+      "tags": [
+        "machine-learning",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "llava": {
+      "name": "llava",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/18-multimodal/llava",
+      "description": "Large Language and Vision Assistant. Enables visual instruction tuning and image-based conversati...",
+      "tags": [
+        "machine-learning",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "awq-quantization": {
+      "name": "awq-quantization",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/10-optimization/awq",
+      "description": "Activation-aware weight quantization for 4-bit LLM compression with 3x speedup and minimal accura...",
+      "tags": [
+        "machine-learning",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "nemo-guardrails": {
+      "name": "nemo-guardrails",
+      "source": "github:zechenzhangAGI/AI-research-SKILLs/07-safety-alignment/nemo-guardrails",
+      "description": "NVIDIA's runtime safety framework for LLM applications. Features jailbreak detection, input/outpu...",
+      "tags": [
+        "testing-and-quality",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    }
+  }
+}

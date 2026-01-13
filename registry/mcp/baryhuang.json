@@ -1,0 +1,124 @@
+{
+  "skills": {
+    "aws-resources-operations": {
+      "name": "AWS Resources",
+      "source": "github:baryhuang/mcp-server-aws-resources-python",
+      "description": "Run generated python code to securely query or modify any AWS resources supported by boto3.",
+      "tags": [
+        "mcp",
+        "AWS",
+        "Docker",
+        "boto3",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "aws-resources-operations-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}",
+            "-e",
+            "AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}",
+            "-e",
+            "AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}",
+            "buryhuang/mcp-server-aws-resources:latest"
+          ],
+          "env": {
+            "AWS_ACCESS_KEY_ID": "${AWS_ACCESS_KEY_ID}",
+            "AWS_SECRET_ACCESS_KEY": "${AWS_SECRET_ACCESS_KEY}",
+            "AWS_DEFAULT_REGION": "${AWS_DEFAULT_REGION}"
+          }
+        }
+      ]
+    },
+    "gmail-headless": {
+      "name": "Headless Gmail Server",
+      "source": "github:baryhuang/mcp-headless-gmail",
+      "description": "Remote hostable MCP server that can get and send Gmail messages without local credential or file system setup.",
+      "tags": [
+        "mcp",
+        "Gmail",
+        "Headless",
+        "Docker",
+        "API",
+        "Messaging"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "gmail-headless-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "buryhuang/mcp-headless-gmail:latest"
+          ],
+          "env": {}
+        }
+      ]
+    },
+    "openapi-anyapi": {
+      "name": "Scalable OpenAPI Endpoint Discovery Tool",
+      "source": "github:baryhuang/mcp-server-any-openapi",
+      "description": "Interact with large [OpenAPI](https://www.openapis.org/) docs using built-in semantic search for endpoints. Allows for customizing the MCP server prefix.",
+      "tags": [
+        "mcp",
+        "OpenAPI",
+        "API Discovery",
+        "Semantic Search",
+        "FastAPI",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "openapi-anyapi-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "OPENAPI_JSON_DOCS_URL=${OPENAPI_JSON_DOCS_URL}",
+            "-e",
+            "API_REQUEST_BASE_URL=${API_REQUEST_BASE_URL}",
+            "-e",
+            "MCP_API_PREFIX=${MCP_API_PREFIX}",
+            "buryhuang/mcp-server-any-openapi:latest"
+          ],
+          "env": {
+            "OPENAPI_JSON_DOCS_URL": "${OPENAPI_JSON_DOCS_URL}",
+            "API_REQUEST_BASE_URL": "${API_REQUEST_BASE_URL}",
+            "MCP_API_PREFIX": "${MCP_API_PREFIX}"
+          }
+        },
+        {
+          "name": "openapi-anyapi-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/baryhuang/mcp-server-any-openapi",
+            "src/mcp_server_any_openapi/server.py"
+          ],
+          "env": {
+            "OPENAPI_JSON_DOCS_URL": "${OPENAPI_JSON_DOCS_URL}",
+            "API_REQUEST_BASE_URL": "${API_REQUEST_BASE_URL}",
+            "MCP_API_PREFIX": "${MCP_API_PREFIX}"
+          }
+        }
+      ]
+    }
+  }
+}

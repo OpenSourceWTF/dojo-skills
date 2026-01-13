@@ -1,0 +1,32 @@
+{
+  "skills": {
+    "minima": {
+      "name": "Minima",
+      "source": "github:dmayboroda/minima",
+      "description": "MCP server for RAG on local files",
+      "tags": [
+        "mcp",
+        "ChatGPT",
+        "Integration",
+        "Local",
+        "Open Source",
+        "Knowledge Base"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "minima-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/dmayboroda/minima.git@main#subdirectory=mcp-server",
+            "minima"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

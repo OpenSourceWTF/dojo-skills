@@ -1,0 +1,50 @@
+{
+  "skills": {
+    "sandbox-mcp": {
+      "name": "302AI Sandbox MCP Server",
+      "source": "github:302ai/302_sandbox_mcp",
+      "description": "Here is a concise description paragraph focused on what the project does:\n\nThe 302AI Sandbox MCP Server is an MCP service that provides a secure code sandbox environment, allowing AI assistants to safely execute arbitrary code from various programming languages and tools without compromising system security.",
+      "tags": [
+        "mcp",
+        "code execution",
+        "sandbox",
+        "MCP",
+        "AI tools",
+        "code sandbox",
+        "development tools",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "sandbox-mcp-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@302ai/sandbox-mcp"
+          ],
+          "env": {
+            "302AI_API_KEY": "${302AI_API_KEY}"
+          }
+        },
+        {
+          "name": "sandbox-mcp-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "302AI_API_KEY",
+            "mcp/302_sandbox"
+          ],
+          "env": {
+            "302AI_API_KEY": "${302AI_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

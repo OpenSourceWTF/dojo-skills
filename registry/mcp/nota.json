@@ -1,0 +1,52 @@
+{
+  "skills": {
+    "gyazo": {
+      "name": "Gyazo MCP Server",
+      "source": "github:nota/gyazo-mcp-server",
+      "description": "A Model Context Protocol server for Gyazo image integration",
+      "tags": [
+        "mcp",
+        "gyazo",
+        "images",
+        "mcp",
+        "model context protocol",
+        "typescript",
+        "api",
+        "search",
+        "upload",
+        "ocr",
+        "Media Creation"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "gyazo-npm",
+          "command": "npx",
+          "args": [
+            "@notainc/gyazo-mcp-server"
+          ],
+          "env": {
+            "GYAZO_ACCESS_TOKEN": "${GYAZO_ACCESS_TOKEN}"
+          }
+        },
+        {
+          "name": "gyazo-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "GYAZO_ACCESS_TOKEN",
+            "mcp/gyazo"
+          ],
+          "env": {
+            "GYAZO_ACCESS_TOKEN": "${GYAZO_ACCESS_TOKEN}"
+          }
+        }
+      ]
+    }
+  }
+}

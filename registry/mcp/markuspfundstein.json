@@ -1,0 +1,81 @@
+{
+  "skills": {
+    "mcp-gsuite": {
+      "name": "MCP Google Workspace Integration",
+      "source": "github:MarkusPfundstein/mcp-gsuite",
+      "description": "MCP server to interact with Google products.",
+      "tags": [
+        "mcp",
+        "gmail",
+        "google",
+        "calendar",
+        "gsuite",
+        "google workspace",
+        "email",
+        "productivity",
+        "Productivity"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-gsuite-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp-gsuite",
+            "--accounts-file",
+            "${ACCOUNTS_FILE_PATH}",
+            "--credentials-dir",
+            "${CREDENTIALS_DIR}"
+          ],
+          "env": {}
+        }
+      ]
+    },
+    "mcp-obsidian": {
+      "name": "MCP server for Obsidian",
+      "source": "github:MarkusPfundstein/mcp-obsidian",
+      "description": "MCP server to interact with Obsidian via the Local REST API community plugin.",
+      "tags": [
+        "mcp",
+        "obsidian",
+        "note-taking",
+        "knowledge-management",
+        "rest-api",
+        "mcp",
+        "Knowledge Base"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-obsidian-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp-obsidian"
+          ],
+          "env": {
+            "OBSIDIAN_API_KEY": "${OBSIDIAN_API_KEY}"
+          }
+        },
+        {
+          "name": "mcp-obsidian-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "OBSIDIAN_API_KEY",
+            "mcp/obsidian"
+          ],
+          "env": {
+            "OBSIDIAN_API_KEY": "${OBSIDIAN_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

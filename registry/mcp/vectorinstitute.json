@@ -1,0 +1,35 @@
+{
+  "skills": {
+    "goodnews": {
+      "name": "Goodnews",
+      "source": "github:VectorInstitute/mcp-goodnews",
+      "description": "A simple MCP server that delivers curated positive and uplifting news stories.",
+      "tags": [
+        "mcp",
+        "positive news",
+        "uplifting",
+        "Cohere",
+        "NewsAPI",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "goodnews-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/VectorInstitute/mcp-goodnews",
+            "server.py"
+          ],
+          "env": {
+            "NEWS_API_KEY": "${NEWS_API_KEY}",
+            "COHERE_API_KEY": "${COHERE_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "skills": {
+    "figma": {
+      "name": "Figma",
+      "source": "github:GLips/Figma-Context-MCP",
+      "description": "Give your coding agent direct access to Figma file data, helping it one-shot design implementation.",
+      "tags": [
+        "mcp",
+        "Figma",
+        "AI",
+        "Professional Apps"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "figma-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "figma-developer-mcp",
+            "--figma-api-key=${FIGMA_API_KEY}",
+            "--stdio"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

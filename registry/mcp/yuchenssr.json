@@ -1,0 +1,44 @@
+{
+  "skills": {
+    "mindmap": {
+      "name": "Mindmap",
+      "source": "github:YuChenSSR/mindmap-mcp-server",
+      "description": "A server that generates mindmaps from input containing markdown code.",
+      "tags": [
+        "mcp",
+        "mindmap",
+        "markdown",
+        "interactive",
+        "Media Creation"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mindmap-uvx",
+          "command": "uvx",
+          "args": [
+            "mindmap-mcp-server",
+            "--return-type",
+            "html"
+          ],
+          "env": {}
+        },
+        {
+          "name": "mindmap-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "--rm",
+            "-i",
+            "-v",
+            "/path/to/output/folder:/output",
+            "ychen94/mindmap-converter-mcp:latest"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "skills": {
+    "whois-mcp": {
+      "name": "Whois Lookup",
+      "source": "github:bharathvaj-ganesan/whois-mcp",
+      "description": "MCP server that performs whois lookup against domain, IP, ASN and TLD.",
+      "tags": [
+        "mcp",
+        "whois",
+        "domain",
+        "tools",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "whois-mcp-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@bharathvaj/whois-mcp@latest"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

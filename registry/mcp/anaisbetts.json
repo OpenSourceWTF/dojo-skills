@@ -1,0 +1,28 @@
+{
+  "skills": {
+    "mcp-installer": {
+      "name": "Installer",
+      "source": "github:anaisbetts/mcp-installer",
+      "description": "This server is a server that installs other MCP servers for you.",
+      "tags": [
+        "mcp",
+        "installer",
+        "server",
+        "MCP Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-installer-npm",
+          "command": "npx",
+          "args": [
+            "@anaisbetts/mcp-installer"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

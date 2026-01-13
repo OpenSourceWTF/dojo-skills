@@ -1,0 +1,34 @@
+{
+  "skills": {
+    "drupal": {
+      "name": "Drupal Server",
+      "source": "github:Omedia/mcp-server-drupal",
+      "description": "Server for interacting with [Drupal](https://www.drupal.org/project/mcp) using STDIO transport layer.",
+      "tags": [
+        "mcp",
+        "Drupal",
+        "TypeScript",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "drupal-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "deno",
+            "run",
+            "-A",
+            "jsr:@omedia/mcp-server-drupal@${VERSION}",
+            "--drupal-url",
+            "${DRUPAL_BASE_URL}"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

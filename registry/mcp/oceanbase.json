@@ -1,0 +1,36 @@
+{
+  "skills": {
+    "mcp-oceanbase": {
+      "name": "OceanBase MCP Server",
+      "source": "github:oceanbase/mcp-oceanbase",
+      "description": "MCP Server for OceanBase database and its tools",
+      "tags": [
+        "mcp",
+        "database",
+        "OceanBase",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-oceanbase-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/oceanbase/mcp-oceanbase",
+            "oceanbase_mcp_server"
+          ],
+          "env": {
+            "OB_HOST": "${OB_HOST}",
+            "OB_PORT": "${OB_PORT}",
+            "OB_USER": "${OB_USER}",
+            "OB_PASSWORD": "${OB_PASSWORD}",
+            "OB_DATABASE": "${OB_DATABASE}"
+          }
+        }
+      ]
+    }
+  }
+}

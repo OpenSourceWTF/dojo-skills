@@ -1,0 +1,57 @@
+{
+  "skills": {
+    "armor-crypto": {
+      "name": "Armor Crypto MCP",
+      "source": "github:armorwallet/armor-crypto-mcp",
+      "description": "*Alpha Test version 0.1*",
+      "tags": [
+        "mcp",
+        "crypto",
+        "wallet",
+        "blockchain",
+        "AI",
+        "Solana",
+        "DCA",
+        "swaps",
+        "staking",
+        "multi-chain",
+        "agent integration",
+        "Finance"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "armor-crypto-uvx",
+          "command": "uvx",
+          "args": [
+            "armor-crypto-mcp@latest",
+            "--version"
+          ],
+          "env": {
+            "ARMOR_API_KEY": "${ARMOR_API_KEY}"
+          }
+        },
+        {
+          "name": "armor-crypto-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "ARMOR_API_URL",
+            "-e",
+            "ARMOR_API_KEY",
+            "mcp/armor-crypto"
+          ],
+          "env": {
+            "ARMOR_API_URL": "https://app.armorwallet.ai/api/v1",
+            "ARMOR_API_KEY": "${ARMOR_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

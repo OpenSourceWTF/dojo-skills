@@ -1,0 +1,35 @@
+{
+  "skills": {
+    "x-twitter": {
+      "name": "X (Twitter)",
+      "source": "github:vidhupv/x-mcp",
+      "description": "Create, manage and publish X/Twitter posts directly through Claude chat.",
+      "tags": [
+        "mcp",
+        "Twitter",
+        "X",
+        "Messaging"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "x-twitter-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/vidhupv/x-mcp",
+            "x-mcp"
+          ],
+          "env": {
+            "TWITTER_API_KEY": "${TWITTER_API_KEY}",
+            "TWITTER_API_SECRET": "${TWITTER_API_SECRET}",
+            "TWITTER_ACCESS_TOKEN": "${TWITTER_ACCESS_TOKEN}",
+            "TWITTER_ACCESS_TOKEN_SECRET": "${TWITTER_ACCESS_TOKEN_SECRET}"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "skills": {
+    "minimax-mcp": {
+      "name": "MiniMax Model Context Protocol Server",
+      "source": "github:MiniMax-AI/MiniMax-MCP",
+      "description": "Here is a concise description paragraph focused on what the MiniMax project does:\n\nMiniMax is an official server that enables interaction with powerful text-to-speech, voice cloning, video generation, and image generation APIs through the MiniMax Model Context Protocol (MCP). It allows MCP clients like Claude Desktop, Cursor, Windsurf, and OpenAI Agents to generate speech, clone voices, create videos and images, and more.",
+      "tags": [
+        "mcp",
+        "text-to-speech",
+        "voice-clone",
+        "video-generation",
+        "image-generation",
+        "MCP",
+        "API",
+        "Claude",
+        "Cursor",
+        "Windsurf",
+        "Media Creation"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "minimax-mcp-uvx",
+          "command": "uvx",
+          "args": [
+            "minimax-mcp"
+          ],
+          "env": {
+            "MINIMAX_API_KEY": "${MINIMAX_API_KEY}",
+            "MINIMAX_MCP_BASE_PATH": "${MINIMAX_MCP_BASE_PATH}",
+            "MINIMAX_API_HOST": "${MINIMAX_API_HOST}",
+            "MINIMAX_API_RESOURCE_MODE": "${MINIMAX_API_RESOURCE_MODE}"
+          }
+        }
+      ]
+    }
+  }
+}

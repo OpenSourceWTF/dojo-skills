@@ -1,0 +1,118 @@
+{
+  "skills": {
+    "crypto-feargreed-mcp": {
+      "name": "Crypto Fear & Greed Index",
+      "source": "github:kukapay/crypto-feargreed-mcp",
+      "description": "Providing real-time and historical Crypto Fear & Greed Index data.",
+      "tags": [
+        "mcp",
+        "Fear & Greed",
+        "Crypto Index",
+        "Analytics",
+        "Finance"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "crypto-feargreed-mcp-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/kukapay/crypto-feargreed-mcp",
+            "main.py"
+          ],
+          "env": {}
+        }
+      ]
+    },
+    "cryptopanic-mcp-server": {
+      "name": "CryptoPanic News",
+      "source": "github:kukapay/cryptopanic-mcp-server",
+      "description": "Providing latest cryptocurrency news to AI agents, powered by CryptoPanic.",
+      "tags": [
+        "mcp",
+        "cryptocurrency",
+        "news",
+        "CryptoPanic",
+        "Finance"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "cryptopanic-mcp-server-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/kukapay/cryptopanic-mcp-server",
+            "main.py"
+          ],
+          "env": {
+            "CRYPTOPANIC_API_KEY": "${CRYPTOPANIC_API_KEY}"
+          }
+        }
+      ]
+    },
+    "dune-analytics-mcp": {
+      "name": "Dune Analytics",
+      "source": "github:kukapay/dune-analytics-mcp",
+      "description": "A mcp server that bridges Dune Analytics data to AI agents.",
+      "tags": [
+        "mcp",
+        "Dune",
+        "Analytics",
+        "AI agents",
+        "Finance"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "dune-analytics-mcp-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/kukapay/dune-analytics-mcp",
+            "main.py"
+          ],
+          "env": {
+            "DUNE_API_KEY": "${DUNE_API_KEY}"
+          }
+        }
+      ]
+    },
+    "whale-tracker-mcp": {
+      "name": "Whale Tracker",
+      "source": "github:kukapay/whale-tracker-mcp",
+      "description": "A mcp server for tracking cryptocurrency whale transactions.",
+      "tags": [
+        "mcp",
+        "whale tracker",
+        "cryptocurrency",
+        "API",
+        "Finance"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "whale-tracker-mcp-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/kukapay/whale-tracker-mcp",
+            "whale-tracker-mcp"
+          ],
+          "env": {
+            "WHALE_TRACKER_API_KEY": "${WHALE_TRACKER_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

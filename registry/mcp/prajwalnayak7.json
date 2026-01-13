@@ -1,0 +1,28 @@
+{
+  "skills": {
+    "redis": {
+      "name": "Redis",
+      "source": "github:prajwalnayak7/mcp-server-redis",
+      "description": "MCP server to interact with Redis Server, AWS Memory DB, etc for caching or other use-cases where in-memory and key-value based storage is appropriate",
+      "tags": [
+        "mcp",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "redis-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/prajwalnayak7/mcp-server-redis",
+            "src/server.py"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "skills": {
+    "duckduckgo-mcp": {
+      "name": "DuckDuckGo Search MCP Server",
+      "source": "github:nickclyde/duckduckgo-mcp-server",
+      "description": "A Model Context Protocol (MCP) server that provides web search capabilities through DuckDuckGo, with additional features for content fetching and parsing.",
+      "tags": [
+        "mcp",
+        "web search",
+        "duckduckgo",
+        "content fetching",
+        "rate limiting",
+        "mcp",
+        "text extraction",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "duckduckgo-mcp-uvx",
+          "command": "uvx",
+          "args": [
+            "duckduckgo-mcp-server"
+          ],
+          "env": {}
+        },
+        {
+          "name": "duckduckgo-mcp-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "mcp/duckduckgo"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

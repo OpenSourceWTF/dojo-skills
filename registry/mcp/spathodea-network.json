@@ -1,0 +1,32 @@
+{
+  "skills": {
+    "opencti": {
+      "name": "OpenCTI",
+      "source": "github:Spathodea-Network/opencti-mcp",
+      "description": "Interact with OpenCTI platform to retrieve threat intelligence data including reports, indicators, malware and threat actors.",
+      "tags": [
+        "mcp",
+        "OpenCTI",
+        "Threat Intelligence",
+        "Knowledge Base"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "opencti-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "https://github.com/Spathodea-Network/opencti-mcp"
+          ],
+          "env": {
+            "OPENCTI_URL": "${OPENCTI_URL}",
+            "OPENCTI_TOKEN": "${OPENCTI_TOKEN}"
+          }
+        }
+      ]
+    }
+  }
+}

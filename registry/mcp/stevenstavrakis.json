@@ -1,0 +1,33 @@
+{
+  "skills": {
+    "obsidian-mcp": {
+      "name": "Obsidian",
+      "source": "github:StevenStavrakis/obsidian-mcp",
+      "description": "(by Steven Stavrakis) An MCP server for Obsidian.md with tools for searching, reading, writing, and organizing notes.",
+      "tags": [
+        "mcp",
+        "Obsidian",
+        "AI",
+        "Notes",
+        "Productivity",
+        "Knowledge Base"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "obsidian-mcp-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "obsidian-mcp",
+            "${OBSIDIAN_VAULT_PATH}",
+            "${OBSIDIAN_VAULT_PATH2}"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

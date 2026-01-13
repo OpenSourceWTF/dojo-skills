@@ -1,0 +1,56 @@
+{
+  "skills": {
+    "deepseek-r1": {
+      "name": "Deepseek R1",
+      "source": "github:66julienmartin/MCP-server-Deepseek_R1",
+      "description": "A Model Context Protocol (MCP) server implementation connecting Claude Desktop with DeepSeek's language models (R1/V3)",
+      "tags": [
+        "mcp",
+        "Deepseek",
+        "LLM",
+        "AI Systems"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "deepseek-r1-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "https://github.com/66julienmartin/MCP-server-Deepseek_R1"
+          ],
+          "env": {
+            "DEEPSEEK_API_KEY": "${DEEPSEEK_API_KEY}"
+          }
+        }
+      ]
+    },
+    "qwen-max": {
+      "name": "Qwen Max",
+      "source": "github:66julienmartin/MCP-server-Qwen_Max",
+      "description": "A Model Context Protocol (MCP) server implementation for the Qwen models.",
+      "tags": [
+        "mcp",
+        "Qwen Max",
+        "Server",
+        "AI Systems"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "qwen-max-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@gongrzhe/quickchart-mcp-server"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

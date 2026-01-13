@@ -1,0 +1,54 @@
+{
+  "skills": {
+    "unity-catalog": {
+      "name": "Unity Catalog",
+      "source": "github:ognis1205/mcp-server-unitycatalog",
+      "description": "An MCP server that enables LLMs to interact with Unity Catalog AI, supporting CRUD operations on Unity Catalog Functions and executing them as MCP tools.",
+      "tags": [
+        "mcp",
+        "Unity Catalog",
+        "API",
+        "Functions",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "unity-catalog-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/ognis1205/mcp-server-unitycatalog",
+            "mcp-server-unitycatalog",
+            "--uc_server",
+            "${UC_SERVER}",
+            "--uc_catalog",
+            "${UC_CATALOG}",
+            "--uc_schema",
+            "${UC_SCHEMA}"
+          ],
+          "env": {}
+        },
+        {
+          "name": "unity-catalog-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "--rm",
+            "-i",
+            "mcp/unitycatalog",
+            "--uc_server",
+            "${UC_SERVER}",
+            "--uc_catalog",
+            "${UC_CATALOG}",
+            "--uc_schema",
+            "${UC_SCHEMA}"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

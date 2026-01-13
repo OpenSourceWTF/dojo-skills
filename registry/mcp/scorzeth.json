@@ -1,0 +1,30 @@
+{
+  "skills": {
+    "anki": {
+      "name": "Anki",
+      "source": "github:scorzeth/anki-mcp-server",
+      "description": "An MCP server for interacting with your [Anki](https://apps.ankiweb.net/) decks and cards.",
+      "tags": [
+        "mcp",
+        "Anki",
+        "Cards",
+        "Review",
+        "Knowledge Base"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "anki-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "https://github.com/scorzeth/anki-mcp-server"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

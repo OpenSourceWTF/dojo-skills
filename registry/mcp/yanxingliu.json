@@ -1,0 +1,33 @@
+{
+  "skills": {
+    "dify": {
+      "name": "Dify",
+      "source": "github:YanxingLiu/dify-mcp-server",
+      "description": "A simple implementation of an MCP server for dify workflows.",
+      "tags": [
+        "mcp",
+        "dify",
+        "server",
+        "workflows",
+        "AI Systems"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "dify-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/YanxingLiu/dify-mcp-server",
+            "dify_mcp_server"
+          ],
+          "env": {
+            "CONFIG_PATH": "${CONFIG_PATH}"
+          }
+        }
+      ]
+    }
+  }
+}

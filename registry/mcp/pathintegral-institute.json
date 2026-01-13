@@ -1,0 +1,310 @@
+{
+  "skills": {
+    "gpaw-computation": {
+      "name": "GPAW Computation Server",
+      "source": "github:pathintegral-institute/mcp.science",
+      "description": "MCP server for running GPAW (Grid-based Projector Augmented Wave) computational calculations for materials science and quantum mechanics simulations.",
+      "tags": [
+        "mcp",
+        "quantum",
+        "computation",
+        "AI Systems"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "gpaw-computation-python",
+          "command": "uvx",
+          "args": [
+            "mcp-science",
+            "gpaw-computation"
+          ],
+          "env": {}
+        }
+      ]
+    },
+    "materials-project": {
+      "name": "Materials Project",
+      "source": "github:pathintegral-institute/mcp.science",
+      "description": "A MCP (Model Context Protocol) server that interacts with the Materials Project database, allowing for material search, structure visualization, and manipulation.",
+      "tags": [
+        "mcp",
+        "materials",
+        "science",
+        "MCP Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "materials-project-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp-science",
+            "materials-project"
+          ],
+          "env": {
+            "MP_API_KEY": "${MP_API_KEY}"
+          }
+        }
+      ]
+    },
+    "mathematica-check": {
+      "name": "Mathematica Check",
+      "source": "github:pathintegral-institute/mcp.science",
+      "description": "A Model Context Protocol (MCP) server that allows MCP clients (like Cursor) to execute Mathematica code via wolframscript and verify mathematical derivations.",
+      "tags": [
+        "mcp",
+        "mathematica",
+        "Professional Apps"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mathematica-check-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp-science",
+            "mathematica-check"
+          ],
+          "env": {}
+        }
+      ]
+    },
+    "nemad": {
+      "name": "NEMAD Materials Database",
+      "source": "github:pathintegral-institute/mcp.science",
+      "description": "MCP server for accessing the North East Materials Database (NEMAD) API to search materials by elements and chemical formulas in magnetic, thermoelectric, and superconductor databases.",
+      "tags": [
+        "mcp",
+        "materials",
+        "database",
+        "Knowledge Base"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "nemad-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp-science",
+            "nemad"
+          ],
+          "env": {
+            "NEMAD_API_KEY": "${NEMAD_API_KEY}"
+          }
+        }
+      ]
+    },
+    "netket": {
+      "name": "NetKet Quantum Physics",
+      "source": "github:pathintegral-institute/mcp.science",
+      "description": "MCP server for NetKet quantum many-body physics analysis. Create, analyze, and visualize quantum systems using natural language interfaces. Supports multiple lattice geometries and Hamiltonian models.",
+      "tags": [
+        "mcp",
+        "quantum",
+        "physics",
+        "AI Systems"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "netket-python",
+          "command": "uvx",
+          "args": [
+            "mcp-science",
+            "netket"
+          ],
+          "env": {}
+        }
+      ]
+    },
+    "python-code-execution": {
+      "name": "Python Code Execution",
+      "source": "github:pathintegral-institute/mcp.science",
+      "description": "A secure sandboxed Python code execution environment for MCP (Model-Client-Program) architecture.",
+      "tags": [
+        "mcp",
+        "python",
+        "code-execution",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "python-code-execution-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp-science",
+            "python-code-execution"
+          ],
+          "env": {}
+        }
+      ]
+    },
+    "ssh-exec": {
+      "name": "SSH Execution",
+      "source": "github:pathintegral-institute/mcp.science",
+      "description": "A Model Context Protocol (MCP) server for executing command-line operations on remote servers via SSH.",
+      "tags": [
+        "mcp",
+        "ssh",
+        "command execution",
+        "remote systems",
+        "System Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "ssh-exec-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp-science",
+            "ssh-exec"
+          ],
+          "env": {
+            "SSH_HOST": "${SSH_HOST}",
+            "SSH_PORT": "${SSH_PORT}",
+            "SSH_USERNAME": "${SSH_USERNAME}",
+            "SSH_PRIVATE_KEY": "${SSH_PRIVATE_KEY}",
+            "SSH_ALLOWED_COMMANDS": "${SSH_ALLOWED_COMMANDS}",
+            "SSH_ALLOWED_PATHS": "${SSH_ALLOWED_PATHS}",
+            "SSH_COMMANDS_BLACKLIST": "${SSH_COMMANDS_BLACKLIST}",
+            "SSH_ARGUMENTS_BLACKLIST": "${SSH_ARGUMENTS_BLACKLIST}"
+          }
+        }
+      ]
+    },
+    "timer": {
+      "name": "Timer MCP Server",
+      "source": "github:pathintegral-institute/mcp.science",
+      "description": "A minimal MCP server that functions as a countdown timer with progress notifications. Demonstrates streaming incremental updates for long-running tasks.",
+      "tags": [
+        "mcp",
+        "timer",
+        "streaming",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "timer-python",
+          "command": "uvx",
+          "args": [
+            "mcp-science",
+            "timer"
+          ],
+          "env": {}
+        }
+      ]
+    },
+    "tinydb": {
+      "name": "TinyDB MCP Server",
+      "source": "github:pathintegral-institute/mcp.science",
+      "description": "MCP server that uses TinyDB to store and retrieve data. Provides a simple NoSQL database interface with operations for creating tables, inserting documents, querying, updating, and deleting records.",
+      "tags": [
+        "mcp",
+        "database",
+        "nosql",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "tinydb-python",
+          "command": "uvx",
+          "args": [
+            "mcp-science",
+            "tinydb"
+          ],
+          "env": {}
+        }
+      ]
+    },
+    "txyz-search": {
+      "name": "TXYZ Search",
+      "source": "github:pathintegral-institute/mcp.science",
+      "description": "A Model Context Protocol (MCP) server for TXYZ Search API. Provides tools for academic and scholarly search, general web search, and smart search.",
+      "tags": [
+        "mcp",
+        "search",
+        "academic",
+        "scholarly",
+        "web search",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "txyz-search-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp-science",
+            "txyz-search"
+          ],
+          "env": {
+            "TXYZ_API_KEY": "${TXYZ_API_KEY}"
+          }
+        }
+      ]
+    },
+    "web-fetch": {
+      "name": "Web Fetch",
+      "source": "github:pathintegral-institute/mcp.science",
+      "description": "A Model Context Protocol (MCP) server for fetching webpages including html/pdf/plain text type content.",
+      "tags": [
+        "mcp",
+        "web",
+        "fetch",
+        "html",
+        "pdf",
+        "text",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "web-fetch-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp-science",
+            "web-fetch"
+          ],
+          "env": {}
+        },
+        {
+          "name": "web-fetch-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "ghcr.io/mcp-servers/fetch:latest"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

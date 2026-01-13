@@ -1,0 +1,49 @@
+{
+  "skills": {
+    "repomix": {
+      "name": "Repomix",
+      "source": "github:yamadashy/repomix",
+      "description": "- Try Repomix in your browser at [repomix.com](https://repomix.com/)",
+      "tags": [
+        "mcp",
+        "code",
+        "AI",
+        "repository",
+        "packaging",
+        "LLM",
+        "token counting",
+        "code analysis",
+        "CLI tool",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "repomix-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "repomix",
+            "--mcp"
+          ],
+          "env": {}
+        },
+        {
+          "name": "repomix-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-v",
+            ".:/app",
+            "-it",
+            "--rm",
+            "ghcr.io/yamadashy/repomix"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

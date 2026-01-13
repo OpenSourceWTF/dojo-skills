@@ -1,0 +1,68 @@
+{
+  "skills": {
+    "wcgw": {
+      "name": "WCGW Shell and Coding Agent",
+      "source": "github:rusiaaman/wcgw",
+      "description": "Empowering chat applications to code, build and run on your local machine.",
+      "tags": [
+        "mcp",
+        "shell",
+        "coding",
+        "AI",
+        "Claude",
+        "ChatGPT",
+        "MCP",
+        "file operations",
+        "terminal",
+        "development",
+        "automation",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "wcgw-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "wcgw@latest",
+            "--python",
+            "3.12",
+            "wcgw_mcp"
+          ],
+          "env": {}
+        },
+        {
+          "name": "wcgw-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "--mount",
+            "type=bind,src=/Users/username/Desktop,dst=/workspace/Desktop",
+            "wcgw"
+          ],
+          "env": {}
+        },
+        {
+          "name": "wcgw-custom",
+          "command": "wsl.exe",
+          "args": [
+            "uv",
+            "tool",
+            "run",
+            "--from",
+            "wcgw@latest",
+            "--python",
+            "3.12",
+            "wcgw_mcp"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

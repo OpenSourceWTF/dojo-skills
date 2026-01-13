@@ -1,0 +1,30 @@
+{
+  "skills": {
+    "airbnb": {
+      "name": "Airbnb",
+      "source": "github:openbnb-org/mcp-server-airbnb",
+      "description": "Provides tools to search Airbnb and get listing details.",
+      "tags": [
+        "mcp",
+        "Airbnb",
+        "search",
+        "listings",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "airbnb-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@openbnb/mcp-server-airbnb"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "skills": {
+    "keboola-mcp-server": {
+      "name": "Keboola MCP Server",
+      "source": "github:keboola/keboola-mcp-server",
+      "description": "<a href=\"https://glama.ai/mcp/servers/72mwt1x862\"><img width=\"380\" height=\"200\" src=\"https://glama.ai/mcp/servers/72mwt1x862/badge\" alt=\"Keboola Explorer Server MCP server\" /></a>",
+      "tags": [
+        "mcp",
+        "keboola",
+        "data",
+        "storage",
+        "snowflake",
+        "Analytics"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "keboola-mcp-server-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/keboola/keboola-mcp-server.git",
+            "keboola-mcp",
+            "--api-url",
+            "${API_URL}"
+          ],
+          "env": {
+            "KBC_STORAGE_TOKEN": "${KBC_STORAGE_TOKEN}",
+            "KBC_WORKSPACE_USER": "${KBC_WORKSPACE_USER}"
+          }
+        }
+      ]
+    }
+  }
+}

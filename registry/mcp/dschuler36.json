@@ -1,0 +1,32 @@
+{
+  "skills": {
+    "reaper": {
+      "name": "Reaper",
+      "source": "github:dschuler36/reaper-mcp-server",
+      "description": "Interact with your [Reaper](https://www.reaper.fm/) (Digital Audio Workstation) projects.",
+      "tags": [
+        "mcp",
+        "Reaper",
+        "Claude",
+        "Media Creation"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "reaper-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/dschuler36/reaper-mcp-server",
+            "reaper-mcp-server",
+            "--reaper-projects-dir",
+            "${REAPER_PROJECTS_DIR}"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

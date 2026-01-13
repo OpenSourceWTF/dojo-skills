@@ -1,0 +1,30 @@
+{
+  "skills": {
+    "mem0-mcp": {
+      "name": "Mem0 Server",
+      "source": "github:mem0ai/mem0-mcp",
+      "description": "A Model Context Protocol server for Mem0, which helps with managing coding preferences.",
+      "tags": [
+        "mcp",
+        "coding preferences",
+        "mem0",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mem0-mcp-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/mem0ai/mem0-mcp",
+            "main.py"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

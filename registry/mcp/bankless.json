@@ -1,0 +1,33 @@
+{
+  "skills": {
+    "onchain-mcp": {
+      "name": "Bankless Onchain MCP Server",
+      "source": "github:bankless/onchain-mcp",
+      "description": "MCP (Model Context Protocol) server for blockchain data interaction through the Bankless API.",
+      "tags": [
+        "mcp",
+        "blockchain",
+        "MCP",
+        "smart contracts",
+        "ethereum",
+        "onchain",
+        "Finance"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "onchain-mcp-npm",
+          "command": "npx",
+          "args": [
+            "@bankless/onchain-mcp"
+          ],
+          "env": {
+            "BANKLESS_API_TOKEN": "${BANKLESS_API_TOKEN}"
+          }
+        }
+      ]
+    }
+  }
+}

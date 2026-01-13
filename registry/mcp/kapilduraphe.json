@@ -1,0 +1,60 @@
+{
+  "skills": {
+    "okta": {
+      "name": "Okta",
+      "source": "github:kapilduraphe/okta-mcp-server",
+      "description": "Interact with Okta API.",
+      "tags": [
+        "mcp",
+        "Okta",
+        "user management",
+        "group management",
+        "System Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "okta-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "https://github.com/kapilduraphe/okta-mcp-server"
+          ],
+          "env": {
+            "OKTA_ORG_URL": "${OKTA_ORG_URL}",
+            "OKTA_API_TOKEN": "${OKTA_API_TOKEN}"
+          }
+        }
+      ]
+    },
+    "webflow": {
+      "name": "Webflow",
+      "source": "github:kapilduraphe/webflow-mcp-server",
+      "description": "Interfact with the Webflow APIs",
+      "tags": [
+        "mcp",
+        "webflow",
+        "api",
+        "Professional Apps"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "webflow-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "https://github.com/kapilduraphe/webflow-mcp-server"
+          ],
+          "env": {
+            "WEBFLOW_API_TOKEN": "${WEBFLOW_API_TOKEN}"
+          }
+        }
+      ]
+    }
+  }
+}

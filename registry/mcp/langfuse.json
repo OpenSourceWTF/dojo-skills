@@ -1,0 +1,33 @@
+{
+  "skills": {
+    "mcp-server-langfuse": {
+      "name": "Langfuse Prompt Management MCP Server",
+      "source": "github:langfuse/mcp-server-langfuse",
+      "description": "Open-source tool for collaborative editing, versioning, evaluating, and releasing prompts.",
+      "tags": [
+        "mcp",
+        "prompts",
+        "mcp",
+        "langfuse",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-server-langfuse-custom",
+          "command": "node",
+          "args": [
+            "./build/index.js"
+          ],
+          "env": {
+            "LANGFUSE_PUBLIC_KEY": "${LANGFUSE_PUBLIC_KEY}",
+            "LANGFUSE_SECRET_KEY": "${LANGFUSE_SECRET_KEY}",
+            "LANGFUSE_BASEURL": "${LANGFUSE_BASEURL}"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "skills": {
+    "lingo-dev": {
+      "name": "Lingo.dev MCP Server",
+      "source": "github:lingodotdev/lingo.dev",
+      "description": "The [Model Context Protocol](https://modelcontextprotocol.io/introduction) (MCP) is a standard for connecting Large Language Models (LLMs) to external services. This guide will walk you through how to connect AI tools to Lingo.dev using MCP.",
+      "tags": [
+        "mcp",
+        "translation",
+        "localization",
+        "mcp",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "lingo-dev-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "lingo.dev",
+            "mcp",
+            "${api-key}"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

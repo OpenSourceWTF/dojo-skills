@@ -1,0 +1,32 @@
+{
+  "skills": {
+    "excel": {
+      "name": "Excel",
+      "source": "github:haris-musa/excel-mcp-server",
+      "description": "Excel manipulation including data reading/writing, worksheet management, formatting, charts, and pivot table.",
+      "tags": [
+        "mcp",
+        "Excel Manipulation",
+        "Python",
+        "Productivity"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "excel-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/haris-musa/excel-mcp-server",
+            "excel-mcp-server"
+          ],
+          "env": {
+            "EXCEL_FILES_PATH": "${EXCEL_FILES_PATH}"
+          }
+        }
+      ]
+    }
+  }
+}

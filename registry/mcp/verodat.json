@@ -1,0 +1,32 @@
+{
+  "skills": {
+    "verodat-mcp-server": {
+      "name": "Verodat MCP Server",
+      "source": "github:Verodat/verodat-mcp-server",
+      "description": "A Model Context Protocol (MCP) server implementation for [Verodat](https://verodat.io), enabling seamless integration of Verodat's data management capabilities with AI systems like Claude Desktop.",
+      "tags": [
+        "mcp",
+        "MCP",
+        "AI",
+        "Data Management",
+        "Claude Desktop",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "verodat-mcp-server-custom",
+          "command": "node",
+          "args": [
+            "path/to/verodat-mcp-server/build/src/index.js"
+          ],
+          "env": {
+            "VERODAT_AI_API_KEY": "${VERODAT_AI_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

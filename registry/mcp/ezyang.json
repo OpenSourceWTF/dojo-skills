@@ -1,0 +1,43 @@
+{
+  "skills": {
+    "codemcp": {
+      "name": "CodeMCP",
+      "source": "github:ezyang/codemcp",
+      "description": "Make Claude Desktop a pair programming assistant by installing codemcp.  With",
+      "tags": [
+        "mcp",
+        "AI coding assistant",
+        "Claude integration",
+        "pair programming",
+        "code editing",
+        "Git integration",
+        "Claude Desktop",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "codemcp-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/ezyang/codemcp@prod",
+            "codemcp"
+          ],
+          "env": {}
+        },
+        {
+          "name": "codemcp-python",
+          "command": "python",
+          "args": [
+            "-m",
+            "codemcp"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

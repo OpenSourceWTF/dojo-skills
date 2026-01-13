@@ -1,0 +1,29 @@
+{
+  "skills": {
+    "fantasy-pl": {
+      "name": "Fantasy Premier League",
+      "source": "github:rishijatia/fantasy-pl-mcp",
+      "description": "Give your coding agent direct access to up-to date Fantasy Premier League data",
+      "tags": [
+        "mcp",
+        "FPL",
+        "fantasy",
+        "football",
+        "Analytics"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "fantasy-pl-uvx",
+          "command": "uvx",
+          "args": [
+            "fpl-mcp"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

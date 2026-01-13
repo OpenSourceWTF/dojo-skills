@@ -1,0 +1,29 @@
+{
+  "skills": {
+    "openapi": {
+      "name": "OpenAPI",
+      "source": "github:snaggle-ai/openapi-mcp-server",
+      "description": "Interact with [OpenAPI](https://www.openapis.org/) APIs.",
+      "tags": [
+        "mcp",
+        "openapi",
+        "api exploration",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "openapi-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "openapi-mcp-server"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

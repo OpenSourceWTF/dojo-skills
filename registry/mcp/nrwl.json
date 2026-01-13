@@ -1,0 +1,34 @@
+{
+  "skills": {
+    "nx-mcp": {
+      "name": "Nx MCP Server",
+      "source": "github:nrwl/nx-console/apps/nx-mcp",
+      "description": "A [Model Context Protocol](https://modelcontextprotocol.io/introduction) server implementation for [Nx](https://nx.dev).",
+      "tags": [
+        "mcp",
+        "nx",
+        "monorepo",
+        "MCP",
+        "Model Context Protocol",
+        "AI",
+        "LLM",
+        "code generation",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "nx-mcp-npm",
+          "command": "npx",
+          "args": [
+            "nx-mcp@latest",
+            "/path/to/your/workspace"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

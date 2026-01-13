@@ -1,0 +1,37 @@
+{
+  "skills": {
+    "mcp-server-weread": {
+      "name": "WeRead MCP Server",
+      "source": "github:freestylefly/mcp-server-weread",
+      "description": "A WeChat reading MCP server that allows you to access WeChat reading notes and reading history in Claude Desktop.",
+      "tags": [
+        "mcp",
+        "weread",
+        "wechat",
+        "reading",
+        "notes",
+        "claude",
+        "mcp",
+        "knowledge management",
+        "api",
+        "Knowledge Base"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-server-weread-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "https://github.com/freestylefly/mcp-server-weread"
+          ],
+          "env": {
+            "WEREAD_COOKIE": "你的微信读书cookie"
+          }
+        }
+      ]
+    }
+  }
+}

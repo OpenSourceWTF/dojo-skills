@@ -1,0 +1,41 @@
+{
+  "skills": {
+    "tavily-search": {
+      "name": "Tavily Search",
+      "source": "github:RamXX/mcp-tavily",
+      "description": "An MCP server for Tavily's search & news API, with explicit site inclusions/exclusions",
+      "tags": [
+        "mcp",
+        "AI",
+        "Search",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "tavily-search-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp-tavily"
+          ],
+          "env": {
+            "TAVILY_API_KEY": "${TAVILY_API_KEY}"
+          }
+        },
+        {
+          "name": "tavily-search-python",
+          "command": "python",
+          "args": [
+            "-m",
+            "mcp-tavily"
+          ],
+          "env": {
+            "TAVILY_API_KEY": "${TAVILY_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

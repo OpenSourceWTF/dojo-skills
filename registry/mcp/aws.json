@@ -1,0 +1,20 @@
+{
+  "skills": {
+    "aws-knowledge-mcp-server": {
+      "name": "AWS Knowledge MCP Server",
+      "source": "github:aws/aws-knowledge-mcp-server",
+      "description": "MCP server providing access to the AWS Knowledge service.",
+      "tags": [
+        "mcp",
+        "aws",
+        "knowledge",
+        "search",
+        "Knowledge",
+        "Search"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    }
+  }
+}

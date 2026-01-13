@@ -1,0 +1,38 @@
+{
+  "skills": {
+    "algorand": {
+      "name": "Algorand Implementation",
+      "source": "github:GoPlausible/algorand-mcp",
+      "description": "A comprehensive MCP server for tooling interactions (40+) and resource accessibility (60+) plus many useful prompts for interacting with the Algorand blockchain.",
+      "tags": [
+        "mcp",
+        "Algorand",
+        "Blockchain",
+        "Finance"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "algorand-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "algorand-mcp"
+          ],
+          "env": {
+            "NFD_API_KEY": "${NFD_API_KEY}",
+            "NFD_API_URL": "${NFD_API_URL}",
+            "ALGORAND_ALGOD": "${ALGORAND_ALGOD}",
+            "ALGORAND_TOKEN": "${ALGORAND_TOKEN}",
+            "ALGORAND_INDEXER": "${ALGORAND_INDEXER}",
+            "ALGORAND_INDEXER_API": "${ALGORAND_INDEXER_API}",
+            "ALGORAND_INDEXER_PORT": "${ALGORAND_INDEXER_PORT}",
+            "ALGORAND_NETWORK": "${ALGORAND_NETWORK}"
+          }
+        }
+      ]
+    }
+  }
+}

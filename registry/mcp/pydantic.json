@@ -1,0 +1,68 @@
+{
+  "skills": {
+    "logfire-mcp": {
+      "name": "Logfire MCP Server",
+      "source": "github:pydantic/logfire-mcp",
+      "description": "This repository contains a Model Context Protocol (MCP) server with tools that can access the OpenTelemetry traces and",
+      "tags": [
+        "mcp",
+        "OpenTelemetry",
+        "traces",
+        "metrics",
+        "logging",
+        "monitoring",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "logfire-mcp-uvx",
+          "command": "uvx",
+          "args": [
+            "logfire-mcp"
+          ],
+          "env": {
+            "LOGFIRE_READ_TOKEN": "YOUR_READ_TOKEN"
+          }
+        }
+      ]
+    },
+    "mcp-run-python": {
+      "name": "MCP Run Python",
+      "source": "github:pydantic/pydantic-ai/mcp-run-python",
+      "description": "The code is executed using [Pyodide](https://pyodide.org) in [Deno](https://deno.com/) and is therefore isolated from",
+      "tags": [
+        "mcp",
+        "python",
+        "sandbox",
+        "pyodide",
+        "deno",
+        "model context protocol",
+        "mcp",
+        "code execution",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-run-python-custom",
+          "command": "deno",
+          "args": [
+            "run",
+            "-N",
+            "-R=node_modules",
+            "-W=node_modules",
+            "--node-modules-dir=auto",
+            "jsr:@pydantic/mcp-run-python",
+            "stdio"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

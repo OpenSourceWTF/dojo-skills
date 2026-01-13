@@ -1,0 +1,88 @@
+{
+  "skills": {
+    "n8n-node-configuration": {
+      "name": "n8n-node-configuration",
+      "source": "github:czlonkowski/n8n-skills/skills/n8n-node-configuration",
+      "description": "Operation-aware node configuration guidance. Use when configuring nodes, understanding property d...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "n8n-mcp-tools-expert": {
+      "name": "n8n-mcp-tools-expert",
+      "source": "github:czlonkowski/n8n-skills/skills/n8n-mcp-tools-expert",
+      "description": "Expert guide for using n8n-mcp MCP tools effectively. Use when searching for nodes, validating co...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "n8n-workflow-patterns": {
+      "name": "n8n-workflow-patterns",
+      "source": "github:czlonkowski/n8n-skills/skills/n8n-workflow-patterns",
+      "description": "Proven workflow architectural patterns from real n8n workflows. Use when building new workflows, ...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "n8n-code-javascript": {
+      "name": "n8n-code-javascript",
+      "source": "github:czlonkowski/n8n-skills/skills/n8n-code-javascript",
+      "description": "Write JavaScript code in n8n Code nodes. Use when writing JavaScript in n8n, using $input/$json/$...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "n8n-expression-syntax": {
+      "name": "n8n-expression-syntax",
+      "source": "github:czlonkowski/n8n-skills/skills/n8n-expression-syntax",
+      "description": "Validate n8n expression syntax and fix common errors. Use when writing n8n expressions, using &#123;&#123;}...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "n8n-validation-expert": {
+      "name": "n8n-validation-expert",
+      "source": "github:czlonkowski/n8n-skills/skills/n8n-validation-expert",
+      "description": "Interpret validation errors and guide fixing them. Use when encountering validation errors, valid...",
+      "tags": [
+        "testing-and-quality",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "n8n-code-python": {
+      "name": "n8n-code-python",
+      "source": "github:czlonkowski/n8n-skills/skills/n8n-code-python",
+      "description": "Write Python code in n8n Code nodes. Use when writing Python in n8n, using _input/_json/_node syn...",
+      "tags": [
+        "uncategorized",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    }
+  }
+}

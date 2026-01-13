@@ -1,0 +1,28 @@
+{
+  "skills": {
+    "hex-docs-search": {
+      "name": "hex-docs-search",
+      "source": "github:bradleygolden/claude-marketplace-elixir/plugins/core/skills/hex-docs-search",
+      "description": "Research Hex packages (Sobelow, Phoenix, Ecto, Credo, Ash, etc). Use when investigating packages,...",
+      "tags": [
+        "documentation",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "usage-rules": {
+      "name": "usage-rules",
+      "source": "github:bradleygolden/claude-marketplace-elixir/plugins/elixir/skills/usage-rules",
+      "description": "Search for package-specific usage rules and best practices from Elixir packages. Use when you nee...",
+      "tags": [
+        "version-control-and-collaboration",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    }
+  }
+}

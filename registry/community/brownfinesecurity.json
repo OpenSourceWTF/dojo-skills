@@ -1,0 +1,124 @@
+{
+  "skills": {
+    "chipsec": {
+      "name": "chipsec",
+      "source": "github:BrownFineSecurity/iothackbot/skills/chipsec",
+      "description": "Static analysis of UEFI/BIOS firmware dumps using Intel's chipsec framework. Decode firmware stru...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "nmap": {
+      "name": "nmap",
+      "source": "github:BrownFineSecurity/iothackbot/skills/nmap",
+      "description": "Professional network reconnaissance and port scanning using nmap. Supports various scan types (qu...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "apktool": {
+      "name": "apktool",
+      "source": "github:BrownFineSecurity/iothackbot/skills/apktool",
+      "description": "Android APK unpacking and resource extraction tool for reverse engineering. Use when you need to ...",
+      "tags": [
+        "machine-learning",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "iotnet": {
+      "name": "iotnet",
+      "source": "github:BrownFineSecurity/iothackbot/skills/iotnet",
+      "description": "IoT network traffic analyzer for detecting IoT protocols and identifying security vulnerabilities...",
+      "tags": [
+        "security",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "onvifscan": {
+      "name": "onvifscan",
+      "source": "github:BrownFineSecurity/iothackbot/skills/onvifscan",
+      "description": "ONVIF device security scanner for testing authentication and brute-forcing credentials. Use when ...",
+      "tags": [
+        "testing-and-quality",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "picocom": {
+      "name": "picocom",
+      "source": "github:BrownFineSecurity/iothackbot/skills/picocom",
+      "description": "Use picocom to interact with IoT device UART consoles for pentesting operations including device ...",
+      "tags": [
+        "testing-and-quality",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "telnetshell": {
+      "name": "telnetshell",
+      "source": "github:BrownFineSecurity/iothackbot/skills/telnetshell",
+      "description": "Use telnet to interact with IoT device shells for pentesting operations including device enumerat...",
+      "tags": [
+        "testing-and-quality",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "ffind": {
+      "name": "ffind",
+      "source": "github:BrownFineSecurity/iothackbot/skills/ffind",
+      "description": "Advanced file finder with type detection and filesystem extraction for analyzing firmware and ext...",
+      "tags": [
+        "uncategorized",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "jadx": {
+      "name": "jadx",
+      "source": "github:BrownFineSecurity/iothackbot/skills/jadx",
+      "description": "Android APK decompiler that converts DEX bytecode to readable Java source code. Use when you need...",
+      "tags": [
+        "uncategorized",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "wsdiscovery": {
+      "name": "wsdiscovery",
+      "source": "github:BrownFineSecurity/iothackbot/skills/wsdiscovery",
+      "description": "WS-Discovery protocol scanner for discovering and enumerating ONVIF cameras and IoT devices on th...",
+      "tags": [
+        "version-control-and-collaboration",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "skills": {
+    "spotify": {
+      "name": "Spotify",
+      "source": "github:varunneal/spotify-mcp",
+      "description": "This MCP allows an LLM to play and use Spotify.",
+      "tags": [
+        "mcp",
+        "spotify",
+        "audio",
+        "Media Creation"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "spotify-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/varunneal/spotify-mcp",
+            "spotify-mcp"
+          ],
+          "env": {
+            "SPOTIFY_CLIENT_ID": "${SPOTIFY_CLIENT_ID}",
+            "SPOTIFY_CLIENT_SECRET": "${SPOTIFY_CLIENT_SECRET}",
+            "SPOTIFY_REDIRECT_URI": "${SPOTIFY_REDIRECT_URI}"
+          }
+        }
+      ]
+    }
+  }
+}

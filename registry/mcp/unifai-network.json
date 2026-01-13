@@ -1,0 +1,45 @@
+{
+  "skills": {
+    "unifai-mcp-server": {
+      "name": "UnifAI MCP Server",
+      "source": "github:unifai-network/unifai-mcp-server",
+      "description": "Dynamically search and call tools using UnifAI Network",
+      "tags": [
+        "mcp",
+        "unifai",
+        "mcp",
+        "MCP Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "unifai-mcp-server-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "-p",
+            "unifai-sdk",
+            "unifai-tools-mcp"
+          ],
+          "env": {
+            "UNIFAI_AGENT_API_KEY": "${UNIFAI_AGENT_API_KEY}"
+          }
+        },
+        {
+          "name": "unifai-mcp-server-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "unifai-sdk",
+            "unifai-tools-mcp"
+          ],
+          "env": {
+            "UNIFAI_AGENT_API_KEY": "${UNIFAI_AGENT_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

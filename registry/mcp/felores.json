@@ -1,0 +1,89 @@
+{
+  "skills": {
+    "airtable": {
+      "name": "Airtable",
+      "source": "github:felores/airtable-mcp",
+      "description": "Airtable Model Context Protocol Server.",
+      "tags": [
+        "mcp",
+        "Airtable",
+        "Database",
+        "API",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "airtable-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@felores/airtable-mcp-server"
+          ],
+          "env": {
+            "AIRTABLE_API_KEY": "${AIRTABLE_API_KEY}"
+          }
+        }
+      ]
+    },
+    "cloudinary": {
+      "name": "Cloudinary",
+      "source": "github:felores/cloudinary-mcp-server",
+      "description": "Cloudinary Model Context Protocol Server to upload media to Cloudinary and get back the media link and details.",
+      "tags": [
+        "mcp",
+        "cloudinary",
+        "images",
+        "videos",
+        "Media Creation"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "cloudinary-npm",
+          "command": "npx",
+          "args": [
+            "@felores/cloudinary-mcp-server@latest"
+          ],
+          "env": {
+            "CLOUDINARY_CLOUD_NAME": "${CLOUDINARY_CLOUD_NAME}",
+            "CLOUDINARY_API_KEY": "${CLOUDINARY_API_KEY}",
+            "CLOUDINARY_API_SECRET": "${CLOUDINARY_API_SECRET}"
+          }
+        }
+      ]
+    },
+    "placid-app": {
+      "name": "Placid.app",
+      "source": "github:felores/placid-mcp-server",
+      "description": "Generate image and video creatives using Placid.app templates",
+      "tags": [
+        "mcp",
+        "Placid",
+        "Templates",
+        "Image Generation",
+        "Video Generation",
+        "Media Creation"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "placid-app-npm",
+          "command": "npx",
+          "args": [
+            "@felores/placid-mcp-server"
+          ],
+          "env": {
+            "PLACID_API_TOKEN": "${PLACID_API_TOKEN}"
+          }
+        }
+      ]
+    }
+  }
+}

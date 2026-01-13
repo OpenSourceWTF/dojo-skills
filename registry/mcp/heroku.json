@@ -1,0 +1,54 @@
+{
+  "skills": {
+    "heroku": {
+      "name": "Heroku Platform MCP Server",
+      "source": "github:heroku/heroku-mcp-server",
+      "description": "The Heroku Platform MCP Server is a specialized Model Context Protocol (MCP) implementation designed to facilitate",
+      "tags": [
+        "mcp",
+        "heroku",
+        "mcp",
+        "platform",
+        "llm",
+        "model context protocol",
+        "devops",
+        "cloud",
+        "deployment",
+        "postgresql",
+        "database",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "heroku-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@heroku/mcp-server"
+          ],
+          "env": {
+            "HEROKU_API_KEY": "${HEROKU_API_KEY}"
+          }
+        },
+        {
+          "name": "heroku-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "HEROKU_API_KEY",
+            "mcp/heroku"
+          ],
+          "env": {
+            "HEROKU_API_KEY": "${HEROKU_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

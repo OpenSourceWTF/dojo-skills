@@ -1,0 +1,34 @@
+{
+  "skills": {
+    "nasa": {
+      "name": "NASA",
+      "source": "github:ProgramComputer/NASA-MCP-server",
+      "description": "Access to a unified gateway of NASA's data sources including but not limited to APOD, NEO, EPIC, GIBS.",
+      "tags": [
+        "mcp",
+        "NASA",
+        "API",
+        "Data",
+        "Space",
+        "Science",
+        "Knowledge Base"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "nasa-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@programcomputer/nasa-mcp-server"
+          ],
+          "env": {
+            "NASA_API_KEY": "${NASA_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

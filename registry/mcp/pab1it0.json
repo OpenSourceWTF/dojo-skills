@@ -1,0 +1,65 @@
+{
+  "skills": {
+    "azure-adx": {
+      "name": "Azure Data Explorer",
+      "source": "github:pab1it0/adx-mcp-server",
+      "description": "Query and analyze Azure Data Explorer databases.",
+      "tags": [
+        "mcp",
+        "Azure",
+        "KQL",
+        "Data Explorer",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "azure-adx-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/pab1it0/adx-mcp-server",
+            "adx-mcp-server"
+          ],
+          "env": {
+            "ADX_CLUSTER_URL": "${ADX_CLUSTER_URL}",
+            "ADX_DATABASE": "${ADX_DATABASE}"
+          }
+        }
+      ]
+    },
+    "prometheus": {
+      "name": "Prometheus",
+      "source": "github:pab1it0/prometheus-mcp-server",
+      "description": "Query and analyze Prometheus - open-source monitoring system.",
+      "tags": [
+        "mcp",
+        "Prometheus",
+        "Metrics",
+        "AI",
+        "Analytics"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "prometheus-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/pab1it0/prometheus-mcp-server",
+            "prometheus-mcp-server"
+          ],
+          "env": {
+            "PROMETHEUS_URL": "${PROMETHEUS_URL}",
+            "PROMETHEUS_USERNAME": "${PROMETHEUS_USERNAME}",
+            "PROMETHEUS_PASSWORD": "${PROMETHEUS_PASSWORD}"
+          }
+        }
+      ]
+    }
+  }
+}

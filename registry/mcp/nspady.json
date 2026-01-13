@@ -1,0 +1,29 @@
+{
+  "skills": {
+    "google-calendar": {
+      "name": "Google Calendar",
+      "source": "github:nspady/google-calendar-mcp",
+      "description": "Google Calendar MCP Server for managing Google calendar events. Also supports searching for events by attributes like title and location.",
+      "tags": [
+        "mcp",
+        "Google Calendar",
+        "event management",
+        "Productivity"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "google-calendar-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "https://github.com/nspady/google-calendar-mcp"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

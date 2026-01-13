@@ -1,0 +1,48 @@
+{
+  "skills": {
+    "dart-mcp-server": {
+      "name": "Dart MCP Server",
+      "source": "github:its-dart/dart-mcp-server",
+      "description": "<h1>Dart MCP Server</h1>",
+      "tags": [
+        "mcp",
+        "AI",
+        "MCP",
+        "Model Context Protocol",
+        "Project Management",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "dart-mcp-server-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "dart-mcp-server"
+          ],
+          "env": {
+            "DART_TOKEN": "${DART_TOKEN}"
+          }
+        },
+        {
+          "name": "dart-mcp-server-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "DART_TOKEN",
+            "mcp/dart"
+          ],
+          "env": {
+            "DART_TOKEN": "${DART_TOKEN}"
+          }
+        }
+      ]
+    }
+  }
+}

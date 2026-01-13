@@ -1,0 +1,38 @@
+{
+  "skills": {
+    "twitter-mcp": {
+      "name": "Twitter MCP Server",
+      "source": "github:EnesCinr/twitter-mcp",
+      "description": "This MCP server allows Clients to interact with Twitter, enabling posting tweets and searching Twitter.",
+      "tags": [
+        "mcp",
+        "twitter",
+        "social media",
+        "tweet",
+        "search",
+        "mcp",
+        "api",
+        "Messaging"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "twitter-mcp-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@enescinar/twitter-mcp"
+          ],
+          "env": {
+            "API_KEY": "${API_KEY}",
+            "API_SECRET_KEY": "${API_SECRET_KEY}",
+            "ACCESS_TOKEN": "${ACCESS_TOKEN}",
+            "ACCESS_TOKEN_SECRET": "${ACCESS_TOKEN_SECRET}"
+          }
+        }
+      ]
+    }
+  }
+}

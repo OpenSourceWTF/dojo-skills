@@ -1,0 +1,29 @@
+{
+  "skills": {
+    "openrpc": {
+      "name": "OpenRPC",
+      "source": "github:shanejonas/openrpc-mpc-server",
+      "description": "Interact with and discover JSON-RPC APIs via [OpenRPC](https://open-rpc.org/).",
+      "tags": [
+        "mcp",
+        "OpenRPC",
+        "JSON-RPC",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "openrpc-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "openrpc-mpc-server"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

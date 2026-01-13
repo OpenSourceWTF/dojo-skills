@@ -1,0 +1,88 @@
+{
+  "skills": {
+    "parallel-execution": {
+      "name": "parallel-execution",
+      "source": "github:CloudAI-X/claude-workflow-v2/skills/parallel-execution",
+      "description": "Patterns for parallel subagent execution using Task tool with run_in_background. Use when coordin...",
+      "tags": [
+        "ai-and-llm",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "designing-apis": {
+      "name": "designing-apis",
+      "source": "github:CloudAI-X/claude-workflow-v2/skills/designing-apis",
+      "description": "Designs REST and GraphQL APIs including endpoints, error handling, versioning, and documentation....",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "managing-git": {
+      "name": "managing-git",
+      "source": "github:CloudAI-X/claude-workflow-v2/skills/managing-git",
+      "description": "Manages Git workflows including branching, commits, and pull requests. Use when working with Git,...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "designing-tests": {
+      "name": "designing-tests",
+      "source": "github:CloudAI-X/claude-workflow-v2/skills/designing-tests",
+      "description": "Designs and implements testing strategies for any codebase. Use when adding tests, improving cove...",
+      "tags": [
+        "devops-and-infrastructure",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "optimizing-performance": {
+      "name": "optimizing-performance",
+      "source": "github:CloudAI-X/claude-workflow-v2/skills/optimizing-performance",
+      "description": "Analyzes and optimizes application performance across frontend, backend, and database layers. Use...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "analyzing-projects": {
+      "name": "analyzing-projects",
+      "source": "github:CloudAI-X/claude-workflow-v2/skills/analyzing-projects",
+      "description": "Analyzes codebases to understand structure, tech stack, patterns, and conventions. Use when onboa...",
+      "tags": [
+        "version-control-and-collaboration",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "designing-architecture": {
+      "name": "designing-architecture",
+      "source": "github:CloudAI-X/claude-workflow-v2/skills/designing-architecture",
+      "description": "Designs software architecture and selects appropriate patterns for projects. Use when designing s...",
+      "tags": [
+        "version-control-and-collaboration",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    }
+  }
+}

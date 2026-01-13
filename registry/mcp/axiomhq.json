@@ -1,0 +1,31 @@
+{
+  "skills": {
+    "mcp-server-axiom": {
+      "name": "Axiom MCP Server",
+      "source": "github:axiomhq/mcp-server-axiom",
+      "description": "A [Model Context Protocol](https://modelcontextprotocol.io/) server implementation for [Axiom](https://axiom.co) that enables AI agents to query your data using Axiom Processing Language (APL).",
+      "tags": [
+        "mcp",
+        "axiom",
+        "apl",
+        "data",
+        "query",
+        "Analytics"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-server-axiom-custom",
+          "command": "axiom-mcp",
+          "args": [
+            "--config",
+            "config.txt"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

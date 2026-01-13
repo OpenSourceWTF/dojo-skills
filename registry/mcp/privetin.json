@@ -1,0 +1,57 @@
+{
+  "skills": {
+    "chroma": {
+      "name": "Chroma",
+      "source": "github:privetin/chroma",
+      "description": "Vector database server for semantic document search and metadata filtering, built on Chroma",
+      "tags": [
+        "mcp",
+        "vector database",
+        "semantic search",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "chroma-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/privetin/chroma",
+            "chroma"
+          ],
+          "env": {}
+        }
+      ]
+    },
+    "dataset-viewer": {
+      "name": "Dataset Viewer",
+      "source": "github:privetin/dataset-viewer",
+      "description": "Browse and analyze Hugging Face datasets with features like search, filtering, statistics, and data export",
+      "tags": [
+        "mcp",
+        "Hugging Face",
+        "datasets",
+        "data analysis",
+        "Analytics"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "dataset-viewer-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/privetin/dataset-viewer",
+            "dataset-viewer"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

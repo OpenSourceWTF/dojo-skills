@@ -1,0 +1,57 @@
+{
+  "skills": {
+    "chronulus-mcp": {
+      "name": "Chronulus MCP",
+      "source": "github:ChronulusAI/chronulus-mcp",
+      "description": "<img width=\"150px\" src=\"https://www.chronulus.com/brand-assets/chronulus-logo-blue-on-alpha-square.png\" alt=\"Chronulus AI\">",
+      "tags": [
+        "mcp",
+        "forecasting",
+        "prediction",
+        "AI agents",
+        "MCP Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "chronulus-mcp-uvx",
+          "command": "uvx",
+          "args": [
+            "chronulus-mcp"
+          ],
+          "env": {
+            "CHRONULUS_API_KEY": "${CHRONULUS_API_KEY}"
+          }
+        },
+        {
+          "name": "chronulus-mcp-pip",
+          "command": "python",
+          "args": [
+            "-m",
+            "chronulus_mcp"
+          ],
+          "env": {
+            "CHRONULUS_API_KEY": "${CHRONULUS_API_KEY}"
+          }
+        },
+        {
+          "name": "chronulus-mcp-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "CHRONULUS_API_KEY",
+            "chronulus-mcp"
+          ],
+          "env": {
+            "CHRONULUS_API_KEY": "${CHRONULUS_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "skills": {
+    "browser-tools-mcp": {
+      "name": "Browser Tools MCP Server",
+      "source": "github:AgentDeskAI/browser-tools-mcp/browser-tools-mcp",
+      "description": "A Model Context Protocol (MCP) server that provides AI-powered browser tools integration. This server works in conjunction with the Browser Tools Server to provide AI capabilities for browser debugging and analysis.",
+      "tags": [
+        "mcp",
+        "MCP",
+        "browser tools",
+        "AI",
+        "debugging",
+        "console logs",
+        "network analysis",
+        "screenshot capture",
+        "element inspection",
+        "accessibility audit",
+        "performance audit",
+        "SEO audit",
+        "best practices audit",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "browser-tools-mcp-npm",
+          "command": "npx",
+          "args": [
+            "@agentdeskai/browser-tools-mcp"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

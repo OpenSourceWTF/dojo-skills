@@ -1,0 +1,31 @@
+{
+  "skills": {
+    "mailgun": {
+      "name": "Mailgun MCP Server",
+      "source": "github:mailgun/mailgun-mcp-server",
+      "description": "A Model Context Protocol (MCP) server implementation for [Mailgun](https://mailgun.com), enabling MCP-compatible AI clients like Claude Desktop to interract with the service.",
+      "tags": [
+        "mcp",
+        "email",
+        "mailgun",
+        "mcp",
+        "Messaging"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mailgun-custom",
+          "command": "node",
+          "args": [
+            "path/to/mailgun-mcp-server/src/mailgun-mcp.js"
+          ],
+          "env": {
+            "MAILGUN_API_KEY": "${MAILGUN_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

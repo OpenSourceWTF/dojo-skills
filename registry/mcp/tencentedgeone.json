@@ -1,0 +1,35 @@
+{
+  "skills": {
+    "edgeone-pages-mcp": {
+      "name": "EdgeOne Pages MCP",
+      "source": "github:TencentEdgeOne/edgeone-pages-mcp",
+      "description": "An MCP service for deploying HTML content to EdgeOne Pages and obtaining a publicly accessible URL.",
+      "tags": [
+        "mcp",
+        "html",
+        "deployment",
+        "edge functions",
+        "kv store",
+        "static content",
+        "serverless",
+        "mcp",
+        "tencent",
+        "edgeone",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "edgeone-pages-mcp-npm",
+          "command": "npx",
+          "args": [
+            "edgeone-pages-mcp"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "skills": {
+    "virtual-location-google-street-view-etc": {
+      "name": "Virtual Traveling Bot",
+      "source": "github:mfukushim/map-traveler-mcp",
+      "description": "Integrates Google Map, Google Street View, PixAI, Stability.ai, ComfyUI API and Bluesky to provide a virtual location simulation in LLM (written in Effect.ts)",
+      "tags": [
+        "mcp",
+        "Google Maps",
+        "Avatar",
+        "Virtual Travel",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "virtual-location-google-street-view-etc-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@mfukushim/map-traveler-mcp"
+          ],
+          "env": {
+            "GoogleMapApi_key": "${GoogleMapApi_key}",
+            "mapApi_url": "${mapApi_url}",
+            "time_scale": "${time_scale}",
+            "sqlite_path": "${sqlite_path}",
+            "rembg_path": "${rembg_path}",
+            "remBgUrl": "${remBgUrl}",
+            "pixAi_key": "${pixAi_key}",
+            "sd_key": "${sd_key}",
+            "pixAi_modelId": "${pixAi_modelId}",
+            "comfy_url": "${comfy_url}",
+            "comfy_workflow_t2i": "${comfy_workflow_t2i}",
+            "comfy_workflow_i2i": "${comfy_workflow_i2i}",
+            "comfy_params": "${comfy_params}",
+            "fixed_model_prompt": "${fixed_model_prompt}",
+            "bodyAreaRatio": "${bodyAreaRatio}",
+            "bodyHWRatio": "${bodyHWRatio}",
+            "bodyWindowRatioW": "${bodyWindowRatioW}",
+            "bodyWindowRatioH": "${bodyWindowRatioH}",
+            "bs_id": "${bs_id}",
+            "bs_pass": "${bs_pass}",
+            "bs_handle": "${bs_handle}",
+            "filter_tools": "${filter_tools}",
+            "moveMode": "${moveMode}",
+            "image_width": "${image_width}",
+            "DATABASE_URL": "${DATABASE_URL}"
+          }
+        }
+      ]
+    }
+  }
+}

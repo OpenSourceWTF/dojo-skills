@@ -1,0 +1,50 @@
+{
+  "skills": {
+    "oxylabs-mcp": {
+      "name": "Oxylabs Scraper",
+      "source": "github:oxylabs/oxylabs-mcp",
+      "description": "A Model Context Protocol (MCP) server that enables AI assistants like Claude to seamlessly access web data through Oxylabs' powerful web scraping technology.",
+      "tags": [
+        "mcp",
+        "web scraping",
+        "data extraction",
+        "web unblocker",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "oxylabs-mcp-uvx",
+          "command": "uvx",
+          "args": [
+            "oxylabs-mcp"
+          ],
+          "env": {
+            "OXYLABS_USERNAME": "${OXYLABS_USERNAME}",
+            "OXYLABS_PASSWORD": "${OXYLABS_PASSWORD}"
+          }
+        },
+        {
+          "name": "oxylabs-mcp-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "OXYLABS_USERNAME",
+            "-e",
+            "OXYLABS_PASSWORD",
+            "mcp/oxylabs"
+          ],
+          "env": {
+            "OXYLABS_USERNAME": "${OXYLABS_USERNAME}",
+            "OXYLABS_PASSWORD": "${OXYLABS_PASSWORD}"
+          }
+        }
+      ]
+    }
+  }
+}

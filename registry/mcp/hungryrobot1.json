@@ -1,0 +1,30 @@
+{
+  "skills": {
+    "pif": {
+      "name": "PIF Framework",
+      "source": "github:hungryrobot1/MCP-PIF",
+      "description": "A Personal Intelligence Framework (PIF), providing tools for file operations, structured reasoning, and journal-based documentation to support continuity and evolving human-AI collaboration across sessions.",
+      "tags": [
+        "mcp",
+        "PIF",
+        "TypeScript",
+        "Node.js",
+        "Knowledge Base"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "pif-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "https://github.com/hungryrobot1/MCP-PIF"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

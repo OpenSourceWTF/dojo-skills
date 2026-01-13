@@ -1,0 +1,29 @@
+{
+  "skills": {
+    "mcp-create": {
+      "name": "Create Server",
+      "source": "github:tesla0225/mcp-create",
+      "description": "A dynamic MCP server management service that creates, runs, and manages Model Context Protocol servers on-the-fly.",
+      "tags": [
+        "mcp",
+        "dynamic",
+        "TypeScript",
+        "MCP Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-create-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "https://github.com/tesla0225/mcp-create"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

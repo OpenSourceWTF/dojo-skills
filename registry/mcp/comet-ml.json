@@ -1,0 +1,66 @@
+{
+  "skills": {
+    "opik-mcp": {
+      "name": "Opik MCP Server",
+      "source": "github:comet-ml/opik-mcp",
+      "description": " Query and analyze your Opik logs, traces, prompts and all other telemtry data from your LLMs in natural language.",
+      "tags": [
+        "mcp",
+        "MCP",
+        "Opik",
+        "IDE Integration",
+        "MCP Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "opik-mcp-custom",
+          "command": "node",
+          "args": [
+            "/path/to/opik-mcp/build/index.js"
+          ],
+          "env": {
+            "OPIK_API_BASE_URL": "https://www.comet.com/opik/api",
+            "OPIK_API_KEY": "YOUR_API_KEY",
+            "OPIK_WORKSPACE_NAME": "default"
+          }
+        }
+      ]
+    },
+    "opik": {
+      "name": "Opik",
+      "source": "github:comet-ml/opik",
+      "description": "<div align=\"center\"><b><a href=\"readme.md\">English</a> | <a href=\"readme_CN.md\">简体中文</a> | <a href=\"readme_JP.md\">日本語</a> | <a href=\"readme_KO.md\">한국어</a></b></div>",
+      "tags": [
+        "mcp",
+        "llm",
+        "evaluation",
+        "tracing",
+        "monitoring",
+        "MCP Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "opik-docker",
+          "command": "./opik.sh",
+          "args": [],
+          "env": {}
+        },
+        {
+          "name": "opik-pip",
+          "command": "pip",
+          "args": [
+            "install",
+            "opik"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

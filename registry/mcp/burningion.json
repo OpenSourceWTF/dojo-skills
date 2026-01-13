@@ -1,0 +1,32 @@
+{
+  "skills": {
+    "video-editor": {
+      "name": "Video Editor",
+      "source": "github:burningion/video-editing-mcp",
+      "description": "A Model Context Protocol Server to add, edit, and search videos with [Video Jungle](https://www.video-jungle.com/).",
+      "tags": [
+        "mcp",
+        "video",
+        "editing",
+        "API",
+        "Media Creation"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "video-editor-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/burningion/video-editing-mcp",
+            "video-editor-mcp",
+            "${YOURAPIKEY}"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

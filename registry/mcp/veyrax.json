@@ -1,0 +1,32 @@
+{
+  "skills": {
+    "veyrax-mcp": {
+      "name": "VeyraX MCP",
+      "source": "github:VeyraX/veyrax-mcp",
+      "description": "Single tool to control all 100+ API integrations, and UI components",
+      "tags": [
+        "mcp",
+        "MCP",
+        "Model Context Protocol",
+        "AI tools",
+        "LLM integration",
+        "MCP Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "veyrax-mcp-custom",
+          "command": "node",
+          "args": [
+            "path/to/veyrax-mcp/build/src/index.js",
+            "--config",
+            "\"{\\\"VEYRAX_API_KEY\\\":\\\"${VEYRAX_API_KEY}\\\"}\""
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

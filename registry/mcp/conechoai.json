@@ -1,0 +1,42 @@
+{
+  "skills": {
+    "openai-websearch-mcp": {
+      "name": "OpenAI WebSearch",
+      "source": "github:ConechoAI/openai-websearch-mcp",
+      "description": "This is a Python-based MCP server that provides OpenAI `web_search` build-in tool.",
+      "tags": [
+        "mcp",
+        "openai",
+        "websearch",
+        "AI assistant",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "openai-websearch-mcp-uvx",
+          "command": "uvx",
+          "args": [
+            "openai-websearch-mcp"
+          ],
+          "env": {
+            "OPENAI_API_KEY": "${OPENAI_API_KEY}"
+          }
+        },
+        {
+          "name": "openai-websearch-mcp-python",
+          "command": "python",
+          "args": [
+            "-m",
+            "openai_websearch_mcp"
+          ],
+          "env": {
+            "OPENAI_API_KEY": "${OPENAI_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

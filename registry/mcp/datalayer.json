@@ -1,0 +1,46 @@
+{
+  "skills": {
+    "jupyter-mcp": {
+      "name": "Jupyter MCP Server",
+      "source": "github:datalayer/jupyter-mcp-server",
+      "description": "Jupyter MCP Server is a [Model Context Protocol](https://modelcontextprotocol.io) (MCP) server implementation that provides interaction with 📓 Jupyter notebooks running in any JupyterLab (works also with your 💻 local JupyterLab).",
+      "tags": [
+        "mcp",
+        "jupyter",
+        "mcp",
+        "model context protocol",
+        "notebook",
+        "jupyterlab",
+        "claude",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "jupyter-mcp-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "SERVER_URL",
+            "-e",
+            "TOKEN",
+            "-e",
+            "NOTEBOOK_PATH",
+            "--network=host",
+            "datalayer/jupyter-mcp-server:latest"
+          ],
+          "env": {
+            "SERVER_URL": "${SERVER_URL}",
+            "TOKEN": "${TOKEN}",
+            "NOTEBOOK_PATH": "${NOTEBOOK_PATH}"
+          }
+        }
+      ]
+    }
+  }
+}

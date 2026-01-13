@@ -1,0 +1,37 @@
+{
+  "skills": {
+    "memory-bank-mcp": {
+      "name": "Memory Bank MCP Server",
+      "source": "github:alioshr/memory-bank-mcp",
+      "description": "The Memory Bank MCP Server is a Model Context Protocol (MCP) server implementation that provides remote access and management capabilities for memory bank files, enabling multi-project support, consistent file structure, and isolation between projects.",
+      "tags": [
+        "mcp",
+        "memory bank",
+        "MCP",
+        "Model Context Protocol",
+        "remote memory",
+        "multi-project",
+        "Claude",
+        "Cline",
+        "Cursor",
+        "Knowledge Base"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "memory-bank-mcp-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@allpepper/memory-bank-mcp"
+          ],
+          "env": {
+            "MEMORY_BANK_ROOT": "${MEMORY_BANK_ROOT}"
+          }
+        }
+      ]
+    }
+  }
+}

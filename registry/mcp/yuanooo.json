@@ -1,0 +1,37 @@
+{
+  "skills": {
+    "oceanbase": {
+      "name": "OceanBase",
+      "source": "github:yuanoOo/oceanbase_mcp_server",
+      "description": "(by yuanoOo) A Model Context Protocol (MCP) server that enables secure interaction with OceanBase databases.",
+      "tags": [
+        "mcp",
+        "OceanBase",
+        "SQL",
+        "Security",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "oceanbase-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/yuanoOo/oceanbase_mcp_server.git",
+            "oceanbase_mcp_server"
+          ],
+          "env": {
+            "OB_HOST": "${OB_HOST}",
+            "OB_PORT": "${OB_PORT}",
+            "OB_USER": "${OB_USER}",
+            "OB_PASSWORD": "${OB_PASSWORD}",
+            "OB_DATABASE": "${OB_DATABASE}"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "skills": {
+    "mcp-browser-use": {
+      "name": "Browser Use MCP Server",
+      "source": "github:Saik0s/mcp-browser-use",
+      "description": "This project is an AI-driven browser automation server that implements the Model Context Protocol (MCP) for natural language control of web browsers and web research tasks.",
+      "tags": [
+        "mcp",
+        "browser-automation",
+        "web-research",
+        "MCP",
+        "AI-driven",
+        "browser-control",
+        "web-scraping",
+        "natural-language",
+        "chrome",
+        "playwright",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-browser-use-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp-server-browser-use"
+          ],
+          "env": {
+            "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}",
+            "PYTHONIOENCODING": "utf-8",
+            "PYTHONUNBUFFERED": "1",
+            "PYTHONUTF8": "1",
+            "MCP_MODEL_PROVIDER": "openrouter",
+            "MCP_MODEL_NAME": "${MCP_MODEL_NAME}",
+            "BROWSER_HEADLESS": "true",
+            "BROWSER_USE_LOGGING_LEVEL": "INFO"
+          }
+        }
+      ]
+    }
+  }
+}

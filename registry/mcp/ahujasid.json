@@ -1,0 +1,60 @@
+{
+  "skills": {
+    "ableton-mcp": {
+      "name": "AbletonMCP",
+      "source": "github:ahujasid/ableton-mcp",
+      "description": "AbletonMCP connects Ableton Live to Claude AI through the Model Context Protocol (MCP), allowing Claude to directly interact with and control Ableton Live. This integration enables prompt-assisted music production, track creation, and Live session manipulation.",
+      "tags": [
+        "mcp",
+        "ableton",
+        "music production",
+        "AI",
+        "Claude",
+        "MCP",
+        "Model Context Protocol",
+        "MIDI",
+        "audio",
+        "music",
+        "Media Creation"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "ableton-mcp-uvx",
+          "command": "uvx",
+          "args": [
+            "ableton-mcp"
+          ],
+          "env": {}
+        }
+      ]
+    },
+    "blender": {
+      "name": "Blender",
+      "source": "github:ahujasid/blender-mcp",
+      "description": "Blender integration allowing prompt enabled 3D scene creation, modeling and manipulation.",
+      "tags": [
+        "mcp",
+        "Blender",
+        "Claude AI",
+        "3D Modeling",
+        "Media Creation"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "blender-uvx",
+          "command": "uvx",
+          "args": [
+            "blender-mcp"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

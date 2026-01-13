@@ -1,0 +1,38 @@
+{
+  "skills": {
+    "typesense": {
+      "name": "Typesense",
+      "source": "github:suhail-ak-s/mcp-typesense-server",
+      "description": "A Model Context Protocol (MCP) server implementation that provides AI models with access to Typesense search capabilities. This server enables LLMs to discover, search, and analyze data stored in Typesense collections.",
+      "tags": [
+        "mcp",
+        "Typesense",
+        "Server",
+        "Search",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "typesense-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "typesense-mcp-server",
+            "--host",
+            "${TYPESENSE_HOST}",
+            "--port",
+            "8108",
+            "--protocol",
+            "http",
+            "--api-key",
+            "${API_KEY}"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

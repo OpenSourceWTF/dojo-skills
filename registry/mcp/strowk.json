@@ -1,0 +1,46 @@
+{
+  "skills": {
+    "mcp-k8s-go": {
+      "name": "MCP K8S Go",
+      "source": "github:strowk/mcp-k8s-go",
+      "description": "MCP K8S Go is a Golang-based server that connects to Kubernetes, allowing users to interact with and manage Kubernetes resources using the Model Context Protocol (MCP).",
+      "tags": [
+        "mcp",
+        "kubernetes",
+        "mcp",
+        "golang",
+        "k8s",
+        "model context protocol",
+        "claude",
+        "tools",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-k8s-go-npm",
+          "command": "npx",
+          "args": [
+            "@strowk/mcp-k8s"
+          ],
+          "env": {}
+        },
+        {
+          "name": "mcp-k8s-go-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "-v",
+            "~/.kube/config:/home/nonroot/.kube/config",
+            "--rm",
+            "mcpk8s/server:latest"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

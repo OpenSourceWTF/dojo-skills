@@ -1,0 +1,47 @@
+{
+  "skills": {
+    "magic-mcp": {
+      "name": "21st.dev Magic AI Agent",
+      "source": "github:21st-dev/magic-mcp",
+      "description": "Magic Component Platform (MCP) is a powerful AI-driven tool that helps developers create beautiful, modern UI components instantly through natural language descriptions. It integrates seamlessly with popular IDEs and provides a streamlined workflow for UI development.",
+      "tags": [
+        "mcp",
+        "ui",
+        "components",
+        "ai",
+        "generator",
+        "react",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "magic-mcp-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@21st-dev/magic@latest",
+            "API_KEY=${API_KEY}"
+          ],
+          "env": {
+            "API_KEY": "${API_KEY}"
+          }
+        },
+        {
+          "name": "magic-mcp-cli",
+          "command": "npx",
+          "args": [
+            "@21st-dev/cli@latest",
+            "install",
+            "<client>",
+            "--api-key",
+            "<key>"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

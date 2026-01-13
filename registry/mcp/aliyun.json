@@ -1,0 +1,35 @@
+{
+  "skills": {
+    "alicloud-hologres": {
+      "name": "Hologres MCP Server",
+      "source": "github:aliyun/alibabacloud-hologres-mcp-server",
+      "description": "Hologres MCP Server serves as a universal interface between AI Agents and Hologres databases. It enables seamless communication between AI Agents and Hologres, helping AI Agents retrieve Hologres database metadata and execute SQL operations.",
+      "tags": [
+        "mcp",
+        "hologres",
+        "database",
+        "SQL",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "alicloud-hologres-local_file",
+          "command": "uvx",
+          "args": [
+            "hologres-mcp-server"
+          ],
+          "env": {
+            "HOLOGRES_HOST": "${HOLOGRES_HOST}",
+            "HOLOGRES_PORT": "${HOLOGRES_PORT}",
+            "HOLOGRES_USER": "${HOLOGRES_USER}",
+            "HOLOGRES_PASSWORD": "${HOLOGRES_PASSWORD}",
+            "HOLOGRES_DATABASE": "${HOLOGRES_DATABASE}"
+          }
+        }
+      ]
+    }
+  }
+}

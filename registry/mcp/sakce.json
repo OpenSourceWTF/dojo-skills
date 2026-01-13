@@ -1,0 +1,46 @@
+{
+  "skills": {
+    "monday-com": {
+      "name": "Monday.com",
+      "source": "github:sakce/mcp-server-monday",
+      "description": "MCP Server to interact with Monday.com boards and items.",
+      "tags": [
+        "mcp",
+        "monday.com",
+        "API",
+        "Productivity"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "monday-com-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp-server-monday"
+          ],
+          "env": {
+            "MONDAY_API_KEY": "${MONDAY_API_KEY}",
+            "MONDAY_WORKSPACE_NAME": "${MONDAY_WORKSPACE_NAME}"
+          }
+        },
+        {
+          "name": "monday-com-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "--rm",
+            "-i",
+            "-e",
+            "MONDAY_API_KEY=${MONDAY_API_KEY}",
+            "-e",
+            "MONDAY_WORKSPACE_NAME=${MONDAY_WORKSPACE_NAME}",
+            "sakce/mcp-server-monday"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

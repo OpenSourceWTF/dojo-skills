@@ -1,0 +1,32 @@
+{
+  "skills": {
+    "searxng": {
+      "name": "SearXNG",
+      "source": "github:ihor-sokoliuk/mcp-searxng",
+      "description": "A Model Context Protocol Server for [SearXNG](https://docs.searxng.org/)",
+      "tags": [
+        "mcp",
+        "search",
+        "searxng",
+        "api",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "searxng-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "https://github.com/ihor-sokoliuk/mcp-searxng"
+          ],
+          "env": {
+            "SEARXNG_URL": "${SEARXNG_URL}"
+          }
+        }
+      ]
+    }
+  }
+}

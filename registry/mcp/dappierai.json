@@ -1,0 +1,52 @@
+{
+  "skills": {
+    "dappier": {
+      "name": "Dappier MCP Server",
+      "source": "github:dappierai/dappier-mcp",
+      "description": "Dappier MCP Server connects any LLM or AI to real-time, proprietary data from trusted sources, enabling AI to become an expert by accessing specialized models like web search, news, sports, finance, crypto, and premium publisher content.",
+      "tags": [
+        "mcp",
+        "MCP",
+        "Model Context Protocol",
+        "real-time data",
+        "web search",
+        "financial data",
+        "stock market",
+        "news",
+        "AI recommendations",
+        "content discovery",
+        "Knowledge Base"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "dappier-uvx",
+          "command": "uvx",
+          "args": [
+            "dappier-mcp"
+          ],
+          "env": {
+            "DAPPIER_API_KEY": "${DAPPIER_API_KEY}"
+          }
+        },
+        {
+          "name": "dappier-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "DAPPIER_API_KEY",
+            "mcp/dappier"
+          ],
+          "env": {
+            "DAPPIER_API_KEY": "${DAPPIER_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

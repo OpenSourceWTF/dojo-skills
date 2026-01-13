@@ -1,0 +1,32 @@
+{
+  "skills": {
+    "kibela": {
+      "name": "Kibela",
+      "source": "github:kiwamizamurai/mcp-kibela-server",
+      "description": "Interact with Kibela API.",
+      "tags": [
+        "mcp",
+        "Kibela",
+        "Integration",
+        "Knowledge Base"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "kibela-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "https://github.com/kiwamizamurai/mcp-kibela-server"
+          ],
+          "env": {
+            "KIBELA_TEAM": "${KIBELA_TEAM}",
+            "KIBELA_TOKEN": "${KIBELA_TOKEN}"
+          }
+        }
+      ]
+    }
+  }
+}

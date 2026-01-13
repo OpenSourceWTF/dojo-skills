@@ -1,0 +1,112 @@
+{
+  "skills": {
+    "project-brainstorming": {
+      "name": "project-brainstorming",
+      "source": "github:athola/claude-night-market/plugins/attune/skills/project-brainstorming",
+      "description": "Socratic questioning and ideation methodology for project conception using structured brainstormi...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "project-planning": {
+      "name": "project-planning",
+      "source": "github:athola/claude-night-market/plugins/attune/skills/project-planning",
+      "description": "Transform specifications into structured implementation plans with architecture design and task b...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "project-specification": {
+      "name": "project-specification",
+      "source": "github:athola/claude-night-market/plugins/attune/skills/project-specification",
+      "description": "Transform project brief into detailed, testable specifications using spec-driven development meth...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "development-workflow": {
+      "name": "development-workflow",
+      "source": "github:athola/claude-night-market/plugins/abstract/docs/examples/modular-skills/complete-skills/development-workflow",
+      "description": "detailed development workflow with modular patterns for git, code review, testing, documentation,...",
+      "tags": [
+        "devops-and-infrastructure",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "makefile-generation": {
+      "name": "makefile-generation",
+      "source": "github:athola/claude-night-market/plugins/attune/skills/makefile-generation",
+      "description": "Generate language-specific Makefile with common development targets",
+      "tags": [
+        "devops-and-infrastructure",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "workflow-setup": {
+      "name": "workflow-setup",
+      "source": "github:athola/claude-night-market/plugins/attune/skills/workflow-setup",
+      "description": "Configure GitHub Actions workflows for CI/CD (test, lint, typecheck, publish)",
+      "tags": [
+        "devops-and-infrastructure",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "precommit-setup": {
+      "name": "precommit-setup",
+      "source": "github:athola/claude-night-market/plugins/attune/skills/precommit-setup",
+      "description": "Configure comprehensive three-layer pre-commit quality system with linting, type checking, and te...",
+      "tags": [
+        "testing-and-quality",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "project-execution": {
+      "name": "project-execution",
+      "source": "github:athola/claude-night-market/plugins/attune/skills/project-execution",
+      "description": "Systematic task execution with checkpoint validation, progress tracking, and quality gates",
+      "tags": [
+        "testing-and-quality",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "review-chamber": {
+      "name": "review-chamber",
+      "source": "github:athola/claude-night-market/plugins/memory-palace/skills/review-chamber",
+      "description": "Capture and retrieve PR review knowledge in project memory palaces",
+      "tags": [
+        "version-control-and-collaboration",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    }
+  }
+}

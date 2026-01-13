@@ -1,0 +1,30 @@
+{
+  "skills": {
+    "mongodb": {
+      "name": "MongoDB",
+      "source": "github:kiliczsh/mcp-mongo-server",
+      "description": "A Model Context Protocol Server for MongoDB.",
+      "tags": [
+        "mcp",
+        "MongoDB",
+        "LLM",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mongodb-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "mcp-mongo-server",
+            "${MONGODB_URI}"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

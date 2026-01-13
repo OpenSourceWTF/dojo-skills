@@ -1,0 +1,42 @@
+{
+  "skills": {
+    "e2b-mcp-server": {
+      "name": "E2B MCP Server",
+      "source": "github:e2b-dev/mcp-server",
+      "description": "This repository contains the source code for the [E2B](https://e2b.dev) MCP server.",
+      "tags": [
+        "mcp",
+        "code-interpreter",
+        "claude",
+        "sandbox",
+        "MCP Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "e2b-mcp-server-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@e2b/mcp-server"
+          ],
+          "env": {
+            "E2B_API_KEY": "${e2bApiKey}"
+          }
+        },
+        {
+          "name": "e2b-mcp-server-uvx",
+          "command": "uvx",
+          "args": [
+            "e2b-mcp-server"
+          ],
+          "env": {
+            "E2B_API_KEY": "${e2bApiKey}"
+          }
+        }
+      ]
+    }
+  }
+}

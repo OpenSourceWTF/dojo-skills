@@ -1,0 +1,258 @@
+{
+  "skills": {
+    "calendar": {
+      "name": "Calendar AutoAuth MCP Server",
+      "source": "github:GongRzhe/Calendar-Autoauth-MCP-Server",
+      "description": "A Model Context Protocol (MCP) server for Google Calendar integration in Claude Desktop with auto authentication support. This server enables AI assistants to manage Google Calendar events through natural language interactions.",
+      "tags": [
+        "mcp",
+        "calendar",
+        "google calendar",
+        "mcp",
+        "oauth",
+        "authentication",
+        "claude desktop",
+        "events",
+        "Productivity"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "calendar-npm",
+          "command": "npx",
+          "args": [
+            "@gongrzhe/server-calendar-autoauth-mcp"
+          ],
+          "env": {}
+        },
+        {
+          "name": "calendar-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-v",
+            "mcp-calendar:/calendar-server",
+            "-e",
+            "CALENDAR_CREDENTIALS_PATH=/calendar-server/credentials.json",
+            "mcp/calendar"
+          ],
+          "env": {}
+        }
+      ]
+    },
+    "gmail": {
+      "name": "Gmail AutoAuth",
+      "source": "github:GongRzhe/Gmail-MCP-Server",
+      "description": "A Model Context Protocol (MCP) server for Gmail integration in Claude Desktop with auto authentication support.",
+      "tags": [
+        "mcp",
+        "gmail",
+        "autoauth",
+        "claude",
+        "Messaging"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "gmail-npm",
+          "command": "npx",
+          "args": [
+            "@gongrzhe/server-gmail-autoauth-mcp"
+          ],
+          "env": {}
+        },
+        {
+          "name": "gmail-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-v",
+            "mcp-gmail:/gmail-server",
+            "-e",
+            "${GMAIL_CREDENTIALS_PATH}=/gmail-server/credentials.json",
+            "mcp/gmail"
+          ],
+          "env": {}
+        }
+      ]
+    },
+    "image-generation": {
+      "name": "Image Generation",
+      "source": "github:GongRzhe/Image-Generation-MCP-Server",
+      "description": "This MCP server provides image generation capabilities using the Replicate Flux model.",
+      "tags": [
+        "mcp",
+        "image",
+        "generation",
+        "flux",
+        "Replicate",
+        "Media Creation"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "image-generation-npm",
+          "command": "npx",
+          "args": [
+            "@gongrzhe/image-gen-server"
+          ],
+          "env": {
+            "REPLICATE_API_TOKEN": "${REPLICATE_API_TOKEN}",
+            "MODEL": "${MODEL}",
+            "your-replicate-api-token": "${your_replicate_api_token}",
+            "alternative-model-name": "${alternative_model_name}"
+          }
+        }
+      ]
+    },
+    "json": {
+      "name": "JSON Model Context Protocol",
+      "source": "github:GongRzhe/JSON-MCP-Server",
+      "description": "JSON handling and processing server with advanced query capabilities using JSONPath syntax and support for array, string, numeric, and date operations.",
+      "tags": [
+        "mcp",
+        "json",
+        "data querying",
+        "standardized tools",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "json-npm",
+          "command": "npx",
+          "args": [
+            "@gongrzhe/server-json-mcp@1.0.3"
+          ],
+          "env": {}
+        }
+      ]
+    },
+    "langflow-doc-qa-server": {
+      "name": "Langflow Document Q&A",
+      "source": "github:GongRzhe/Langflow-DOC-QA-SERVER",
+      "description": "A Model Context Protocol server for document Q&A powered by Langflow. It demonstrates core MCP concepts by providing a simple interface to query documents through a Langflow backend.",
+      "tags": [
+        "mcp",
+        "Langflow",
+        "Document Q&A",
+        "Knowledge Base"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "langflow-doc-qa-server-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "https://github.com/GongRzhe/Langflow-DOC-QA-SERVER"
+          ],
+          "env": {
+            "API_ENDPOINT": "${API_ENDPOINT}"
+          }
+        }
+      ]
+    },
+    "quickchart": {
+      "name": "Quickchart",
+      "source": "github:GongRzhe/Quickchart-MCP-Server",
+      "description": "A Model Context Protocol server for generating charts using QuickChart.io",
+      "tags": [
+        "mcp",
+        "quickchart",
+        "chart generation",
+        "data visualization",
+        "Media Creation"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "quickchart-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@gongrzhe/quickchart-mcp-server"
+          ],
+          "env": {}
+        }
+      ]
+    },
+    "terminal-control": {
+      "name": "Terminal Controller",
+      "source": "github:GongRzhe/terminal-controller-mcp",
+      "description": "A MCP server that enables secure terminal command execution, directory navigation, and file system operations through a standardized interface.",
+      "tags": [
+        "mcp",
+        "terminal",
+        "command execution",
+        "file management",
+        "cross-platform",
+        "System Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "terminal-control-uvx",
+          "command": "uvx",
+          "args": [
+            "terminal-controller"
+          ],
+          "env": {}
+        },
+        {
+          "name": "terminal-control-python",
+          "command": "python",
+          "args": [
+            "-m",
+            "terminal_controller"
+          ],
+          "env": {}
+        }
+      ]
+    },
+    "travel-planner": {
+      "name": "Travel Planner",
+      "source": "github:GongRzhe/TRAVEL-PLANNER-MCP-Server",
+      "description": "Travel planning and itinerary management server integrating with Google Maps API for location search, place details, and route calculations.",
+      "tags": [
+        "mcp",
+        "google-maps",
+        "travel-planning",
+        "Professional Apps"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "travel-planner-npm",
+          "command": "npx",
+          "args": [
+            "@gongrzhe/server-travelplanner-mcp"
+          ],
+          "env": {
+            "GOOGLE_MAPS_API_KEY": "${GOOGLE_MAPS_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

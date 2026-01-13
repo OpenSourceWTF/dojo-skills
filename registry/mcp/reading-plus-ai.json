@@ -1,0 +1,28 @@
+{
+  "skills": {
+    "data-exploration": {
+      "name": "Data Exploration",
+      "source": "github:reading-plus-ai/mcp-server-data-exploration",
+      "description": "MCP server for autonomous data exploration on .csv-based datasets, providing intelligent insights with minimal effort. NOTE: Will execute arbitrary Python code on your machine, please use with caution!",
+      "tags": [
+        "mcp",
+        "data",
+        "exploration",
+        "Analytics"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "data-exploration-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp-server-ds"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "skills": {
+    "amap": {
+      "name": "Amap / 高德地图",
+      "source": "https://www.npmjs.com/package/@amap/amap-maps-mcp-server",
+      "description": "MCP Server for the AMap Map API.",
+      "tags": [
+        "mcp",
+        "amap",
+        "map",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "amap-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@amap/amap-maps-mcp-server"
+          ],
+          "env": {
+            "AMAP_MAPS_API_KEY": "${AMAP_MAPS_API_KEY}"
+          }
+        }
+      ]
+    },
+    "deepwiki": {
+      "name": "DeepWiki",
+      "source": "https://mcp.deepwiki.com/mcp",
+      "description": "AI-powered knowledge base and documentation search system",
+      "tags": [
+        "mcp",
+        "wiki",
+        "documentation",
+        "knowledge base",
+        "search",
+        "Knowledge Base",
+        "Documentation"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "skills": {
+    "mcp-server-singlestore": {
+      "name": "SingleStore MCP Server",
+      "source": "github:singlestore-labs/mcp-server-singlestore",
+      "description": "Interact with the SingleStore database platform",
+      "tags": [
+        "mcp",
+        "singlestore",
+        "database",
+        "sql",
+        "mcp",
+        "model context protocol",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-server-singlestore-uvx",
+          "command": "uvx",
+          "args": [
+            "singlestore-mcp-server"
+          ],
+          "env": {
+            "SINGLESTORE_DB_USERNAME": "${SINGLESTORE_DB_USERNAME}",
+            "SINGLESTORE_DB_PASSWORD": "${SINGLESTORE_DB_PASSWORD}",
+            "SINGLESTORE_API_KEY": "${SINGLESTORE_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

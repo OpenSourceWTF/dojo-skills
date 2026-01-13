@@ -1,0 +1,35 @@
+{
+  "skills": {
+    "mcp-server-qdrant": {
+      "name": "Qdrant MCP Server",
+      "source": "github:qdrant/mcp-server-qdrant",
+      "description": "This repository is an example of how to create a MCP server for Qdrant, a vector search engine.",
+      "tags": [
+        "mcp",
+        "vector-search",
+        "qdrant",
+        "memory",
+        "semantic-search",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-server-qdrant-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp-server-qdrant"
+          ],
+          "env": {
+            "QDRANT_URL": "${QDRANT_URL}",
+            "QDRANT_API_KEY": "${QDRANT_API_KEY}",
+            "COLLECTION_NAME": "${COLLECTION_NAME}",
+            "EMBEDDING_MODEL": "${EMBEDDING_MODEL}"
+          }
+        }
+      ]
+    }
+  }
+}

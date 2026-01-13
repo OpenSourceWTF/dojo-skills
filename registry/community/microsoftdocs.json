@@ -1,0 +1,28 @@
+{
+  "skills": {
+    "microsoft-docs": {
+      "name": "microsoft-docs",
+      "source": "github:MicrosoftDocs/mcp/skills/microsoft-docs",
+      "description": "Query official Microsoft documentation to understand concepts, find tutorials, and learn how serv...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "microsoft-code-reference": {
+      "name": "microsoft-code-reference",
+      "source": "github:MicrosoftDocs/mcp/skills/microsoft-code-reference",
+      "description": "Look up Microsoft API references, find working code samples, and verify SDK code is correct. Use ...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    }
+  }
+}

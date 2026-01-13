@@ -1,0 +1,29 @@
+{
+  "skills": {
+    "obsidian-markdown-notes": {
+      "name": "Obsidian Markdown Notes",
+      "source": "github:calclavia/mcp-obsidian",
+      "description": "Read and search through your Obsidian vault or any directory containing Markdown notes",
+      "tags": [
+        "mcp",
+        "obsidian",
+        "Knowledge Base"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "obsidian-markdown-notes-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "https://github.com/calclavia/mcp-obsidian.git",
+            "${OBSIDIAN_VAULT_PATH}"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

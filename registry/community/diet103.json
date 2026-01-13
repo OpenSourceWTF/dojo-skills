@@ -1,0 +1,64 @@
+{
+  "skills": {
+    "error-tracking": {
+      "name": "error-tracking",
+      "source": "github:diet103/claude-code-infrastructure-showcase/error-tracking",
+      "description": "Add Sentry v8 error tracking and performance monitoring to your project services. Use this skill ...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "route-tester": {
+      "name": "route-tester",
+      "source": "github:diet103/claude-code-infrastructure-showcase/route-tester",
+      "description": "Test authenticated routes in the your project using cookie-based authentication. Use this skill w...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "backend-dev-guidelines": {
+      "name": "backend-dev-guidelines",
+      "source": "github:diet103/claude-code-infrastructure-showcase/backend-dev-guidelines",
+      "description": "Comprehensive backend development guide for Node.js/Express/TypeScript microservices. Use when cr...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "skill-developer": {
+      "name": "skill-developer",
+      "source": "github:diet103/claude-code-infrastructure-showcase/skill-developer",
+      "description": "Create and manage Claude Code skills following Anthropic best practices. Use when creating new sk...",
+      "tags": [
+        "devops-and-infrastructure",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "frontend-dev-guidelines": {
+      "name": "frontend-dev-guidelines",
+      "source": "github:diet103/claude-code-infrastructure-showcase/frontend-dev-guidelines",
+      "description": "Frontend development guidelines for React/TypeScript applications. Modern patterns including Susp...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    }
+  }
+}

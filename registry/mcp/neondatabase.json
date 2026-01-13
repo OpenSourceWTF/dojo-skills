@@ -1,0 +1,49 @@
+{
+  "skills": {
+    "mcp-server-neon": {
+      "name": "Neon MCP Server",
+      "source": "github:neondatabase/mcp-server-neon",
+      "description": "This lets you use Claude Desktop, or any MCP Client, to use natural language to accomplish things with Neon.",
+      "tags": [
+        "mcp",
+        "database",
+        "postgres",
+        "neon",
+        "mcp",
+        "llm",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-server-neon-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@neondatabase/mcp-server-neon",
+            "start",
+            "${NEON_API_KEY}"
+          ],
+          "env": {}
+        },
+        {
+          "name": "mcp-server-neon-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "NEON_API_KEY",
+            "mcp/neon"
+          ],
+          "env": {
+            "NEON_API_KEY": "${NEON_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

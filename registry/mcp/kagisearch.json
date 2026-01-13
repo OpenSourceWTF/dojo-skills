@@ -1,0 +1,31 @@
+{
+  "skills": {
+    "kagimcp": {
+      "name": "Kagi MCP server",
+      "source": "github:kagisearch/kagimcp",
+      "description": "<a href=\"https://glama.ai/mcp/servers/xabrrs4bka\">",
+      "tags": [
+        "mcp",
+        "search",
+        "summarizer",
+        "Analytics"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "kagimcp-uvx",
+          "command": "uvx",
+          "args": [
+            "kagimcp"
+          ],
+          "env": {
+            "KAGI_API_KEY": "${KAGI_API_KEY}",
+            "KAGI_SUMMARIZER_ENGINE": "${KAGI_SUMMARIZER_ENGINE}"
+          }
+        }
+      ]
+    }
+  }
+}

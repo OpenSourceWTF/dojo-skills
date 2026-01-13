@@ -1,0 +1,67 @@
+{
+  "skills": {
+    "atlassian": {
+      "name": "Atlassian",
+      "source": "github:sooperset/mcp-atlassian",
+      "description": "Interact with Atlassian Cloud products (Confluence and Jira) including searching/reading Confluence spaces/pages, accessing Jira issues, and project metadata.",
+      "tags": [
+        "mcp",
+        "Atlassian",
+        "Confluence",
+        "Jira",
+        "Productivity"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "atlassian-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp-atlassian",
+            "--confluence-url=${CONFLUENCE_URL}",
+            "--confluence-username=${CONFLUENCE_USERNAME}",
+            "--confluence-token=${CONFLUENCE_TOKEN}",
+            "--jira-url=${JIRA_URL}",
+            "--jira-username=${JIRA_USERNAME}",
+            "--jira-token=${JIRA_TOKEN}"
+          ],
+          "env": {}
+        },
+        {
+          "name": "atlassian-python",
+          "command": "python",
+          "args": [
+            "-m",
+            "mcp-atlassian",
+            "--confluence-url=${CONFLUENCE_URL}",
+            "--confluence-username=${CONFLUENCE_USERNAME}",
+            "--confluence-token=${CONFLUENCE_TOKEN}",
+            "--jira-url=${JIRA_URL}",
+            "--jira-username=${JIRA_USERNAME}",
+            "--jira-token=${JIRA_TOKEN}"
+          ],
+          "env": {}
+        },
+        {
+          "name": "atlassian-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "--rm",
+            "-i",
+            "mcp/atlassian",
+            "--confluence-url=${CONFLUENCE_URL}",
+            "--confluence-username=${CONFLUENCE_USERNAME}",
+            "--confluence-token=${CONFLUENCE_TOKEN}",
+            "--jira-url=${JIRA_URL}",
+            "--jira-username=${JIRA_USERNAME}",
+            "--jira-token=${JIRA_TOKEN}"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

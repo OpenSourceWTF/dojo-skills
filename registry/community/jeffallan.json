@@ -1,0 +1,148 @@
+{
+  "skills": {
+    "fine-tuning-expert": {
+      "name": "fine-tuning-expert",
+      "source": "github:Jeffallan/claude-skills/skills/fine-tuning-expert",
+      "description": "Use when fine-tuning LLMs, training custom models, or optimizing model performance for specific t...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "game-developer": {
+      "name": "game-developer",
+      "source": "github:Jeffallan/claude-skills/skills/game-developer",
+      "description": "Use when building game systems, implementing Unity/Unreal features, or optimizing game performanc...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "pandas-pro": {
+      "name": "pandas-pro",
+      "source": "github:Jeffallan/claude-skills/skills/pandas-pro",
+      "description": "Use when working with pandas DataFrames, data cleaning, aggregation, merging, or time series anal...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "prompt-engineer": {
+      "name": "prompt-engineer",
+      "source": "github:Jeffallan/claude-skills/skills/prompt-engineer",
+      "description": "Use when designing prompts for LLMs, optimizing model performance, building evaluation frameworks...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "rag-architect": {
+      "name": "rag-architect",
+      "source": "github:Jeffallan/claude-skills/skills/rag-architect",
+      "description": "Use when building RAG systems, vector databases, or knowledge-grounded AI applications requiring ...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "wordpress-pro": {
+      "name": "wordpress-pro",
+      "source": "github:Jeffallan/claude-skills/skills/wordpress-pro",
+      "description": "Use when developing WordPress themes, plugins, customizing Gutenberg blocks, implementing WooComm...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "shopify-expert": {
+      "name": "shopify-expert",
+      "source": "github:Jeffallan/claude-skills/skills/shopify-expert",
+      "description": "Use when building Shopify themes, apps, custom storefronts, or e-commerce solutions. Invoke for L...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "spark-engineer": {
+      "name": "spark-engineer",
+      "source": "github:Jeffallan/claude-skills/skills/spark-engineer",
+      "description": "Use when building Apache Spark applications, distributed data processing pipelines, or optimizing...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "ml-pipeline": {
+      "name": "ml-pipeline",
+      "source": "github:Jeffallan/claude-skills/skills/ml-pipeline",
+      "description": "Use when building ML pipelines, orchestrating training workflows, automating model lifecycle, imp...",
+      "tags": [
+        "data-and-analytics",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "atlassian-mcp": {
+      "name": "atlassian-mcp",
+      "source": "github:Jeffallan/claude-skills/skills/atlassian-mcp",
+      "description": "Use when querying Jira issues, searching Confluence pages, creating tickets, updating documentati...",
+      "tags": [
+        "data-and-analytics",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "salesforce-developer": {
+      "name": "salesforce-developer",
+      "source": "github:Jeffallan/claude-skills/skills/salesforce-developer",
+      "description": "Use when developing Salesforce applications, Apex code, Lightning Web Components, SOQL queries, t...",
+      "tags": [
+        "frontend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "chaos-engineer": {
+      "name": "chaos-engineer",
+      "source": "github:Jeffallan/claude-skills/skills/chaos-engineer",
+      "description": "Use when designing chaos experiments, implementing failure injection frameworks, or conducting ga...",
+      "tags": [
+        "testing-and-quality",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    }
+  }
+}

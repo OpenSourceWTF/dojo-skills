@@ -1,0 +1,34 @@
+{
+  "skills": {
+    "base-free-usdc-transfer": {
+      "name": "Free USDC Transfer",
+      "source": "github:magnetai/mcp-free-usdc-transfer",
+      "description": "Send USDC on [Base](https://base.org/) for free using Claude AI! Built with [Coinbase CDP](https://docs.cdp.coinbase.com/mpc-wallet/docs/welcome).",
+      "tags": [
+        "mcp",
+        "USDC",
+        "Base",
+        "Coinbase",
+        "MPC Wallet",
+        "Finance"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "base-free-usdc-transfer-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@magnetai/free-usdc-transfer"
+          ],
+          "env": {
+            "COINBASE_CDP_API_KEY_NAME": "${COINBASE_CDP_API_KEY_NAME}",
+            "COINBASE_CDP_PRIVATE_KEY": "${COINBASE_CDP_PRIVATE_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

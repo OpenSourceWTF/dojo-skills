@@ -1,0 +1,50 @@
+{
+  "skills": {
+    "notion-mcp": {
+      "name": "Notion MCP Server",
+      "source": "github:makenotion/notion-mcp-server",
+      "description": "This project implements an [MCP server](https://spec.modelcontextprotocol.io/) for the [Notion API](https://developers.notion.com/reference/intro).",
+      "tags": [
+        "mcp",
+        "notion",
+        "mcp",
+        "api",
+        "model-context-protocol",
+        "integration",
+        "notion-api",
+        "Productivity"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "notion-mcp-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@notionhq/notion-mcp-server"
+          ],
+          "env": {
+            "OPENAPI_MCP_HEADERS": "${OPENAPI_MCP_HEADERS}"
+          }
+        },
+        {
+          "name": "notion-mcp-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "INTERNAL_INTEGRATION_TOKEN",
+            "mcp/notion"
+          ],
+          "env": {
+            "INTERNAL_INTEGRATION_TOKEN": "${INTERNAL_INTEGRATION_TOKEN}"
+          }
+        }
+      ]
+    }
+  }
+}

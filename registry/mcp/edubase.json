@@ -1,0 +1,56 @@
+{
+  "skills": {
+    "edubase": {
+      "name": "EduBase MCP server",
+      "source": "github:EduBase/MCP",
+      "description": "<img src=\"https://static.edubase.net/media/brand/title/color.png\" alt=\"EduBase logo\" height=\"150\" />",
+      "tags": [
+        "mcp",
+        "education",
+        "learning",
+        "quiz",
+        "assessment",
+        "API",
+        "MCP Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "edubase-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "EDUBASE_API_URL",
+            "-e",
+            "EDUBASE_API_APP",
+            "-e",
+            "EDUBASE_API_KEY",
+            "edubase/mcp"
+          ],
+          "env": {
+            "EDUBASE_API_URL": "${EDUBASE_API_URL}",
+            "EDUBASE_API_APP": "${EDUBASE_API_APP}",
+            "EDUBASE_API_KEY": "${EDUBASE_API_KEY}"
+          }
+        },
+        {
+          "name": "edubase-custom",
+          "command": "node",
+          "args": [
+            "/path/to/dist/index.js"
+          ],
+          "env": {
+            "EDUBASE_API_URL": "${EDUBASE_API_URL}",
+            "EDUBASE_API_APP": "${EDUBASE_API_APP}",
+            "EDUBASE_API_KEY": "${EDUBASE_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

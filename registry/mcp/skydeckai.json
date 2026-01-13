@@ -1,0 +1,32 @@
+{
+  "skills": {
+    "rememberizer-ai": {
+      "name": "Rememberizer",
+      "source": "github:skydeckai/mcp-server-rememberizer",
+      "description": "An MCP server designed for interacting with the Rememberizer data source, facilitating enhanced knowledge retrieval.",
+      "tags": [
+        "mcp",
+        "Rememberizer",
+        "Document Management",
+        "Knowledge Management",
+        "API",
+        "Knowledge Base"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "rememberizer-ai-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp-server-rememberizer"
+          ],
+          "env": {
+            "REMEMBERIZER_API_TOKEN": "${REMEMBERIZER_API_TOKEN}"
+          }
+        }
+      ]
+    }
+  }
+}

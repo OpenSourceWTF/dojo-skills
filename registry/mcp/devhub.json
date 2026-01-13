@@ -1,0 +1,33 @@
+{
+  "skills": {
+    "devhub-cms-mcp": {
+      "name": "DevHub CMS MCP",
+      "source": "github:devhub/devhub-cms-mcp",
+      "description": "Manage and utilize website content within the DevHub CMS platform",
+      "tags": [
+        "mcp",
+        "cms",
+        "content management",
+        "devhub",
+        "Productivity"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "devhub-cms-mcp-uvx",
+          "command": "uvx",
+          "args": [
+            "devhub-cms-mcp"
+          ],
+          "env": {
+            "DEVHUB_API_KEY": "${DEVHUB_API_KEY}",
+            "DEVHUB_API_SECRET": "${DEVHUB_API_SECRET}",
+            "DEVHUB_BASE_URL": "${DEVHUB_BASE_URL}"
+          }
+        }
+      ]
+    }
+  }
+}

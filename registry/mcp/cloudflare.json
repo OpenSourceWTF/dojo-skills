@@ -1,0 +1,64 @@
+{
+  "skills": {
+    "mcp-server-cloudflare": {
+      "name": "Cloudflare MCP Server",
+      "source": "github:cloudflare/mcp-server-cloudflare",
+      "description": "Model Context Protocol (MCP) is a [new, standardized protocol](https://modelcontextprotocol.io/introduction) for managing context between large language models (LLMs) and external systems. In this repository, we provide an installer as well as an MCP Server for [Cloudflare's API](https://api.cloudflare.com).",
+      "tags": [
+        "mcp",
+        "cloudflare",
+        "mcp",
+        "model-context-protocol",
+        "llm",
+        "api",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-server-cloudflare-npm",
+          "command": "npx",
+          "args": [
+            "@cloudflare/mcp-server-cloudflare",
+            "init"
+          ],
+          "env": {}
+        }
+      ]
+    },
+    "workers-mcp": {
+      "name": "Cloudflare Workers MCP",
+      "source": "github:cloudflare/workers-mcp",
+      "description": "This package provides both the CLI tooling and the in-Worker logic to connect Claude Desktop (or any [MCP Client](https://modelcontextprotocol.io/)) to a Cloudflare Worker on your account, so you can customise it to suit your needs. It works via a build step that can translate TypeScript methods of your Worker like this:",
+      "tags": [
+        "mcp",
+        "cloudflare",
+        "workers",
+        "mcp",
+        "model context protocol",
+        "claude",
+        "ai",
+        "serverless",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "workers-mcp-cli",
+          "command": "workers-mcp",
+          "args": [
+            "run",
+            "your-mcp-server-name",
+            "https://your-server-url.workers.dev",
+            "/path/to/your/project"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

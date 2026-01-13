@@ -1,0 +1,70 @@
+{
+  "skills": {
+    "snowflake": {
+      "name": "Snowflake",
+      "source": "github:isaacwasserman/mcp-snowflake-server",
+      "description": "This MCP server enables LLMs to interact with Snowflake databases, allowing for secure and controlled data operations.",
+      "tags": [
+        "mcp",
+        "snowflake",
+        "sql",
+        "database",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "snowflake-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp_snowflake_server",
+            "--account",
+            "${ACCOUNT}",
+            "--warehouse",
+            "${WAREHOUSE}",
+            "--user",
+            "${USER}",
+            "--password",
+            "${PASSWORD}",
+            "--role",
+            "${ROLE}",
+            "--database",
+            "${DATABASE}",
+            "--schema",
+            "${SCHEMA}"
+          ],
+          "env": {}
+        }
+      ]
+    },
+    "vega-lite": {
+      "name": "Vega-Lite Data Visualization",
+      "source": "github:isaacwasserman/mcp-vegalite-server",
+      "description": "Generate visualizations from fetched data using the VegaLite format and renderer.",
+      "tags": [
+        "mcp",
+        "visualization",
+        "data",
+        "vega-lite",
+        "Media Creation"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "vega-lite-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "git+https://github.com/isaacwasserman/mcp-vegalite-server",
+            "mcp_server_vegalite"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

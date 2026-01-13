@@ -1,0 +1,34 @@
+{
+  "skills": {
+    "jinni": {
+      "name": "Jinni: Bring Your Project Into Context",
+      "source": "github:smat-dev/jinni",
+      "description": "<a href=\"https://glama.ai/mcp/servers/@smat-dev/jinni\">",
+      "tags": [
+        "mcp",
+        "context",
+        "project",
+        "LLM",
+        "MCP",
+        "development",
+        "code",
+        "file management",
+        "context window",
+        "Media Creation"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "jinni-uvx",
+          "command": "uvx",
+          "args": [
+            "jinni-server"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

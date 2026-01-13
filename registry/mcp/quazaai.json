@@ -1,0 +1,32 @@
+{
+  "skills": {
+    "unity-integration-advanced": {
+      "name": "Unity Integration",
+      "source": "github:quazaai/UnityMCPIntegration",
+      "description": "Advanced Unity3d Game Engine MCP which supports ,Execution of Any Editor Related Code Directly Inside of Unity, Fetch Logs, Get Editor State and Allow File Access of the Project making it much more useful in Script Editing or asset creation.",
+      "tags": [
+        "mcp",
+        "Unity",
+        "Integration",
+        "AI",
+        "Media Creation"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "unity-integration-advanced-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "https://github.com/quazaai/UnityMCPIntegration"
+          ],
+          "env": {
+            "MCP_WEBSOCKET_PORT": "${MCP_WEBSOCKET_PORT}"
+          }
+        }
+      ]
+    }
+  }
+}

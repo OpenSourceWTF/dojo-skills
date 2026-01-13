@@ -1,0 +1,100 @@
+{
+  "skills": {
+    "hugging-face-datasets": {
+      "name": "hugging-face-datasets",
+      "source": "github:huggingface/skills/skills/hugging-face-datasets",
+      "description": "Create and manage datasets on Hugging Face Hub. Supports initializing repos, defining configs/sys...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "hugging-face-model-trainer": {
+      "name": "hugging-face-model-trainer",
+      "source": "github:huggingface/skills/skills/hugging-face-model-trainer",
+      "description": "This skill should be used when users want to train or fine-tune language models using TRL (Transf...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "hugging-face-evaluation": {
+      "name": "hugging-face-evaluation",
+      "source": "github:huggingface/skills/skills/hugging-face-evaluation",
+      "description": "Add and manage evaluation results in Hugging Face model cards. Supports extracting eval tables fr...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "hugging-face-tool-builder": {
+      "name": "hugging-face-tool-builder",
+      "source": "github:huggingface/skills/skills/hugging-face-tool-builder",
+      "description": "Use this skill when the user wants to build tool/scripts or achieve a task where using data from ...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "hugging-face-trackio": {
+      "name": "hugging-face-trackio",
+      "source": "github:huggingface/skills/skills/hugging-face-trackio",
+      "description": "Track and visualize ML training experiments with Trackio. Use when logging metrics during trainin...",
+      "tags": [
+        "backend-development",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "hugging-face-paper-publisher": {
+      "name": "hugging-face-paper-publisher",
+      "source": "github:huggingface/skills/skills/hugging-face-paper-publisher",
+      "description": "Publish and manage research papers on Hugging Face Hub. Supports creating paper pages, linking pa...",
+      "tags": [
+        "data-and-analytics",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "hugging-face-cli": {
+      "name": "hugging-face-cli",
+      "source": "github:huggingface/skills/skills/hugging-face-cli",
+      "description": "Execute Hugging Face Hub operations using the `hf` CLI. Use when the user needs to download model...",
+      "tags": [
+        "devops-and-infrastructure",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "hugging-face-jobs": {
+      "name": "hugging-face-jobs",
+      "source": "github:huggingface/skills/skills/hugging-face-jobs",
+      "description": "This skill should be used when users want to run any workload on Hugging Face Jobs infrastructure...",
+      "tags": [
+        "devops-and-infrastructure",
+        "community"
+      ],
+      "versions": {
+        "latest": "main"
+      }
+    }
+  }
+}

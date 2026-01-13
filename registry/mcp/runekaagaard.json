@@ -1,0 +1,40 @@
+{
+  "skills": {
+    "mcp-alchemy": {
+      "name": "MCP Alchemy - Database Assistant",
+      "source": "github:runekaagaard/mcp-alchemy",
+      "description": "Database assistant MCP server enabling LLMs to interact with relational databases for exploration, querying, and analysis. Supports PostgreSQL, MySQL, MariaDB, SQLite, Oracle, MS SQL Server, CrateDB, Vertica, and other SQLAlchemy-compatible databases.",
+      "tags": [
+        "mcp",
+        "Database",
+        "SQL",
+        "PostgreSQL",
+        "MySQL",
+        "SQLite",
+        "Oracle",
+        "SQLAlchemy",
+        "Query Analysis",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-alchemy-uvx",
+          "command": "uvx",
+          "args": [
+            "--from",
+            "mcp-alchemy",
+            "--with",
+            "psycopg2-binary",
+            "--refresh-package",
+            "mcp-alchemy",
+            "mcp-alchemy"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

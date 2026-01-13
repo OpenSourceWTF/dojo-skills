@@ -1,0 +1,32 @@
+{
+  "skills": {
+    "rember-mcp": {
+      "name": "Rember MCP",
+      "source": "github:rember/rember-mcp",
+      "description": "Create spaced repetition flashcards in Rember to remember anything you learn in your chats",
+      "tags": [
+        "mcp",
+        "flashcards",
+        "spaced repetition",
+        "learning",
+        "memory",
+        "Knowledge Base"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "rember-mcp-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@getrember/mcp",
+            "--api-key=${api-key}"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

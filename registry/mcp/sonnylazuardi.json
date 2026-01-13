@@ -1,0 +1,30 @@
+{
+  "skills": {
+    "cursor-talk-to-figma-mcp": {
+      "name": "Cursor Talk to Figma MCP",
+      "source": "github:sonnylazuardi/cursor-talk-to-figma-mcp",
+      "description": "Here is a concise description paragraph extracted from the README content, focused on what the project does, and kept under 200 characters:\n\nTailwind UI is a professional collection of UI components built with Tailwind CSS, including application UI like modals, dropdowns, and navigation menus, as well as marketing UI like headers, pricing tables, and testimonials.",
+      "tags": [
+        "mcp",
+        "figma",
+        "cursor",
+        "mcp",
+        "plugin",
+        "Media Creation"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "cursor-talk-to-figma-mcp-custom",
+          "command": "bunx",
+          "args": [
+            "cursor-talk-to-figma-mcp@latest"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

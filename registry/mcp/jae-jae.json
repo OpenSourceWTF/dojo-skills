@@ -1,0 +1,36 @@
+{
+  "skills": {
+    "fetcher-mcp": {
+      "name": "Fetcher MCP",
+      "source": "github:jae-jae/fetcher-mcp",
+      "description": "Fetcher MCP is a server for fetching web page content using the Playwright headless browser, capable of executing JavaScript and handling dynamic web content.",
+      "tags": [
+        "mcp",
+        "web scraping",
+        "Playwright",
+        "headless browser",
+        "content extraction",
+        "JavaScript",
+        "Markdown",
+        "HTML",
+        "parallel processing",
+        "MCP server",
+        "Web Services"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "fetcher-mcp-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "fetcher-mcp"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

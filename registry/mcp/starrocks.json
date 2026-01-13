@@ -1,0 +1,34 @@
+{
+  "skills": {
+    "mcp-server-starrocks": {
+      "name": "StarRocks Official MCP Server",
+      "source": "github:StarRocks/mcp-server-starrocks",
+      "description": "The StarRocks MCP Server acts as a bridge between AI assistants and StarRocks databases, allowing for direct SQL execution and database exploration without requiring complex setup or configuration.",
+      "tags": [
+        "mcp",
+        "database",
+        "sql",
+        "starrocks",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-server-starrocks-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp-server-starrocks"
+          ],
+          "env": {
+            "STARROCKS_HOST": "${STARROCKS_HOST}",
+            "STARROCKS_PORT": "${STARROCKS_PORT}",
+            "STARROCKS_USER": "${STARROCKS_USER}",
+            "STARROCKS_PASSWORD": "${STARROCKS_PASSWORD}"
+          }
+        }
+      ]
+    }
+  }
+}

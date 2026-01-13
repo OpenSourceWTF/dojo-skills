@@ -1,0 +1,58 @@
+{
+  "skills": {
+    "discord": {
+      "name": "Discord",
+      "source": "github:v-3/discordmcp",
+      "description": "A MCP server to connect to Discord guilds through a bot and read and write messages in channels",
+      "tags": [
+        "mcp",
+        "Discord",
+        "LLM",
+        "Bot",
+        "Messaging"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "discord-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "https://github.com/v-3/discordmcp"
+          ],
+          "env": {
+            "DISCORD_TOKEN": "${DISCORD_TOKEN}"
+          }
+        }
+      ]
+    },
+    "notion": {
+      "name": "Notion",
+      "source": "github:v-3/notion-server",
+      "description": "Notion MCP integration. Search, Read, Update, and Create pages through Claude chat.",
+      "tags": [
+        "mcp",
+        "Notion",
+        "Productivity"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "notion-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "https://github.com/v-3/notion-server"
+          ],
+          "env": {
+            "NOTION_API_KEY": "${NOTION_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

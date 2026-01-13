@@ -1,0 +1,29 @@
+{
+  "skills": {
+    "pandoc": {
+      "name": "Pandoc Document Conversion",
+      "source": "github:vivekVells/mcp-pandoc",
+      "description": "MCP server for seamless document format conversion using Pandoc, supporting Markdown, HTML, PDF, DOCX (.docx), csv and more.",
+      "tags": [
+        "mcp",
+        "pandoc",
+        "document",
+        "conversion",
+        "Media Creation"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "pandoc-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp-pandoc"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

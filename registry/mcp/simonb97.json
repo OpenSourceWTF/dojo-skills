@@ -1,0 +1,33 @@
+{
+  "skills": {
+    "windows-cli": {
+      "name": "Windows CLI",
+      "source": "github:SimonB97/win-cli-mcp-server",
+      "description": "MCP server for secure command-line interactions on Windows systems, enabling controlled access to PowerShell, CMD, and Git Bash shells.",
+      "tags": [
+        "mcp",
+        "CLI",
+        "Windows",
+        "Security",
+        "SSH",
+        "System Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "windows-cli-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@simonb97/server-win-cli",
+            "--config",
+            "${config}"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

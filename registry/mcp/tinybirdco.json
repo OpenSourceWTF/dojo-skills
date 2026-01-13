@@ -1,0 +1,33 @@
+{
+  "skills": {
+    "mcp-tinybird": {
+      "name": "Tinybird MCP server",
+      "source": "github:tinybirdco/mcp-tinybird",
+      "description": "An MCP server to interact with a Tinybird Workspace from any MCP client.",
+      "tags": [
+        "mcp",
+        "tinybird",
+        "data",
+        "analytics",
+        "Analytics"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-tinybird-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp-tinybird",
+            "stdio"
+          ],
+          "env": {
+            "TB_API_URL": "${TB_API_URL}",
+            "TB_ADMIN_TOKEN": "${TB_ADMIN_TOKEN}"
+          }
+        }
+      ]
+    }
+  }
+}

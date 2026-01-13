@@ -1,0 +1,37 @@
+{
+  "skills": {
+    "mcp-codex-keeper": {
+      "name": "Aindreyway MCP Codex Keeper",
+      "source": "github:aindreyway/mcp-codex-keeper",
+      "description": "An intelligent MCP server that serves as a guardian of development knowledge, providing AI assistants with curated access to latest documentation and best practices.",
+      "tags": [
+        "mcp",
+        "MCP",
+        "Server",
+        "documentation",
+        "knowledge base",
+        "AI",
+        "development",
+        "best practices",
+        "Knowledge Base"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-codex-keeper-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@aindreyway/mcp-codex-keeper@latest"
+          ],
+          "env": {
+            "npm_config_cache_max": "1024000000",
+            "NODE_OPTIONS": "--max-old-space-size=256"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "skills": {
+    "mcp-server-esignatures": {
+      "name": "eSignatures MCP server",
+      "source": "github:esignaturescom/mcp-server-esignatures",
+      "description": "MCP server for eSignatures (https://esignatures.com)",
+      "tags": [
+        "mcp",
+        "contracts",
+        "templates",
+        "collaborators",
+        "esignatures",
+        "Productivity"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-server-esignatures-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp-server-esignatures"
+          ],
+          "env": {
+            "ESIGNATURES_SECRET_TOKEN": "${ESIGNATURES_SECRET_TOKEN}"
+          }
+        }
+      ]
+    }
+  }
+}

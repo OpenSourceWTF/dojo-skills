@@ -1,0 +1,40 @@
+{
+  "skills": {
+    "llamacloud": {
+      "name": "LlamaCloud",
+      "source": "github:run-llama/mcp-server-llamacloud",
+      "description": "Integrate the data stored in a managed index on [LlamaCloud](https://cloud.llamaindex.ai/)",
+      "tags": [
+        "mcp",
+        "LlamaCloud",
+        "TypeScript",
+        "Knowledge Base"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "llamacloud-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@llamaindex/mcp-server-llamacloud",
+            "--index",
+            "10k-SEC-Tesla",
+            "--description",
+            "10k SEC documents from 2023 for Tesla",
+            "--index",
+            "10k-SEC-Apple",
+            "--description",
+            "10k SEC documents from 2023 for Apple"
+          ],
+          "env": {
+            "LLAMA_CLOUD_PROJECT_NAME": "${LLAMA_CLOUD_PROJECT_NAME}",
+            "LLAMA_CLOUD_API_KEY": "${LLAMA_CLOUD_API_KEY}"
+          }
+        }
+      ]
+    }
+  }
+}

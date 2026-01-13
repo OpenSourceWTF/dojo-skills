@@ -1,0 +1,56 @@
+{
+  "skills": {
+    "mcp-redis": {
+      "name": "Redis MCP Server",
+      "source": "github:redis/mcp-redis",
+      "description": "The Redis MCP Server is a natural language interface designed for AI applications to efficiently manage and search data in Redis, enabling AI-driven workflows to interact with structured and unstructured data using natural language queries.",
+      "tags": [
+        "mcp",
+        "redis",
+        "database",
+        "natural language interface",
+        "MCP",
+        "Model Content Protocol",
+        "data management",
+        "search",
+        "vector search",
+        "caching",
+        "streams",
+        "JSON",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mcp-redis-docker",
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "-e",
+            "REDIS_HOST",
+            "-e",
+            "REDIS_PORT",
+            "-e",
+            "REDIS_USERNAME",
+            "-e",
+            "REDIS_SSL",
+            "-e",
+            "REDIS_PWD",
+            "mcp/redis"
+          ],
+          "env": {
+            "REDIS_HOST": "${REDIS_HOST}",
+            "REDIS_PORT": "${REDIS_PORT}",
+            "REDIS_USERNAME": "${REDIS_USERNAME}",
+            "REDIS_SSL": "${REDIS_SSL}",
+            "REDIS_PWD": "${REDIS_PWD}"
+          }
+        }
+      ]
+    }
+  }
+}

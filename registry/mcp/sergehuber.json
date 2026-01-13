@@ -1,0 +1,37 @@
+{
+  "skills": {
+    "inoyu": {
+      "name": "Inoyu Apache Unomi",
+      "source": "github:sergehuber/inoyu-mcp-unomi-server",
+      "description": "Interact with an Apache Unomi CDP customer data platform to retrieve and update customer profiles",
+      "tags": [
+        "mcp",
+        "Apache Unomi",
+        "User Profiles",
+        "Context Management",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "inoyu-npm",
+          "command": "npx",
+          "args": [
+            "@inoyu/mcp-unomi-server"
+          ],
+          "env": {
+            "UNOMI_BASE_URL": "${UNOMI_BASE_URL}",
+            "UNOMI_USERNAME": "${UNOMI_USERNAME}",
+            "UNOMI_PASSWORD": "${UNOMI_PASSWORD}",
+            "UNOMI_PROFILE_ID": "${UNOMI_PROFILE_ID}",
+            "UNOMI_KEY": "${UNOMI_KEY}",
+            "UNOMI_EMAIL": "${UNOMI_EMAIL}",
+            "UNOMI_SOURCE_ID": "${UNOMI_SOURCE_ID}"
+          }
+        }
+      ]
+    }
+  }
+}

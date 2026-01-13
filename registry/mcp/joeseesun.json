@@ -1,0 +1,36 @@
+{
+  "skills": {
+    "qiniu-mcp-joe": {
+      "name": "Qiniu MCP Server",
+      "source": "github:joeseesun/qiniu-mcp-joe",
+      "description": "Edit `.env` file and fill in your Qiniu credentials",
+      "tags": [
+        "mcp",
+        "qiniu",
+        "cloud storage",
+        "file upload",
+        "MCP",
+        "python",
+        "Dev Tools"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "qiniu-mcp-joe-python",
+          "command": "python",
+          "args": [
+            "/path/to/qiniu_mcp_server/server.py"
+          ],
+          "env": {
+            "QINIU_ACCESS_KEY": "${QINIU_ACCESS_KEY}",
+            "QINIU_SECRET_KEY": "${QINIU_SECRET_KEY}",
+            "QINIU_BUCKET_NAME": "${QINIU_BUCKET_NAME}",
+            "QINIU_DOMAIN": "${QINIU_DOMAIN}"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "skills": {
+    "evm-mcp-server": {
+      "name": "EVM Server",
+      "source": "github:mcpdotdirect/evm-mcp-server",
+      "description": "Comprehensive blockchain services for 30+ EVM networks, supporting native tokens, ERC20, NFTs, smart contracts, transactions, and ENS resolution.",
+      "tags": [
+        "mcp",
+        "Ethereum",
+        "Smart Contracts",
+        "AI",
+        "Token Transfers",
+        "NFTs",
+        "Finance"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "evm-mcp-server-npm",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@mcpdotdirect/evm-mcp-server"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

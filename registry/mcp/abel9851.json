@@ -1,0 +1,38 @@
+{
+  "skills": {
+    "mariadb": {
+      "name": "MariaDB Database Integration",
+      "source": "github:abel9851/mcp-server-mariadb",
+      "description": "MariaDB database integration with configurable access controls in Python.",
+      "tags": [
+        "mcp",
+        "MariaDB",
+        "Data Retrieval",
+        "Databases"
+      ],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "mariadb-uvx",
+          "command": "uvx",
+          "args": [
+            "mcp-server-mariadb",
+            "--host",
+            "${DB_HOST}",
+            "--port",
+            "${DB_PORT}",
+            "--user",
+            "${DB_USER}",
+            "--password",
+            "${DB_PASSWORD}",
+            "--database",
+            "${DB_NAME}"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}
