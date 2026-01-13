@@ -208,25 +208,6 @@
       "versions": {
         "latest": "main"
       }
-    },
-    "instructa-prompts": {
-      "name": "Instructa AI Prompts",
-      "source": "github:instructa/ai-prompts",
-      "aliases": [
-        "ai-prompts",
-        "coding-standards"
-      ],
-      "description": "Curated AI prompts for Cursor, Cline, Windsurf, and GitHub Copilot",
-      "tags": [
-        "prompts",
-        "cross-platform",
-        "standards",
-        "patterns"
-      ],
-      "dependencies": [],
-      "versions": {
-        "latest": "main"
-      }
     }
   }
 }

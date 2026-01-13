@@ -19,21 +19,24 @@ Skills are distributed to all detected agent environments via Dojo's "Always-Syn
 ```
 registry/
 ├── official/               # Vendor-maintained skills (SKILL.md format)
-│   ├── anthropic.json      # Official Anthropic/Claude skills
-│   ├── google.json         # Official Google/Gemini skills
-│   └── openai.json         # Official OpenAI/Codex skills
+│   ├── anthropic.json      # Official Anthropic/Claude skills (17)
+│   ├── google.json         # Official Google/Gemini skills (10)
+│   └── openai.json         # Official OpenAI/Codex skills (6)
 ├── community/              # Community-curated skills  
-│   ├── awesome.json        # Curated community skills
-│   └── cursor-rules.json   # Cursor AI rules
+│   └── awesome.json        # Curated community skills (17)
 ├── mcp/                    # MCP servers by vendor
 │   ├── modelcontextprotocol.json  # Official MCP servers (13)
-│   ├── github.json         # GitHub's official MCP server
-│   ├── upstash.json        # Upstash Context7
-│   ├── opensourcewtf.json  # Dojo skill manager
-│   └── community.json      # Other community MCP servers
+│   ├── github.json         # GitHub's official MCP server (1)
+│   ├── upstash.json        # Upstash Context7 (1)
+│   ├── opensourcewtf.json  # Dojo skill manager (1)
+│   └── community.json      # Other community MCP servers (5)
+├── cursor/                 # Cursor AI rules by vendor
+│   ├── patrickjs.json      # awesome-cursorrules collection (11)
+│   └── instructa.json      # Instructa AI prompts (1)
 └── user/                   # Gitignored, local-only mappings
     └── *.json
 ```
+
 
 
 
