@@ -1,0 +1,16 @@
+{
+  "name": "dojo-skills",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "AI Agent Skills Registry",
+  "scripts": {
+    "sync": "npx tsx scripts/sync-registry.ts",
+    "sync:dry-run": "npx tsx scripts/sync-registry.ts --dry-run --verbose",
+    "validate": "npx tsx scripts/validate-links.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.8",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}

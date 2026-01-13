@@ -1,26 +1,23 @@
 <p align="center">
-  <img src="assets/dojo-logo-light.svg" alt="Dojo Logo" width="180">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/dojo-logo-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/dojo-logo-light.svg">
+    <img src="assets/dojo-logo-light.svg" alt="Dojo" width="180">
+  </picture>
 </p>
 
-<h1 align="center">🥋 Dojo Skills Registry</h1>
-
-<p align="center">
+<h3 align="center">
   <strong>The canonical skill registry for <a href="https://github.com/OpenSourceWTF/dojo">Dojo</a> — a package manager for AI agent skills and workflows.</strong>
+</h3>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/@opensourcewtf/dojo-cli"><img src="https://img.shields.io/npm/v/@opensourcewtf/dojo-cli.svg?style=flat-square&color=cb3837" alt="npm"></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License"></a>
+  <a href="https://github.com/OpenSourceWTF/dojo"><img src="https://img.shields.io/github/stars/OpenSourceWTF/dojo?style=flat-square&color=yellow" alt="Stars"></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/OpenSourceWTF/dojo-skills/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License"></a>
-  <a href="https://github.com/OpenSourceWTF/dojo-skills"><img src="https://img.shields.io/github/stars/OpenSourceWTF/dojo-skills?style=social" alt="GitHub Stars"></a>
-  <img src="https://img.shields.io/badge/skills-83-brightgreen" alt="Skills Count">
-  <img src="https://img.shields.io/badge/MCP%20Servers-21-purple" alt="MCP Servers">
-</p>
-
-<p align="center">
-  <a href="https://github.com/OpenSourceWTF">
-    <img src="assets/oswtf-logo-light.svg" alt="OpenSourceWTF" width="80">
-  </a>
-  <br>
-  <sub>An <a href="https://github.com/OpenSourceWTF">OpenSourceWTF</a> Project</sub>
+  Install skills once, use them across <strong>Claude</strong>, <strong>Gemini</strong>, <strong>Cursor</strong>, and <strong>Codex</strong>.
 </p>
 
 ---

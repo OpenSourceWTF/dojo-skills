@@ -1,5 +1,9 @@
 # Dojo Skills Registry
 
+# Node.js
+node_modules/
+package-lock.json
+
 # User-specific registry files (local only)
 registry/user/*.json
 
@@ -11,6 +15,13 @@ Thumbs.db
 *~
 .vscode/
 .idea/
+
+# AI Agent directories (created by dojo learn)
+.claude/
+.gemini/
+.cursor/
+.codex/
+.dojo/
 
 # Worktrees (managed separately)
 .worktrees/

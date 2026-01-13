@@ -8,7 +8,7 @@
     "OpenAI Codex",
     "Cursor AI"
   ],
-  "totalSkills": 83,
+  "totalSkills": 2607,
   "categories": {
     "official": [
       "anthropic.json",
@@ -16,14 +16,16 @@
       "openai.json"
     ],
     "community": [
-      "awesome.json"
+      "awesome.json",
+      "synced-awesome.json"
     ],
     "mcp": [
       "modelcontextprotocol.json",
       "github.json",
       "upstash.json",
       "opensourcewtf.json",
-      "community.json"
+      "community.json",
+      "synced-mcps.json"
     ],
     "cursor": [
       "patrickjs.json",
