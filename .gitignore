@@ -1,0 +1,16 @@
+# Dojo Skills Registry
+
+# User-specific registry files (local only)
+registry/user/*.json
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Worktrees (managed separately)
+.worktrees/

@@ -1,0 +1,52 @@
+# Purge jsDelivr CDN Cache
+#
+# Automatically invalidates jsDelivr CDN cache for all registry files
+# when changes are pushed to main. This ensures consumers get the latest
+# skill definitions without waiting up to 7 days for cache expiration.
+#
+# jsDelivr URL format: https://cdn.jsdelivr.net/gh/OpenSourceWTF/dojo-skills@main/registry/...
+
+name: Purge jsDelivr Cache
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'registry/**/*.json'
+      - 'README.md'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  purge-cdn-cache:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build CDN URLs to purge
+        id: urls
+        run: |
+          BASE_URL="https://cdn.jsdelivr.net/gh/${{ github.repository }}@main"
+          
+          # Collect all registry JSON files
+          URLS=""
+          for file in $(find registry -name "*.json" -type f); do
+            URLS="${URLS}${BASE_URL}/${file}
+          "
+          done
+          
+          # Add README
+          URLS="${URLS}${BASE_URL}/README.md"
+          
+          # Output for next step
+          echo "urls<<EOF" >> $GITHUB_OUTPUT
+          echo "$URLS" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+          
+          echo "Files to purge:"
+          echo "$URLS"
+
+      - name: Purge jsDelivr cache
+        uses: gacts/purge-jsdelivr-cache@v1
+        with:
+          url: ${{ steps.urls.outputs.urls }}
