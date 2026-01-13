@@ -48,7 +48,16 @@ Each skill entry follows this structure:
       "versions": {
         "1.0.0": "commit-hash",
         "latest": "main"
-      }
+      },
+      "mcp_servers": [
+        {
+          "name": "server-name",
+          "package": "@scope/package-name",
+          "command": "npx",
+          "args": ["-y", "@scope/package-name"],
+          "env": { "API_KEY": "" }
+        }
+      ]
     }
   }
 }
@@ -65,6 +74,20 @@ Each skill entry follows this structure:
 | `tags` | ✅ | Categories for filtering |
 | `dependencies` | ❌ | Skills this depends on |
 | `versions` | ❌ | Version-to-commit mapping |
+| `mcp_servers` | ❌ | MCP server configurations (see below) |
+
+### MCP Server Configuration
+
+Skills can include `mcp_servers` for automatic MCP config setup:
+
+| Field | Description |
+|-------|-------------|
+| `name` | Server identifier in MCP config |
+| `package` | npm package name |
+| `command` | Usually `npx` or `node` |
+| `args` | Command arguments (`-y` for npx auto-install) |
+| `env` | Environment vars (empty = required, value = default) |
+
 
 ## Resolution Logic
 

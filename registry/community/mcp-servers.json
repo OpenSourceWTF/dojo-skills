@@ -18,7 +18,20 @@
       "dependencies": [],
       "versions": {
         "latest": "main"
-      }
+      },
+      "mcp_servers": [
+        {
+          "name": "filesystem",
+          "package": "@modelcontextprotocol/server-filesystem",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@modelcontextprotocol/server-filesystem",
+            "/path/to/allowed/dir"
+          ],
+          "env": {}
+        }
+      ]
     },
     "mcp-github": {
       "name": "GitHub MCP Server",
@@ -37,7 +50,21 @@
       "dependencies": [],
       "versions": {
         "latest": "main"
-      }
+      },
+      "mcp_servers": [
+        {
+          "name": "github",
+          "package": "@modelcontextprotocol/server-github",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@modelcontextprotocol/server-github"
+          ],
+          "env": {
+            "GITHUB_PERSONAL_ACCESS_TOKEN": ""
+          }
+        }
+      ]
     },
     "mcp-postgres": {
       "name": "PostgreSQL MCP Server",
@@ -57,7 +84,20 @@
       "dependencies": [],
       "versions": {
         "latest": "main"
-      }
+      },
+      "mcp_servers": [
+        {
+          "name": "postgres",
+          "package": "@modelcontextprotocol/server-postgres",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@modelcontextprotocol/server-postgres",
+            "postgresql://localhost/mydb"
+          ],
+          "env": {}
+        }
+      ]
     },
     "mcp-sqlite": {
       "name": "SQLite MCP Server",
@@ -76,7 +116,21 @@
       "dependencies": [],
       "versions": {
         "latest": "main"
-      }
+      },
+      "mcp_servers": [
+        {
+          "name": "sqlite",
+          "package": "@modelcontextprotocol/server-sqlite",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@modelcontextprotocol/server-sqlite",
+            "--db-path",
+            "./database.db"
+          ],
+          "env": {}
+        }
+      ]
     },
     "mcp-brave-search": {
       "name": "Brave Search MCP Server",
@@ -96,7 +150,21 @@
       "dependencies": [],
       "versions": {
         "latest": "main"
-      }
+      },
+      "mcp_servers": [
+        {
+          "name": "brave-search",
+          "package": "@modelcontextprotocol/server-brave-search",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@modelcontextprotocol/server-brave-search"
+          ],
+          "env": {
+            "BRAVE_API_KEY": ""
+          }
+        }
+      ]
     },
     "mcp-fetch": {
       "name": "Fetch MCP Server",
@@ -116,7 +184,19 @@
       "dependencies": [],
       "versions": {
         "latest": "main"
-      }
+      },
+      "mcp_servers": [
+        {
+          "name": "fetch",
+          "package": "@modelcontextprotocol/server-fetch",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@modelcontextprotocol/server-fetch"
+          ],
+          "env": {}
+        }
+      ]
     },
     "mcp-puppeteer": {
       "name": "Puppeteer MCP Server",
@@ -136,7 +216,19 @@
       "dependencies": [],
       "versions": {
         "latest": "main"
-      }
+      },
+      "mcp_servers": [
+        {
+          "name": "puppeteer",
+          "package": "@modelcontextprotocol/server-puppeteer",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@modelcontextprotocol/server-puppeteer"
+          ],
+          "env": {}
+        }
+      ]
     },
     "mcp-memory": {
       "name": "Memory MCP Server",
@@ -156,7 +248,19 @@
       "dependencies": [],
       "versions": {
         "latest": "main"
-      }
+      },
+      "mcp_servers": [
+        {
+          "name": "memory",
+          "package": "@modelcontextprotocol/server-memory",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@modelcontextprotocol/server-memory"
+          ],
+          "env": {}
+        }
+      ]
     },
     "mcp-sequential-thinking": {
       "name": "Sequential Thinking MCP Server",
@@ -176,7 +280,19 @@
       "dependencies": [],
       "versions": {
         "latest": "main"
-      }
+      },
+      "mcp_servers": [
+        {
+          "name": "sequential-thinking",
+          "package": "@modelcontextprotocol/server-sequential-thinking",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@modelcontextprotocol/server-sequential-thinking"
+          ],
+          "env": {}
+        }
+      ]
     },
     "mcp-slack": {
       "name": "Slack MCP Server",
@@ -195,7 +311,22 @@
       "dependencies": [],
       "versions": {
         "latest": "main"
-      }
+      },
+      "mcp_servers": [
+        {
+          "name": "slack",
+          "package": "@modelcontextprotocol/server-slack",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@modelcontextprotocol/server-slack"
+          ],
+          "env": {
+            "SLACK_BOT_TOKEN": "",
+            "SLACK_TEAM_ID": ""
+          }
+        }
+      ]
     },
     "mcp-google-drive": {
       "name": "Google Drive MCP Server",
@@ -214,7 +345,22 @@
       "dependencies": [],
       "versions": {
         "latest": "main"
-      }
+      },
+      "mcp_servers": [
+        {
+          "name": "gdrive",
+          "package": "@modelcontextprotocol/server-gdrive",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@modelcontextprotocol/server-gdrive"
+          ],
+          "env": {
+            "GOOGLE_CLIENT_ID": "",
+            "GOOGLE_CLIENT_SECRET": ""
+          }
+        }
+      ]
     },
     "mcp-google-maps": {
       "name": "Google Maps MCP Server",
@@ -234,7 +380,21 @@
       "dependencies": [],
       "versions": {
         "latest": "main"
-      }
+      },
+      "mcp_servers": [
+        {
+          "name": "google-maps",
+          "package": "@modelcontextprotocol/server-google-maps",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@modelcontextprotocol/server-google-maps"
+          ],
+          "env": {
+            "GOOGLE_MAPS_API_KEY": ""
+          }
+        }
+      ]
     },
     "mcp-sentry": {
       "name": "Sentry MCP Server",
@@ -254,7 +414,22 @@
       "dependencies": [],
       "versions": {
         "latest": "main"
-      }
+      },
+      "mcp_servers": [
+        {
+          "name": "sentry",
+          "package": "@modelcontextprotocol/server-sentry",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@modelcontextprotocol/server-sentry"
+          ],
+          "env": {
+            "SENTRY_AUTH_TOKEN": "",
+            "SENTRY_ORG": ""
+          }
+        }
+      ]
     },
     "mcp-playwright": {
       "name": "Playwright MCP Server",
@@ -273,7 +448,19 @@
       "dependencies": [],
       "versions": {
         "latest": "main"
-      }
+      },
+      "mcp_servers": [
+        {
+          "name": "playwright",
+          "package": "@anthropic-ai/mcp-server-playwright",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@anthropic-ai/mcp-server-playwright"
+          ],
+          "env": {}
+        }
+      ]
     },
     "mcp-docker": {
       "name": "Docker MCP Server",
@@ -292,7 +479,19 @@
       "dependencies": [],
       "versions": {
         "latest": "main"
-      }
+      },
+      "mcp_servers": [
+        {
+          "name": "docker",
+          "package": "mcp-server-docker",
+          "command": "npx",
+          "args": [
+            "-y",
+            "mcp-server-docker"
+          ],
+          "env": {}
+        }
+      ]
     },
     "mcp-context7": {
       "name": "Context7 MCP Server",
@@ -312,7 +511,19 @@
       "dependencies": [],
       "versions": {
         "latest": "master"
-      }
+      },
+      "mcp_servers": [
+        {
+          "name": "context7",
+          "package": "@upstash/context7-mcp",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@upstash/context7-mcp"
+          ],
+          "env": {}
+        }
+      ]
     },
     "mcp-github-official": {
       "name": "GitHub Official MCP Server",
@@ -331,7 +542,21 @@
       "dependencies": [],
       "versions": {
         "latest": "main"
-      }
+      },
+      "mcp_servers": [
+        {
+          "name": "github",
+          "package": "@github/mcp-server",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@github/mcp-server"
+          ],
+          "env": {
+            "GITHUB_PERSONAL_ACCESS_TOKEN": ""
+          }
+        }
+      ]
     },
     "mcp-xcode": {
       "name": "Xcode Build MCP Server",
@@ -351,7 +576,19 @@
       "dependencies": [],
       "versions": {
         "latest": "main"
-      }
+      },
+      "mcp_servers": [
+        {
+          "name": "xcodebuild",
+          "package": "xcodebuild-mcp",
+          "command": "npx",
+          "args": [
+            "-y",
+            "xcodebuild-mcp"
+          ],
+          "env": {}
+        }
+      ]
     },
     "mcp-chart": {
       "name": "Chart Visualization MCP Server",
@@ -371,7 +608,19 @@
       "dependencies": [],
       "versions": {
         "latest": "main"
-      }
+      },
+      "mcp_servers": [
+        {
+          "name": "chart",
+          "package": "@anthropic-ai/mcp-server-chart",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@anthropic-ai/mcp-server-chart"
+          ],
+          "env": {}
+        }
+      ]
     },
     "mcp-excel": {
       "name": "Excel MCP Server",
@@ -390,7 +639,19 @@
       "dependencies": [],
       "versions": {
         "latest": "main"
-      }
+      },
+      "mcp_servers": [
+        {
+          "name": "excel",
+          "package": "excel-mcp-server",
+          "command": "npx",
+          "args": [
+            "-y",
+            "excel-mcp-server"
+          ],
+          "env": {}
+        }
+      ]
     }
   }
 }
