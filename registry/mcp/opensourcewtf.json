@@ -1,0 +1,36 @@
+{
+  "skills": {
+    "mcp-dojo": {
+      "name": "Dojo Skill Manager MCP Server",
+      "source": "github:OpenSourceWTF/dojo/packages/mcp-server",
+      "aliases": [
+        "dojo",
+        "skill-manager",
+        "dojo-mcp"
+      ],
+      "description": "AI agent skill manager - search, learn, and sync skills across Claude/Gemini/Codex",
+      "tags": [
+        "mcp",
+        "skills",
+        "package-manager",
+        "multi-agent"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "dojo",
+          "package": "@opensourcewtf/dojo-mcp",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@opensourcewtf/dojo-mcp"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

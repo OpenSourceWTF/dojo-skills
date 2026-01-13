@@ -1,0 +1,161 @@
+{
+  "skills": {
+    "mcp-playwright": {
+      "name": "Playwright MCP Server",
+      "source": "github:executeautomation/mcp-playwright",
+      "aliases": [
+        "playwright-mcp",
+        "browser-testing"
+      ],
+      "description": "Playwright-based browser automation MCP server",
+      "tags": [
+        "mcp",
+        "testing",
+        "playwright",
+        "browser"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "playwright",
+          "package": "@anthropic-ai/mcp-server-playwright",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@anthropic-ai/mcp-server-playwright"
+          ],
+          "env": {}
+        }
+      ]
+    },
+    "mcp-docker": {
+      "name": "Docker MCP Server",
+      "source": "github:ckreiling/mcp-server-docker",
+      "aliases": [
+        "docker",
+        "containers"
+      ],
+      "description": "Docker container and image management operations",
+      "tags": [
+        "mcp",
+        "docker",
+        "containers",
+        "devops"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "docker",
+          "package": "mcp-server-docker",
+          "command": "npx",
+          "args": [
+            "-y",
+            "mcp-server-docker"
+          ],
+          "env": {}
+        }
+      ]
+    },
+    "mcp-xcode": {
+      "name": "Xcode Build MCP Server",
+      "source": "github:cameroncooke/XcodeBuildMCP",
+      "aliases": [
+        "xcode",
+        "xcodebuild",
+        "ios-build"
+      ],
+      "description": "Xcode-related tools for integration with AI assistants",
+      "tags": [
+        "mcp",
+        "xcode",
+        "ios",
+        "macos"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "xcodebuild",
+          "package": "xcodebuild-mcp",
+          "command": "npx",
+          "args": [
+            "-y",
+            "xcodebuild-mcp"
+          ],
+          "env": {}
+        }
+      ]
+    },
+    "mcp-chart": {
+      "name": "Chart Visualization MCP Server",
+      "source": "github:antvis/mcp-server-chart",
+      "aliases": [
+        "charts",
+        "visualization",
+        "antv"
+      ],
+      "description": "25+ visual charts using AntV for chart generation and data analysis",
+      "tags": [
+        "mcp",
+        "visualization",
+        "charts",
+        "data"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "chart",
+          "package": "@anthropic-ai/mcp-server-chart",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@anthropic-ai/mcp-server-chart"
+          ],
+          "env": {}
+        }
+      ]
+    },
+    "mcp-excel": {
+      "name": "Excel MCP Server",
+      "source": "github:haris-musa/excel-mcp-server",
+      "aliases": [
+        "excel-mcp",
+        "spreadsheet-mcp"
+      ],
+      "description": "Excel file manipulation and automation",
+      "tags": [
+        "mcp",
+        "excel",
+        "spreadsheet",
+        "office"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      },
+      "mcp_servers": [
+        {
+          "name": "excel",
+          "package": "excel-mcp-server",
+          "command": "npx",
+          "args": [
+            "-y",
+            "excel-mcp-server"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}

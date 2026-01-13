@@ -1,0 +1,36 @@
+{
+  "skills": {
+    "mcp-context7": {
+      "name": "Context7 MCP Server",
+      "source": "github:upstash/context7",
+      "aliases": [
+        "context7",
+        "docs",
+        "documentation"
+      ],
+      "description": "Up-to-date code documentation for LLMs and AI code editors",
+      "tags": [
+        "mcp",
+        "documentation",
+        "llm",
+        "context"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "master"
+      },
+      "mcp_servers": [
+        {
+          "name": "context7",
+          "package": "@upstash/context7-mcp",
+          "command": "npx",
+          "args": [
+            "-y",
+            "@upstash/context7-mcp"
+          ],
+          "env": {}
+        }
+      ]
+    }
+  }
+}
