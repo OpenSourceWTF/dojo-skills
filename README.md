@@ -228,6 +228,25 @@ Huge thanks to the **[Chat2AnyLLM](https://github.com/Chat2AnyLLM)** team for th
 
 Their registry aggregation work powers the bulk of this skill collection. 🎉
 
+### 🔧 Need More Power? Check Out CAM
+
+The Chat2AnyLLM team also builds **[Code Assistant Manager (CAM)](https://github.com/Chat2AnyLLM/code-assistant-manager)** — a full-featured management suite for AI coding assistants.
+
+| Feature | **Dojo** | **CAM** |
+|---------|:--------:|:-------:|
+| **Philosophy** | Simple, do one thing well | Full-featured power tool |
+| **Focus** | Skill/MCP registry sync | Complete assistant management |
+| **AI Assistants** | 4 (Claude, Gemini, Codex, Cursor) | 17+ (Claude, Copilot, Goose, Zed...) |
+| **Installation** | `npm i -g @opensourcewtf/dojo-cli` | `pip install cam` |
+| **Interface** | CLI commands | Interactive TUI + CLI |
+| **Config** | Per-project `.dojo/` | Centralized `providers.json` |
+| **API Keys** | Managed by each agent | Unified `.env` management |
+| **Best For** | Quick skill installs | Power users managing many assistants |
+
+**Choose Dojo if:** You want a simple `npm`-style experience for installing skills.
+
+**Choose CAM if:** You need unified management across 17+ AI assistants with a polished TUI.
+
 ---
 
 <p align="center">
