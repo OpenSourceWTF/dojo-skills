@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/dojo-logo.png" alt="Dojo Logo" width="200">
+  <img src="assets/dojo-logo-light.svg" alt="Dojo Logo" width="200">
 </p>
 
 <h1 align="center">Dojo Skills Registry</h1>
@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://github.com/OpenSourceWTF">
-    <img src="assets/opensourcewtf-logo.png" alt="OpenSourceWTF" width="100">
+    <img src="assets/oswtf-logo-light.svg" alt="OpenSourceWTF" width="100">
   </a>
   <br>
   <em>An <a href="https://github.com/OpenSourceWTF">OpenSourceWTF</a> Project</em>
