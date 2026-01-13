@@ -56,23 +56,26 @@ dojo list                                # List installed
 ```
 registry/
 ├── 🏢 official/                    # Vendor-maintained skills
-│   ├── anthropic.json              # Claude skills (17)
-│   ├── google.json                 # Gemini skills (10)
-│   └── openai.json                 # Codex skills (6)
+│   ├── anthropic.json              # Claude skills
+│   ├── google.json                 # Gemini skills
+│   └── openai.json                 # Codex skills
 │
-├── 🌐 community/                   # Community-curated  
-│   └── awesome.json                # Curated skills (17)
+├── 🌐 community/                   # Community-curated (by author)
+│   ├── awesome.json                # Hand-curated skills
+│   ├── anthropics.json             # Official Anthropic
+│   ├── davila7.json                # claude-code-templates
+│   ├── wshobson.json               # agents/plugins
+│   └── ...                         # 25+ more authors
 │
-├── 🔌 mcp/                         # MCP servers by vendor
-│   ├── modelcontextprotocol.json   # Official MCP (13)
-│   ├── github.json                 # GitHub MCP (1)
-│   ├── upstash.json                # Context7 (1)
-│   ├── opensourcewtf.json          # Dojo (1)
-│   └── community.json              # Community (5)
+├── 🔌 mcp/                         # MCP servers (by author)
+│   ├── modelcontextprotocol.json   # Official MCP
+│   ├── microsoft.json              # Microsoft MCPs
+│   ├── stripe.json                 # Stripe MCP
+│   └── ...                         # 300+ more authors
 │
 ├── 🖱️ cursor/                      # Cursor AI rules
-│   ├── patrickjs.json              # awesome-cursorrules (11)
-│   └── instructa.json              # AI prompts (1)
+│   ├── patrickjs.json              # awesome-cursorrules
+│   └── instructa.json              # AI prompts
 │
 └── 👤 user/                        # Local-only (gitignored)
 ```
@@ -83,11 +86,9 @@ registry/
 
 | Category | Description | Count |
 |:--------:|-------------|:-----:|
-| 📄 **Document** | Office docs, PDFs, file formats | 8 |
-| 🎨 **Design** | Visual design, creative coding | 12 |
-| 💻 **Development** | Coding patterns, testing, builds | 24 |
-| 🔌 **MCP** | Model Context Protocol servers | 21 |
-| 🔧 **Productivity** | Workflows, automation | 6 |
+| 🌐 **Community** | Community skills by author | 2,605 |
+| 🔌 **MCP** | Model Context Protocol servers | 381 |
+| 🏢 **Official** | Vendor-maintained skills | 33 |
 | 🖱️ **Cursor** | Cursor AI rules & prompts | 12 |
 
 ---
@@ -216,12 +217,23 @@ registry/
 
 </details>
 
+## 🙏 Acknowledgments
+
+Huge thanks to the **[Chat2AnyLLM](https://github.com/Chat2AnyLLM)** team for their amazing work aggregating AI agent skills and MCP servers:
+
+| Repository | Description | Synced |
+|------------|-------------|:------:|
+| [awesome-claude-skills](https://github.com/Chat2AnyLLM/awesome-claude-skills) | 2,600+ skills across 16 domains | 2026-01-13 |
+| [code-assistant-manager](https://github.com/Chat2AnyLLM/code-assistant-manager) | 380+ MCP server configurations | 2026-01-13 |
+
+Their registry aggregation work powers the bulk of this skill collection. 🎉
+
 ---
 
 <p align="center">
   <sub>
-    <strong>Total Skills: 83</strong> · 
-    <strong>MCP Servers: 21</strong> · 
+    <strong>Total Skills: 2,986</strong> · 
+    <strong>MCP Servers: 381</strong> · 
     <strong>Last Updated: 2026-01-13</strong>
   </sub>
 </p>
