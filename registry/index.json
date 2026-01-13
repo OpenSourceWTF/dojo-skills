@@ -1,0 +1,8 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-01-12",
+  "categories": {
+    "official": ["anthropic.json", "google.json", "openai.json"],
+    "community": []
+  }
+}
