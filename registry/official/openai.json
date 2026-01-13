@@ -1,0 +1,112 @@
+{
+  "skills": {
+    "codex-cli": {
+      "name": "Codex CLI",
+      "source": "github:openai/codex",
+      "aliases": [
+        "openai-codex",
+        "codex"
+      ],
+      "description": "OpenAI's lightweight coding agent that runs in your terminal",
+      "tags": [
+        "development",
+        "terminal",
+        "ai-coding"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "code-generation": {
+      "name": "Code Generation",
+      "source": "github:openai/codex",
+      "aliases": [
+        "codegen",
+        "generate-code"
+      ],
+      "description": "AI-powered code generation from natural language descriptions",
+      "tags": [
+        "development",
+        "generation",
+        "productivity"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "code-completion": {
+      "name": "Code Completion",
+      "source": "github:openai/codex",
+      "aliases": [
+        "autocomplete",
+        "intellisense"
+      ],
+      "description": "Intelligent code completion and suggestions",
+      "tags": [
+        "development",
+        "completion",
+        "productivity"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "test-generation": {
+      "name": "Test Generation",
+      "source": "github:openai/codex",
+      "aliases": [
+        "generate-tests",
+        "unit-tests"
+      ],
+      "description": "Generate comprehensive unit tests for existing code",
+      "tags": [
+        "development",
+        "testing",
+        "quality"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "code-explanation": {
+      "name": "Code Explanation",
+      "source": "github:openai/codex",
+      "aliases": [
+        "explain-code",
+        "documentation"
+      ],
+      "description": "Explain complex code with detailed documentation",
+      "tags": [
+        "development",
+        "documentation",
+        "learning"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "refactoring": {
+      "name": "Code Refactoring",
+      "source": "github:openai/codex",
+      "aliases": [
+        "refactor",
+        "code-cleanup"
+      ],
+      "description": "Intelligent code refactoring and cleanup suggestions",
+      "tags": [
+        "development",
+        "quality",
+        "maintenance"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    }
+  }
+}

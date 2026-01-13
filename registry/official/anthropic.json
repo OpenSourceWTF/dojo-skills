@@ -1,15 +1,272 @@
 {
-  "anthropic": {
-    "name": "Anthropic Claude",
-    "path": "anthropic",
-    "source": "github:OpenSourceWTF/dojo-skills-anthropic",
-    "aliases": ["claude", "anthropic-llm"],
-    "description": "Integration with Anthropic's Claude models",
-    "tags": ["llm", "ai", "chat"],
-    "dependencies": [],
-    "versions": {
-      "1.0.0": "init",
-      "latest": "init"
+  "skills": {
+    "docx": {
+      "name": "Word Documents",
+      "source": "github:anthropics/skills/skills/docx",
+      "aliases": [
+        "word",
+        "doc",
+        "document"
+      ],
+      "description": "Create, edit, and analyze Word documents with tracked changes, comments, and formatting preservation",
+      "tags": [
+        "document",
+        "office",
+        "productivity"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "pdf": {
+      "name": "PDF Toolkit",
+      "source": "github:anthropics/skills/skills/pdf",
+      "aliases": [
+        "acrobat",
+        "pdfs"
+      ],
+      "description": "Extract text/tables, create PDFs, merge/split documents, and handle forms",
+      "tags": [
+        "document",
+        "office",
+        "productivity"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "pptx": {
+      "name": "PowerPoint Presentations",
+      "source": "github:anthropics/skills/skills/pptx",
+      "aliases": [
+        "powerpoint",
+        "slides",
+        "presentation"
+      ],
+      "description": "Create, edit, and analyze presentations with layouts, templates, charts, and slide generation",
+      "tags": [
+        "document",
+        "office",
+        "productivity",
+        "design"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "xlsx": {
+      "name": "Excel Spreadsheets",
+      "source": "github:anthropics/skills/skills/xlsx",
+      "aliases": [
+        "excel",
+        "spreadsheet",
+        "csv"
+      ],
+      "description": "Create, edit, and analyze spreadsheets with formulas, formatting, data analysis, and visualization",
+      "tags": [
+        "document",
+        "office",
+        "productivity",
+        "data"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "algorithmic-art": {
+      "name": "Algorithmic Art",
+      "source": "github:anthropics/skills/skills/algorithmic-art",
+      "aliases": [
+        "generative-art",
+        "p5js",
+        "creative-coding"
+      ],
+      "description": "Create generative art using p5.js with seeded randomness, flow fields, and particle systems",
+      "tags": [
+        "design",
+        "creative",
+        "visualization",
+        "p5js"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "canvas-design": {
+      "name": "Canvas Design",
+      "source": "github:anthropics/skills/skills/canvas-design",
+      "aliases": [
+        "visual-art",
+        "graphics"
+      ],
+      "description": "Design visual art in PNG and PDF formats using design philosophies",
+      "tags": [
+        "design",
+        "creative",
+        "graphics"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "slack-gif-creator": {
+      "name": "Slack GIF Creator",
+      "source": "github:anthropics/skills/skills/slack-gif-creator",
+      "aliases": [
+        "gif",
+        "animation",
+        "slack"
+      ],
+      "description": "Create animated GIFs optimized for Slack's size constraints",
+      "tags": [
+        "design",
+        "creative",
+        "communication"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "frontend-design": {
+      "name": "Frontend Design",
+      "source": "github:anthropics/skills/skills/frontend-design",
+      "aliases": [
+        "ui-design",
+        "react-design",
+        "web-design"
+      ],
+      "description": "Avoid AI slop aesthetics, make bold design decisions. Optimized for React & Tailwind",
+      "tags": [
+        "development",
+        "design",
+        "react",
+        "tailwind",
+        "frontend"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "artifacts-builder": {
+      "name": "Artifacts Builder",
+      "source": "github:anthropics/skills/skills/artifacts-builder",
+      "aliases": [
+        "html-artifacts",
+        "claude-artifacts"
+      ],
+      "description": "Build complex claude.ai HTML artifacts using React, Tailwind CSS, and shadcn/ui",
+      "tags": [
+        "development",
+        "react",
+        "tailwind",
+        "artifacts"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "mcp-builder": {
+      "name": "MCP Builder",
+      "source": "github:anthropics/skills/skills/mcp-builder",
+      "aliases": [
+        "mcp-server",
+        "mcp-tools"
+      ],
+      "description": "Guide for creating high-quality MCP servers to integrate external APIs and services",
+      "tags": [
+        "development",
+        "mcp",
+        "integration",
+        "api"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "webapp-testing": {
+      "name": "Web App Testing",
+      "source": "github:anthropics/skills/skills/webapp-testing",
+      "aliases": [
+        "playwright-testing",
+        "e2e-testing",
+        "ui-testing"
+      ],
+      "description": "Test local web applications using Playwright for UI verification and debugging",
+      "tags": [
+        "development",
+        "testing",
+        "playwright",
+        "quality"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "brand-guidelines": {
+      "name": "Brand Guidelines",
+      "source": "github:anthropics/skills/skills/brand-guidelines",
+      "aliases": [
+        "branding",
+        "style-guide"
+      ],
+      "description": "Apply Anthropic's official brand colors and typography to artifacts",
+      "tags": [
+        "design",
+        "communication",
+        "branding"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "internal-comms": {
+      "name": "Internal Communications",
+      "source": "github:anthropics/skills/skills/internal-comms",
+      "aliases": [
+        "status-reports",
+        "newsletters",
+        "faq"
+      ],
+      "description": "Write internal communications like status reports, newsletters, and FAQs",
+      "tags": [
+        "communication",
+        "writing",
+        "productivity"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "skill-creator": {
+      "name": "Skill Creator",
+      "source": "github:anthropics/skills/skills/skill-creator",
+      "aliases": [
+        "create-skill",
+        "skill-builder"
+      ],
+      "description": "Interactive skill creation tool that guides you through building new skills with Q&A",
+      "tags": [
+        "meta",
+        "development",
+        "productivity"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
     }
   }
 }

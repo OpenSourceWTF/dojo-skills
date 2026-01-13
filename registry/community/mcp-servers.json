@@ -1,0 +1,298 @@
+{
+  "skills": {
+    "mcp-filesystem": {
+      "name": "Filesystem MCP Server",
+      "source": "github:modelcontextprotocol/servers/src/filesystem",
+      "aliases": [
+        "fs",
+        "files",
+        "filesystem"
+      ],
+      "description": "Secure file operations with configurable access controls",
+      "tags": [
+        "mcp",
+        "filesystem",
+        "tools",
+        "core"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "mcp-github": {
+      "name": "GitHub MCP Server",
+      "source": "github:modelcontextprotocol/servers/src/github",
+      "aliases": [
+        "gh",
+        "github-api"
+      ],
+      "description": "GitHub API integration for repos, issues, PRs, and more",
+      "tags": [
+        "mcp",
+        "github",
+        "api",
+        "devops"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "mcp-postgres": {
+      "name": "PostgreSQL MCP Server",
+      "source": "github:modelcontextprotocol/servers/src/postgres",
+      "aliases": [
+        "pg",
+        "postgresql",
+        "database"
+      ],
+      "description": "Read-only PostgreSQL database access with schema inspection",
+      "tags": [
+        "mcp",
+        "database",
+        "postgres",
+        "data"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "mcp-sqlite": {
+      "name": "SQLite MCP Server",
+      "source": "github:modelcontextprotocol/servers/src/sqlite",
+      "aliases": [
+        "sqlite",
+        "sqlite3"
+      ],
+      "description": "Local SQLite database operations and queries",
+      "tags": [
+        "mcp",
+        "database",
+        "sqlite",
+        "local"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "mcp-brave-search": {
+      "name": "Brave Search MCP Server",
+      "source": "github:modelcontextprotocol/servers/src/brave-search",
+      "aliases": [
+        "brave",
+        "search",
+        "web-search"
+      ],
+      "description": "Web search capabilities via Brave Search API",
+      "tags": [
+        "mcp",
+        "search",
+        "web",
+        "research"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "mcp-fetch": {
+      "name": "Fetch MCP Server",
+      "source": "github:modelcontextprotocol/servers/src/fetch",
+      "aliases": [
+        "http",
+        "web-fetch",
+        "url"
+      ],
+      "description": "Fetch and convert web pages to markdown for LLM consumption",
+      "tags": [
+        "mcp",
+        "web",
+        "fetch",
+        "scraping"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "mcp-puppeteer": {
+      "name": "Puppeteer MCP Server",
+      "source": "github:modelcontextprotocol/servers/src/puppeteer",
+      "aliases": [
+        "browser",
+        "headless",
+        "automation"
+      ],
+      "description": "Browser automation via Puppeteer for screenshots and navigation",
+      "tags": [
+        "mcp",
+        "browser",
+        "automation",
+        "testing"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "mcp-memory": {
+      "name": "Memory MCP Server",
+      "source": "github:modelcontextprotocol/servers/src/memory",
+      "aliases": [
+        "knowledge-graph",
+        "memory",
+        "kg"
+      ],
+      "description": "Knowledge graph-based persistent memory for conversations",
+      "tags": [
+        "mcp",
+        "memory",
+        "knowledge",
+        "persistence"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "mcp-sequential-thinking": {
+      "name": "Sequential Thinking MCP Server",
+      "source": "github:modelcontextprotocol/servers/src/sequentialthinking",
+      "aliases": [
+        "thinking",
+        "reasoning",
+        "cot"
+      ],
+      "description": "Dynamic problem-solving through structured thinking chains",
+      "tags": [
+        "mcp",
+        "reasoning",
+        "thinking",
+        "planning"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "mcp-slack": {
+      "name": "Slack MCP Server",
+      "source": "github:modelcontextprotocol/servers/src/slack",
+      "aliases": [
+        "slack",
+        "messaging"
+      ],
+      "description": "Slack workspace integration for channels and messages",
+      "tags": [
+        "mcp",
+        "slack",
+        "communication",
+        "messaging"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "mcp-google-drive": {
+      "name": "Google Drive MCP Server",
+      "source": "github:modelcontextprotocol/servers/src/gdrive",
+      "aliases": [
+        "gdrive",
+        "google-docs"
+      ],
+      "description": "Google Drive file access and search capabilities",
+      "tags": [
+        "mcp",
+        "google",
+        "drive",
+        "documents"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "mcp-google-maps": {
+      "name": "Google Maps MCP Server",
+      "source": "github:modelcontextprotocol/servers/src/google-maps",
+      "aliases": [
+        "maps",
+        "geocoding",
+        "directions"
+      ],
+      "description": "Location services, directions, and place search via Google Maps",
+      "tags": [
+        "mcp",
+        "google",
+        "maps",
+        "location"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "mcp-sentry": {
+      "name": "Sentry MCP Server",
+      "source": "github:modelcontextprotocol/servers/src/sentry",
+      "aliases": [
+        "sentry",
+        "errors",
+        "monitoring"
+      ],
+      "description": "Retrieve and analyze issues from Sentry.io",
+      "tags": [
+        "mcp",
+        "sentry",
+        "errors",
+        "monitoring"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "mcp-playwright": {
+      "name": "Playwright MCP Server",
+      "source": "github:executeautomation/mcp-playwright",
+      "aliases": [
+        "playwright-mcp",
+        "browser-testing"
+      ],
+      "description": "Playwright-based browser automation MCP server",
+      "tags": [
+        "mcp",
+        "testing",
+        "playwright",
+        "browser"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "mcp-docker": {
+      "name": "Docker MCP Server",
+      "source": "github:ckreiling/mcp-server-docker",
+      "aliases": [
+        "docker",
+        "containers"
+      ],
+      "description": "Docker container and image management operations",
+      "tags": [
+        "mcp",
+        "docker",
+        "containers",
+        "devops"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    }
+  }
+}

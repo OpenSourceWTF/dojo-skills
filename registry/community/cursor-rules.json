@@ -1,0 +1,232 @@
+{
+  "skills": {
+    "cursor-react": {
+      "name": "React Cursor Rules",
+      "source": "github:PatrickJS/awesome-cursorrules/rules/react",
+      "aliases": [
+        "react-rules",
+        "react-patterns"
+      ],
+      "description": "React development standards and patterns for Cursor AI",
+      "tags": [
+        "cursor",
+        "react",
+        "frontend",
+        "patterns"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "cursor-nodejs": {
+      "name": "Node.js Cursor Rules",
+      "source": "github:PatrickJS/awesome-cursorrules/rules/nodejs-api",
+      "aliases": [
+        "nodejs-rules",
+        "backend-rules"
+      ],
+      "description": "Node.js backend API development rules for Cursor AI",
+      "tags": [
+        "cursor",
+        "nodejs",
+        "backend",
+        "api"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "cursor-playwright": {
+      "name": "Playwright Cursor Rules",
+      "source": "github:PatrickJS/awesome-cursorrules/rules/playwright",
+      "aliases": [
+        "playwright-rules",
+        "e2e-rules"
+      ],
+      "description": "Cross-browser testing setup and patterns for Cursor",
+      "tags": [
+        "cursor",
+        "testing",
+        "playwright",
+        "e2e"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "cursor-cypress": {
+      "name": "Cypress Cursor Rules",
+      "source": "github:PatrickJS/awesome-cursorrules/rules/cypress",
+      "aliases": [
+        "cypress-rules",
+        "e2e-testing"
+      ],
+      "description": "JavaScript E2E testing rules for Cursor AI",
+      "tags": [
+        "cursor",
+        "testing",
+        "cypress",
+        "e2e"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "cursor-selenium": {
+      "name": "Selenium Python Rules",
+      "source": "github:PatrickJS/awesome-cursorrules/rules/selenium-python",
+      "aliases": [
+        "selenium-rules",
+        "python-testing"
+      ],
+      "description": "Python test automation patterns for Cursor",
+      "tags": [
+        "cursor",
+        "testing",
+        "selenium",
+        "python"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "cursor-typescript": {
+      "name": "TypeScript Cursor Rules",
+      "source": "github:PatrickJS/awesome-cursorrules",
+      "aliases": [
+        "typescript-rules",
+        "ts-patterns"
+      ],
+      "description": "TypeScript development standards for Cursor AI",
+      "tags": [
+        "cursor",
+        "typescript",
+        "development",
+        "patterns"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "cursor-tailwind": {
+      "name": "Tailwind CSS Rules",
+      "source": "github:PatrickJS/awesome-cursorrules",
+      "aliases": [
+        "tailwind-rules",
+        "css-patterns"
+      ],
+      "description": "Tailwind CSS patterns and standards for Cursor",
+      "tags": [
+        "cursor",
+        "css",
+        "tailwind",
+        "frontend"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "cursor-nextjs": {
+      "name": "Next.js Cursor Rules",
+      "source": "github:PatrickJS/awesome-cursorrules",
+      "aliases": [
+        "nextjs-rules",
+        "react-ssr"
+      ],
+      "description": "Next.js development standards for Cursor AI",
+      "tags": [
+        "cursor",
+        "nextjs",
+        "react",
+        "ssr"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "cursor-python": {
+      "name": "Python Cursor Rules",
+      "source": "github:PatrickJS/awesome-cursorrules",
+      "aliases": [
+        "python-rules",
+        "py-patterns"
+      ],
+      "description": "Python development standards for Cursor AI",
+      "tags": [
+        "cursor",
+        "python",
+        "development",
+        "patterns"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "cursor-rust": {
+      "name": "Rust Cursor Rules",
+      "source": "github:PatrickJS/awesome-cursorrules",
+      "aliases": [
+        "rust-rules",
+        "rs-patterns"
+      ],
+      "description": "Rust development standards for Cursor AI",
+      "tags": [
+        "cursor",
+        "rust",
+        "development",
+        "systems"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "cursor-go": {
+      "name": "Go Cursor Rules",
+      "source": "github:PatrickJS/awesome-cursorrules",
+      "aliases": [
+        "golang-rules",
+        "go-patterns"
+      ],
+      "description": "Go development standards for Cursor AI",
+      "tags": [
+        "cursor",
+        "go",
+        "golang",
+        "backend"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "instructa-prompts": {
+      "name": "Instructa AI Prompts",
+      "source": "github:instructa/ai-prompts",
+      "aliases": [
+        "ai-prompts",
+        "coding-standards"
+      ],
+      "description": "Curated AI prompts for Cursor, Cline, Windsurf, and GitHub Copilot",
+      "tags": [
+        "prompts",
+        "cross-platform",
+        "standards",
+        "patterns"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    }
+  }
+}

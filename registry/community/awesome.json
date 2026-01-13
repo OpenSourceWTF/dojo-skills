@@ -1,288 +1,238 @@
 {
   "skills": {
-    "filesystem": {
-      "name": "Filesystem",
-      "path": "src/filesystem",
-      "source": "github:modelcontextprotocol/servers",
+    "superpowers": {
+      "name": "Claude Superpowers",
+      "source": "github:obra/superpowers",
       "aliases": [
-        "fs",
-        "files"
+        "obra-superpowers",
+        "superpowers-skills"
       ],
-      "description": "Local filesystem access",
+      "description": "Core skills library with 20+ battle-tested skills including TDD, debugging, and collaboration patterns",
       "tags": [
-        "system",
-        "files"
-      ]
-    },
-    "git": {
-      "name": "Git",
-      "path": "src/git",
-      "source": "github:modelcontextprotocol/servers",
-      "aliases": [
-        "vcs"
-      ],
-      "description": "Git repository management",
-      "tags": [
-        "dev",
-        "vcs",
-        "git"
-      ]
-    },
-    "memory": {
-      "name": "Memory",
-      "path": "src/memory",
-      "source": "github:modelcontextprotocol/servers",
-      "aliases": [
-        "store",
-        "graph"
-      ],
-      "description": "Knowledge graph memory system",
-      "tags": [
-        "ai",
-        "memory",
-        "graph"
-      ]
-    },
-    "brave-search": {
-      "name": "Brave Search",
-      "path": "src/brave-search",
-      "source": "github:modelcontextprotocol/servers",
-      "aliases": [
-        "search",
-        "web"
-      ],
-      "description": "Web search using Brave API",
-      "tags": [
-        "search",
-        "web"
-      ]
-    },
-    "github": {
-      "name": "GitHub",
-      "path": "src/github",
-      "source": "github:modelcontextprotocol/servers",
-      "aliases": [
-        "gh"
-      ],
-      "description": "GitHub API integration",
-      "tags": [
-        "dev",
-        "github",
-        "api"
-      ]
-    },
-    "postgres": {
-      "name": "PostgreSQL",
-      "path": "src/postgres",
-      "source": "github:modelcontextprotocol/servers",
-      "aliases": [
-        "pg",
-        "sql"
-      ],
-      "description": "PostgreSQL database access",
-      "tags": [
-        "db",
-        "sql",
-        "postgres"
-      ]
-    },
-    "sqlite": {
-      "name": "SQLite",
-      "path": "src/sqlite",
-      "source": "github:modelcontextprotocol/servers",
-      "aliases": [
-        "sql",
-        "lite"
-      ],
-      "description": "SQLite database access",
-      "tags": [
-        "db",
-        "sql",
-        "sqlite"
-      ]
-    },
-    "slack": {
-      "name": "Slack",
-      "path": "src/slack",
-      "source": "github:modelcontextprotocol/servers",
-      "aliases": [
-        "chat"
-      ],
-      "description": "Slack integration",
-      "tags": [
-        "chat",
-        "slack",
+        "collection",
+        "tdd",
+        "debugging",
+        "collaboration",
         "productivity"
-      ]
-    },
-    "sentry": {
-      "name": "Sentry",
-      "path": "src/sentry",
-      "source": "github:modelcontextprotocol/servers",
-      "aliases": [
-        "monitoring",
-        "error"
       ],
-      "description": "Sentry error monitoring",
-      "tags": [
-        "dev",
-        "monitoring",
-        "sentry"
-      ]
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
     },
-    "cloudflare": {
-      "name": "Cloudflare",
-      "path": "src/cloudflare",
-      "source": "github:modelcontextprotocol/servers",
+    "superpowers-lab": {
+      "name": "Superpowers Lab",
+      "source": "github:obra/superpowers-lab",
       "aliases": [
-        "cf"
+        "experimental-superpowers"
       ],
-      "description": "Cloudflare resource management",
+      "description": "Experimental skills for Claude Code Superpowers using cutting-edge techniques",
       "tags": [
-        "devops",
-        "cloud",
-        "cloudflare"
-      ]
+        "collection",
+        "experimental",
+        "research"
+      ],
+      "dependencies": [
+        "superpowers"
+      ],
+      "versions": {
+        "latest": "main"
+      }
     },
-    "linear": {
-      "name": "Linear",
-      "path": "src/linear",
-      "source": "github:modelcontextprotocol/servers",
+    "ios-simulator": {
+      "name": "iOS Simulator",
+      "source": "github:conorluddy/ios-simulator-skill",
       "aliases": [
-        "issues"
+        "ios",
+        "xcode",
+        "simulator"
       ],
-      "description": "Linear issue tracking",
+      "description": "iOS app building, navigation, and testing through automation",
       "tags": [
-        "productivity",
-        "issues",
-        "linear"
-      ]
+        "mobile",
+        "ios",
+        "testing",
+        "automation"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
     },
-    "notion": {
-      "name": "Notion",
-      "path": "src/notion",
-      "source": "github:modelcontextprotocol/servers",
+    "ffuf-web-fuzzing": {
+      "name": "FFUF Web Fuzzing",
+      "source": "github:jthack/ffuf_claude_skill",
       "aliases": [
-        "wiki"
+        "ffuf",
+        "fuzzing",
+        "pentest"
       ],
-      "description": "Notion knowledge base",
+      "description": "Expert guidance for ffuf web fuzzing during penetration testing",
       "tags": [
-        "productivity",
-        "notes",
-        "notion"
-      ]
+        "security",
+        "pentesting",
+        "fuzzing",
+        "hacking"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
     },
-    "puppeteer": {
-      "name": "Puppeteer",
-      "path": "src/puppeteer",
-      "source": "github:modelcontextprotocol/servers",
+    "playwright": {
+      "name": "Playwright Automation",
+      "source": "github:lackeyjb/playwright-skill",
       "aliases": [
-        "browser",
-        "scrape"
+        "browser-automation",
+        "e2e"
       ],
-      "description": "Browser automation",
+      "description": "General-purpose browser automation using Playwright",
       "tags": [
-        "web",
+        "testing",
         "automation",
-        "testing"
-      ]
-    },
-    "sequential-thinking": {
-      "name": "Sequential Thinking",
-      "path": "src/sequential-thinking",
-      "source": "github:modelcontextprotocol/servers",
-      "aliases": [
-        "think",
-        "cot"
+        "browser",
+        "e2e"
       ],
-      "description": "Dynamic chain of thought processing",
-      "tags": [
-        "ai",
-        "reasoning",
-        "tool"
-      ]
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
     },
-    "time": {
-      "name": "Time",
-      "path": "src/time",
-      "source": "github:modelcontextprotocol/servers",
+    "d3js-visualization": {
+      "name": "D3.js Visualization",
+      "source": "github:chrisvoncsefalvay/claude-d3js-skill",
       "aliases": [
-        "clock"
+        "d3",
+        "charts",
+        "dataviz"
       ],
-      "description": "Time and date utilities",
+      "description": "Create data visualizations using D3.js",
       "tags": [
-        "utility",
-        "time"
-      ]
+        "visualization",
+        "data",
+        "charts",
+        "d3"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
     },
-    "weather": {
-      "name": "Weather",
-      "path": "src/weather",
-      "source": "github:modelcontextprotocol/servers",
+    "scientific-skills": {
+      "name": "Scientific Skills",
+      "source": "github:K-Dense-AI/claude-scientific-skills",
       "aliases": [
-        "forecast"
+        "science",
+        "research",
+        "academic"
       ],
-      "description": "Weather forecasts",
+      "description": "Comprehensive collection of ready-to-use scientific skills for specialized libraries and databases",
       "tags": [
-        "utility",
-        "weather"
-      ]
+        "science",
+        "research",
+        "data",
+        "academic"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
     },
-    "everything": {
-      "name": "Everything",
-      "path": "src/everything",
-      "source": "github:modelcontextprotocol/servers",
+    "web-asset-generator": {
+      "name": "Web Asset Generator",
+      "source": "github:alonw0/web-asset-generator",
       "aliases": [
-        "all"
+        "favicons",
+        "icons",
+        "social-images"
       ],
-      "description": "Template or reference server",
+      "description": "Generate web assets like favicons, app icons, and social media images",
       "tags": [
-        "template",
-        "example"
-      ]
-    },
-    "fetch": {
-      "name": "Fetch",
-      "path": "src/fetch",
-      "source": "github:modelcontextprotocol/servers",
-      "aliases": [
-        "http",
-        "curl"
-      ],
-      "description": "Web content fetching",
-      "tags": [
-        "utility",
+        "design",
         "web",
-        "fetch"
-      ]
-    },
-    "gdrive": {
-      "name": "Google Drive",
-      "path": "src/gdrive",
-      "source": "github:modelcontextprotocol/servers",
-      "aliases": [
-        "drive"
+        "assets",
+        "icons"
       ],
-      "description": "Google Drive integration",
-      "tags": [
-        "productivity",
-        "storage",
-        "google"
-      ]
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
     },
-    "gitlab": {
-      "name": "GitLab",
-      "path": "src/gitlab",
-      "source": "github:modelcontextprotocol/servers",
+    "loki-mode": {
+      "name": "Loki Mode",
+      "source": "github:asklokesh/claudeskill-loki-mode",
       "aliases": [
-        "gl"
+        "multi-agent",
+        "startup",
+        "autonomous"
       ],
-      "description": "GitLab API integration",
+      "description": "Multi-agent autonomous startup system - orchestrates 37 AI agents across 6 swarms",
       "tags": [
-        "dev",
-        "gitlab",
-        "vcs"
-      ]
+        "agents",
+        "automation",
+        "startup",
+        "orchestration"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "skill-seekers": {
+      "name": "Skill Seekers",
+      "source": "github:yusufkaraaslan/Skill_Seekers",
+      "aliases": [
+        "docs-to-skills",
+        "converter"
+      ],
+      "description": "Convert documentation websites into Claude Skills",
+      "tags": [
+        "tools",
+        "conversion",
+        "documentation"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "claude-starter": {
+      "name": "Claude Starter",
+      "source": "github:anthropics/claude-starter",
+      "aliases": [
+        "starter-template",
+        "config-template"
+      ],
+      "description": "Production-ready Claude Code configuration template with 40 auto-activating skills across 8 domains",
+      "tags": [
+        "collection",
+        "template",
+        "configuration"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "move-code-quality": {
+      "name": "Move Code Quality",
+      "source": "github:community/move-code-quality-skill",
+      "aliases": [
+        "move",
+        "sui",
+        "aptos"
+      ],
+      "description": "Analyze Move language packages against the official Move Book Code Quality Checklist",
+      "tags": [
+        "blockchain",
+        "move",
+        "quality",
+        "linting"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
     }
   }
 }

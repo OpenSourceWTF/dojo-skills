@@ -2,33 +2,136 @@
   "skills": {
     "github-actions": {
       "name": "GitHub Actions",
-      "path": "skills/github-actions",
-      "source": "github:google-gemini/gemini-cli",
+      "source": "github:google-gemini/gemini-cli/packages/cli/src/core/skills/github-actions",
       "aliases": [
         "gha",
-        "actions"
+        "actions",
+        "ci-cd"
       ],
-      "description": "Manage GitHub Actions workflows",
+      "description": "Manage GitHub Actions workflows with AI assistance",
       "tags": [
         "devops",
         "ci-cd",
-        "github"
-      ]
+        "github",
+        "automation"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
     },
     "code-review": {
       "name": "Code Review",
-      "path": "skills/code-review",
-      "source": "github:google-gemini/gemini-cli",
+      "source": "github:google-gemini/gemini-cli/packages/cli/src/core/skills/code-review",
       "aliases": [
         "cr",
-        "review"
-      ],
-      "description": "Automated code review assistant",
-      "tags": [
-        "coding",
         "review",
-        "quality"
-      ]
+        "pr-review"
+      ],
+      "description": "Automated code review assistant for pull requests",
+      "tags": [
+        "development",
+        "review",
+        "quality",
+        "pr"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "gemini-agent-skills": {
+      "name": "Agent Skills Framework",
+      "source": "github:google-gemini/gemini-cli",
+      "aliases": [
+        "agent-skills",
+        "skills-framework"
+      ],
+      "description": "Modular skill plugins for task-specific AI expertise in terminal coding",
+      "tags": [
+        "framework",
+        "development",
+        "productivity"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "issue-triage": {
+      "name": "Issue Triage",
+      "source": "github:google-github-actions/run-gemini-cli",
+      "aliases": [
+        "triage",
+        "issue-management"
+      ],
+      "description": "Automated GitHub issue triage and labeling with Gemini",
+      "tags": [
+        "devops",
+        "github",
+        "automation",
+        "issues"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "pr-summary": {
+      "name": "PR Summary",
+      "source": "github:google-github-actions/run-gemini-cli",
+      "aliases": [
+        "pull-request-summary",
+        "pr-description"
+      ],
+      "description": "Generate comprehensive pull request descriptions and summaries",
+      "tags": [
+        "devops",
+        "github",
+        "documentation",
+        "pr"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "code-understanding": {
+      "name": "Code Understanding",
+      "source": "github:google-gemini/gemini-cli",
+      "aliases": [
+        "code-explain",
+        "codebase-analysis"
+      ],
+      "description": "Deep code understanding, navigation, and file manipulation",
+      "tags": [
+        "development",
+        "analysis",
+        "productivity"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
+    },
+    "troubleshooting": {
+      "name": "Dynamic Troubleshooting",
+      "source": "github:google-gemini/gemini-cli",
+      "aliases": [
+        "debug",
+        "debugging",
+        "problem-solving"
+      ],
+      "description": "Dynamic troubleshooting and debugging assistance",
+      "tags": [
+        "development",
+        "debugging",
+        "productivity"
+      ],
+      "dependencies": [],
+      "versions": {
+        "latest": "main"
+      }
     }
   }
 }
