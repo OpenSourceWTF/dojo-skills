@@ -6,7 +6,8 @@
   "scripts": {
     "sync": "npx tsx scripts/sync-registry.ts",
     "sync:dry-run": "npx tsx scripts/sync-registry.ts --dry-run --verbose",
-    "validate": "npx tsx scripts/validate-links.ts"
+    "validate": "npx tsx scripts/validate-links.ts",
+    "build": "npx tsx scripts/build-registry.ts"
   },
   "devDependencies": {
     "@types/node": "^25.0.8",
