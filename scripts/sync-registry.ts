@@ -477,6 +477,16 @@ async function writeRegistryFiles(
   return { files, totalCount };
 }
 
+// Check if file exists asynchronously
+async function fileExists(path: string): Promise<boolean> {
+  try {
+    await fs.stat(path);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 // Update index.json with new files
 async function updateIndex(
   communityFiles: string[],
@@ -489,7 +499,20 @@ async function updateIndex(
     const content = await fs.readFile(indexPath, "utf-8");
     const index: IndexJson = JSON.parse(content);
 
-    // Add new files to categories if not present
+    // Add new files to categories if not present, but verify existence first
+    // Note: clean up index entries if file no longer exists?
+    // For now, simpler: only ADD if not present.
+    // Ideally we should sync index with exactly what was written + existing files.
+    // The previous implementation pushes blindly.
+
+    // Better: Rebuild category file lists from filesystem? 
+    // No, we trust the sync logic. But we should check if they exist.
+    // Actually, sync logic returns the files it WROTE.
+    // But index contains *previously* written files too (if any were not overwritten).
+    // Let's assume sync overwrites everything for its managed categories.
+    // If files are removed (e.g. author removed skills), they might remain in FS but not in result.
+    // That's a separate cleanup task.
+
     for (const file of communityFiles) {
       if (!index.categories.community.includes(file)) {
         index.categories.community.push(file);
@@ -500,6 +523,10 @@ async function updateIndex(
         index.categories.mcp.push(file);
       }
     }
+
+    // Cleanup: Filter out files that don't exist
+    index.categories.community = await filterExistingFiles(CONFIG.outputDir, "community", index.categories.community);
+    index.categories.mcp = await filterExistingFiles(CONFIG.outputDir, "mcp", index.categories.mcp);
 
     // Update counts and date
     index.totalSkills = totalSkills;
@@ -516,6 +543,35 @@ async function updateIndex(
     log(`Updated index.json: ${totalSkills} total skills`);
   } catch (error) {
     log(`Error updating index.json: ${error}`, "error");
+  }
+}
+
+async function filterExistingFiles(baseDir: string, category: string, files: string[]): Promise<string[]> {
+  const existing: string[] = [];
+  for (const file of files) {
+    const filePath = path.join(baseDir, category, file);
+    if (await fileExists(filePath)) {
+      existing.push(file);
+    }
+  }
+  return existing;
+}
+
+// Run build script
+async function runBuild() {
+  log("Running registry build...");
+  const buildScript = path.join(import.meta.dirname, "build-registry.ts");
+  const { exec } = await import("child_process");
+  const { promisify } = await import("util");
+  const execAsync = promisify(exec);
+
+  try {
+    const { stdout, stderr } = await execAsync(`npx tsx ${buildScript}`);
+    console.log(stdout);
+    if (stderr) console.error(stderr);
+  } catch (error) {
+    log(`Build failed: ${error}`, "error");
+    throw error;
   }
 }
 
@@ -541,6 +597,11 @@ async function main() {
   // Update index
   const totalSkills = communityResult.totalCount + mcpResult.totalCount;
   await updateIndex(communityResult.files, mcpResult.files, totalSkills);
+
+  // Run build
+  if (!CONFIG.dryRun) {
+    await runBuild();
+  }
 
   log("=== Sync Complete ===");
   log(
