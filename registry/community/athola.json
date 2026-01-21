@@ -9,7 +9,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "project-planning": {
@@ -21,7 +21,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "project-specification": {
@@ -33,7 +33,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "development-workflow": {
@@ -45,7 +45,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "makefile-generation": {
@@ -57,7 +57,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "workflow-setup": {
@@ -69,7 +69,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "precommit-setup": {
@@ -81,7 +81,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "project-execution": {
@@ -93,7 +93,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "review-chamber": {
@@ -105,7 +105,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     }
   }

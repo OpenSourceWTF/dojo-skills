@@ -209,6 +209,12 @@ function extractOwner(url: string): string {
   return match ? match[1].toLowerCase() : "unknown";
 }
 
+// Extract branch from GitHub URL
+function extractBranch(url: string): string {
+  const match = url.match(/github\.com\/[^/]+\/[^/]+\/tree\/([^/]+)/);
+  return match ? match[1] : "main";
+}
+
 // Convert GitHub URL to our source format
 function urlToSource(url: string): string {
   const match = url.match(
@@ -273,7 +279,7 @@ async function fetchSkillsFromAwesome(): Promise<SkillsByOwner> {
                 ? skill.description.substring(0, 197) + "..."
                 : skill.description,
             tags: [domainTag, "community"],
-            versions: { latest: "main" },
+            versions: { latest: extractBranch(skill.url) },
           });
         }
       }

@@ -57,7 +57,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "canvas-design": {
@@ -69,7 +69,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "slack-gif-creator": {
@@ -81,7 +81,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "frontend-design": {
@@ -93,7 +93,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "artifacts-builder": {
@@ -105,7 +105,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "mcp-builder": {
@@ -117,7 +117,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "webapp-testing": {
@@ -129,7 +129,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "brand-guidelines": {
@@ -141,7 +141,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "internal-comms": {
@@ -153,7 +153,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "skill-creator": {
@@ -165,7 +165,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "doc-coauthoring": {
@@ -189,7 +189,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "web-artifacts-builder": {
@@ -13877,7 +13877,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "code-documentation-analyzer": {
@@ -19760,7 +19760,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "verification-before-completion": {
@@ -20142,7 +20142,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "crewai-multi-agent": {
@@ -20178,7 +20178,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "dispatching-parallel-agents": {
@@ -20238,7 +20238,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "product-strategist": {
@@ -20502,7 +20502,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "cosmic-database": {
@@ -20586,7 +20586,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "drugbank-database": {
@@ -20826,7 +20826,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "isms-audit-expert": {
@@ -21201,7 +21201,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "pufferlib": {
@@ -21561,7 +21561,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "weights-and-biases": {
@@ -22823,7 +22823,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "marketing-strategy-pmm": {
@@ -22847,7 +22847,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "product-manager-toolkit": {
@@ -23354,7 +23354,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "sparse-autoencoder-training": {
@@ -23690,7 +23690,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "scientific-slides": {
@@ -23858,7 +23858,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "fluidsim": {
@@ -23894,7 +23894,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "linear": {
@@ -23934,7 +23934,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "n8n-node-configuration": {
@@ -23958,7 +23958,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "notion-spec-to-implementation": {
@@ -23970,7 +23970,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "obsidian-markdown": {
@@ -26478,7 +26478,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "card-news-generator-v2": {
@@ -26490,7 +26490,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "codex-claude-cursor-loop": {
@@ -26502,7 +26502,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "codex-claude-loop": {
@@ -26514,7 +26514,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "flutter-init": {
@@ -26526,7 +26526,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "gemini-logo-remover": {
@@ -26538,7 +26538,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "landing-page-guide-v2": {
@@ -26550,7 +26550,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "workthrough": {
@@ -26562,7 +26562,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "design-prompt-generator-v2": {
@@ -26574,7 +26574,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "midjourney-card-news-backgrounds": {
@@ -26586,7 +26586,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "prompt-enhancer": {
@@ -26598,7 +26598,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "code-changelog": {
@@ -26610,7 +26610,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "landing-page-guide": {
@@ -26622,7 +26622,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "nextjs15-init": {
@@ -26634,7 +26634,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "web-to-markdown": {
@@ -26646,7 +26646,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "": {
@@ -26658,7 +26658,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "chipsec": {
@@ -26670,7 +26670,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "nmap": {
@@ -26682,7 +26682,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "apktool": {
@@ -26694,7 +26694,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "iotnet": {
@@ -26706,7 +26706,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "onvifscan": {
@@ -26718,7 +26718,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "picocom": {
@@ -26730,7 +26730,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "telnetshell": {
@@ -26742,7 +26742,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "ffind": {
@@ -26754,7 +26754,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "jadx": {
@@ -26766,7 +26766,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "wsdiscovery": {
@@ -26778,7 +26778,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "claude-code-history-files-finder": {
@@ -26910,7 +26910,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "cloudflare-troubleshooting": {
@@ -27630,7 +27630,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "project-planning": {
@@ -27642,7 +27642,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "project-specification": {
@@ -27654,7 +27654,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "development-workflow": {
@@ -27666,7 +27666,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "makefile-generation": {
@@ -27678,7 +27678,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "workflow-setup": {
@@ -27690,7 +27690,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "precommit-setup": {
@@ -27702,7 +27702,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "project-execution": {
@@ -27714,7 +27714,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "review-chamber": {
@@ -27726,7 +27726,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "microsoft-docs": {
@@ -27810,7 +27810,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "aws-kb-retrieval": {

@@ -9,7 +9,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "developer-growth-analysis": {
@@ -21,7 +21,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "skill-creator": {
@@ -33,7 +33,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "template-skill": {
@@ -45,7 +45,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "brand-guidelines": {
@@ -57,7 +57,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "changelog-generator": {
@@ -69,7 +69,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "content-research-writer": {
@@ -81,7 +81,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "docx": {
@@ -93,7 +93,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "domain-name-brainstormer": {
@@ -105,7 +105,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "internal-comms": {
@@ -117,7 +117,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "invoice-organizer": {
@@ -129,7 +129,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "pdf": {
@@ -141,7 +141,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "xlsx": {
@@ -153,7 +153,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "youtube-downloader": {
@@ -165,7 +165,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "mcp-builder": {
@@ -177,7 +177,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "slack-gif-creator": {
@@ -189,7 +189,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "canvas-design": {
@@ -201,7 +201,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "image-enhancer": {
@@ -213,7 +213,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "artifacts-builder": {
@@ -225,7 +225,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "pptx": {
@@ -237,7 +237,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "theme-factory": {
@@ -249,7 +249,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "webapp-testing": {
@@ -261,7 +261,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "skill-share": {
@@ -273,7 +273,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "raffle-winner-picker": {
@@ -285,7 +285,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "file-organizer": {
@@ -297,7 +297,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "lead-research-assistant": {
@@ -309,7 +309,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     },
     "meeting-insights-analyzer": {
@@ -321,7 +321,7 @@
         "community"
       ],
       "versions": {
-        "latest": "main"
+        "latest": "master"
       }
     }
   }
